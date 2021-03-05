@@ -1,0 +1,753 @@
+// converted by version 1.3
+// on Mon Nov 26 16:42:55 CET 2007
+
+.package benchs/jcre/engine/dup {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x64:0x75:0x70;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x64:0x75:0x70:0x1 DupTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef DupTestApplet DupTestApplet$10/this$0;
+		// 1
+		instanceFieldRef DupTestApplet DupTestApplet$11/this$0;
+		// 2
+		instanceFieldRef DupTestApplet DupTestApplet$2/this$0;
+		// 3
+		instanceFieldRef DupTestApplet DupTestApplet$3/this$0;
+		// 4
+		instanceFieldRef DupTestApplet DupTestApplet$4/this$0;
+		// 5
+		instanceFieldRef DupTestApplet DupTestApplet$5/this$0;
+		// 6
+		instanceFieldRef DupTestApplet DupTestApplet$6/this$0;
+		// 7
+		instanceFieldRef DupTestApplet DupTestApplet$7/this$0;
+		// 8
+		instanceFieldRef DupTestApplet DupTestApplet$8/this$0;
+		// 9
+		instanceFieldRef DupTestApplet DupTestApplet$9/this$0;
+		// 10
+		instanceFieldRef DupTestApplet DupTestApplet$1/this$0;
+		// 11
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 12
+		staticMethodRef DupTestCase/<init>()V;
+		// 13
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 14
+		classRef DupTestApplet;
+		// 15
+		staticMethodRef DupTestApplet/<init>()V;
+		// 16
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 17
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 18
+		classRef DupTestApplet$1;
+		// 19
+		staticMethodRef DupTestApplet$1/<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V;
+		// 20
+		classRef DupTestApplet$2;
+		// 21
+		staticMethodRef DupTestApplet$2/<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V;
+		// 22
+		classRef DupTestApplet$3;
+		// 23
+		staticMethodRef DupTestApplet$3/<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V;
+		// 24
+		classRef DupTestApplet$4;
+		// 25
+		staticMethodRef DupTestApplet$4/<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V;
+		// 26
+		classRef DupTestApplet$5;
+		// 27
+		staticMethodRef DupTestApplet$5/<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V;
+		// 28
+		classRef DupTestApplet$6;
+		// 29
+		staticMethodRef DupTestApplet$6/<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V;
+		// 30
+		classRef DupTestApplet$7;
+		// 31
+		staticMethodRef DupTestApplet$7/<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V;
+		// 32
+		classRef DupTestApplet$8;
+		// 33
+		staticMethodRef DupTestApplet$8/<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V;
+		// 34
+		classRef DupTestApplet$9;
+		// 35
+		staticMethodRef DupTestApplet$9/<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V;
+		// 36
+		classRef DupTestApplet$10;
+		// 37
+		staticMethodRef DupTestApplet$10/<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V;
+		// 38
+		classRef DupTestApplet$11;
+		// 39
+		staticMethodRef DupTestApplet$11/<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V;
+		// 40
+		virtualMethodRef 0.7.5(Z)V;		// setUseInnerCounter(Z)V
+	}
+
+	.class abstract DupTestCase extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.publicMethodTable 7 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 11;		// benchs/lib/templates/TestCase.<init>()V
+					aload_0;
+					sconst_0;
+					invokevirtual 40;		// setUseInnerCounter(Z)V
+					return;
+		}
+
+	}
+
+	.class final DupTestApplet$10 extends DupTestCase {
+
+		.fields {
+			final DupTestApplet this$0 0;		// Lbenchs/jcre/engine/dup/DupTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcre/engine/dup/DupTestApplet$10.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/dup/DupTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+     .locals 0;
+     
+     L0: sconst_0;
+   sconst_0;
+   sconst_0;
+   sconst_0;
+   dup_x 36;
+   return;
+		}
+
+	}
+
+	.class final DupTestApplet$11 extends DupTestCase {
+
+		.fields {
+			final DupTestApplet this$0 0;		// Lbenchs/jcre/engine/dup/DupTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcre/engine/dup/DupTestApplet$11.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/dup/DupTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+      .locals 0;
+   
+   L0: sconst_0;
+      sconst_0;
+   sconst_0;
+   sconst_0;
+   dup;
+   return;
+		}
+
+	}
+
+	.class final DupTestApplet$2 extends DupTestCase {
+
+		.fields {
+			final DupTestApplet this$0 0;		// Lbenchs/jcre/engine/dup/DupTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcre/engine/dup/DupTestApplet$2.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/dup/DupTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+     .locals 0;
+     
+     L0: sconst_0;
+   sconst_0;
+   sconst_0;
+   sconst_0;
+     dup2;
+   return;
+		}
+
+	}
+
+	.class final DupTestApplet$3 extends DupTestCase {
+
+		.fields {
+			final DupTestApplet this$0 0;		// Lbenchs/jcre/engine/dup/DupTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcre/engine/dup/DupTestApplet$3.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/dup/DupTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+     .locals 0;
+     
+     L0: sconst_0;
+   sconst_0;
+   sconst_0;
+   sconst_0;
+     dup_x 16;
+   return;
+		}
+
+	}
+
+	.class final DupTestApplet$4 extends DupTestCase {
+
+		.fields {
+			final DupTestApplet this$0 0;		// Lbenchs/jcre/engine/dup/DupTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcre/engine/dup/DupTestApplet$4.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/dup/DupTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+     .locals 0;
+     
+     L0: sconst_0;
+   sconst_0;
+   sconst_0;
+   sconst_0;
+   dup_x 17;
+   return;
+		}
+
+	}
+
+	.class final DupTestApplet$5 extends DupTestCase {
+
+		.fields {
+			final DupTestApplet this$0 0;		// Lbenchs/jcre/engine/dup/DupTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcre/engine/dup/DupTestApplet$5.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/dup/DupTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+     .locals 0;
+     
+     L0: sconst_0;
+   sconst_0;
+   sconst_0;
+   sconst_0;
+   dup_x 18;
+   return;
+		}
+
+	}
+
+	.class final DupTestApplet$6 extends DupTestCase {
+
+		.fields {
+			final DupTestApplet this$0 0;		// Lbenchs/jcre/engine/dup/DupTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcre/engine/dup/DupTestApplet$6.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/dup/DupTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+     .locals 0;
+     
+     L0: sconst_0;
+   sconst_0;
+   sconst_0;
+   sconst_0;
+   dup_x 19;
+   return;
+		}
+
+	}
+
+	.class final DupTestApplet$7 extends DupTestCase {
+
+		.fields {
+			final DupTestApplet this$0 0;		// Lbenchs/jcre/engine/dup/DupTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcre/engine/dup/DupTestApplet$7.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/dup/DupTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+     .locals 0;
+     
+     L0: sconst_0;
+   sconst_0;
+   sconst_0;
+   sconst_0;
+   dup_x 32;
+   return;
+		}
+
+	}
+
+	.class final DupTestApplet$8 extends DupTestCase {
+
+		.fields {
+			final DupTestApplet this$0 0;		// Lbenchs/jcre/engine/dup/DupTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcre/engine/dup/DupTestApplet$8.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/dup/DupTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+     .locals 0;
+     
+     L0: sconst_0;
+   sconst_0;
+   sconst_0;
+   sconst_0;
+   dup_x 34;
+   return;
+		}
+
+	}
+
+	.class final DupTestApplet$9 extends DupTestCase {
+
+		.fields {
+			final DupTestApplet this$0 0;		// Lbenchs/jcre/engine/dup/DupTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcre/engine/dup/DupTestApplet$9.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/dup/DupTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+     .locals 0;
+     
+     L0: sconst_0;
+   sconst_0;
+   sconst_0;
+   sconst_0;
+   dup_x 35;
+   return;
+		}
+
+	}
+
+	.class public DupTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 13;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 1 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 14;		// benchs/jcre/engine/dup/DupTestApplet
+					dup;
+					invokespecial 15;		// benchs/jcre/engine/dup/DupTestApplet.<init>()V
+					invokevirtual 16;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 11;
+					anewarray 17;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 18;		// benchs/jcre/engine/dup/DupTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 19;		// benchs/jcre/engine/dup/DupTestApplet$1.<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 20;		// benchs/jcre/engine/dup/DupTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 21;		// benchs/jcre/engine/dup/DupTestApplet$2.<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 22;		// benchs/jcre/engine/dup/DupTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 23;		// benchs/jcre/engine/dup/DupTestApplet$3.<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 24;		// benchs/jcre/engine/dup/DupTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 25;		// benchs/jcre/engine/dup/DupTestApplet$4.<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 26;		// benchs/jcre/engine/dup/DupTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 27;		// benchs/jcre/engine/dup/DupTestApplet$5.<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 28;		// benchs/jcre/engine/dup/DupTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 29;		// benchs/jcre/engine/dup/DupTestApplet$6.<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 30;		// benchs/jcre/engine/dup/DupTestApplet$7
+					dup;
+					aload_0;
+					invokespecial 31;		// benchs/jcre/engine/dup/DupTestApplet$7.<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 32;		// benchs/jcre/engine/dup/DupTestApplet$8
+					dup;
+					aload_0;
+					invokespecial 33;		// benchs/jcre/engine/dup/DupTestApplet$8.<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 34;		// benchs/jcre/engine/dup/DupTestApplet$9
+					dup;
+					aload_0;
+					invokespecial 35;		// benchs/jcre/engine/dup/DupTestApplet$9.<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 36;		// benchs/jcre/engine/dup/DupTestApplet$10
+					dup;
+					aload_0;
+					invokespecial 37;		// benchs/jcre/engine/dup/DupTestApplet$10.<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V
+					aastore;
+					dup;
+					bspush 10;
+					new 38;		// benchs/jcre/engine/dup/DupTestApplet$11
+					dup;
+					aload_0;
+					invokespecial 39;		// benchs/jcre/engine/dup/DupTestApplet$11.<init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+	}
+
+	.class final DupTestApplet$1 extends DupTestCase {
+
+		.fields {
+			final DupTestApplet this$0 0;		// Lbenchs/jcre/engine/dup/DupTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/dup/DupTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 10;		// reference benchs/jcre/engine/dup/DupTestApplet$1.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/dup/DupTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+     .locals 0;
+     
+     L0: sconst_0;
+   sconst_0;
+   sconst_0;
+   sconst_0;
+   return;
+		}
+
+	}
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<project name="Util.arrayCopyNonAtomic" default="convert" basedir=".">
+	
+	<property name="package.name" value="benchs.jcapi.javacard_framework.util.arraycopynonatomic"/>
+	<property name="package.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x63:0x6F:0x70:0x79:0x6E:0x61"/>
+	<property name="applet.name" value="benchs.jcapi.javacard_framework.util.arraycopynonatomic.ArrayCopyNonAtomicTestApplet"/>
+	<property name="applet.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x63:0x6F:0x70:0x79:0x6E:0x61:0x01"/>
+	
+	<import file="../../../../../tools/converter/build.xml"/>
+	
+	<target name="convert">
+      <ant dir="${src.path}/benchs/lib/templates" target="convert" inheritall="false"/>
+	  <ant antfile="${ant.file.converter}" target="convert" inheritrefs="true"/>
+	</target>
+		
+</project>

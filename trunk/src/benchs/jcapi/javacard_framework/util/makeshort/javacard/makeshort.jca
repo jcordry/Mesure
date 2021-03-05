@@ -1,0 +1,241 @@
+// converted by version 1.3
+// on Mon Nov 26 16:41:29 CET 2007
+
+.package benchs/jcapi/javacard_framework/util/makeshort {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x6D:0x73:0x68:0x6F:0x72:0x74;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x6D:0x73:0x68:0x6F:0x72:0x74:0x1 MakeShortTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef MakeShortTestApplet MakeShortTestApplet$1/this$0;
+		// 1
+		instanceFieldRef MakeShortTestApplet MakeShortTestApplet$2/this$0;
+		// 2
+		instanceFieldRef byte MakeShortTestApplet/b1;
+		// 3
+		instanceFieldRef byte MakeShortTestApplet/b2;
+		// 4
+		staticMethodRef 0.5.2(BB)V;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort(BB)V
+		// 5
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 6
+		staticMethodRef 2.16.5(BB)S;		// javacard/framework/Util.makeShort(BB)S
+		// 7
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 8
+		staticMethodRef MakeShortTestApplet/access$0(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)B;
+		// 9
+		staticMethodRef MakeShortTestApplet/access$1(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)B;
+		// 10
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 11
+		classRef MakeShortTestApplet;
+		// 12
+		staticMethodRef MakeShortTestApplet/<init>()V;
+		// 13
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 14
+		classRef MakeShortTestApplet$1;
+		// 15
+		staticMethodRef MakeShortTestApplet$1/<init>(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)V;
+		// 16
+		classRef MakeShortTestApplet$2;
+		// 17
+		staticMethodRef MakeShortTestApplet$2/<init>(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)V;
+	}
+
+	.class final MakeShortTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final MakeShortTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet$1.this$0
+					aload_0;
+					invokespecial 5;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet$1.this$0
+					invokestatic 8;		// benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)B
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet$1.this$0
+					invokestatic 9;		// benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)B
+					invokestatic 4;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort(BB)V
+					return;
+		}
+
+	}
+
+	.class final MakeShortTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final MakeShortTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet$2.this$0
+					aload_0;
+					invokespecial 5;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet$2.this$0
+					invokestatic 8;		// benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)B
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet$2.this$0
+					invokestatic 9;		// benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)B
+					invokestatic 6;		// javacard/framework/Util.makeShort(BB)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class public MakeShortTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			private byte b1 0;		// B
+			private byte b2 1;		// B
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method private <init>()V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 7;		// benchs/lib/templates/TemplateApplet.<init>()V
+					aload_0;
+					sconst_0;
+					putfield_b 2;		// byte benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet.b1
+					aload_0;
+					sconst_m1;
+					putfield_b 3;		// byte benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet.b2
+					aload_0;
+					invokevirtual 10;		// register()V
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	new 11;		// benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet
+					invokespecial 12;		// benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet.<init>()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	sconst_2;
+					anewarray 13;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 14;		// benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 15;		// benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet$1.<init>(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 16;		// benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 17;		// benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet$2.<init>(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static access$0(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_b 2;		// byte benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet.b1
+					sreturn;
+		}
+
+		.method static access$1(Lbenchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet;)B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_b 3;		// byte benchs/jcapi/javacard_framework/util/makeshort/MakeShortTestApplet.b2
+					sreturn;
+		}
+
+	}
+
+}

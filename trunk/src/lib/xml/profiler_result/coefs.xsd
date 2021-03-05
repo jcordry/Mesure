@@ -1,0 +1,91 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="Results">
+		
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="BytecodeAverageList" minOccurs="1" maxOccurs="1" />
+				<xsd:element ref="MethodAverageList" minOccurs="1" maxOccurs="1" />
+				<xsd:element ref="Domain" minOccurs="3" maxOccurs="3" />
+			</xsd:sequence>
+				<xsd:attribute name="mark" type="xsd:double"/>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="BytecodeAverageList">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="BytecodeAverage" minOccurs="0" maxOccurs="unbounded" />
+			</xsd:sequence>	
+		</xsd:complexType>	
+	</xsd:element>
+	
+	<xsd:element name="MethodAverageList">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="MethodAverage" minOccurs="0" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>	
+	</xsd:element>
+	
+	<xsd:element name="BytecodeAverage">
+		<xsd:complexType>
+			<xsd:attribute name="name" type="xsd:string"/>
+			<xsd:attribute name="avg" type="xsd:double"/>	
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="MethodAverage">
+		<xsd:complexType>
+			<xsd:attribute name="name" type="xsd:string"/>
+			<xsd:attribute name="avg" type="xsd:double"/>	
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Domain">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Bytecodes" minOccurs="1" maxOccurs="1" />
+				<xsd:element ref="Methods" minOccurs="1" maxOccurs="1" />
+			</xsd:sequence>
+			<xsd:attribute name="name" type="xsd:string"/>
+		      <xsd:attribute name="mark" type="xsd:double"/>	
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Bytecodes">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Bytecode" minOccurs="0" maxOccurs="unbounded" />
+			</xsd:sequence>	
+			<xsd:attribute name="totalocc" type="xsd:positiveInteger"/>
+		</xsd:complexType>	
+	</xsd:element>
+
+	<xsd:element name="Bytecode">
+		<xsd:complexType>
+			<xsd:attribute name="name" type="xsd:string"/>
+			<xsd:attribute name="nbocc" type="xsd:positiveInteger"/>
+			<xsd:attribute name="avg" type="xsd:double"/>
+		</xsd:complexType>	
+	</xsd:element>
+
+	<xsd:element name="Methods">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Method" minOccurs="0" maxOccurs="unbounded" />
+			</xsd:sequence>	
+			<xsd:attribute name="totalocc" type="xsd:positiveInteger"/>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Method">
+		<xsd:complexType>
+			<xsd:attribute name="name" type="xsd:string"/>
+			<xsd:attribute name="nbocc" type="xsd:positiveInteger"/>
+			<xsd:attribute name="avg" type="xsd:double"/>
+		</xsd:complexType>	
+	</xsd:element>
+
+</xsd:schema>
+
+

@@ -1,0 +1,196 @@
+// converted by version 1.3
+// on Mon Nov 26 16:43:34 CET 2007
+
+.package benchs/jcre/memsetup {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x6D:0x65:0x6D:0x73:0x65:0x74:0x75;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x6D:0x65:0x6D:0x73:0x65:0x74:0x75:0x1 MemSetupApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef MemSetupApplet MemSetupApplet$1/this$0;
+		// 1
+		instanceFieldRef MemSetupApplet MemSetupApplet$2/this$0;
+		// 2
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 3
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 4
+		classRef MemSetupApplet;
+		// 5
+		staticMethodRef MemSetupApplet/<init>()V;
+		// 6
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 7
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 8
+		classRef MemSetupApplet$1;
+		// 9
+		staticMethodRef MemSetupApplet$1/<init>(Lbenchs/jcre/memsetup/MemSetupApplet;)V;
+		// 10
+		classRef MemSetupApplet$2;
+		// 11
+		staticMethodRef MemSetupApplet$2/<init>(Lbenchs/jcre/memsetup/MemSetupApplet;)V;
+	}
+
+	.class final MemSetupApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final MemSetupApplet this$0 0;		// Lbenchs/jcre/memsetup/MemSetupApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/memsetup/MemSetupApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcre/memsetup/MemSetupApplet$1.this$0
+					aload_0;
+					invokespecial 2;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+	}
+
+	.class final MemSetupApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final MemSetupApplet this$0 0;		// Lbenchs/jcre/memsetup/MemSetupApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/memsetup/MemSetupApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcre/memsetup/MemSetupApplet$2.this$0
+					aload_0;
+					invokespecial 2;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+	}
+
+	.class public MemSetupApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 3;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 1 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 4;		// benchs/jcre/memsetup/MemSetupApplet
+					dup;
+					invokespecial 5;		// benchs/jcre/memsetup/MemSetupApplet.<init>()V
+					invokevirtual 6;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	sconst_2;
+					anewarray 7;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 8;		// benchs/jcre/memsetup/MemSetupApplet$1
+					dup;
+					aload_0;
+					invokespecial 9;		// benchs/jcre/memsetup/MemSetupApplet$1.<init>(Lbenchs/jcre/memsetup/MemSetupApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 10;		// benchs/jcre/memsetup/MemSetupApplet$2
+					dup;
+					aload_0;
+					invokespecial 11;		// benchs/jcre/memsetup/MemSetupApplet$2.<init>(Lbenchs/jcre/memsetup/MemSetupApplet;)V
+					aastore;
+					areturn;
+		}
+
+	}
+
+}

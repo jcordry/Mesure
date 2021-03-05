@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * Copyright (c) 2006 Mesure Project
+ * 
+ * This software is a computer program whose purpose is to measure 
+ * the performances of Java Card platforms.
+ *
+ * This software is governed by the CeCILL license under French law and
+ * abiding by the rules of distribution of free software.  You can  use, 
+ * modify and/ or redistribute the software under the terms of the CeCILL
+ * license as circulated by CEA, CNRS and INRIA at the following URL
+ * "http://www.cecill.info". 
+ * 
+ * As a counterpart to the access to the source code and  rights to copy,
+ * modify and redistribute granted by the license, users are provided only
+ * with a limited warranty  and the software's author,  the holder of the
+ * economic rights,  and the successive licensors  have only  limited
+ * liability. 
+ * 
+ * In this respect, the user's attention is drawn to the risks associated
+ * with loading,  using,  modifying and/or developing or reproducing the
+ * software by the user in light of its specific status of free software,
+ * that may mean  that it is complicated to manipulate,  and  that  also
+ * therefore means  that it is reserved for developers  and  experienced
+ * professionals having in-depth computer knowledge. Users are therefore
+ * encouraged to load and test the software's suitability as regards their
+ * requirements in conditions enabling the security of their systems and/or 
+ * data to be ensured and,  more generally, to use and operate it in the 
+ * same conditions as regards security. 
+ * 
+ * The fact that you are presently reading this means that you have had
+ * knowledge of the CeCILL license and that you accept its terms.
+ *
+ *
+ * $HeadURL: svn+ssh://corentinboe@gforge.inria.fr/svn/mesureprv/src/benchs/engine/config/ManagerConfig.xsd $
+ * Created: 1 septembre 2006
+ * Author: TL 
+ * $LastChangedRevision: 43 $
+ * $LastChangedDate: 2006-10-16 17:17:37 +0200 (lun., 16 oct. 2006) $
+ * $LastChangedBy: cpascal $
+ *
+-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="managerConfig">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="cad" type="xsd:string" default="PCSC" minOccurs="1" maxOccurs="1"/>
+        <xsd:element name="timeProvider" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="cardConfig" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="tests" minOccurs="1" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>   
+   
+  <xsd:element name="tests">
+    <xsd:complexType> 
+      <xsd:sequence>
+        <xsd:element ref="test" minOccurs="0" maxOccurs="unbounded"/>     
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>	
+  
+  <xsd:element name="test">
+    <xsd:complexType> 
+      <xsd:sequence> 
+        <xsd:element ref="testCase" minOccurs="0" maxOccurs="unbounded"/>     
+      </xsd:sequence>
+      <xsd:attribute name="testConfig" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+    </xsd:complexType>
+  </xsd:element>	
+  
+  <xsd:element name="testCase">
+    <xsd:complexType> 
+      <xsd:sequence> 
+        <xsd:element ref="calibrateMetric" minOccurs="0" maxOccurs="1"/>   
+      </xsd:sequence>
+      <xsd:attribute name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:attribute name="x" type="xsd:int" minOccurs="0" maxOccurs="1"/>  
+      <xsd:attribute name="y" type="xsd:int" minOccurs="0" maxOccurs="1"/>  
+      <xsd:attribute name="minLoop" type="xsd:int" minOccurs="0" maxOccurs="1"/>
+      <xsd:attribute name="maxLoop" type="xsd:int" minOccurs="0" maxOccurs="1"/>
+      <xsd:attribute name="startLoop" type="xsd:int" default="_x" minOccurs="0" maxOccurs="1"/>
+      <xsd:attribute name="precision" type="xsd:double" default="2" minOccurs="0" maxOccurs="1"/>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="calibrateMetric">
+    <xsd:complexType>
+      <xsd:attribute name="Xmin" type="xsd:int" default="16" minOccurs="0" maxOccurs="1"/>
+      <xsd:attribute name="Ymin" type="xsd:int" default="30" minOccurs="0" maxOccurs="1"/>
+      <xsd:attribute name="tmin" type="xsd:double" default="10000000" minOccurs="0" maxOccurs="1"/>
+      <xsd:attribute name="a" type="xsd:double" default="0.0" minOccurs="0" maxOccurs="1"/>
+      <xsd:attribute name="b" type="xsd:double" default="0.0" minOccurs="0" maxOccurs="1"/>
+    </xsd:complexType>
+  </xsd:element>
+
+ 
+</xsd:schema>

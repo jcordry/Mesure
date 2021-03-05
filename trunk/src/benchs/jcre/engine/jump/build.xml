@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+
+<project name="jump" default="convert" basedir=".">
+	<property name="package.name" value="benchs.jcre.engine.jump"/>
+	<property name="package.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x6A:0x75:0x6D:0x70"/>
+	<property name="applet.name" value="benchs.jcre.engine.jump.JumpTestApplet"/>
+	<property name="applet.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x6A:0x75:0x6D:0x70:0x01"/>
+	<property name="cap" value="false"/>
+	<property name="jcafile" value="${basedir}/javacard/jump.jca"/>
+	<property name="capfile" value="${basedir}/javacard/jump.cap"/>
+	
+	<import file="../../../../tools/converter/build.xml"/>
+
+	<target name="convert">
+	  <ant dir="${src.path}/benchs/lib/templates" target="convert" inheritall="false"/>
+	  <ant antfile="${ant.file.converter}" target="convert" inheritrefs="true"/>
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 12340;\s+sstore_2;\s+return;"
+	  	replace=".stack 0;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 12350;\s+sstore_2;\s+return;"
+	  	replace=".stack 0;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: goto L1;${line.separator}		
+	  	L1:	return;"
+	  />
+	  <replaceregexp
+		file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 12360;\s+sstore_2;\s+return;"
+	  	replace=".stack 0;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: goto_w L1;${line.separator}
+		sspush 12360;${line.separator}
+		sstore_2;${line.separator}
+		sinc 2 1;${line.separator}
+		sinc 2 1;${line.separator}
+        sinc 2 1;${line.separator}
+        sinc 2 1;${line.separator}
+        sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	  	sinc 2 1;${line.separator}
+	    L1: return;"
+	  />
+	  <ant antfile="${ant.file.converter}" target="capgen" inheritrefs="true"/>
+	</target>
+</project>

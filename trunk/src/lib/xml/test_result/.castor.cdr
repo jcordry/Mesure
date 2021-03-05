@@ -1,0 +1,6 @@
+#Fri Aug 10 10:26:35 CEST 2007
+lib.xml.test_result.TestResult=lib.xml.test_result.TestResultDescriptor
+lib.xml.test_result.Test=lib.xml.test_result.TestDescriptor
+lib.xml.test_result.TimeMeasure=lib.xml.test_result.TimeMeasureDescriptor
+lib.xml.test_result.TestCase=lib.xml.test_result.TestCaseDescriptor
+lib.xml.test_result.Bench=lib.xml.test_result.BenchDescriptor

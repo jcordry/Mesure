@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+ *
+ * Copyright (c) 2006-2008 Mesure Project
+ * 
+ * This software is a computer program whose purpose is to measure 
+ * the performances of Java Card platforms.
+ *
+ * This software is governed by the CeCILL license under French law and
+ * abiding by the rules of distribution of free software.  You can  use, 
+ * modify and/ or redistribute the software under the terms of the CeCILL
+ * license as circulated by CEA, CNRS and INRIA at the following URL
+ * "http://www.cecill.info". 
+ * 
+ * As a counterpart to the access to the source code and  rights to copy,
+ * modify and redistribute granted by the license, users are provided only
+ * with a limited warranty  and the software's author,  the holder of the
+ * economic rights,  and the successive licensors  have only  limited
+ * liability. 
+ * 
+ * In this respect, the user's attention is drawn to the risks associated
+ * with loading,  using,  modifying and/or developing or reproducing the
+ * software by the user in light of its specific status of free software,
+ * that may mean  that it is complicated to manipulate,  and  that  also
+ * therefore means  that it is reserved for developers  and  experienced
+ * professionals having in-depth computer knowledge. Users are therefore
+ * encouraged to load and test the software's suitability as regards their
+ * requirements in conditions enabling the security of their systems and/or 
+ * data to be ensured and,  more generally, to use and operate it in the 
+ * same conditions as regards security. 
+ * 
+ * The fact that you are presently reading this means that you have had
+ * knowledge of the CeCILL license and that you accept its terms.
+ *
+ *
+ * $HeadURL: svn+ssh://corentinboe@gforge.inria.fr/svn/mesureprv/src/benchs/engine/config/ManagerConfig.xml $
+ * Created: 1 septembre 2006
+ * Author: TL 
+ * $LastChangedRevision: 34 $
+ * $LastChangedDate: 2006-09-27 11:32:21 +0200 (mer., 27 sept. 2006) $
+ * $LastChangedBy: jcordry $
+-->
+
+<managerConfig>
+  <!-- <cad>SCM Microsystems Inc. CHIPDRIVE Serial 0</cad> -->
+  <!-- <cad>Texas Instruments SmartCardSlot 0</cad> -->
+  <!-- <cad>OMNIKEY CardMan 2020 0</cad> --> 
+  <!-- <cad>Gemplus USB Smart Card Reader 0</cad> -->
+  <cad>Gemplus GemPC Twin 00 00</cad>
+  <!-- <cad>lib.cad.UltraSmartCAD:ULTRASMART:NODEID=123,TIMING=Application,WTXTIMEOUT=false,READERTIMEOUTDURATION=60000</cad> -->
+  <!-- <cad>SCM Microsystems Inc. SCR33x USB Smart Card Reader 0</cad> -->
+
+  <cardConfig>../cards/CardConfig.xml</cardConfig> 
+   
+  <tests>
+ 
+	<!-- API benchmarks -->
+    <test testConfig="benchs/jcapi/javacardx_crypto/cipher/dofinal/des/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_encrypt/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_nopad_decrypt_512/TestConfig.xml"/>
+	<test testConfig="benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_nopad_decrypt_768/TestConfig.xml"/>
+	<test testConfig="benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_nopad_decrypt_1024/TestConfig.xml"/>
+	<test testConfig="benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_nopad_decrypt_2048/TestConfig.xml"/>	
+    <test testConfig="benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_512/TestConfig.xml"/>
+	<test testConfig="benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_768/TestConfig.xml"/>
+	<test testConfig="benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_1024/TestConfig.xml"/>
+	<test testConfig="benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/TestConfig.xml"/>
+	<test testConfig="benchs/jcapi/javacardx_crypto/cipher/init/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacardx_crypto/cipher/initiv/TestConfig.xml"/>
+    
+    <test testConfig="benchs/jcapi/javacard_framework/aid/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_framework/apdu/getbuffer/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_framework/apdu/getprotocol/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_framework/applet/select/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_framework/applet/selectingapplet/TestConfig.xml"/>
+	<test testConfig="benchs/jcapi/javacard_framework/jcsystem/getaid/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_framework/jcsystem/begincommittransaction/TestConfig.xml"/>
+	<test testConfig="benchs/jcapi/javacard_framework/ownerpin/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_framework/util/setshort/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_framework/util/getshort/TestConfig.xml"/> 
+    <test testConfig="benchs/jcapi/javacard_framework/util/makeshort/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_framework/util/arrayfillnonatomic/TestConfig.xml"/> 
+    <test testConfig="benchs/jcapi/javacard_framework/util/arraycompare/TestConfig.xml"/> 
+    <test testConfig="benchs/jcapi/javacard_framework/util/arraycopynonatomic/TestConfig.xml"/>  
+    <test testConfig="benchs/jcapi/javacard_framework/util/arraycopy/TestConfig.xml"/> 
+	
+    <test testConfig="benchs/jcapi/javacard_security/deskey/getkey/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/deskey/setkey/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/key/clearkey/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/key/getsize/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/key/gettype/TestConfig.xml"/> 
+    <test testConfig="benchs/jcapi/javacard_security/messagedigest/dofinal/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/randomdata/generatedata/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/rsaprivatecrtkey/setx/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/rsaprivatekey/setx/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/rsapublickey/setx/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/signature/init/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/signature/initiv/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/signature/sign/TestConfig.xml"/> 
+    <test testConfig="benchs/jcapi/javacard_security/signature/verify/des/TestConfig.xml"/>  
+    <test testConfig="benchs/jcapi/javacard_security/signature/verify/rsa9796_512_768/TestConfig.xml"/> 
+    <test testConfig="benchs/jcapi/javacard_security/signature/verify/rsa9796_1024/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/signature/verify/rsa9796_2048/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/signature/verify/rsapkcs1_512_768/TestConfig.xml"/>
+    <test testConfig="benchs/jcapi/javacard_security/signature/verify/rsapkcs1_1024/TestConfig.xml"/> 
+    <test testConfig="benchs/jcapi/javacard_security/signature/verify/rsapkcs1_2048/TestConfig.xml"/> 
+
+    <!-- VM benchmarks -->
+    <test testConfig="benchs/jcre/arith/arith16/TestConfig.xml" y="10"
+        precision="2" minLoop="10"/>
+    <test testConfig="benchs/jcre/arraylength/TestConfig.xml" y="10"
+        precision="2" minLoop="10"/>
+    <test testConfig="benchs/jcre/engine/dup/TestConfig.xml" y="10"
+        precision="2" minLoop="10"/>
+    <test testConfig="benchs/jcre/engine/jump/TestConfig.xml" y="10"
+        precision="2" minLoop="10"/>
+    <test testConfig="benchs/jcre/engine/objects/TestConfig.xml"
+        y="10" precision="2" minLoop="10"/>
+    <test testConfig="benchs/jcre/engine/stests/TestConfig.xml"
+        y="10" precision="2" minLoop="10"/>
+    
+    <test testConfig="benchs/jcre/engine/stack/TestConfig.xml"
+        y="10" precision="1.5" minLoop="3" maxLoop="180" startLoop="15"/>
+    <test testConfig="benchs/jcre/engine/ual/TestConfig.xml"
+        y="10" precision="1.5" minLoop="3" maxLoop="180" startLoop="15"/>
+    <test testConfig="benchs/jcre/engine/locvar/TestConfig.xml"
+        y="10" precision="1.5" minLoop="3" maxLoop="180" startLoop="15"/>
+    <test testConfig="benchs/jcre/engine/stableswitch/TestConfig.xml"
+        y="10" precision="1.5" minLoop="3" maxLoop="180" startLoop="30"/> 
+    <test testConfig="benchs/jcre/engine/slookupswitch/TestConfig.xml"
+        y="10" precision="1.5" minLoop="3" maxLoop="180" startLoop="30"/>
+    <test testConfig="benchs/jcre/array_read/TestConfig.xml"
+        y="10" precision="1.5" minLoop="3" maxLoop="180" startLoop="30"/> 
+    <test testConfig="benchs/jcre/array_write/TestConfig.xml"
+        y="10" precision="1.5" minLoop="3" maxLoop="180" startLoop="30"/> 
+    <test testConfig="benchs/jcre/engine/invoke/TestConfig.xml"
+        y="10" precision="1.5" minLoop="3" maxLoop="180" startLoop="30"/> 
+    <test testConfig="benchs/jcre/engine/field/TestConfig.xml"
+        y="10" precision="1.5" minLoop="3" maxLoop="180" startLoop="30"/> 
+    <test testConfig="benchs/jcre/engine/tests/TestConfig.xml"
+        y="10" precision="1.5" minLoop="3" maxLoop="180" startLoop="30"/>
+    <test testConfig="benchs/jcre/engine/types/TestConfig.xml"
+        y="10" precision="1.5" minLoop="3" maxLoop="180" startLoop="30"/> 
+   
+  </tests>
+</managerConfig>

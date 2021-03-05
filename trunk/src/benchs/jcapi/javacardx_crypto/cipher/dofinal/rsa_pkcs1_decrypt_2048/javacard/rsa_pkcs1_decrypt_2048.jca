@@ -1,0 +1,1293 @@
+// converted by version 1.3
+// on Tue Nov 27 17:45:37 CET 2007
+
+.package benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048 {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x63:0x64:0x6F:0x66:0x69:0x6E:0x61:0x6C;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+		0xA0:0x0:0x0:0x0:0x62:0x2:0x1 1.1;		//javacardx/crypto
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x2 1.1;		//javacard/security
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x63:0x64:0x6F:0x66:0x69:0x6E:0x61:0x6C:0x1 DoFinalTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef DoFinalTestApplet DoFinalTestApplet$1/this$0;
+		// 1
+		instanceFieldRef DoFinalTestApplet DoFinalTestApplet$10/this$0;
+		// 2
+		instanceFieldRef DoFinalTestApplet DoFinalTestApplet$2/this$0;
+		// 3
+		instanceFieldRef DoFinalTestApplet DoFinalTestApplet$3/this$0;
+		// 4
+		instanceFieldRef DoFinalTestApplet DoFinalTestApplet$4/this$0;
+		// 5
+		instanceFieldRef DoFinalTestApplet DoFinalTestApplet$5/this$0;
+		// 6
+		instanceFieldRef DoFinalTestApplet DoFinalTestApplet$6/this$0;
+		// 7
+		instanceFieldRef DoFinalTestApplet DoFinalTestApplet$7/this$0;
+		// 8
+		instanceFieldRef DoFinalTestApplet DoFinalTestApplet$8/this$0;
+		// 9
+		instanceFieldRef DoFinalTestApplet DoFinalTestApplet$9/this$0;
+		// 10
+		instanceFieldRef byte[] DoFinalTestApplet/tmpBuffer;
+		// 11
+		instanceFieldRef byte[] DoFinalTestApplet/inputBuffer;
+		// 12
+		instanceFieldRef byte[] DoFinalTestApplet/outputBuffer;
+		// 13
+		instanceFieldRef 0.9 0.10.39;		// reference benchs/lib/templates/KeyTemplateApplet.keyInfo
+		// 14
+		instanceFieldRef 0.3 0.11.7;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+		// 15
+		instanceFieldRef short DoFinalTestApplet/length;
+		// 16
+		instanceFieldRef 3.1 0.11.3;		// reference benchs/lib/templates/CryptoTemplateApplet.cipher
+		// 17
+		instanceFieldRef 4.0 0.10.34;		// reference benchs/lib/templates/KeyTemplateApplet.key
+		// 18
+		instanceFieldRef 0.5 0.11.2;		// reference benchs/lib/templates/CryptoTemplateApplet.dummy
+		// 19
+		instanceFieldRef 0.3 0.11.7;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+		// 20
+		instanceFieldRef 3.1 0.11.3;		// reference benchs/lib/templates/CryptoTemplateApplet.cipher
+		// 21
+		instanceFieldRef byte[] 0.11.1;		// reference benchs/lib/templates/CryptoTemplateApplet.IV_NULL
+		// 22
+		instanceFieldRef byte[] 0.11.0;		// reference benchs/lib/templates/CryptoTemplateApplet.IV
+		// 23
+		staticMethodRef DoFinalTestApplet/access$4(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B;
+		// 24
+		virtualMethodRef 0.3.12()S;		// getOutOffset()S
+		// 25
+		virtualMethodRef 0.5.9([BSS[BS)V;		// dummyMethodShort([BSS[BS)V
+		// 26
+		staticMethodRef 0.11.0()V;		// benchs/lib/templates/CryptoTemplateApplet.<init>()V
+		// 27
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 28
+		staticMethodRef 2.8.13(SB)[B;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+		// 29
+		virtualMethodRef DoFinalTestApplet/init([B[B[B)V;
+		// 30
+		staticMethodRef DoFinalTestApplet/access$5(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B;
+		// 31
+		staticMethodRef 2.16.2([BS[BSS)S;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+		// 32
+		virtualMethodRef 0.9.4()B;		// getKeyType()B
+		// 33
+		virtualMethodRef 0.9.3(B)V;		// setKeyType(B)V
+		// 34
+		virtualMethodRef 0.11.10()V;		// buildKey()V
+		// 35
+		virtualMethodRef 0.11.9([B)V;		// init([B)V
+		// 36
+		staticMethodRef DoFinalTestApplet/access$6(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Ljavacardx/crypto/Cipher;;
+			.descriptor	Ljavacardx/crypto/Cipher;	3.1;
+
+		// 37
+		virtualMethodRef 0.3.11()S;		// getInLength()S
+		// 38
+		staticMethodRef 2.7.1(S)V;		// javacard/framework/ISOException.throwIt(S)V
+		// 39
+		staticMethodRef 2.16.3([BSSB)S;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+		// 40
+		virtualMethodRef 3.1.1([BSS[BS)S;		// doFinal([BSS[BS)S
+		// 41
+		virtualMethodRef 0.3.8()B;		// getMode()B
+		// 42
+		virtualMethodRef 0.3.7()B;		// getAlgorithm()B
+		// 43
+		staticMethodRef DoFinalTestApplet/access$0(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/DummyClass;;
+			.descriptor	Lbenchs/lib/templates/DummyClass;	0.5;
+
+		// 44
+		staticMethodRef DoFinalTestApplet/access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B;
+		// 45
+		virtualMethodRef 3.1.3(Ljavacard/security/Key;B)V;		// init(Ljavacard/security/Key;B)V
+			.descriptor	Ljavacard/security/Key;	4.0;
+
+		// 46
+		virtualMethodRef 3.1.4(Ljavacard/security/Key;B[BSS)V;		// init(Ljavacard/security/Key;B[BSS)V
+			.descriptor	Ljavacard/security/Key;	4.0;
+
+		// 47
+		virtualMethodRef DoFinalTestApplet/changeKey()V;
+		// 48
+		classRef DoFinalTestApplet;
+		// 49
+		staticMethodRef DoFinalTestApplet/<init>()V;
+		// 50
+		virtualMethodRef 0.11.1()V;		// register()V
+		// 51
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 52
+		classRef DoFinalTestApplet$1;
+		// 53
+		staticMethodRef DoFinalTestApplet$1/<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V;
+		// 54
+		classRef DoFinalTestApplet$2;
+		// 55
+		staticMethodRef DoFinalTestApplet$2/<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V;
+		// 56
+		classRef DoFinalTestApplet$3;
+		// 57
+		staticMethodRef DoFinalTestApplet$3/<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V;
+		// 58
+		classRef DoFinalTestApplet$4;
+		// 59
+		staticMethodRef DoFinalTestApplet$4/<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V;
+		// 60
+		classRef DoFinalTestApplet$5;
+		// 61
+		staticMethodRef DoFinalTestApplet$5/<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V;
+		// 62
+		classRef DoFinalTestApplet$6;
+		// 63
+		staticMethodRef DoFinalTestApplet$6/<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V;
+		// 64
+		classRef DoFinalTestApplet$7;
+		// 65
+		staticMethodRef DoFinalTestApplet$7/<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V;
+		// 66
+		classRef DoFinalTestApplet$8;
+		// 67
+		staticMethodRef DoFinalTestApplet$8/<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V;
+		// 68
+		classRef DoFinalTestApplet$9;
+		// 69
+		staticMethodRef DoFinalTestApplet$9/<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V;
+		// 70
+		classRef DoFinalTestApplet$10;
+		// 71
+		staticMethodRef DoFinalTestApplet$10/<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V;
+		// 72
+		staticMethodRef DoFinalTestApplet/access$7(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B;
+		// 73
+		staticMethodRef DoFinalTestApplet/access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;;
+			.descriptor	Lbenchs/lib/templates/CryptoInfo;	0.3;
+
+		// 74
+		staticMethodRef DoFinalTestApplet/access$8(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B;
+		// 75
+		virtualMethodRef 0.3.10()S;		// getInOffset()S
+		// 76
+		staticMethodRef DoFinalTestApplet/access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S;
+	}
+
+	.class final DoFinalTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final DoFinalTestApplet this$0 0;		// Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$1.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$1.this$0
+					invokestatic 43;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$0(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/DummyClass;
+					getfield_a_this 0;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$1.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 0;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$1.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 0;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$1.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					getfield_a_this 0;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$1.this$0
+					invokestatic 23;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$4(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 0;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$1.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 24;		// getOutOffset()S
+					invokevirtual 25;		// dummyMethodShort([BSS[BS)V
+					return;
+		}
+
+	}
+
+	.class final DoFinalTestApplet$10 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final DoFinalTestApplet this$0 0;		// Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.this$0
+					aload_1;
+					getfield_a_this 1;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					aconst_null;
+					invokevirtual 29;		// init([B[B[B)V
+					getfield_a_this 1;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.this$0
+					invokestatic 30;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$5(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					sconst_0;
+					getfield_a_this 1;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 1;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 1;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					invokestatic 31;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.this$0
+					invokestatic 36;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$6(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Ljavacardx/crypto/Cipher;
+					getfield_a_this 1;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 1;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 1;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					aload_1;
+					getfield_a_this 1;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 24;		// getOutOffset()S
+					invokevirtual 40;		// doFinal([BSS[BS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final DoFinalTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final DoFinalTestApplet this$0 0;		// Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					aload_1;
+					getfield_a_this 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					aconst_null;
+					invokevirtual 29;		// init([B[B[B)V
+					getfield_a_this 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					invokestatic 30;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$5(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					sconst_0;
+					getfield_a_this 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					invokestatic 31;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					invokestatic 36;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$6(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Ljavacardx/crypto/Cipher;
+					getfield_a_this 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					getfield_a_this 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					invokestatic 23;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$4(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 2;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 24;		// getOutOffset()S
+					invokevirtual 40;		// doFinal([BSS[BS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final DoFinalTestApplet$3 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final DoFinalTestApplet this$0 0;		// Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					aload_1;
+					getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					invokestatic 72;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$7(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					invokevirtual 29;		// init([B[B[B)V
+					getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					invokestatic 30;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$5(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					sconst_0;
+					getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					invokestatic 31;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					invokestatic 36;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$6(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Ljavacardx/crypto/Cipher;
+					getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					invokestatic 23;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$4(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 3;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 24;		// getOutOffset()S
+					invokevirtual 40;		// doFinal([BSS[BS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final DoFinalTestApplet$4 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final DoFinalTestApplet this$0 0;		// Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					aload_1;
+					getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					invokestatic 74;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$8(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					invokevirtual 29;		// init([B[B[B)V
+					getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					invokestatic 30;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$5(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					sconst_0;
+					getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					invokestatic 31;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					invokestatic 36;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$6(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Ljavacardx/crypto/Cipher;
+					getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					invokestatic 23;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$4(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 4;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 24;		// getOutOffset()S
+					invokevirtual 40;		// doFinal([BSS[BS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final DoFinalTestApplet$5 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final DoFinalTestApplet this$0 0;		// Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 5;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5.this$0
+					invokestatic 30;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$5(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					sconst_0;
+					getfield_a_this 5;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 5;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 5;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					invokestatic 31;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getfield_a_this 5;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5.this$0
+					invokestatic 43;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$0(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/DummyClass;
+					getfield_a_this 5;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 5;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 5;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					getfield_a_this 5;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 5;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					invokevirtual 25;		// dummyMethodShort([BSS[BS)V
+					return;
+		}
+
+	}
+
+	.class final DoFinalTestApplet$6 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final DoFinalTestApplet this$0 0;		// Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					aload_1;
+					getfield_a_this 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					aconst_null;
+					invokevirtual 29;		// init([B[B[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					invokestatic 30;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$5(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					sconst_0;
+					getfield_a_this 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					invokestatic 31;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getfield_a_this 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					invokestatic 36;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$6(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Ljavacardx/crypto/Cipher;
+					getfield_a_this 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					getfield_a_this 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 6;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					invokevirtual 40;		// doFinal([BSS[BS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final DoFinalTestApplet$7 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final DoFinalTestApplet this$0 0;		// Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$7.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$7.this$0
+					invokestatic 30;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$5(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					sconst_0;
+					aload_1;
+					getfield_a_this 7;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$7.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 7;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$7.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					invokestatic 31;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getfield_a_this 7;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$7.this$0
+					invokestatic 43;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$0(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/DummyClass;
+					aload_1;
+					getfield_a_this 7;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$7.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 7;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$7.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					getfield_a_this 7;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$7.this$0
+					invokestatic 23;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$4(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 7;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$7.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 24;		// getOutOffset()S
+					invokevirtual 25;		// dummyMethodShort([BSS[BS)V
+					return;
+		}
+
+	}
+
+	.class final DoFinalTestApplet$8 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final DoFinalTestApplet this$0 0;		// Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$8.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 8;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$8.this$0
+					aload_1;
+					aload_1;
+					aconst_null;
+					invokevirtual 29;		// init([B[B[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 8;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$8.this$0
+					invokestatic 30;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$5(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					sconst_0;
+					aload_1;
+					getfield_a_this 8;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$8.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 8;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$8.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					invokestatic 31;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getfield_a_this 8;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$8.this$0
+					invokestatic 36;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$6(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Ljavacardx/crypto/Cipher;
+					aload_1;
+					getfield_a_this 8;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$8.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 8;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$8.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					getfield_a_this 8;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$8.this$0
+					invokestatic 23;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$4(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 8;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$8.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 24;		// getOutOffset()S
+					invokevirtual 40;		// doFinal([BSS[BS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final DoFinalTestApplet$9 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final DoFinalTestApplet this$0 0;		// Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$9.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 9;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$9.this$0
+					invokestatic 43;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$0(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/DummyClass;
+					getfield_a_this 9;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$9.this$0
+					invokestatic 44;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B
+					getfield_a_this 9;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$9.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 9;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$9.this$0
+					invokestatic 76;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S
+					aload_1;
+					getfield_a_this 9;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$9.this$0
+					invokestatic 73;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 24;		// getOutOffset()S
+					invokevirtual 25;		// dummyMethodShort([BSS[BS)V
+					return;
+		}
+
+	}
+
+	.class public DoFinalTestApplet 0 extends 0.11 {		// extends benchs/lib/templates/CryptoTemplateApplet
+
+		.fields {
+			private byte[] inputBuffer 0;		// [B
+			private byte[] outputBuffer 1;		// [B
+			private byte[] tmpBuffer 2;		// [B
+			private short length 3;		// S
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+			init([B)V;
+			buildKey()V;
+			changeKey()V;
+			init([B[B[B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method private <init>()V {
+			.stack 3;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 26;		// benchs/lib/templates/CryptoTemplateApplet.<init>()V
+					aload_0;
+					sspush 288;
+					newarray 11;
+					putfield_a 10;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.tmpBuffer
+					aload_0;
+					sspush 288;
+					sconst_2;
+					invokestatic 28;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 11;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.inputBuffer
+					aload_0;
+					sspush 288;
+					sconst_2;
+					invokestatic 28;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 12;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.outputBuffer
+					return;
+		}
+
+		.method protected changeKey()V 11 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 13;		// reference benchs/lib/templates/KeyTemplateApplet.keyInfo
+					invokevirtual 32;		// getKeyType()B
+					stableswitch L6 4 9 L4 L3 L3 L2 L1 L5;
+				L1:	getfield_a_this 13;		// reference benchs/lib/templates/KeyTemplateApplet.keyInfo
+					bspush 7;
+					invokevirtual 33;		// setKeyType(B)V
+					aload_0;
+					invokevirtual 34;		// buildKey()V
+					goto L6;
+				L2:	getfield_a_this 13;		// reference benchs/lib/templates/KeyTemplateApplet.keyInfo
+					bspush 8;
+					invokevirtual 33;		// setKeyType(B)V
+					aload_0;
+					invokevirtual 34;		// buildKey()V
+					goto L6;
+				L3:	getfield_a_this 13;		// reference benchs/lib/templates/KeyTemplateApplet.keyInfo
+					sconst_4;
+					invokevirtual 33;		// setKeyType(B)V
+					aload_0;
+					invokevirtual 34;		// buildKey()V
+					goto L6;
+				L4:	getfield_a_this 13;		// reference benchs/lib/templates/KeyTemplateApplet.keyInfo
+					sconst_5;
+					invokevirtual 33;		// setKeyType(B)V
+					aload_0;
+					invokevirtual 34;		// buildKey()V
+					goto L6;
+				L5:	getfield_a_this 13;		// reference benchs/lib/templates/KeyTemplateApplet.keyInfo
+					bspush 6;
+					invokevirtual 33;		// setKeyType(B)V
+					aload_0;
+					invokevirtual 34;		// buildKey()V
+					goto L6;
+				L6:	return;
+		}
+
+		.method protected init([B[B[B)V 12 {
+			.stack 7;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					invokevirtual 35;		// init([B)V
+					getfield_a_this 14;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 75;		// getInOffset()S
+					getfield_a_this 14;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 37;		// getInLength()S
+					sadd;
+					aload_2;
+					arraylength;
+					if_scmple L2;
+				L1:	sspush 27012;
+					invokestatic 38;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	getfield_a_this 10;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.tmpBuffer
+					sconst_0;
+					getfield_a_this 10;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.tmpBuffer
+					arraylength;
+					bspush -91;
+					invokestatic 39;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload_0;
+					getfield_a_this 14;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 37;		// getInLength()S
+					putfield_s 15;		// short benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.length
+					getfield_a_this 14;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 41;		// getMode()B
+					sconst_1;
+					if_scmpne_w L12;
+				L3:	getfield_a_this 14;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 42;		// getAlgorithm()B
+					stableswitch L12 1 12 L8 L8 L8 L12 L8 L8 L8 L12 L4 L4 L4 L4;
+				L4:	aload_3;
+					ifnonnull L6;
+				L5:	getfield_a_this 16;		// reference benchs/lib/templates/CryptoTemplateApplet.cipher
+					getfield_a_this 17;		// reference benchs/lib/templates/KeyTemplateApplet.key
+					sconst_2;
+					invokevirtual 45;		// init(Ljavacard/security/Key;B)V
+					goto L7;
+				L6:	getfield_a_this 16;		// reference benchs/lib/templates/CryptoTemplateApplet.cipher
+					getfield_a_this 17;		// reference benchs/lib/templates/KeyTemplateApplet.key
+					sconst_2;
+					aload_3;
+					sconst_0;
+					aload_3;
+					arraylength;
+					invokevirtual 46;		// init(Ljavacard/security/Key;B[BSS)V
+				L7:	aload_0;
+					getfield_a_this 16;		// reference benchs/lib/templates/CryptoTemplateApplet.cipher
+					getfield_a_this 10;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.tmpBuffer
+					sconst_0;
+					getfield_a_this 14;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 37;		// getInLength()S
+					getfield_a_this 10;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.tmpBuffer
+					sconst_0;
+					invokevirtual 40;		// doFinal([BSS[BS)S
+					putfield_s 15;		// short benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.length
+					aload_0;
+					invokevirtual 47;		// changeKey()V
+					goto L12;
+				L8:	aload_3;
+					ifnonnull L10;
+				L9:	getfield_a_this 16;		// reference benchs/lib/templates/CryptoTemplateApplet.cipher
+					getfield_a_this 17;		// reference benchs/lib/templates/KeyTemplateApplet.key
+					sconst_2;
+					invokevirtual 45;		// init(Ljavacard/security/Key;B)V
+					goto L11;
+				L10:	getfield_a_this 16;		// reference benchs/lib/templates/CryptoTemplateApplet.cipher
+					getfield_a_this 17;		// reference benchs/lib/templates/KeyTemplateApplet.key
+					sconst_2;
+					aload_3;
+					sconst_0;
+					aload_3;
+					arraylength;
+					invokevirtual 46;		// init(Ljavacard/security/Key;B[BSS)V
+				L11:	aload_0;
+					getfield_a_this 16;		// reference benchs/lib/templates/CryptoTemplateApplet.cipher
+					getfield_a_this 10;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.tmpBuffer
+					sconst_0;
+					getfield_a_this 14;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 37;		// getInLength()S
+					getfield_a_this 10;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.tmpBuffer
+					sconst_0;
+					invokevirtual 40;		// doFinal([BSS[BS)S
+					putfield_s 15;		// short benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.length
+					goto L12;
+				L12:	aload_3;
+					ifnonnull L14;
+				L13:	getfield_a_this 16;		// reference benchs/lib/templates/CryptoTemplateApplet.cipher
+					getfield_a_this 17;		// reference benchs/lib/templates/KeyTemplateApplet.key
+					getfield_a_this 14;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 41;		// getMode()B
+					invokevirtual 45;		// init(Ljavacard/security/Key;B)V
+					goto L15;
+				L14:	getfield_a_this 16;		// reference benchs/lib/templates/CryptoTemplateApplet.cipher
+					getfield_a_this 17;		// reference benchs/lib/templates/KeyTemplateApplet.key
+					getfield_a_this 14;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 41;		// getMode()B
+					aload_3;
+					sconst_0;
+					aload_3;
+					arraylength;
+					invokevirtual 46;		// init(Ljavacard/security/Key;B[BSS)V
+				L15:	return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 48;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet
+					dup;
+					invokespecial 49;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.<init>()V
+					invokevirtual 50;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 10;
+					anewarray 51;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 52;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 53;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$1.<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 54;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 55;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$2.<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 56;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 57;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$3.<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 58;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 59;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$4.<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 60;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 61;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$5.<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 62;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 63;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$6.<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 64;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$7
+					dup;
+					aload_0;
+					invokespecial 65;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$7.<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 66;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$8
+					dup;
+					aload_0;
+					invokespecial 67;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$8.<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 68;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$9
+					dup;
+					aload_0;
+					invokespecial 69;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$9.<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 70;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10
+					dup;
+					aload_0;
+					invokespecial 71;		// benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet$10.<init>(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static access$0(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/DummyClass; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/DummyClass;	0.5;
+
+				L0:	aload_0;
+					getfield_a 18;		// reference benchs/lib/templates/CryptoTemplateApplet.dummy
+					areturn;
+		}
+
+		.method static access$1(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 11;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.inputBuffer
+					areturn;
+		}
+
+		.method static access$2(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Lbenchs/lib/templates/CryptoInfo; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/CryptoInfo;	0.3;
+
+				L0:	aload_0;
+					getfield_a 19;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					areturn;
+		}
+
+		.method static access$3(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_s 15;		// short benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.length
+					sreturn;
+		}
+
+		.method static access$4(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 12;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.outputBuffer
+					areturn;
+		}
+
+		.method static access$5(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 10;		// reference benchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet.tmpBuffer
+					areturn;
+		}
+
+		.method static access$6(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)Ljavacardx/crypto/Cipher; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Ljavacardx/crypto/Cipher;	3.1;
+
+				L0:	aload_0;
+					getfield_a 20;		// reference benchs/lib/templates/CryptoTemplateApplet.cipher
+					areturn;
+		}
+
+		.method static access$7(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 21;		// reference benchs/lib/templates/CryptoTemplateApplet.IV_NULL
+					areturn;
+		}
+
+		.method static access$8(Lbenchs/jcapi/javacardx_crypto/cipher/dofinal/rsa_pkcs1_decrypt_2048/DoFinalTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 22;		// reference benchs/lib/templates/CryptoTemplateApplet.IV
+					areturn;
+		}
+
+	}
+
+}

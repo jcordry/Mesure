@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<project name="memory" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="cache/read" target="convert" inheritall="false"/>
+	  <ant dir="cache/write" target="convert" inheritall="false"/>
+	</target>
+
+</project>

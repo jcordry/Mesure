@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="packager" default="release" basedir=".">
+	<property name="root" location="${ant.file.packager}/../.." />
+	<property name="tmp" value="${root}/tmp" />
+	<property name="bin" value="${root}/bin" />
+	<property name="build" value="${root}/build" />
+	<property name="doc" value="${root}/doc" />
+	<property name="lib" value="${root}/lib" />
+	<property name="src" value="${root}/src" />
+	<property name="config" value="${root}/config" />
+	<property name="svnant.path" location="${root}/src/tools/svnant" />
+
+	<!-- First create the temporary folders and initialize properties -->
+	<target name="init">
+		<!-- Checking List -->
+		<echo>BEFORE PACKAGING THE MESURE PROJECT CHECK THAT:</echo>
+		<echo> * You have added to the "Path" system variable the path of the ${eclipse}\plugins\org.tigris.subversion.javahl.win32_x.y.z folder.</echo>
+		<echo> * You have correctly documented the "build/excludes.txt" file listing the files to be excluded from the distribution (unversioned files, etc).</echo>
+		<input message="Please check the printed (console) list, before continuing." validargs="y,n" addproperty="check.ok" />
+		<condition property="check.ko">
+			<equals arg1="n" arg2="${check.ok}" />
+		</condition>
+		<fail if="check.ko">Packaging interrupted by user!</fail>
+		<echo>Initializing...</echo>
+		<tstamp>
+			<format property="date" pattern="yyyy MMMM d, hh:mm aa" locale="en" />
+		</tstamp>
+		<!--input message="Please enter SVN username:" addproperty="svn.username"/>
+  	<input message="Please enter SVN password:" addproperty="svn.password"/-->
+		<path id="svnant.classpath">
+			<pathelement location="${svnant.path}/svnant.jar" />
+			<pathelement location="${svnant.path}/svnClientAdapter.jar" />
+			<pathelement location="${svnant.path}/svnjavahl.jar" />
+		</path>
+		<taskdef name="svn" classname="org.tigris.subversion.svnant.SvnTask" classpathref="svnant.classpath" />
+		<svn username="${username}" password="${password}">
+			<status path="${root}" revisionProperty="version" />
+		</svn>
+		<mkdir dir="${build}/src" />
+		<copy todir="${build}/src">
+			<fileset dir="${src}" excludesfile="${build}/excludes.txt" />
+		</copy>
+		<copy file="${build}/Version.java.template" tofile="${build}/src/lib/main/Version.java" filtering="on" overwrite="true">
+			<filterset>
+				<filter token="BUILD_DATE" value="${date}" />
+				<filter token="VERSION" value="${version}" />
+			</filterset>
+		</copy>
+		<echo>Compiling...</echo>
+		<path id="javac.classpath">
+			<fileset dir="${lib}">
+				<include name="*.jar" />
+			</fileset>
+		</path>
+		<mkdir dir="${build}/classes" />
+		<javac destdir="${build}/classes" source="1.4">
+			<src>
+				<path path="${build}/src/benchs" />
+			</src>
+			<classpath refid="javac.classpath" />
+		</javac>
+		<javac destdir="${build}/classes" debug="${debug}">
+			<src>
+				<path path="${build}/src/lib" />
+				<path path="${build}/src/scripts" />
+				<path path="${build}/src/tools" />
+			</src>
+			<classpath refid="javac.classpath" />
+		</javac>
+		<copy todir="${build}/classes">
+			<fileset dir="${build}/src" excludes="**/*.java,**/javacard/**" excludesfile="${build}/excludes.txt" />
+		</copy>
+		<echo>Converting...</echo>
+		<ant dir="${build}/src/benchs" target="convert" inheritAll="false" />
+	</target>
+
+	<!-- Then create the JAR file -->
+	<target name="jar" depends="init">
+		<echo>Creating the JAR file...</echo>
+		<copy todir="${build}/classes">
+			<fileset dir="${build}/src" includes="**/javacard/**" />
+		</copy>
+		<delete quiet="true">
+			<fileset dir="${build}/classes">
+				<include name="tools/converter/**" />
+				<include name="**/build.xml" />
+			</fileset>
+		</delete>
+		<delete file="${bin}/mesure.jar" quiet="true" />
+		<jar destfile="${bin}/mesure.jar" basedir="${build}/classes">
+			<manifest>
+				<attribute name="Created-By" value="Mesure Project (http://mesure.gforge.inria.fr)" />
+				<attribute name="Main-Class" value="lib.main.Version" />
+				<attribute name="Class-Path" value="../lib/castor-1.0.3.jar ../lib/commons-logging-1.1.jar ../lib/jcommon-1.0.9.jar ../lib/jfreechart-1.0.5.jar ../lib/xerces-J_1.4.0.jar" />
+			</manifest>
+		</jar>
+	</target>
+
+	<!-- Build the tool hierarchy -->
+	<target name="release" depends="jar">
+		<echo>Building the tool hierarchy...</echo>
+		<!-- root -->
+		<mkdir dir="${build}/Mesure-${version}" />
+		<copy file="${root}/Licence_CeCILL_V2-en.txt" tofile="${build}/Mesure-${version}/Licence_CeCILL_V2-en.txt" />
+		<copy file="${root}/README.txt" tofile="${build}/Mesure-${version}/README.txt" />
+		<!-- bin -->
+		<mkdir dir="${build}/Mesure-${version}/bin" />
+		<copy todir="${build}/Mesure-${version}/bin">
+			<fileset dir="${bin}" excludesfile="${build}/excludes.txt" />
+		</copy>
+		<!-- doc -->
+		<mkdir dir="${build}/Mesure-${version}/doc" />
+		<copy todir="${build}/Mesure-${version}/doc">
+			<fileset dir="${doc}" excludesfile="${build}/excludes.txt" />
+		</copy>
+		<!-- lib -->
+		<mkdir dir="${build}/Mesure-${version}/lib" />
+		<copy todir="${build}/Mesure-${version}/lib">
+			<fileset dir="${lib}" excludesfile="${build}/excludes.txt" />
+		</copy>
+		<!-- config -->
+		<mkdir dir="${build}/Mesure-${version}/config" />
+		<copy todir="${build}/Mesure-${version}/config">
+			<fileset dir="${config}" excludesfile="${build}/excludes.txt" />
+		</copy>
+
+		<echo>Creating a ZIP file...</echo>
+		<zip destfile="${build}/Mesure-${version}.zip" basedir="${build}" includes="Mesure-${version}/**" update="true" />
+
+		<echo>Creating a TAR file...</echo>
+		<tar destfile="${build}/Mesure-${version}.tar.gz" basedir="${build}" includes="Mesure-${version}/**" compression="gzip" />
+
+		<echo>Cleaning...</echo>
+		<delete quiet="true" includeEmptyDirs="true">
+			<fileset dir="${build}">
+				<exclude name="build.xml" />
+				<exclude name="Version.java.template" />
+				<exclude name="excludes.txt" />
+				<exclude name="Mesure-${version}.zip" />
+				<exclude name="Mesure-${version}.tar*" />
+				<exclude name=".svn" />
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="src">
+		<!-- Checking List -->
+		<echo>BEFORE PACKAGING THE MESURE PROJECT CHECK THAT:</echo>
+		<echo> * You have added to the "Path" system variable the path of the ${eclipse}\plugins\org.tigris.subversion.javahl.win32_x.y.z folder.</echo>
+		<echo>Initializing...</echo>
+		<tstamp>
+			<format property="date" pattern="yyyy MMMM d, hh:mm aa" locale="en" />
+		</tstamp>
+		<!--input message="Please enter SVN username:" addproperty="svn.username"/>
+  	<input message="Please enter SVN password:" addproperty="svn.password"/-->
+		<path id="svnant.classpath">
+			<pathelement location="${svnant.path}/svnant.jar" />
+			<pathelement location="${svnant.path}/svnClientAdapter.jar" />
+			<pathelement location="${svnant.path}/svnjavahl.jar" />
+		</path>
+		<taskdef name="svn" classname="org.tigris.subversion.svnant.SvnTask" classpathref="svnant.classpath" />
+		<svn username="${username}" password="${password}">
+			<status path="${root}" revisionProperty="version" />
+		</svn>
+
+		<!--
+		<echo>Creating a ZIP file...</echo>
+		<zip destfile="${root}/Mesure-${version}-src.zip" basedir="${root}/.." update="true" excludes="**/Mesure-${version}-src.zip, **/Mesure-${version}-src.tar.gz, **/*.jca, **/*.cap, **/classes**, **/*.exp, **/tmp/**, **/.settings/**, **/.metadata/**, **/.classpath, **/.project, **/build/**, **/lib/api21.jar" />
+-->
+
+		<echo>Creating a TAR file...</echo>
+		<tar destfile="${root}/Mesure-${version}-src.tar.gz" basedir="${root}" compression="gzip" excludes="**/Mesure-*-src.zip, **/Mesure-*-src.tar.gz, **/*.jca, **/*.cap, **/classes**, **/*.exp, **/tmp/**, **/.settings/**, **/.metadata/**, **/.classpath, **/.project, **/build/**" excludesfile="${build}/excludes.txt" />
+	</target>
+</project>

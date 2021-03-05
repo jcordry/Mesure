@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Results>
+    <BytecodeAverageList>
+        <BytecodeAverage name="SSHL" avg="304959.7117668195"/>
+        <BytecodeAverage name="ALOAD" avg="17209.400826523084"/>
+        <BytecodeAverage name="SINC" avg="20159.63446352746"/>
+        <BytecodeAverage name="SMUL" avg="292717.25928875955"/>
+        <BytecodeAverage name="ASTORE" avg="129655.5779631096"/>
+        <BytecodeAverage name="SAND" avg="232627.68766982938"/>
+        <BytecodeAverage name="POP" avg="39557.96823169443"/>
+        <BytecodeAverage name="SXOR" avg="233229.0060303033"/>
+        <BytecodeAverage name="DUP" avg="14890.023777395758"/>
+        <BytecodeAverage name="SSHR" avg="307114.7270580751"/>
+        <BytecodeAverage name="SREM" avg="456689.24694205384"/>
+        <BytecodeAverage name="SADD" avg="231262.87727848513"/>
+        <BytecodeAverage name="AALOAD" avg="186055.99963044838"/>
+        <BytecodeAverage name="SSUB" avg="232168.45085604966"/>
+        <BytecodeAverage name="GOTO" avg="13084.834388017298"/>
+        <BytecodeAverage name="SOR" avg="229956.12203354295"/>
+        <BytecodeAverage name="SDIV" avg="499744.72296624404"/>
+    </BytecodeAverageList>
+    <MethodAverageList>
+        <MethodAverage name="javacard.security.key.gettype" avg="249485.63381387474"/>
+        <MethodAverage name="javacard.framework.aid.getbytes" avg="1429817.5464987103"/>
+        <MethodAverage name="javacard.framework.apdu.getbuffer" avg="-143698.71544293594"/>
+        <MethodAverage name="javacard.security.rsapublickey.setmodulus" avg="1.5897253992614051E7"/>
+        <MethodAverage name="javacard.security.signature.initiv" avg="2708716.3394139623"/>
+        <MethodAverage name="javacard.framework.util.arraycopy" avg="2638023.5676706894"/>
+        <MethodAverage name="javacard.framework.ownerpin.isvalidated" avg="1256126.1037273642"/>
+        <MethodAverage name="javacard.security.deskey.setkey" avg="1.746910156266979E7"/>
+        <MethodAverage name="javacardx.crypto.cipher.dofinal" avg="1.4010898630098864E8"/>
+        <MethodAverage name="javacard.framework.applet.selectingapplet" avg="100437.5446839539"/>
+        <MethodAverage name="javacard.framework.util.getshort" avg="68501.5414090302"/>
+        <MethodAverage name="javacard.framework.util.makeshort" avg="47230.21802942309"/>
+        <MethodAverage name="javacard.framework.util.arrayfillnonatomic" avg="731141.217673615"/>
+        <MethodAverage name="javacard.framework.util.arraycompare" avg="2356379.8387208288"/>
+        <MethodAverage
+            name="javacard.framework.ownerpin.resetandunblock" avg="5483735.728657274"/>
+        <MethodAverage name="javacard.framework.aid.partialequals" avg="1236227.9428665123"/>
+        <MethodAverage name="javacard.security.signature.verify" avg="1.5418407263317958E7"/>
+        <MethodAverage name="javacard.security.rsapublickey.setexponent" avg="8636429.199202128"/>
+        <MethodAverage name="javacard.security.key.getsize" avg="345345.47565369715"/>
+        <MethodAverage name="javacard.framework.apdu.getprotocol" avg="-81390.04533019311"/>
+        <MethodAverage name="javacard.security.signature.init" avg="2938999.5299589867"/>
+        <MethodAverage name="javacard.framework.applet.select" avg="262722.85727762297"/>
+        <MethodAverage name="javacard.framework.jcsystem.getaid" avg="461488.4582286833"/>
+        <MethodAverage name="javacard.framework.ownerpin.check" avg="1.5173019603940869E7"/>
+        <MethodAverage name="javacard.security.signature.sign" avg="2.072878570489853E8"/>
+        <MethodAverage name="javacard.framework.ownerpin.reset" avg="1207019.518068857"/>
+        <MethodAverage name="javacard.security.key.clearkey" avg="6470478.062384586"/>
+        <MethodAverage
+            name="javacard.framework.jcsystem.begintransaction" avg="3954189.033407224"/>
+        <MethodAverage name="javacard.security.deskey.getkey" avg="2925321.6778952065"/>
+        <MethodAverage name="javacard.framework.util.setshort" avg="2010564.8155156923"/>
+        <MethodAverage name="javacard.framework.util.arraycopynonatomic" avg="339625.71977691835"/>
+        <MethodAverage
+            name="javacard.framework.ownerpin.gettriesremaining" avg="895498.1255135307"/>
+        <MethodAverage name="javacardx.crypto.cipher.init" avg="2491578.5469340025"/>
+    </MethodAverageList>
+    <Domain name="Transport">
+        <Bytecodes totalocc="34179">
+            <Bytecode name="ACONST_NULL" nbocc="1"/>
+            <Bytecode name="ALOAD" nbocc="93"/>
+            <Bytecode name="ALOAD_0" nbocc="2"/>
+            <Bytecode name="ALOAD_1" nbocc="167"/>
+            <Bytecode name="ALOAD_2" nbocc="80"/>
+            <Bytecode name="ALOAD_3" nbocc="8"/>
+            <Bytecode name="ARRAYLENGTH" nbocc="4"/>
+            <Bytecode name="ASTORE" nbocc="22"/>
+            <Bytecode name="ASTORE_2" nbocc="9"/>
+            <Bytecode name="ASTORE_3" nbocc="2"/>
+            <Bytecode name="BALOAD" nbocc="2743"/>
+            <Bytecode name="BASTORE" nbocc="1220"/>
+            <Bytecode name="BSPUSH" nbocc="247"/>
+            <Bytecode name="CHECKCAST" nbocc="1"/>
+            <Bytecode name="DUP" nbocc="1477"/>
+            <Bytecode name="DUP2" nbocc="10"/>
+            <Bytecode name="GETFIELD_A_THIS" nbocc="2514"/>
+            <Bytecode name="GETFIELD_B_THIS" nbocc="3"/>
+            <Bytecode name="GETSTATIC_A" nbocc="1230"/>
+            <Bytecode name="GETSTATIC_B" nbocc="2"/>
+            <Bytecode name="GOTO" nbocc="17"/>
+            <Bytecode name="GOTO_W" nbocc="1"/>
+            <Bytecode name="IFEQ" nbocc="17"/>
+            <Bytecode name="IFEQ_W" nbocc="1"/>
+            <Bytecode name="IFGE" nbocc="153"/>
+            <Bytecode name="IFGT" nbocc="1"/>
+            <Bytecode name="IFLE" nbocc="1"/>
+            <Bytecode name="IFLT" nbocc="3"/>
+            <Bytecode name="IFLT_W" nbocc="2"/>
+            <Bytecode name="IFNE" nbocc="1203"/>
+            <Bytecode name="IFNULL" nbocc="3"/>
+            <Bytecode name="IF_SCMPEQ" nbocc="8"/>
+            <Bytecode name="IF_SCMPGE" nbocc="1"/>
+            <Bytecode name="IF_SCMPLE" nbocc="11"/>
+            <Bytecode name="IF_SCMPLT" nbocc="24"/>
+            <Bytecode name="IF_SCMPNE" nbocc="15"/>
+            <Bytecode name="IF_SCMPNE_W" nbocc="7"/>
+            <Bytecode name="INVOKEINTERFACE" nbocc="2"/>
+            <Bytecode name="INVOKESTATIC" nbocc="36"/>
+            <Bytecode name="INVOKEVIRTUAL" nbocc="33"/>
+            <Bytecode name="JSR" nbocc="1"/>
+            <Bytecode name="POP" nbocc="20"/>
+            <Bytecode name="RET" nbocc="1"/>
+            <Bytecode name="RETURN" nbocc="26"/>
+            <Bytecode name="S2B" nbocc="1385"/>
+            <Bytecode name="SADD" nbocc="3906"/>
+            <Bytecode name="SALOAD" nbocc="4"/>
+            <Bytecode name="SAND" nbocc="1190"/>
+            <Bytecode name="SCONST_0" nbocc="2562"/>
+            <Bytecode name="SCONST_1" nbocc="1523"/>
+            <Bytecode name="SCONST_2" nbocc="35"/>
+            <Bytecode name="SCONST_3" nbocc="22"/>
+            <Bytecode name="SCONST_4" nbocc="22"/>
+            <Bytecode name="SCONST_5" nbocc="19"/>
+            <Bytecode name="SINC" nbocc="2"/>
+            <Bytecode name="SLOAD" nbocc="6106"/>
+            <Bytecode name="SLOAD_0" nbocc="16"/>
+            <Bytecode name="SLOAD_1" nbocc="10"/>
+            <Bytecode name="SLOAD_2" nbocc="151"/>
+            <Bytecode name="SLOAD_3" nbocc="179"/>
+            <Bytecode name="SLOOKUPSWITCH" nbocc="10"/>
+            <Bytecode name="SMUL" nbocc="6"/>
+            <Bytecode name="SOR" nbocc="1"/>
+            <Bytecode name="SRETURN" nbocc="7"/>
+            <Bytecode name="SSHL" nbocc="5"/>
+            <Bytecode name="SSHR" nbocc="5"/>
+            <Bytecode name="SSPUSH" nbocc="1187"/>
+            <Bytecode name="SSTORE" nbocc="2738"/>
+            <Bytecode name="SSTORE_2" nbocc="148"/>
+            <Bytecode name="SSTORE_3" nbocc="156"/>
+            <Bytecode name="SSUB" nbocc="1343"/>
+            <Bytecode name="STABLESWITCH" nbocc="3"/>
+            <Bytecode name="SXOR" nbocc="16"/>
+        </Bytecodes>
+        <Methods totalocc="42">
+            <Method name="javacard.framework.Util.arrayCopy" nbocc="12"/>
+            <Method name="javacard.framework.APDU.getBuffer" nbocc="7"/>
+            <Method name="javacard.framework.Util.setShort" nbocc="6"/>
+            <Method name="javacard.framework.Util.getShort" nbocc="4"/>
+            <Method name="javacard.framework.Util.arrayFillNonAtomic" nbocc="3"/>
+            <Method
+                name="javacardx.crypto.Cipher.init with 2 parameters" nbocc="1"/>
+            <Method name="javacardx.crypto.Cipher.doFinal" nbocc="1"/>
+            <Method name="javacard.security.DESKey.setKey" nbocc="1"/>
+            <Method name="javacard.security.DESKey.getKey" nbocc="1"/>
+            <Method name="javacard.framework.Util.arrayCopyNonAtomic" nbocc="1"/>
+            <Method name="javacard.framework.Util.arrayCompare" nbocc="1"/>
+            <Method name="javacard.framework.JCSystem.getAID" nbocc="1"/>
+            <Method name="javacard.framework.JCSystem.beginTransaction" nbocc="1"/>
+            <Method name="javacard.framework.APDU.getProtocol" nbocc="1"/>
+            <Method name="javacard.framework.AID.partialEquals" nbocc="1"/>
+        </Methods>
+    </Domain>
+    <Domain name="Identity">
+        <Bytecodes totalocc="2746">
+            <Bytecode name="AALOAD" nbocc="18"/>
+            <Bytecode name="ACONST_NULL" nbocc="2"/>
+            <Bytecode name="ALOAD" nbocc="26"/>
+            <Bytecode name="ALOAD_0" nbocc="51"/>
+            <Bytecode name="ALOAD_1" nbocc="27"/>
+            <Bytecode name="ALOAD_2" nbocc="68"/>
+            <Bytecode name="ALOAD_3" nbocc="7"/>
+            <Bytecode name="ARETURN" nbocc="16"/>
+            <Bytecode name="ASTORE" nbocc="5"/>
+            <Bytecode name="ASTORE_2" nbocc="5"/>
+            <Bytecode name="ASTORE_3" nbocc="4"/>
+            <Bytecode name="BALOAD" nbocc="50"/>
+            <Bytecode name="BASTORE" nbocc="15"/>
+            <Bytecode name="BSPUSH" nbocc="82"/>
+            <Bytecode name="CHECKCAST" nbocc="3"/>
+            <Bytecode name="DUP" nbocc="3"/>
+            <Bytecode name="GETFIELD_A_THIS" nbocc="217"/>
+            <Bytecode name="GETFIELD_B_THIS" nbocc="13"/>
+            <Bytecode name="GETFIELD_S" nbocc="1"/>
+            <Bytecode name="GETFIELD_S_THIS" nbocc="38"/>
+            <Bytecode name="GETSTATIC_A" nbocc="27"/>
+            <Bytecode name="GETSTATIC_B" nbocc="3"/>
+            <Bytecode name="GOTO" nbocc="41"/>
+            <Bytecode name="GOTO_W" nbocc="5"/>
+            <Bytecode name="IFEQ" nbocc="23"/>
+            <Bytecode name="IFLE" nbocc="2"/>
+            <Bytecode name="IFLT" nbocc="1"/>
+            <Bytecode name="IFNE" nbocc="45"/>
+            <Bytecode name="IFNONNULL" nbocc="3"/>
+            <Bytecode name="IFNULL" nbocc="12"/>
+            <Bytecode name="IF_SCMPEQ" nbocc="18"/>
+            <Bytecode name="IF_SCMPGE" nbocc="18"/>
+            <Bytecode name="IF_SCMPLE" nbocc="3"/>
+            <Bytecode name="IF_SCMPLT" nbocc="17"/>
+            <Bytecode name="IF_SCMPNE" nbocc="89"/>
+            <Bytecode name="INVOKEINTERFACE" nbocc="6"/>
+            <Bytecode name="INVOKESPECIAL" nbocc="22"/>
+            <Bytecode name="INVOKESTATIC" nbocc="127"/>
+            <Bytecode name="INVOKEVIRTUAL" nbocc="137"/>
+            <Bytecode name="NEWARRAY" nbocc="1"/>
+            <Bytecode name="POP" nbocc="32"/>
+            <Bytecode name="PUTFIELD_A" nbocc="2"/>
+            <Bytecode name="PUTFIELD_B" nbocc="2"/>
+            <Bytecode name="PUTFIELD_S" nbocc="11"/>
+            <Bytecode name="PUTSTATIC_A" nbocc="1"/>
+            <Bytecode name="RETURN" nbocc="53"/>
+            <Bytecode name="S2B" nbocc="14"/>
+            <Bytecode name="SADD" nbocc="128"/>
+            <Bytecode name="SAND" nbocc="3"/>
+            <Bytecode name="SCONST_0" nbocc="67"/>
+            <Bytecode name="SCONST_1" nbocc="37"/>
+            <Bytecode name="SCONST_2" nbocc="69"/>
+            <Bytecode name="SCONST_3" nbocc="12"/>
+            <Bytecode name="SCONST_4" nbocc="27"/>
+            <Bytecode name="SCONST_5" nbocc="5"/>
+            <Bytecode name="SCONST_M1" nbocc="71"/>
+            <Bytecode name="SDIV" nbocc="2"/>
+            <Bytecode name="SINC" nbocc="11"/>
+            <Bytecode name="SLOAD" nbocc="145"/>
+            <Bytecode name="SLOAD_0" nbocc="18"/>
+            <Bytecode name="SLOAD_1" nbocc="192"/>
+            <Bytecode name="SLOAD_2" nbocc="120"/>
+            <Bytecode name="SLOAD_3" nbocc="169"/>
+            <Bytecode name="SLOOKUPSWITCH" nbocc="5"/>
+            <Bytecode name="SMUL" nbocc="1"/>
+            <Bytecode name="SOR" nbocc="1"/>
+            <Bytecode name="SREM" nbocc="1"/>
+            <Bytecode name="SRETURN" nbocc="99"/>
+            <Bytecode name="SSHL" nbocc="4"/>
+            <Bytecode name="SSPUSH" nbocc="3"/>
+            <Bytecode name="SSTORE" nbocc="80"/>
+            <Bytecode name="SSTORE_1" nbocc="19"/>
+            <Bytecode name="SSTORE_2" nbocc="7"/>
+            <Bytecode name="SSTORE_3" nbocc="55"/>
+            <Bytecode name="SSUB" nbocc="19"/>
+            <Bytecode name="STABLESWITCH" nbocc="10"/>
+        </Bytecodes>
+        <Methods totalocc="131">
+            <Method name="javacard.framework.Util.getShort" nbocc="72"/>
+            <Method name="javacard.framework.Util.setShort" nbocc="22"/>
+            <Method name="javacard.framework.OwnerPIN.reset" nbocc="8"/>
+            <Method name="javacard.framework.Util.arrayCopyNonAtomic" nbocc="5"/>
+            <Method name="javacard.framework.APDU.getBuffer" nbocc="5"/>
+            <Method name="javacard.framework.Util.makeShort" nbocc="3"/>
+            <Method name="javacard.security.Key.getSize" nbocc="2"/>
+            <Method name="javacard.framework.Util.arrayFillNonAtomic" nbocc="2"/>
+            <Method
+                name="javacardx.crypto.Cipher.init with 2 parameters" nbocc="1"/>
+            <Method name="javacardx.crypto.Cipher.doFinal" nbocc="1"/>
+            <Method name="javacard.security.RSAPublicKey.setModulus" nbocc="1"/>
+            <Method name="javacard.security.RSAPublicKey.setExponent" nbocc="1"/>
+            <Method name="javacard.security.Key.getType" nbocc="1"/>
+            <Method name="javacard.security.Key.clearKey" nbocc="1"/>
+            <Method name="javacard.framework.Util.arrayCopy" nbocc="1"/>
+            <Method name="javacard.framework.OwnerPIN.getTriesRemaining" nbocc="1"/>
+            <Method name="javacard.framework.OwnerPIN.check" nbocc="1"/>
+            <Method name="javacard.framework.JCSystem.getAID" nbocc="1"/>
+            <Method name="javacard.framework.Applet.selectingApplet" nbocc="1"/>
+            <Method name="javacard.framework.AID.getBytes" nbocc="1"/>
+        </Methods>
+    </Domain>
+    <Domain name="Banking">
+        <Bytecodes totalocc="16611">
+            <Bytecode name="AALOAD" nbocc="90"/>
+            <Bytecode name="ALOAD" nbocc="119"/>
+            <Bytecode name="ALOAD_0" nbocc="375"/>
+            <Bytecode name="ALOAD_1" nbocc="437"/>
+            <Bytecode name="ALOAD_2" nbocc="336"/>
+            <Bytecode name="ALOAD_3" nbocc="173"/>
+            <Bytecode name="ARETURN" nbocc="45"/>
+            <Bytecode name="ARRAYLENGTH" nbocc="326"/>
+            <Bytecode name="ASTORE" nbocc="12"/>
+            <Bytecode name="ASTORE_1" nbocc="2"/>
+            <Bytecode name="ASTORE_2" nbocc="50"/>
+            <Bytecode name="ASTORE_3" nbocc="16"/>
+            <Bytecode name="BALOAD" nbocc="851"/>
+            <Bytecode name="BASTORE" nbocc="183"/>
+            <Bytecode name="BSPUSH" nbocc="849"/>
+            <Bytecode name="CHECKCAST" nbocc="19"/>
+            <Bytecode name="DUP" nbocc="25"/>
+            <Bytecode name="DUP2" nbocc="26"/>
+            <Bytecode name="DUP_X" nbocc="6"/>
+            <Bytecode name="GETFIELD_A" nbocc="59"/>
+            <Bytecode name="GETFIELD_A_THIS" nbocc="1226"/>
+            <Bytecode name="GETFIELD_B" nbocc="10"/>
+            <Bytecode name="GETFIELD_B_THIS" nbocc="274"/>
+            <Bytecode name="GETFIELD_S_THIS" nbocc="30"/>
+            <Bytecode name="GETSTATIC_A" nbocc="239"/>
+            <Bytecode name="GOTO" nbocc="193"/>
+            <Bytecode name="GOTO_W" nbocc="4"/>
+            <Bytecode name="IFEQ" nbocc="265"/>
+            <Bytecode name="IFEQ_W" nbocc="15"/>
+            <Bytecode name="IFGE" nbocc="22"/>
+            <Bytecode name="IFGE_W" nbocc="7"/>
+            <Bytecode name="IFLE" nbocc="8"/>
+            <Bytecode name="IFLT" nbocc="6"/>
+            <Bytecode name="IFNE" nbocc="120"/>
+            <Bytecode name="IFNE_W" nbocc="1"/>
+            <Bytecode name="IFNONNULL" nbocc="2"/>
+            <Bytecode name="IFNULL" nbocc="31"/>
+            <Bytecode name="IF_ACMPNE" nbocc="1"/>
+            <Bytecode name="IF_SCMPEQ" nbocc="143"/>
+            <Bytecode name="IF_SCMPGE" nbocc="12"/>
+            <Bytecode name="IF_SCMPGT" nbocc="24"/>
+            <Bytecode name="IF_SCMPLE" nbocc="61"/>
+            <Bytecode name="IF_SCMPLT" nbocc="407"/>
+            <Bytecode name="IF_SCMPNE" nbocc="387"/>
+            <Bytecode name="IF_SCMPNE_W" nbocc="6"/>
+            <Bytecode name="INVOKEINTERFACE" nbocc="6"/>
+            <Bytecode name="INVOKESPECIAL" nbocc="206"/>
+            <Bytecode name="INVOKESTATIC" nbocc="444"/>
+            <Bytecode name="INVOKEVIRTUAL" nbocc="376"/>
+            <Bytecode name="JSR" nbocc="1"/>
+            <Bytecode name="POP" nbocc="151"/>
+            <Bytecode name="PUTFIELD_A" nbocc="2"/>
+            <Bytecode name="PUTFIELD_B" nbocc="28"/>
+            <Bytecode name="PUTFIELD_S" nbocc="3"/>
+            <Bytecode name="RET" nbocc="1"/>
+            <Bytecode name="RETURN" nbocc="240"/>
+            <Bytecode name="S2B" nbocc="397"/>
+            <Bytecode name="SADD" nbocc="309"/>
+            <Bytecode name="SALOAD" nbocc="106"/>
+            <Bytecode name="SAND" nbocc="338"/>
+            <Bytecode name="SASTORE" nbocc="70"/>
+            <Bytecode name="SCONST_0" nbocc="626"/>
+            <Bytecode name="SCONST_1" nbocc="341"/>
+            <Bytecode name="SCONST_2" nbocc="237"/>
+            <Bytecode name="SCONST_3" nbocc="112"/>
+            <Bytecode name="SCONST_4" nbocc="112"/>
+            <Bytecode name="SCONST_5" nbocc="38"/>
+            <Bytecode name="SCONST_M1" nbocc="41"/>
+            <Bytecode name="SDIV" nbocc="10"/>
+            <Bytecode name="SINC" nbocc="347"/>
+            <Bytecode name="SLOAD" nbocc="1128"/>
+            <Bytecode name="SLOAD_0" nbocc="79"/>
+            <Bytecode name="SLOAD_1" nbocc="541"/>
+            <Bytecode name="SLOAD_2" nbocc="726"/>
+            <Bytecode name="SLOAD_3" nbocc="241"/>
+            <Bytecode name="SLOOKUPSWITCH" nbocc="49"/>
+            <Bytecode name="SMUL" nbocc="2"/>
+            <Bytecode name="SOR" nbocc="16"/>
+            <Bytecode name="SREM" nbocc="2"/>
+            <Bytecode name="SRETURN" nbocc="308"/>
+            <Bytecode name="SSHL" nbocc="51"/>
+            <Bytecode name="SSHR" nbocc="31"/>
+            <Bytecode name="SSPUSH" nbocc="209"/>
+            <Bytecode name="SSTORE" nbocc="440"/>
+            <Bytecode name="SSTORE_1" nbocc="257"/>
+            <Bytecode name="SSTORE_2" nbocc="70"/>
+            <Bytecode name="SSTORE_3" nbocc="107"/>
+            <Bytecode name="SSUB" nbocc="111"/>
+            <Bytecode name="STABLESWITCH" nbocc="4"/>
+            <Bytecode name="SXOR" nbocc="204"/>
+        </Bytecodes>
+        <Methods totalocc="418">
+            <Method name="javacard.framework.Util.getShort" nbocc="86"/>
+            <Method name="javacard.framework.Util.arrayCopyNonAtomic" nbocc="72"/>
+            <Method name="javacard.framework.APDU.getBuffer" nbocc="60"/>
+            <Method name="javacard.framework.Util.setShort" nbocc="40"/>
+            <Method name="javacard.framework.Util.makeShort" nbocc="38"/>
+            <Method name="javacard.framework.APDU.getProtocol" nbocc="14"/>
+            <Method name="javacard.framework.Util.arrayFillNonAtomic" nbocc="13"/>
+            <Method name="javacard.framework.Applet.selectingApplet" nbocc="13"/>
+            <Method
+                name="javacard.security.Signature.init with 5 parameters" nbocc="12"/>
+            <Method name="javacard.framework.Util.arrayCopy" nbocc="10"/>
+            <Method name="javacard.security.Signature.verify" nbocc="9"/>
+            <Method name="javacard.framework.Util.arrayCompare" nbocc="9"/>
+            <Method name="javacard.framework.JCSystem.beginTransaction" nbocc="9"/>
+            <Method name="javacard.security.Signature.sign" nbocc="5"/>
+            <Method
+                name="javacardx.crypto.Cipher.init with 2 parameters" nbocc="4"/>
+            <Method name="javacardx.crypto.Cipher.doFinal" nbocc="4"/>
+            <Method name="javacard.security.DESKey.setKey" nbocc="4"/>
+            <Method name="javacard.framework.OwnerPIN.check" nbocc="3"/>
+            <Method
+                name="javacard.security.Signature.init with 2 parameters" nbocc="2"/>
+            <Method name="javacard.security.DESKey.getKey" nbocc="2"/>
+            <Method name="javacard.framework.OwnerPIN.isValidated" nbocc="2"/>
+            <Method name="javacard.framework.JCSystem.getAID" nbocc="2"/>
+            <Method name="javacard.framework.AID.getBytes" nbocc="2"/>
+            <Method name="javacard.framework.OwnerPIN.resetAndUnblock" nbocc="1"/>
+            <Method name="javacard.framework.OwnerPIN.getTriesRemaining" nbocc="1"/>
+            <Method name="javacard.framework.Applet.select" nbocc="1"/>
+        </Methods>
+    </Domain>
+</Results>

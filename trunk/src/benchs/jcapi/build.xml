@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<project name="jcapi" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="javacard_framework" target="convert" inheritall="false"/>
+	  <ant dir="javacard_security" target="convert" inheritall="false"/>
+	  <ant dir="javacardx_crypto" target="convert" inheritall="false"/>
+	</target>
+
+</project>

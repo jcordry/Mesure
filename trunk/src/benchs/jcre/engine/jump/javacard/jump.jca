@@ -1,0 +1,377 @@
+// converted by version 1.3
+// on Mon Nov 26 16:43:03 CET 2007
+
+.package benchs/jcre/engine/jump {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x6A:0x75:0x6D:0x70;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x6A:0x75:0x6D:0x70:0x1 JumpTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef JumpTestApplet JumpTestApplet$1/this$0;
+		// 1
+		instanceFieldRef JumpTestApplet JumpTestApplet$2/this$0;
+		// 2
+		instanceFieldRef JumpTestApplet JumpTestApplet$3/this$0;
+		// 3
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 4
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 5
+		classRef JumpTestApplet;
+		// 6
+		staticMethodRef JumpTestApplet/<init>()V;
+		// 7
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 8
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 9
+		classRef JumpTestApplet$1;
+		// 10
+		staticMethodRef JumpTestApplet$1/<init>(Lbenchs/jcre/engine/jump/JumpTestApplet;)V;
+		// 11
+		classRef JumpTestApplet$2;
+		// 12
+		staticMethodRef JumpTestApplet$2/<init>(Lbenchs/jcre/engine/jump/JumpTestApplet;)V;
+		// 13
+		classRef JumpTestApplet$3;
+		// 14
+		staticMethodRef JumpTestApplet$3/<init>(Lbenchs/jcre/engine/jump/JumpTestApplet;)V;
+	}
+
+	.class final JumpTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final JumpTestApplet this$0 0;		// Lbenchs/jcre/engine/jump/JumpTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/jump/JumpTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcre/engine/jump/JumpTestApplet$1.this$0
+					aload_0;
+					invokespecial 3;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+     .locals 0;
+     
+     L0: return;
+		}
+
+	}
+
+	.class final JumpTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final JumpTestApplet this$0 0;		// Lbenchs/jcre/engine/jump/JumpTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/jump/JumpTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcre/engine/jump/JumpTestApplet$2.this$0
+					aload_0;
+					invokespecial 3;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+     .locals 0;
+     
+     L0: goto L1;
+       L1: return;
+		}
+
+	}
+
+	.class final JumpTestApplet$3 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final JumpTestApplet this$0 0;		// Lbenchs/jcre/engine/jump/JumpTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/jump/JumpTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcre/engine/jump/JumpTestApplet$3.this$0
+					aload_0;
+					invokespecial 3;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+     .locals 0;
+     
+     L0: goto_w L1;
+   sspush 12360;
+   sstore_2;
+   sinc 2 1;
+   sinc 2 1;
+         sinc 2 1;
+         sinc 2 1;
+         sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+     sinc 2 1;
+      L1: return;
+		}
+
+	}
+
+	.class public JumpTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 4;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 1 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 5;		// benchs/jcre/engine/jump/JumpTestApplet
+					dup;
+					invokespecial 6;		// benchs/jcre/engine/jump/JumpTestApplet.<init>()V
+					invokevirtual 7;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	sconst_3;
+					anewarray 8;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 9;		// benchs/jcre/engine/jump/JumpTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 10;		// benchs/jcre/engine/jump/JumpTestApplet$1.<init>(Lbenchs/jcre/engine/jump/JumpTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 11;		// benchs/jcre/engine/jump/JumpTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/jump/JumpTestApplet$2.<init>(Lbenchs/jcre/engine/jump/JumpTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 13;		// benchs/jcre/engine/jump/JumpTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 14;		// benchs/jcre/engine/jump/JumpTestApplet$3.<init>(Lbenchs/jcre/engine/jump/JumpTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+	}
+
+}

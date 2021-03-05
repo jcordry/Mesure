@@ -1,0 +1,1809 @@
+// converted by version 1.3
+// on Mon Nov 26 16:41:14 CET 2007
+
+.package benchs/jcapi/javacard_framework/util/arraycompare {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x63:0x6F:0x6D:0x70:0x61:0x72:0x65;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x63:0x6F:0x6D:0x70:0x61:0x72:0x65:0x1 ArrayCompareTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$1/this$0;
+		// 1
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$10/this$0;
+		// 2
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$11/this$0;
+		// 3
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$12/this$0;
+		// 4
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$13/this$0;
+		// 5
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$14/this$0;
+		// 6
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$15/this$0;
+		// 7
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$2/this$0;
+		// 8
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$3/this$0;
+		// 9
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$4/this$0;
+		// 10
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$5/this$0;
+		// 11
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$6/this$0;
+		// 12
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$7/this$0;
+		// 13
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$8/this$0;
+		// 14
+		instanceFieldRef ArrayCompareTestApplet ArrayCompareTestApplet$9/this$0;
+		// 15
+		instanceFieldRef byte[] ArrayCompareTestApplet/persistent1;
+		// 16
+		instanceFieldRef byte[] ArrayCompareTestApplet/persistent2;
+		// 17
+		instanceFieldRef byte[] ArrayCompareTestApplet/transient1;
+		// 18
+		instanceFieldRef byte[] ArrayCompareTestApplet/transient2;
+		// 19
+		instanceFieldRef short ArrayCompareTestApplet/offsetCompare;
+		// 20
+		instanceFieldRef short ArrayCompareTestApplet/lengthCompare;
+		// 21
+		instanceFieldRef short ArrayCompareTestApplet/srcOff;
+		// 22
+		instanceFieldRef short ArrayCompareTestApplet/destOff;
+		// 23
+		instanceFieldRef short ArrayCompareTestApplet/arrayLength;
+		// 24
+		instanceFieldRef short ArrayCompareTestApplet/apduLength;
+		// 25
+		staticMethodRef ArrayCompareTestApplet/access$4(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B;
+		// 26
+		staticMethodRef ArrayCompareTestApplet/access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S;
+		// 27
+		staticMethodRef ArrayCompareTestApplet/access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B;
+		// 28
+		staticMethodRef ArrayCompareTestApplet/access$7(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B;
+		// 29
+		staticMethodRef 1.16.0([BS[BSS)B;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+		// 30
+		staticMethodRef 1.7.1(S)V;		// javacard/framework/ISOException.throwIt(S)V
+		// 31
+		staticMethodRef 0.5.3([BS[BSS)V;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BS[BSS)V
+		// 32
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 33
+		classRef 1.13;		// javacard/framework/SystemException
+		// 34
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 35
+		staticMethodRef 1.16.5(BB)S;		// javacard/framework/Util.makeShort(BB)S
+		// 36
+		staticMethodRef ArrayCompareTestApplet/access$8(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;S)V;
+		// 37
+		staticMethodRef ArrayCompareTestApplet/access$9(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S;
+		// 38
+		staticMethodRef ArrayCompareTestApplet/access$10(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S;
+		// 39
+		staticMethodRef ArrayCompareTestApplet/access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V;
+		// 40
+		staticMethodRef 1.16.1([BS[BSS)S;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+		// 41
+		staticMethodRef ArrayCompareTestApplet/access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B;
+		// 42
+		staticMethodRef ArrayCompareTestApplet/access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S;
+		// 43
+		staticMethodRef ArrayCompareTestApplet/access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S;
+		// 44
+		staticMethodRef 1.16.3([BSSB)S;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+		// 45
+		staticMethodRef 1.8.13(SB)[B;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+		// 46
+		virtualMethodRef 1.13.1()S;		// getReason()S
+		// 47
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 48
+		classRef ArrayCompareTestApplet;
+		// 49
+		staticMethodRef ArrayCompareTestApplet/<init>()V;
+		// 50
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 51
+		classRef ArrayCompareTestApplet$1;
+		// 52
+		staticMethodRef ArrayCompareTestApplet$1/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 53
+		classRef ArrayCompareTestApplet$2;
+		// 54
+		staticMethodRef ArrayCompareTestApplet$2/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 55
+		classRef ArrayCompareTestApplet$3;
+		// 56
+		staticMethodRef ArrayCompareTestApplet$3/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 57
+		classRef ArrayCompareTestApplet$4;
+		// 58
+		staticMethodRef ArrayCompareTestApplet$4/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 59
+		classRef ArrayCompareTestApplet$5;
+		// 60
+		staticMethodRef ArrayCompareTestApplet$5/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 61
+		classRef ArrayCompareTestApplet$6;
+		// 62
+		staticMethodRef ArrayCompareTestApplet$6/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 63
+		classRef ArrayCompareTestApplet$7;
+		// 64
+		staticMethodRef ArrayCompareTestApplet$7/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 65
+		classRef ArrayCompareTestApplet$8;
+		// 66
+		staticMethodRef ArrayCompareTestApplet$8/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 67
+		classRef ArrayCompareTestApplet$9;
+		// 68
+		staticMethodRef ArrayCompareTestApplet$9/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 69
+		classRef ArrayCompareTestApplet$10;
+		// 70
+		staticMethodRef ArrayCompareTestApplet$10/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 71
+		classRef ArrayCompareTestApplet$11;
+		// 72
+		staticMethodRef ArrayCompareTestApplet$11/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 73
+		classRef ArrayCompareTestApplet$12;
+		// 74
+		staticMethodRef ArrayCompareTestApplet$12/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 75
+		classRef ArrayCompareTestApplet$13;
+		// 76
+		staticMethodRef ArrayCompareTestApplet$13/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 77
+		classRef ArrayCompareTestApplet$14;
+		// 78
+		staticMethodRef ArrayCompareTestApplet$14/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 79
+		classRef ArrayCompareTestApplet$15;
+		// 80
+		staticMethodRef ArrayCompareTestApplet$15/<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V;
+		// 81
+		staticMethodRef ArrayCompareTestApplet/init([BZZ)V;
+	}
+
+	.class final ArrayCompareTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					aload_1;
+					sconst_0;
+					sconst_0;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					sadd;
+					sconst_0;
+					invokestatic 44;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$4(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					sadd;
+					sconst_0;
+					invokestatic 44;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 28;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$7(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 29;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					ifeq L2;
+				L1:	sspush -24730;
+					invokestatic 30;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$4(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 31;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BS[BSS)V
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$10 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					aload_1;
+					sconst_0;
+					sconst_0;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					aload_1;
+					bspush 11;
+					baload;
+					aload_1;
+					bspush 12;
+					baload;
+					invokestatic 35;		// javacard/framework/Util.makeShort(BB)S
+					invokestatic 36;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$8(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;S)V
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 37;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$9(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					sadd;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 38;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$10(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					if_scmple L2;
+				L1:	sspush 27012;
+					invokestatic 30;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					sconst_0;
+					invokestatic 44;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$4(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					sconst_0;
+					invokestatic 44;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$4(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 37;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$9(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					sadd;
+					sconst_1;
+					bastore;
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$4(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 29;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					pop;
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$11 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$11.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$11.this$0
+					aload_1;
+					sconst_1;
+					sconst_1;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	aload_1;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$11.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					aload_1;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$11.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$11.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 40;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					aload_1;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$11.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					aload_1;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$11.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$11.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 29;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					pop;
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$12 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$12.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$12.this$0
+					aload_1;
+					sconst_1;
+					sconst_0;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	aload_1;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$12.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$12.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$12.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$12.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 40;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					aload_1;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$12.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$12.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$12.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$12.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 29;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					pop;
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$13 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$13.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$13.this$0
+					aload_1;
+					sconst_1;
+					sconst_0;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	aload_1;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$13.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$13.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$13.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$13.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 40;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					aload_1;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$13.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$13.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$13.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$13.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 29;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					pop;
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$14 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.this$0
+					aload_1;
+					sconst_0;
+					sconst_0;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 40;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 29;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					pop;
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$15 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$15.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$15.this$0
+					aload_1;
+					sconst_0;
+					sconst_1;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$15.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$15.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					aload_1;
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$15.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$15.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 40;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$15.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$15.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					aload_1;
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$15.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$15.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 29;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					pop;
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					aload_1;
+					sconst_0;
+					sconst_0;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					sconst_0;
+					invokestatic 44;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					invokestatic 28;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$7(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					sconst_0;
+					invokestatic 44;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					invokestatic 28;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$7(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 29;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					ifeq L2;
+				L1:	sspush -24730;
+					invokestatic 30;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					invokestatic 28;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$7(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 31;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BS[BSS)V
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$3 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$3.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$3.this$0
+					aload_1;
+					sconst_1;
+					sconst_1;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	aload_1;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$3.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					aload_1;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$3.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$3.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 40;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					aload_1;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$3.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					aload_1;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$3.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$3.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 31;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BS[BSS)V
+					return;
+		}
+
+		.method public cleanUp([B)V 3 {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$4 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$4.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$4.this$0
+					aload_1;
+					sconst_1;
+					sconst_0;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	aload_1;
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$4.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$4.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$4.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$4.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 40;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					aload_1;
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$4.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$4.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$4.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$4.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 31;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BS[BSS)V
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$5 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 10;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$5.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$5.this$0
+					aload_1;
+					sconst_1;
+					sconst_0;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	aload_1;
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$5.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$5.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$5.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$5.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 40;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$5.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$5.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 31;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BS[BSS)V
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$6 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 11;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$6.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$6.this$0
+					aload_1;
+					sconst_0;
+					sconst_0;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$6.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$6.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$6.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$6.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$6.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 40;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$6.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$6.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$6.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 31;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BS[BSS)V
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$7 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 12;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$7.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 12;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$7.this$0
+					aload_1;
+					sconst_0;
+					sconst_1;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 12;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$7.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					getfield_a_this 12;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$7.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					aload_1;
+					getfield_a_this 12;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$7.this$0
+					invokestatic 26;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					getfield_a_this 12;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$7.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 40;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					getfield_a_this 12;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$7.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					aload_1;
+					sconst_0;
+					getfield_a_this 12;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$7.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 31;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BS[BSS)V
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$8 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 13;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.this$0
+					aload_1;
+					sconst_0;
+					sconst_0;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					sconst_0;
+					invokestatic 44;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$4(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					sconst_0;
+					invokestatic 44;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$4(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 29;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					ifeq L2;
+				L1:	sspush -24730;
+					invokestatic 30;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$4(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 29;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					pop;
+					return;
+		}
+
+	}
+
+	.class final ArrayCompareTestApplet$9 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayCompareTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 14;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.this$0
+					aload_0;
+					invokespecial 32;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.this$0
+					aload_1;
+					sconst_0;
+					sconst_0;
+					invokestatic 39;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					sconst_0;
+					invokestatic 44;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.this$0
+					invokestatic 28;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$7(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					sconst_0;
+					invokestatic 44;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.this$0
+					invokestatic 28;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$7(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 29;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					ifeq L2;
+				L1:	sspush -24730;
+					invokestatic 30;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.this$0
+					invokestatic 27;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.this$0
+					invokestatic 28;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$7(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B
+					sconst_0;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.this$0
+					invokestatic 42;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S
+					invokestatic 29;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					pop;
+					return;
+		}
+
+	}
+
+	.class public ArrayCompareTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			private byte[] persistent1 0;		// [B
+			private byte[] persistent2 1;		// [B
+			private byte[] transient1 2;		// [B
+			private byte[] transient2 3;		// [B
+			private short offsetCompare 4;		// S
+			private short lengthCompare 5;		// S
+			private short srcOff 6;		// S
+			private short destOff 7;		// S
+			private short arrayLength 8;		// S
+			private short apduLength 9;		// S
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method private <init>()V {
+			.stack 3;
+			.locals 1;
+
+				L0:	aload_0;
+					invokespecial 34;		// benchs/lib/templates/TemplateApplet.<init>()V
+					aload_0;
+					aconst_null;
+					putfield_a 15;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.persistent1
+					aload_0;
+					aconst_null;
+					putfield_a 16;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.persistent2
+					aload_0;
+					aconst_null;
+					putfield_a 17;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.transient1
+					aload_0;
+					aconst_null;
+					putfield_a 18;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.transient2
+					aload_0;
+					sconst_0;
+					putfield_s 19;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.offsetCompare
+					aload_0;
+					sconst_0;
+					putfield_s 20;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.lengthCompare
+					aload_0;
+					sconst_0;
+					putfield_s 21;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.srcOff
+					aload_0;
+					sconst_0;
+					putfield_s 22;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.destOff
+					aload_0;
+					sspush 128;
+					putfield_s 23;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.arrayLength
+					aload_0;
+					sconst_0;
+					putfield_s 24;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.apduLength
+				L1:	aload_0;
+					getfield_s_this 23;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.arrayLength
+					newarray 11;
+					putfield_a 15;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.persistent1
+					aload_0;
+					getfield_s_this 23;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.arrayLength
+					newarray 11;
+					putfield_a 16;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.persistent2
+					aload_0;
+					getfield_s_this 23;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.arrayLength
+					sconst_2;
+					invokestatic 45;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 17;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.transient1
+					aload_0;
+					getfield_s_this 23;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.arrayLength
+					sconst_2;
+					invokestatic 45;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 18;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.transient2
+					goto L7;
+				L2:	astore_1;
+					aload_1;
+					invokevirtual 46;		// getReason()S
+					sconst_2;
+					if_scmpne L4;
+				L3:	sspush -25791;
+					invokestatic 30;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	aload_1;
+					invokevirtual 46;		// getReason()S
+					sconst_5;
+					if_scmpne L6;
+				L5:	sspush -25790;
+					invokestatic 30;		// javacard/framework/ISOException.throwIt(S)V
+				L6:	sspush -25792;
+					invokestatic 30;		// javacard/framework/ISOException.throwIt(S)V
+				L7:	aload_0;
+					invokevirtual 47;		// register()V
+					return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L1 L2 L2 33;
+			}
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	new 48;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet
+					invokespecial 49;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.<init>()V
+					return;
+		}
+
+		.method private init([BZZ)V {
+			.stack 4;
+			.locals 2;
+
+				L0:	getfield_s_this 24;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.apduLength
+					ifne L2;
+				L1:	aload_0;
+					aload_1;
+					arraylength;
+					putfield_s 24;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.apduLength
+				L2:	sload_2;
+					ifeq L4;
+				L3:	getfield_s_this 24;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.apduLength
+					sstore 4;
+					goto L5;
+				L4:	getfield_s_this 23;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.arrayLength
+					sstore 4;
+				L5:	sload_3;
+					ifeq L7;
+				L6:	getfield_s_this 24;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.apduLength
+					sstore 5;
+					goto L8;
+				L7:	getfield_s_this 23;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.arrayLength
+					sstore 5;
+				L8:	aload_0;
+					aload_1;
+					sconst_5;
+					baload;
+					aload_1;
+					bspush 6;
+					baload;
+					invokestatic 35;		// javacard/framework/Util.makeShort(BB)S
+					putfield_s 20;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.lengthCompare
+					aload_0;
+					aload_1;
+					bspush 7;
+					baload;
+					aload_1;
+					bspush 8;
+					baload;
+					invokestatic 35;		// javacard/framework/Util.makeShort(BB)S
+					putfield_s 21;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.srcOff
+					aload_0;
+					aload_1;
+					bspush 9;
+					baload;
+					aload_1;
+					bspush 10;
+					baload;
+					invokestatic 35;		// javacard/framework/Util.makeShort(BB)S
+					putfield_s 22;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.destOff
+					getfield_s_this 20;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.lengthCompare
+					sspush 256;
+					if_scmpgt L13;
+				L9:	getfield_s_this 21;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.srcOff
+					sspush 172;
+					if_scmpgt L13;
+				L10:	getfield_s_this 22;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.destOff
+					sspush 172;
+					if_scmpgt L13;
+				L11:	getfield_s_this 20;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.lengthCompare
+					getfield_s_this 21;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.srcOff
+					sadd;
+					sload 4;
+					if_scmpgt L13;
+				L12:	getfield_s_this 20;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.lengthCompare
+					getfield_s_this 22;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.destOff
+					sadd;
+					sload 5;
+					if_scmple L14;
+				L13:	sspush 27012;
+					invokestatic 30;		// javacard/framework/ISOException.throwIt(S)V
+				L14:	return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 15;
+					anewarray 50;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 51;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 52;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$1.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 53;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 54;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$2.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 55;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 56;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$3.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 57;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 58;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$4.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 59;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 60;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$5.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 61;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 62;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$6.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 63;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$7
+					dup;
+					aload_0;
+					invokespecial 64;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$7.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 65;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8
+					dup;
+					aload_0;
+					invokespecial 66;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$8.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 67;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9
+					dup;
+					aload_0;
+					invokespecial 68;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$9.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 69;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10
+					dup;
+					aload_0;
+					invokespecial 70;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$10.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					bspush 10;
+					new 71;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$11
+					dup;
+					aload_0;
+					invokespecial 72;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$11.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					bspush 11;
+					new 73;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$12
+					dup;
+					aload_0;
+					invokespecial 74;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$12.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					bspush 12;
+					new 75;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$13
+					dup;
+					aload_0;
+					invokespecial 76;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$13.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					bspush 13;
+					new 77;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14
+					dup;
+					aload_0;
+					invokespecial 78;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$14.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					dup;
+					bspush 14;
+					new 79;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$15
+					dup;
+					aload_0;
+					invokespecial 80;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet$15.<init>(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static access$0(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;[BZZ)V {
+			.stack 4;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					sload_2;
+					sload_3;
+					invokespecial 81;		// benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.init([BZZ)V
+					return;
+		}
+
+		.method static access$1(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 15;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.persistent1
+					areturn;
+		}
+
+		.method static access$2(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_s 20;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.lengthCompare
+					sreturn;
+		}
+
+		.method static access$3(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_s 21;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.srcOff
+					sreturn;
+		}
+
+		.method static access$4(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 16;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.persistent2
+					areturn;
+		}
+
+		.method static access$5(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_s 22;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.destOff
+					sreturn;
+		}
+
+		.method static access$6(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 17;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.transient1
+					areturn;
+		}
+
+		.method static access$7(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 18;		// reference benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.transient2
+					areturn;
+		}
+
+		.method static access$8(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;S)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					putfield_s 19;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.offsetCompare
+					return;
+		}
+
+		.method static access$9(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_s 19;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.offsetCompare
+					sreturn;
+		}
+
+		.method static access$10(Lbenchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet;)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_s 23;		// short benchs/jcapi/javacard_framework/util/arraycompare/ArrayCompareTestApplet.arrayLength
+					sreturn;
+		}
+
+	}
+
+}

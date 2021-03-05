@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<project name="javacardx_crypto" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="cipher" target="convert" inheritall="false"/>
+	</target>
+
+</project>

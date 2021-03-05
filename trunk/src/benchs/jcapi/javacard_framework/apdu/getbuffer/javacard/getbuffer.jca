@@ -1,0 +1,391 @@
+// converted by version 1.3
+// on Mon Nov 26 16:41:03 CET 2007
+
+.package benchs/jcapi/javacard_framework/apdu/getbuffer {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x67:0x62:0x75:0x66:0x66:0x65:0x72;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x67:0x62:0x75:0x66:0x66:0x65:0x72:0x1 GetBufferTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef GetBufferTestApplet GetBufferTestApplet$2/this$0;
+		// 1
+		instanceFieldRef 0.5 GetBufferTestApplet/dummy;
+		// 2
+		instanceFieldRef 0.7[] 0.4.0;		// reference benchs/lib/templates/TemplateApplet.testCases
+		// 3
+		instanceFieldRef GetBufferTestApplet GetBufferTestApplet$1/this$0;
+		// 4
+		virtualMethodRef 1.10.1()[B;		// getBuffer()[B
+		// 5
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 6
+		classRef 0.5;		// benchs/lib/templates/DummyClass
+		// 7
+		staticMethodRef 0.5.0()V;		// benchs/lib/templates/DummyClass.<init>()V
+		// 8
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 9
+		classRef GetBufferTestApplet;
+		// 10
+		staticMethodRef GetBufferTestApplet/<init>()V;
+		// 11
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 12
+		classRef TestCase;
+		// 13
+		classRef GetBufferTestApplet$1;
+		// 14
+		staticMethodRef GetBufferTestApplet$1/<init>(Lbenchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet;)V;
+		// 15
+		classRef GetBufferTestApplet$2;
+		// 16
+		staticMethodRef GetBufferTestApplet$2/<init>(Lbenchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet;)V;
+		// 17
+		classRef 1.7;		// javacard/framework/ISOException
+		// 18
+		classRef 2.1;		// java/lang/Throwable
+		// 19
+		virtualMethodRef 0.4.3()Z;		// selectingApplet()Z
+		// 20
+		staticMethodRef 1.7.1(S)V;		// javacard/framework/ISOException.throwIt(S)V
+		// 21
+		staticMethodRef TestCase/<init>()V;
+		// 22
+		staticMethodRef 0.13.1(S)S;		// benchs/lib/templates/Util.loopSize(S)S
+		// 23
+		virtualMethodRef TestCase/run(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 24
+		staticMethodRef GetBufferTestApplet/access$0(Lbenchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet;)Lbenchs/lib/templates/DummyClass;;
+			.descriptor	Lbenchs/lib/templates/DummyClass;	0.5;
+
+		// 25
+		virtualMethodRef 0.5.2()V;		// dummyMethodShort()V
+	}
+
+	.class public abstract TestCase 0 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			run(Ljavacard/framework/APDU;)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 8;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+		.method public abstract run(Ljavacard/framework/APDU;)V 7 {
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		}
+
+	}
+
+	.class final GetBufferTestApplet$2 extends TestCase {
+
+		.fields {
+			final GetBufferTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet;
+		}
+
+		.publicMethodTable 7 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			run(Ljavacard/framework/APDU;)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet$2.this$0
+					aload_0;
+					invokespecial 21;		// benchs/jcapi/javacard_framework/apdu/getbuffer/TestCase.<init>()V
+					return;
+		}
+
+		.method public run(Ljavacard/framework/APDU;)V 7 {
+			.stack 1;
+			.locals 1;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet$2.this$0
+					invokestatic 24;		// benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet.access$0(Lbenchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet;)Lbenchs/lib/templates/DummyClass;
+					astore_2;
+					aload_1;
+					invokevirtual 4;		// getBuffer()[B
+					pop;
+					return;
+		}
+
+	}
+
+	.class public GetBufferTestApplet 1 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			private 0.5 dummy 0;		// Lbenchs/lib/templates/DummyClass;
+		}
+
+		.publicMethodTable 7 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method private <init>()V {
+			.stack 3;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 5;		// benchs/lib/templates/TemplateApplet.<init>()V
+					aload_0;
+					new 6;		// benchs/lib/templates/DummyClass
+					dup;
+					invokespecial 7;		// benchs/lib/templates/DummyClass.<init>()V
+					putfield_a 1;		// reference benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet.dummy
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 9;		// benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet
+					dup;
+					invokespecial 10;		// benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet.<init>()V
+					invokevirtual 11;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	sconst_2;
+					anewarray 12;		// benchs/jcapi/javacard_framework/apdu/getbuffer/TestCase
+					dup;
+					sconst_0;
+					new 13;		// benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 14;		// benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet$1.<init>(Lbenchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 15;		// benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 16;		// benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet$2.<init>(Lbenchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method public process(Ljavacard/framework/APDU;)V 7 {
+			.stack 2;
+			.locals 6;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_0;
+					invokevirtual 19;		// selectingApplet()Z
+					ifeq L2;
+				L1:	return;
+				L2:	aload_1;
+					invokevirtual 4;		// getBuffer()[B
+					astore_2;
+					aload_2;
+					sconst_0;
+					baload;
+					bspush -4;
+					sand;
+					bspush -128;
+					if_scmpeq L4;
+				L3:	sspush 28160;
+					invokestatic 20;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	aload_2;
+					sconst_1;
+					baload;
+					sstore_3;
+					sload_3;
+					bspush -16;
+					sand;
+					bspush 16;
+					if_scmpeq L8;
+				L5:	sload_3;
+					bspush -16;
+					sand;
+					bspush 32;
+					if_scmpeq L8;
+				L6:	sload_3;
+					bspush -16;
+					sand;
+					bspush 64;
+					if_scmpeq L8;
+				L7:	sspush 27904;
+					invokestatic 20;		// javacard/framework/ISOException.throwIt(S)V
+				L8:	aload_2;
+					sconst_2;
+					baload;
+					sspush 255;
+					sand;
+					sstore 4;
+					sload 4;
+					getfield_a_this 2;		// reference benchs/lib/templates/TemplateApplet.testCases
+					arraylength;
+					if_scmplt L10;
+				L9:	sspush 27392;
+					invokestatic 20;		// javacard/framework/ISOException.throwIt(S)V
+				L10:	aload_2;
+					sconst_3;
+					baload;
+					sspush 255;
+					sand;
+					sstore 5;
+					sload 5;
+					invokestatic 22;		// benchs/lib/templates/Util.loopSize(S)S
+					sstore 5;
+				L11:	getfield_a_this 2;		// reference benchs/lib/templates/TemplateApplet.testCases
+					sload 4;
+					aaload;
+					checkcast 0 12;		// T_CLASSORINTERFACE benchs/jcapi/javacard_framework/apdu/getbuffer/TestCase
+					astore 6;
+					sconst_0;
+					sstore 7;
+					goto L13;
+				L12:	aload 6;
+					aload_1;
+					invokevirtual 23;		// run(Ljavacard/framework/APDU;)V
+					sinc 7 1;
+				L13:	sload 7;
+					sload 5;
+					if_scmplt L12;
+				L14:	goto L17;
+				L15:	astore 6;
+					aload 6;
+					athrow;
+				L16:	astore 6;
+					sspush 28416;
+					invokestatic 20;		// javacard/framework/ISOException.throwIt(S)V
+				L17:	return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L11 L15 L15 17;
+				L11 L15 L16 18;
+			}
+		}
+
+		.method static access$0(Lbenchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet;)Lbenchs/lib/templates/DummyClass; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/DummyClass;	0.5;
+
+				L0:	aload_0;
+					getfield_a 1;		// reference benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet.dummy
+					areturn;
+		}
+
+	}
+
+	.class final GetBufferTestApplet$1 extends TestCase {
+
+		.fields {
+			final GetBufferTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet;
+		}
+
+		.publicMethodTable 7 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			run(Ljavacard/framework/APDU;)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet$1.this$0
+					aload_0;
+					invokespecial 21;		// benchs/jcapi/javacard_framework/apdu/getbuffer/TestCase.<init>()V
+					return;
+		}
+
+		.method public run(Ljavacard/framework/APDU;)V 7 {
+			.stack 1;
+			.locals 1;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					astore_2;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet$1.this$0
+					invokestatic 24;		// benchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet.access$0(Lbenchs/jcapi/javacard_framework/apdu/getbuffer/GetBufferTestApplet;)Lbenchs/lib/templates/DummyClass;
+					invokevirtual 25;		// dummyMethodShort()V
+					return;
+		}
+
+	}
+
+}

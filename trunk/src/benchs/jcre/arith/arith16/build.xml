@@ -1,0 +1,579 @@
+<?xml version="1.0"?>
+
+<project name="arith16" default="convert" basedir=".">
+	
+	<property name="package.name" value="benchs.jcre.arith.arith16"/>
+	<property name="package.aid" value="0x4d:0x45:0x53:0x55:0x52:0x45:0x5f:0x61:0x72:0x69:0x74:0x68:0x31:0x36"/>
+	<property name="applet.name" value="benchs.jcre.arith.arith16.Arith16Applet"/>
+	<property name="applet.aid" value="0x4d:0x45:0x53:0x55:0x52:0x45:0x5f:0x61:0x72:0x69:0x74:0x68:0x31:0x36:0x01"/>
+	<property name="cap" value="false"/>
+	<property name="jcafile" value="${basedir}/javacard/arith16.jca"/>
+    <property name="capfile" value="${basedir}/javacard/arith16.cap"/>
+
+	<import file="../../../../tools/converter/build.xml"/>
+	
+	<target name="convert">
+      <ant dir="${src.path}/benchs/lib/templates/" target="convert" inheritall="false"/>
+	  <ant antfile="${ant.file.converter}" target="convert" inheritrefs="true"/>
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 361;\s+sstore_2;\s+return;"
+		replace=".stack 17;${line.separator}
+		.locals 0;${line.separator}
+	  	${line.separator}
+		L0: sspush 32767;${line.separator}
+		sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    sconst_3;${line.separator}
+	    return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 362;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 32767;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+        sconst_3;${line.separator}
+        sadd;${line.separator}
+	    return;"
+	  />
+	  <replaceregexp
+		file="${jcafile}"
+	    match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 363;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 32767;${line.separator}
+	    sconst_3;${line.separator}
+	    ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+	    sconst_3;${line.separator}
+	  	ssub;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+		file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 364;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 32767;${line.separator}
+		sconst_3;${line.separator}
+		smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		sconst_3;${line.separator}
+	  	smul;${line.separator}
+		return;"
+	  />		
+	  <replaceregexp
+	    file="${jcafile}"
+	    match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 365;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 32767;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+		sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+		sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+		sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+		sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+		sconst_3;${line.separator}
+	    sdiv;${line.separator}
+		sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+	    sconst_3;${line.separator}
+	    sdiv;${line.separator}
+		sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+		sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+		sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+		sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+	    sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+		sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+		sconst_3;${line.separator}
+	  	sdiv;${line.separator}
+		return;"
+      />	
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 366;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 0;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		sconst_3;${line.separator}
+		sdiv;${line.separator}
+		return;"
+	  />	
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 367;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 32767;${line.separator}
+	    sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		sconst_3;${line.separator}
+	  	srem;${line.separator}
+		return;"
+	  />	
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 368;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 0;${line.separator}
+		sconst_3;${line.separator}
+	    srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		sconst_3;${line.separator}
+		srem;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 369;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 32767;${line.separator}
+		sconst_3;${line.separator}
+		sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		sconst_3;${line.separator}
+	  	sneg;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 370;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 32767;${line.separator}
+		sconst_3;${line.separator}
+		sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		sconst_3;${line.separator}
+	  	sshl;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 371;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 32767;${line.separator}
+		sconst_3;${line.separator}
+		sshr;${line.separator}
+		sconst_3;${line.separator}
+		sshr;${line.separator}
+		sconst_3;${line.separator}
+		sshr;${line.separator}
+	    sconst_3;${line.separator}
+		sshr;${line.separator}
+		sconst_3;${line.separator}
+		sshr;${line.separator}
+		sconst_3;${line.separator}
+		sshr;${line.separator}
+		sconst_3;${line.separator}
+		sshr;${line.separator}
+		sconst_3;${line.separator}
+		sshr;${line.separator}
+		sconst_3;${line.separator}
+		sshr;${line.separator}
+		sconst_3;${line.separator}
+		sshr;${line.separator}
+	    sconst_3;${line.separator}
+		sshr;${line.separator}
+		sconst_3;${line.separator}
+		sshr;${line.separator}
+		sconst_3;${line.separator}
+		sshr;${line.separator}
+	    sconst_3;${line.separator}
+		sshr;${line.separator}
+	    sconst_3;${line.separator}
+		sshr;${line.separator}
+		sconst_3;${line.separator}
+		sshr;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 372;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 32767;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		sconst_3;${line.separator}
+		sor;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 373;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 32767;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		sconst_3;${line.separator}
+		sand;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 374;\s+sstore_2;\s+return;"
+	  	replace=".stack 17;${line.separator}
+	  	.locals 0;${line.separator}
+	  	${line.separator}
+	  	L0: sspush 32767;${line.separator}
+		sconst_3;${line.separator}
+		sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		sconst_3;${line.separator}
+	  	sxor;${line.separator}
+		return;"
+	  />
+	  <ant antfile="${ant.file.converter}" target="capgen" inheritrefs="true"/>
+	</target>
+		
+</project>

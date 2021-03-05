@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Extractor>
+	<config name="template" description="this is not a configuration but a template for others configurations.">
+		<help/>
+		<warning/>
+		<verbose/>
+		<verboseLevel>10</verboseLevel>
+		<verboseFilter>1</verboseFilter>
+		<input>../tmp/filtered.xml</input>
+		<output>../tmp/extracted.xml</output>
+		<resolve/>
+		<print/>
+	</config>
+
+	<!-- Default configuration. Should always be defined. -->
+	<config name="default" description="The default configuration">
+	    <log>../tmp/ExtractionLog.txt</log>
+		<verboseLevel>10</verboseLevel>
+		<input>../tmp/Results.xml</input>
+		<output>../tmp/Extracted.xml</output>
+		<resolve/>
+	</config>
+
+	<!-- My extraction configuration -->
+	<config name="my_extraction_config" description="My extraction configuration">
+	  <config>default</config>
+	</config>
+</Extractor>

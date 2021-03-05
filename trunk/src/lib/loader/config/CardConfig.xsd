@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+ *
+ * Copyright (c) 2006 Mesure Project
+ * 
+ * This software is a computer program whose purpose is to measure 
+ * the performances of Java Card platforms.
+ *
+ * This software is governed by the CeCILL license under French law and
+ * abiding by the rules of distribution of free software.  You can  use, 
+ * modify and/ or redistribute the software under the terms of the CeCILL
+ * license as circulated by CEA, CNRS and INRIA at the following URL
+ * "http://www.cecill.info". 
+ * 
+ * As a counterpart to the access to the source code and  rights to copy,
+ * modify and redistribute granted by the license, users are provided only
+ * with a limited warranty  and the software's author,  the holder of the
+ * economic rights,  and the successive licensors  have only  limited
+ * liability. 
+ * 
+ * In this respect, the user's attention is drawn to the risks associated
+ * with loading,  using,  modifying and/or developing or reproducing the
+ * software by the user in light of its specific status of free software,
+ * that may mean  that it is complicated to manipulate,  and  that  also
+ * therefore means  that it is reserved for developers  and  experienced
+ * professionals having in-depth computer knowledge. Users are therefore
+ * encouraged to load and test the software's suitability as regards their
+ * requirements in conditions enabling the security of their systems and/or 
+ * data to be ensured and,  more generally, to use and operate it in the 
+ * same conditions as regards security. 
+ * 
+ * The fact that you are presently reading this means that you have had
+ * knowledge of the CeCILL license and that you accept its terms.
+ *
+ *
+ * $HeadURL: svn+ssh://gforge.inria.fr/svn/mesureprv/... $
+ * Created: 1 septembre 2006
+ * Author: TL 
+ * $LastChangedRevision: 107 $
+ * $LastChangedDate: 2006-07-04 10:52:24 +0000 (mar., 04 juil. 2006) $
+ * $LastChangedBy: cpascal $
+ *
+-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+   <xsd:element name="cardConfig">
+     <xsd:complexType>
+       <xsd:sequence>
+         <xsd:element name="cardManagerAid" type="xsd:string" default="0xA0:0x00:0x00:0x00:0x03:0x00:0x00:0x00" minOccurs="0" maxOccurs="1"/>
+         <xsd:element ref="mutualAuthenticate" minOccurs="0" maxOccurs="1"/>
+         <xsd:element ref="load" minOccurs="0" maxOccurs="1"/>
+       </xsd:sequence>
+     </xsd:complexType>
+   </xsd:element>
+
+   <xsd:element name="mutualAuthenticate">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="div" type="xsd:string" default="none" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="scp" type="xsd:string" default="1" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="secLevel" type="xsd:byte" default="1" minOccurs="0" maxOccurs="1"/>	
+	    <xsd:element name="kenc" type="xsd:string" default="0x40:0x41:0x42:0x43:0x44:0x45:0x46:0x47:0x48:0x49:0x4A:0x4B:0x4C:0x4D:0x4E:0x4F" minOccurs="0" maxOccurs="1"/>
+ 	    <xsd:element name="kmac" type="xsd:string" default="0x40:0x41:0x42:0x43:0x44:0x45:0x46:0x47:0x48:0x49:0x4A:0x4B:0x4C:0x4D:0x4E:0x4F" minOccurs="0" maxOccurs="1"/>
+ 	    <xsd:element name="kmc" type="xsd:string" minOccurs="0" maxOccurs="1"/>	
+ 	    <xsd:element name="keyVersion" type="xsd:short" default="0" minOccurs="0" maxOccurs="1"/>	
+ 	    <xsd:element name="keyIndex" type="xsd:short" default="0" minOccurs="0" maxOccurs="1"/>	
+        <xsd:element name="hostChallenge" type="xsd:string" minOccurs="0" maxOccurs="1"/>	
+      </xsd:sequence>
+     </xsd:complexType>
+   </xsd:element>	
+  
+   <xsd:element name="load">
+    <xsd:complexType>
+      <xsd:sequence>
+          <xsd:element name="lc" type="xsd:byte" default="127" minOccurs="0" maxOccurs="1" />
+	      <xsd:element name="nonVolatileCode" type="xsd:boolean" default="false" minOccurs="0" maxOccurs="1"/>
+       </xsd:sequence>
+     </xsd:complexType>
+   </xsd:element>	
+  
+</xsd:schema>

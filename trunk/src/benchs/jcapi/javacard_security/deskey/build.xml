@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<project name="DESKey" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="getkey" target="convert" inheritall="false"/>
+	  <ant dir="setkey" target="convert" inheritall="false"/>
+	</target>
+
+</project>

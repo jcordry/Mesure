@@ -1,0 +1,905 @@
+// converted by version 1.3
+// on Mon Nov 26 16:43:12 CET 2007
+
+.package benchs/jcre/engine/stableswitch {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x74:0x61:0x62:0x6C:0x65:0x73:0x77;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x74:0x61:0x62:0x6C:0x65:0x73:0x77:0x1 StableswitchApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef StableswitchApplet StableswitchApplet$2/this$0;
+		// 1
+		instanceFieldRef StableswitchApplet StableswitchApplet$3/this$0;
+		// 2
+		instanceFieldRef StableswitchApplet StableswitchApplet$4/this$0;
+		// 3
+		instanceFieldRef StableswitchApplet StableswitchApplet$5/this$0;
+		// 4
+		instanceFieldRef StableswitchApplet StableswitchApplet$6/this$0;
+		// 5
+		instanceFieldRef StableswitchApplet StableswitchApplet$7/this$0;
+		// 6
+		instanceFieldRef StableswitchApplet StableswitchApplet$8/this$0;
+		// 7
+		instanceFieldRef StableswitchApplet StableswitchApplet$1/this$0;
+		// 8
+		staticFieldRef short StableswitchApplet/iterCount;
+		// 9
+		staticMethodRef StableswitchApplet/access$3()V;
+		// 10
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 11
+		staticMethodRef StableswitchApplet/access$4()V;
+		// 12
+		staticMethodRef StableswitchTestCase/<init>()V;
+		// 13
+		staticMethodRef StableswitchApplet/access$5()V;
+		// 14
+		staticMethodRef StableswitchApplet/access$1()V;
+		// 15
+		staticMethodRef StableswitchApplet/access$6()V;
+		// 16
+		virtualMethodRef 0.7.5(Z)V;		// setUseInnerCounter(Z)V
+		// 17
+		staticMethodRef StableswitchApplet/access$7()V;
+		// 18
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 19
+		classRef StableswitchApplet;
+		// 20
+		staticMethodRef StableswitchApplet/<init>()V;
+		// 21
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 22
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 23
+		classRef StableswitchApplet$1;
+		// 24
+		staticMethodRef StableswitchApplet$1/<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V;
+		// 25
+		classRef StableswitchApplet$2;
+		// 26
+		staticMethodRef StableswitchApplet$2/<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V;
+		// 27
+		classRef StableswitchApplet$3;
+		// 28
+		staticMethodRef StableswitchApplet$3/<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V;
+		// 29
+		classRef StableswitchApplet$4;
+		// 30
+		staticMethodRef StableswitchApplet$4/<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V;
+		// 31
+		classRef StableswitchApplet$5;
+		// 32
+		staticMethodRef StableswitchApplet$5/<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V;
+		// 33
+		classRef StableswitchApplet$6;
+		// 34
+		staticMethodRef StableswitchApplet$6/<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V;
+		// 35
+		classRef StableswitchApplet$7;
+		// 36
+		staticMethodRef StableswitchApplet$7/<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V;
+		// 37
+		classRef StableswitchApplet$8;
+		// 38
+		staticMethodRef StableswitchApplet$8/<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V;
+		// 39
+		staticMethodRef StableswitchApplet/ref_stableswitch(SS)V;
+		// 40
+		staticMethodRef StableswitchApplet/unit_stableswitch(S)V;
+		// 41
+		staticMethodRef StableswitchApplet/tc_ref_stableswitch_1()V;
+		// 42
+		staticMethodRef StableswitchApplet/tc_unit_stableswitch_1()V;
+		// 43
+		staticMethodRef StableswitchApplet/tc_unit_stableswitch_2()V;
+		// 44
+		staticMethodRef StableswitchApplet/tc_unit_stableswitch_3()V;
+		// 45
+		staticMethodRef StableswitchApplet/tc_unit_stableswitch_4()V;
+		// 46
+		staticMethodRef StableswitchApplet/tc_unit_stableswitch_0()V;
+		// 47
+		staticMethodRef StableswitchApplet/tc_ref_stableswitch_10()V;
+		// 48
+		staticMethodRef StableswitchApplet/tc_unit_stableswitch_10()V;
+		// 49
+		staticMethodRef StableswitchApplet/access$2()V;
+		// 50
+		staticMethodRef StableswitchApplet/access$0()V;
+	}
+
+	.class abstract StableswitchTestCase extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 10;		// benchs/lib/templates/TestCase.<init>()V
+					aload_0;
+					sconst_1;
+					invokevirtual 16;		// setUseInnerCounter(Z)V
+					return;
+		}
+
+		.method public setUp([BS)V 1 {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_2;
+					putstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					return;
+		}
+
+	}
+
+	.class final StableswitchApplet$2 extends StableswitchTestCase {
+
+		.fields {
+			final StableswitchApplet this$0 0;		// Lbenchs/jcre/engine/stableswitch/StableswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcre/engine/stableswitch/StableswitchApplet$2.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/stableswitch/StableswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 14;		// benchs/jcre/engine/stableswitch/StableswitchApplet.access$1()V
+					return;
+		}
+
+	}
+
+	.class final StableswitchApplet$3 extends StableswitchTestCase {
+
+		.fields {
+			final StableswitchApplet this$0 0;		// Lbenchs/jcre/engine/stableswitch/StableswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcre/engine/stableswitch/StableswitchApplet$3.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/stableswitch/StableswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 49;		// benchs/jcre/engine/stableswitch/StableswitchApplet.access$2()V
+					return;
+		}
+
+	}
+
+	.class final StableswitchApplet$4 extends StableswitchTestCase {
+
+		.fields {
+			final StableswitchApplet this$0 0;		// Lbenchs/jcre/engine/stableswitch/StableswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcre/engine/stableswitch/StableswitchApplet$4.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/stableswitch/StableswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 9;		// benchs/jcre/engine/stableswitch/StableswitchApplet.access$3()V
+					return;
+		}
+
+	}
+
+	.class final StableswitchApplet$5 extends StableswitchTestCase {
+
+		.fields {
+			final StableswitchApplet this$0 0;		// Lbenchs/jcre/engine/stableswitch/StableswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcre/engine/stableswitch/StableswitchApplet$5.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/stableswitch/StableswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 11;		// benchs/jcre/engine/stableswitch/StableswitchApplet.access$4()V
+					return;
+		}
+
+	}
+
+	.class final StableswitchApplet$6 extends StableswitchTestCase {
+
+		.fields {
+			final StableswitchApplet this$0 0;		// Lbenchs/jcre/engine/stableswitch/StableswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcre/engine/stableswitch/StableswitchApplet$6.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/stableswitch/StableswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 13;		// benchs/jcre/engine/stableswitch/StableswitchApplet.access$5()V
+					return;
+		}
+
+	}
+
+	.class final StableswitchApplet$7 extends StableswitchTestCase {
+
+		.fields {
+			final StableswitchApplet this$0 0;		// Lbenchs/jcre/engine/stableswitch/StableswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcre/engine/stableswitch/StableswitchApplet$7.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/stableswitch/StableswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 15;		// benchs/jcre/engine/stableswitch/StableswitchApplet.access$6()V
+					return;
+		}
+
+	}
+
+	.class final StableswitchApplet$8 extends StableswitchTestCase {
+
+		.fields {
+			final StableswitchApplet this$0 0;		// Lbenchs/jcre/engine/stableswitch/StableswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcre/engine/stableswitch/StableswitchApplet$8.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/stableswitch/StableswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 17;		// benchs/jcre/engine/stableswitch/StableswitchApplet.access$7()V
+					return;
+		}
+
+	}
+
+	.class public StableswitchApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			protected static short iterCount 0;		// S
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 18;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 1 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 19;		// benchs/jcre/engine/stableswitch/StableswitchApplet
+					dup;
+					invokespecial 20;		// benchs/jcre/engine/stableswitch/StableswitchApplet.<init>()V
+					invokevirtual 21;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 8;
+					anewarray 22;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 23;		// benchs/jcre/engine/stableswitch/StableswitchApplet$1
+					dup;
+					aload_0;
+					invokespecial 24;		// benchs/jcre/engine/stableswitch/StableswitchApplet$1.<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 25;		// benchs/jcre/engine/stableswitch/StableswitchApplet$2
+					dup;
+					aload_0;
+					invokespecial 26;		// benchs/jcre/engine/stableswitch/StableswitchApplet$2.<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 27;		// benchs/jcre/engine/stableswitch/StableswitchApplet$3
+					dup;
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/stableswitch/StableswitchApplet$3.<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 29;		// benchs/jcre/engine/stableswitch/StableswitchApplet$4
+					dup;
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/stableswitch/StableswitchApplet$4.<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 31;		// benchs/jcre/engine/stableswitch/StableswitchApplet$5
+					dup;
+					aload_0;
+					invokespecial 32;		// benchs/jcre/engine/stableswitch/StableswitchApplet$5.<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 33;		// benchs/jcre/engine/stableswitch/StableswitchApplet$6
+					dup;
+					aload_0;
+					invokespecial 34;		// benchs/jcre/engine/stableswitch/StableswitchApplet$6.<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 35;		// benchs/jcre/engine/stableswitch/StableswitchApplet$7
+					dup;
+					aload_0;
+					invokespecial 36;		// benchs/jcre/engine/stableswitch/StableswitchApplet$7.<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 37;		// benchs/jcre/engine/stableswitch/StableswitchApplet$8
+					dup;
+					aload_0;
+					invokespecial 38;		// benchs/jcre/engine/stableswitch/StableswitchApplet$8.<init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method private static ref_stableswitch(SS)V {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+		.method private static tc_ref_stableswitch_1()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_1;
+					sload_0;
+					invokestatic 39;		// benchs/jcre/engine/stableswitch/StableswitchApplet.ref_stableswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static unit_stableswitch(S)V {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_0;
+					stableswitch L5 1 4 L1 L2 L3 L4;
+				L1:	return;
+				L2:	return;
+				L3:	return;
+				L4:	return;
+				L5:	return;
+		}
+
+		.method private static tc_unit_stableswitch_1()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_1;
+					invokestatic 40;		// benchs/jcre/engine/stableswitch/StableswitchApplet.unit_stableswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_ref_stableswitch_2()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_2;
+					sload_0;
+					invokestatic 39;		// benchs/jcre/engine/stableswitch/StableswitchApplet.ref_stableswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_unit_stableswitch_2()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_2;
+					invokestatic 40;		// benchs/jcre/engine/stableswitch/StableswitchApplet.unit_stableswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_ref_stableswitch_3()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_3;
+					sload_0;
+					invokestatic 39;		// benchs/jcre/engine/stableswitch/StableswitchApplet.ref_stableswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_unit_stableswitch_3()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_3;
+					invokestatic 40;		// benchs/jcre/engine/stableswitch/StableswitchApplet.unit_stableswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_ref_stableswitch_4()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_4;
+					sload_0;
+					invokestatic 39;		// benchs/jcre/engine/stableswitch/StableswitchApplet.ref_stableswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_unit_stableswitch_4()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_4;
+					invokestatic 40;		// benchs/jcre/engine/stableswitch/StableswitchApplet.unit_stableswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_ref_stableswitch_0()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_0;
+					sload_0;
+					invokestatic 39;		// benchs/jcre/engine/stableswitch/StableswitchApplet.ref_stableswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_unit_stableswitch_0()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_0;
+					invokestatic 40;		// benchs/jcre/engine/stableswitch/StableswitchApplet.unit_stableswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_ref_stableswitch_10()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	bspush 10;
+					sload_0;
+					invokestatic 39;		// benchs/jcre/engine/stableswitch/StableswitchApplet.ref_stableswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_unit_stableswitch_10()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 8;		// short benchs/jcre/engine/stableswitch/StableswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	bspush 10;
+					invokestatic 40;		// benchs/jcre/engine/stableswitch/StableswitchApplet.unit_stableswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method static access$0()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 41;		// benchs/jcre/engine/stableswitch/StableswitchApplet.tc_ref_stableswitch_1()V
+					return;
+		}
+
+		.method static access$1()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 42;		// benchs/jcre/engine/stableswitch/StableswitchApplet.tc_unit_stableswitch_1()V
+					return;
+		}
+
+		.method static access$2()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 43;		// benchs/jcre/engine/stableswitch/StableswitchApplet.tc_unit_stableswitch_2()V
+					return;
+		}
+
+		.method static access$3()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 44;		// benchs/jcre/engine/stableswitch/StableswitchApplet.tc_unit_stableswitch_3()V
+					return;
+		}
+
+		.method static access$4()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 45;		// benchs/jcre/engine/stableswitch/StableswitchApplet.tc_unit_stableswitch_4()V
+					return;
+		}
+
+		.method static access$5()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 46;		// benchs/jcre/engine/stableswitch/StableswitchApplet.tc_unit_stableswitch_0()V
+					return;
+		}
+
+		.method static access$6()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 47;		// benchs/jcre/engine/stableswitch/StableswitchApplet.tc_ref_stableswitch_10()V
+					return;
+		}
+
+		.method static access$7()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 48;		// benchs/jcre/engine/stableswitch/StableswitchApplet.tc_unit_stableswitch_10()V
+					return;
+		}
+
+	}
+
+	.class final StableswitchApplet$1 extends StableswitchTestCase {
+
+		.fields {
+			final StableswitchApplet this$0 0;		// Lbenchs/jcre/engine/stableswitch/StableswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stableswitch/StableswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcre/engine/stableswitch/StableswitchApplet$1.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/stableswitch/StableswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 50;		// benchs/jcre/engine/stableswitch/StableswitchApplet.access$0()V
+					return;
+		}
+
+	}
+
+}

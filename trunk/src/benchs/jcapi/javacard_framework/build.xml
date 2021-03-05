@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<project name="javacard_framework" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="aid" target="convert" inheritall="false"/>
+	  <ant dir="apdu" target="convert" inheritall="false"/>
+	  <ant dir="applet" target="convert" inheritall="false"/>
+	  <ant dir="ownerpin" target="convert" inheritall="false"/>
+	  <ant dir="util" target="convert" inheritall="false"/>
+	  <ant dir="jcsystem" target="convert" inheritall="false"/>
+	</target>
+
+</project>

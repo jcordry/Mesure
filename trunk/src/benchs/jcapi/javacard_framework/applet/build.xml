@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<project name="applet" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="select" target="convert" inheritall="false"/>
+	  <ant dir="selectingapplet" target="convert" inheritall="false"/>
+	</target>
+
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<project name="JCSystem.begincommittransaction" default="convert" basedir=".">
+	
+	<property name="package.name" value="benchs.jcapi.javacard_framework.jcsystem.begincommittransaction"/>
+	<property name="package.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x79:0x73:0x74:0x72:0x61:0x6E:0x73"/>
+	<property name="applet.name" value="benchs.jcapi.javacard_framework.jcsystem.begincommittransaction.BeginCommitTransactionTestApplet"/>
+	<property name="applet.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x79:0x73:0x74:0x72:0x61:0x6E:0x73:0x01"/>
+	
+	<import file="../../../../../tools/converter/build.xml"/>
+	
+	<target name="convert">
+      <ant dir="${src.path}/benchs/lib/templates" target="convert" inheritall="false"/>
+	  <ant antfile="${ant.file.converter}" target="convert" inheritrefs="true"/>
+	</target>
+		
+</project>

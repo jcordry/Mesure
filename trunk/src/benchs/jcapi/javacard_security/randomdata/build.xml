@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<project name="RandomData" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="generatedata" target="convert" inheritall="false"/>
+	</target>
+
+</project>

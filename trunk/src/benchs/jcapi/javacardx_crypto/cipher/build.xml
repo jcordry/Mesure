@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<project name="cipher" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="dofinal" target="convert" inheritall="false"/>
+	  <ant dir="init" target="convert" inheritall="false"/>
+	  <ant dir="initiv" target="convert" inheritall="false"/>
+	</target>
+
+</project>

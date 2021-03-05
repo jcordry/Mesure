@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<dummytool>
+	<!-- Defaut configuration. Should always be defined. Here, it just defines the number of cats to use. -->
+	<config name="default" description="Normal behavior, no foobar debugging and a couple of cats used.">
+		<numberofcats>3</numberofcats>
+	</config>
+	
+	<!-- Inherit from the default configuration, but add foobar debugging. -->
+	<config name="debug" description="Like the default configuration, but with foobar debugging enabled.">
+		<config>default</config>
+		<foobar/>
+	</config>
+
+	<!-- Inherit from the debug configuration, but redefines the number of cats to use. -->
+	<config name="slaughter" description="Use many, many cats. May raise undeads or various other creatures from Hell. Foobar debugging is enabled as a workaround.">
+		<config>debug</config>
+		<numberofcats>666</numberofcats>
+	</config>
+</dummytool>

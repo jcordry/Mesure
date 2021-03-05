@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<project name="arraylength" default="convert" basedir=".">
+	
+	<property name="package.name" value="benchs.jcre.arraylength"/>
+	<property name="package.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x61:0x72:0x6C:0x65"/>
+	<property name="applet.name" value="benchs.jcre.arraylength.ArraylengthTestApplet"/>
+	<property name="applet.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x61:0x72:0x6C:0x65:0x01"/>
+	<property name="cap" value="false"/>
+	<property name="jcafile" value="${basedir}/javacard/arraylength.jca"/>
+	<property name="capfile" value="${basedir}/javacard/arraylength.cap"/>
+
+	<import file="../../../tools/converter/build.xml"/>
+	
+	<target name="convert">
+	  <ant dir="${src.path}/benchs/lib/templates/" target="convert" inheritall="false"/>
+	  <ant antfile="${ant.file.converter}" target="convert" inheritrefs="true"/>
+	  <replaceregexp
+	    file="${jcafile}"
+		match="(?s)\.stack 1;\s+.locals 2;\s+L0:\s+sspush 361;.*?return;"
+		replace=".stack 1;${line.separator}
+		.locals 1;${line.separator}
+	  	${line.separator}
+		L0:	getfield_a_this 4;${line.separator}
+		getfield_a 1;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="(?s)\.stack 1;\s+.locals 2;\s+L0:\s+sspush 362;.*?return;"
+	  	replace=".stack 1;${line.separator}
+	  	.locals 1;${line.separator}
+	  	${line.separator}
+	  	L0:	getfield_a_this 0;${line.separator}
+		getfield_a 1;${line.separator}
+		arraylength;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="(?s)\.stack 1;\s+.locals 2;\s+L0:\s+sspush 363;.*?return;"
+	  	replace=".stack 1;${line.separator}
+	  	.locals 1;${line.separator}
+	  	${line.separator}
+	  	L0:	getfield_a_this 2;${line.separator}
+		getfield_a 3;${line.separator}
+		arraylength;${line.separator}
+		return;"
+	  />
+	  <ant antfile="${ant.file.converter}" target="capgen" inheritrefs="true"/>
+	</target>
+		
+</project>

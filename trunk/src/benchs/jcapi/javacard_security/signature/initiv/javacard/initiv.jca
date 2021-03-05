@@ -1,0 +1,494 @@
+// converted by version 1.3
+// on Tue Nov 27 17:45:00 CET 2007
+
+.package benchs/jcapi/javacard_security/signature/initiv {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x69:0x6E:0x69:0x74:0x69:0x76;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x2 1.1;		//javacard/security
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x69:0x6E:0x69:0x74:0x69:0x76:0x1 InitIVTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef InitIVTestApplet InitIVTestApplet$1/this$0;
+		// 1
+		instanceFieldRef InitIVTestApplet InitIVTestApplet$2/this$0;
+		// 2
+		instanceFieldRef InitIVTestApplet InitIVTestApplet$3/this$0;
+		// 3
+		instanceFieldRef byte[] 0.11.1;		// reference benchs/lib/templates/CryptoTemplateApplet.IV_NULL
+		// 4
+		instanceFieldRef byte[] InitIVTestApplet/cod;
+		// 5
+		instanceFieldRef byte[] 0.11.1;		// reference benchs/lib/templates/CryptoTemplateApplet.IV_NULL
+		// 6
+		instanceFieldRef byte[] InitIVTestApplet/iv;
+		// 7
+		instanceFieldRef 0.5 0.11.2;		// reference benchs/lib/templates/CryptoTemplateApplet.dummy
+		// 8
+		instanceFieldRef 1.0 0.10.34;		// reference benchs/lib/templates/KeyTemplateApplet.key
+		// 9
+		instanceFieldRef 0.3 0.11.7;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+		// 10
+		instanceFieldRef 1.15 0.11.4;		// reference benchs/lib/templates/CryptoTemplateApplet.signature
+		// 11
+		staticMethodRef InitIVTestApplet/access$6(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;[B)V;
+		// 12
+		staticMethodRef InitIVTestApplet/access$7(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Ljavacard/security/Signature;;
+			.descriptor	Ljavacard/security/Signature;	1.15;
+
+		// 13
+		virtualMethodRef 1.15.4(Ljavacard/security/Key;B[BSS)V;		// init(Ljavacard/security/Key;B[BSS)V
+			.descriptor	Ljavacard/security/Key;	1.0;
+
+		// 14
+		staticMethodRef InitIVTestApplet/access$0(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B;
+		// 15
+		staticMethodRef InitIVTestApplet/access$8(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B;
+		// 16
+		staticMethodRef 0.11.0()V;		// benchs/lib/templates/CryptoTemplateApplet.<init>()V
+		// 17
+		staticMethodRef InitIVTestApplet/access$1(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;[B)V;
+		// 18
+		staticMethodRef 3.8.13(SB)[B;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+		// 19
+		staticMethodRef InitIVTestApplet/access$2(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Lbenchs/lib/templates/DummyClass;;
+			.descriptor	Lbenchs/lib/templates/DummyClass;	0.5;
+
+		// 20
+		staticMethodRef 3.16.2([BS[BSS)S;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+		// 21
+		classRef InitIVTestApplet;
+		// 22
+		staticMethodRef InitIVTestApplet/<init>()V;
+		// 23
+		virtualMethodRef 0.11.1()V;		// register()V
+		// 24
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 25
+		classRef InitIVTestApplet$1;
+		// 26
+		staticMethodRef InitIVTestApplet$1/<init>(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)V;
+		// 27
+		classRef InitIVTestApplet$2;
+		// 28
+		staticMethodRef InitIVTestApplet$2/<init>(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)V;
+		// 29
+		classRef InitIVTestApplet$3;
+		// 30
+		staticMethodRef InitIVTestApplet$3/<init>(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)V;
+		// 31
+		staticMethodRef InitIVTestApplet/access$3(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Ljavacard/security/Key;;
+			.descriptor	Ljavacard/security/Key;	1.0;
+
+		// 32
+		staticMethodRef InitIVTestApplet/access$4(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Lbenchs/lib/templates/CryptoInfo;;
+			.descriptor	Lbenchs/lib/templates/CryptoInfo;	0.3;
+
+		// 33
+		virtualMethodRef 0.3.8()B;		// getMode()B
+		// 34
+		staticMethodRef InitIVTestApplet/access$5(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B;
+		// 35
+		virtualMethodRef 0.5.8(Ljavacard/security/Key;B[BSS)V;		// dummyMethodVoid(Ljavacard/security/Key;B[BSS)V
+			.descriptor	Ljavacard/security/Key;	1.0;
+
+		// 36
+		virtualMethodRef 0.11.9([B)V;		// init([B)V
+		// 37
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+	}
+
+	.class final InitIVTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final InitIVTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$1.this$0
+					aload_0;
+					invokespecial 37;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$1.this$0
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$1.this$0
+					invokestatic 14;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$0(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B
+					invokestatic 17;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$1.this$0
+					invokestatic 19;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Lbenchs/lib/templates/DummyClass;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$1.this$0
+					invokestatic 31;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Ljavacard/security/Key;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$1.this$0
+					invokestatic 32;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$4(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 33;		// getMode()B
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$1.this$0
+					invokestatic 34;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$5(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B
+					sconst_0;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$1.this$0
+					invokestatic 34;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$5(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B
+					arraylength;
+					invokevirtual 35;		// dummyMethodVoid(Ljavacard/security/Key;B[BSS)V
+					return;
+		}
+
+	}
+
+	.class final InitIVTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final InitIVTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$2.this$0
+					aload_0;
+					invokespecial 37;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$2.this$0
+					aload_1;
+					invokestatic 11;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$6(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;[B)V
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$2.this$0
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$2.this$0
+					invokestatic 14;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$0(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B
+					invokestatic 17;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$2.this$0
+					invokestatic 12;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$7(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Ljavacard/security/Signature;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$2.this$0
+					invokestatic 31;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Ljavacard/security/Key;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$2.this$0
+					invokestatic 32;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$4(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 33;		// getMode()B
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$2.this$0
+					invokestatic 34;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$5(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B
+					sconst_0;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$2.this$0
+					invokestatic 34;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$5(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B
+					arraylength;
+					invokevirtual 13;		// init(Ljavacard/security/Key;B[BSS)V
+					return;
+		}
+
+	}
+
+	.class final InitIVTestApplet$3 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final InitIVTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$3.this$0
+					aload_0;
+					invokespecial 37;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$3.this$0
+					aload_1;
+					invokestatic 11;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$6(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;[B)V
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$3.this$0
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$3.this$0
+					invokestatic 15;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$8(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B
+					invokestatic 17;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$3.this$0
+					invokestatic 12;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$7(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Ljavacard/security/Signature;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$3.this$0
+					invokestatic 31;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Ljavacard/security/Key;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$3.this$0
+					invokestatic 32;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$4(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 33;		// getMode()B
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$3.this$0
+					invokestatic 34;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$5(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B
+					sconst_0;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$3.this$0
+					invokestatic 34;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.access$5(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B
+					arraylength;
+					invokevirtual 13;		// init(Ljavacard/security/Key;B[BSS)V
+					return;
+		}
+
+	}
+
+	.class public InitIVTestApplet 0 extends 0.11 {		// extends benchs/lib/templates/CryptoTemplateApplet
+
+		.fields {
+			private byte[] iv 0;		// [B
+			private byte[] cod 1;		// [B
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+			init([B)V;
+			buildKey()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method private <init>()V {
+			.stack 5;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 16;		// benchs/lib/templates/CryptoTemplateApplet.<init>()V
+					aload_0;
+					getfield_a_this 3;		// reference benchs/lib/templates/CryptoTemplateApplet.IV_NULL
+					arraylength;
+					sconst_2;
+					invokestatic 18;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 4;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.cod
+					getfield_a_this 3;		// reference benchs/lib/templates/CryptoTemplateApplet.IV_NULL
+					sconst_0;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.cod
+					sconst_0;
+					getfield_a_this 3;		// reference benchs/lib/templates/CryptoTemplateApplet.IV_NULL
+					arraylength;
+					invokestatic 20;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 21;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet
+					dup;
+					invokespecial 22;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.<init>()V
+					invokevirtual 23;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	sconst_3;
+					anewarray 24;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 25;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 26;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$1.<init>(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 27;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 28;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$2.<init>(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 29;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 30;		// benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet$3.<init>(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static access$0(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 5;		// reference benchs/lib/templates/CryptoTemplateApplet.IV_NULL
+					areturn;
+		}
+
+		.method static access$1(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;[B)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.iv
+					return;
+		}
+
+		.method static access$2(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Lbenchs/lib/templates/DummyClass; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/DummyClass;	0.5;
+
+				L0:	aload_0;
+					getfield_a 7;		// reference benchs/lib/templates/CryptoTemplateApplet.dummy
+					areturn;
+		}
+
+		.method static access$3(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Ljavacard/security/Key; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Ljavacard/security/Key;	1.0;
+
+				L0:	aload_0;
+					getfield_a 8;		// reference benchs/lib/templates/KeyTemplateApplet.key
+					areturn;
+		}
+
+		.method static access$4(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Lbenchs/lib/templates/CryptoInfo; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/CryptoInfo;	0.3;
+
+				L0:	aload_0;
+					getfield_a 9;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					areturn;
+		}
+
+		.method static access$5(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 6;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.iv
+					areturn;
+		}
+
+		.method static access$6(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;[B)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					invokevirtual 36;		// init([B)V
+					return;
+		}
+
+		.method static access$7(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)Ljavacard/security/Signature; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Ljavacard/security/Signature;	1.15;
+
+				L0:	aload_0;
+					getfield_a 10;		// reference benchs/lib/templates/CryptoTemplateApplet.signature
+					areturn;
+		}
+
+		.method static access$8(Lbenchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 4;		// reference benchs/jcapi/javacard_security/signature/initiv/InitIVTestApplet.cod
+					areturn;
+		}
+
+	}
+
+}

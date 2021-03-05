@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Profiler>
+	<config name="template" description="this is not a configuration but a template for others configurations.">
+		<help/>
+		<warning/>
+		<verbose/>
+		<verboseLevel>10</verboseLevel>
+		<verboseFilter>1</verboseFilter>
+		<input>../tmp/results/Extracted_1.xml</input>
+		<input>../tmp/results/Extracted_2.xml</input>	
+		<coefFile>../config/profiler/coefs.xml</coefFile>
+		<output>../config/profiler/GlobalMarkCalculationOutput.xml</output>
+	</config>
+
+	<!-- Default configuration. Should always be defined. -->
+	<config name="default" description="The default configuration">
+      <log>../tmp/GlobalMarkCalculationLog.txt</log>
+	  <verboseLevel>10</verboseLevel>
+	  <input>../tmp/results/Extracted_1.xml</input>
+	  <input>../tmp/results/Extracted_2.xml</input>	
+	  <coefFile>../config/profiler/coefs.xml</coefFile>
+	  <output>../config/profiler/GlobalMarkCalculationOutput.xml</output>
+	</config>
+
+	<!-- My configuration -->
+	<config name="my_profiling_config" description="My profiling configuration">
+	  <config>default</config>
+	</config>
+</Profiler>

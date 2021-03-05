@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<project name="rsapublickey" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="setx" target="convert" inheritall="false"/>
+	</target>
+
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<project name="templates" default="convert" basedir=".">
+	
+  <property name="package.name" value="benchs.lib.templates"/>
+  <property name="package.aid" value="0x4d:0x45:0x53:0x55:0x52:0x45"/>
+  <property name="package.library" value="true"/>
+  	
+  <import file="../../../tools/converter/build.xml"/>
+	
+</project>

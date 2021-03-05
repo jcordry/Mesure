@@ -1,0 +1,4 @@
+#Mon May 07 15:37:48 CEST 2007
+lib.loader.config.Load=lib.loader.config.LoadDescriptor
+lib.loader.config.MutualAuthenticate=lib.loader.config.MutualAuthenticateDescriptor
+lib.loader.config.CardConfig=lib.loader.config.CardConfigDescriptor

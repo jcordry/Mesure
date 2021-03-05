@@ -1,0 +1,1016 @@
+// converted by version 1.3
+// on Mon Nov 26 16:41:01 CET 2007
+
+.package benchs/jcapi/javacard_framework/aid {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x61:0x69:0x64;
+	.version 1.0;
+
+	.imports {
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x61:0x69:0x64:0x1 AIDTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef byte[] AIDInfo/aid;
+		// 1
+		instanceFieldRef short AIDInfo/offset;
+		// 2
+		instanceFieldRef byte AIDInfo/length;
+		// 3
+		instanceFieldRef AIDTestApplet AIDTestApplet$1/this$0;
+		// 4
+		instanceFieldRef AIDTestApplet AIDTestApplet$2/this$0;
+		// 5
+		instanceFieldRef AIDTestApplet AIDTestApplet$3/this$0;
+		// 6
+		instanceFieldRef AIDTestApplet AIDTestApplet$4/this$0;
+		// 7
+		instanceFieldRef AIDTestApplet AIDTestApplet$5/this$0;
+		// 8
+		instanceFieldRef AIDTestApplet AIDTestApplet$6/this$0;
+		// 9
+		instanceFieldRef AIDInfo AIDTestApplet/info;
+		// 10
+		instanceFieldRef 1.5 AIDTestApplet/dummy;
+		// 11
+		instanceFieldRef byte[] AIDTestApplet/value;
+		// 12
+		instanceFieldRef 1.2 AIDTestApplet/reader;
+		// 13
+		instanceFieldRef 2.6 AIDTestApplet/aid;
+		// 14
+		instanceFieldRef short AIDTestApplet/offset;
+		// 15
+		instanceFieldRef byte AIDTestApplet/length;
+		// 16
+		staticMethodRef AIDTestApplet/access$3(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)B;
+		// 17
+		staticMethodRef 2.16.2([BS[BSS)S;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+		// 18
+		staticMethodRef AIDTestApplet/access$4(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Lbenchs/lib/templates/DummyClass;;
+			.descriptor	Lbenchs/lib/templates/DummyClass;	1.5;
+
+		// 19
+		virtualMethodRef 1.5.5([BSB)V;		// dummyMethodShort([BSB)V
+		// 20
+		virtualMethodRef 1.2.3()B;		// readByte()B
+		// 21
+		staticMethodRef 2.8.3()Ljavacard/framework/AID;;		// javacard/framework/JCSystem.getAID()Ljavacard/framework/AID;
+			.descriptor	Ljavacard/framework/AID;	2.6;
+
+		// 22
+		staticMethodRef AIDTestApplet/access$5(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;Ljavacard/framework/AID;)V;
+			.descriptor	Ljavacard/framework/AID;	2.6;
+
+		// 23
+		staticMethodRef AIDTestApplet/access$6(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Ljavacard/framework/AID;;
+			.descriptor	Ljavacard/framework/AID;	2.6;
+
+		// 24
+		virtualMethodRef 2.6.3([BS)B;		// getBytes([BS)B
+		// 25
+		virtualMethodRef 2.6.4([BSB)Z;		// partialEquals([BSB)Z
+		// 26
+		staticMethodRef 2.13.1(S)V;		// javacard/framework/SystemException.throwIt(S)V
+		// 27
+		virtualMethodRef 1.2.2([BSS)S;		// read([BSS)S
+		// 28
+		virtualMethodRef 1.5.4([BS)V;		// dummyMethodShort([BS)V
+		// 29
+		virtualMethodRef 1.2.5()S;		// readShort()S
+		// 30
+		virtualMethodRef 1.6.3(S)V;		// writeByte(S)V
+		// 31
+		staticMethodRef AIDTestApplet/access$7(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Lbenchs/jcapi/javacard_framework/aid/AIDInfo;;
+		// 32
+		virtualMethodRef AIDInfo/getAID()[B;
+		// 33
+		staticMethodRef AIDTestApplet/access$8(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;[B)V;
+		// 34
+		virtualMethodRef AIDInfo/getOffset()S;
+		// 35
+		staticMethodRef AIDTestApplet/access$9(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;S)V;
+		// 36
+		classRef 2.6;		// javacard/framework/AID
+		// 37
+		staticMethodRef 2.6.0([BSB)V;		// javacard/framework/AID.<init>([BSB)V
+		// 38
+		staticMethodRef 1.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 39
+		classRef AIDInfo;
+		// 40
+		staticMethodRef AIDInfo/<init>()V;
+		// 41
+		virtualMethodRef 1.6.2([BSS)V;		// write([BSS)V
+		// 42
+		classRef 1.5;		// benchs/lib/templates/DummyClass
+		// 43
+		staticMethodRef 1.5.0()V;		// benchs/lib/templates/DummyClass.<init>()V
+		// 44
+		virtualMethodRef 1.6.4(S)V;		// writeShort(S)V
+		// 45
+		staticMethodRef 0.0.0()V;		// java/lang/Object.<init>()V
+		// 46
+		classRef AIDTestApplet;
+		// 47
+		staticMethodRef AIDTestApplet/<init>()V;
+		// 48
+		virtualMethodRef 1.4.1()V;		// register()V
+		// 49
+		staticMethodRef 1.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 50
+		classRef 1.2;		// benchs/lib/templates/ByteArrayReader
+		// 51
+		staticMethodRef 1.2.0([BS)V;		// benchs/lib/templates/ByteArrayReader.<init>([BS)V
+		// 52
+		virtualMethodRef 1.2.6([BS)V;		// reset([BS)V
+		// 53
+		virtualMethodRef AIDInfo/read(Lbenchs/lib/templates/ByteArrayReader;)Lbenchs/jcapi/javacard_framework/aid/AIDInfo;;
+			.descriptor	Lbenchs/lib/templates/ByteArrayReader;	1.2;
+
+		// 54
+		staticMethodRef AIDTestApplet/access$0(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;[B)V;
+		// 55
+		virtualMethodRef 2.6.2([BSB)Z;		// equals([BSB)Z
+		// 56
+		staticMethodRef AIDTestApplet/access$1(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)[B;
+		// 57
+		virtualMethodRef AIDInfo/getLength()B;
+		// 58
+		staticMethodRef AIDTestApplet/access$2(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)S;
+		// 59
+		classRef 1.7;		// benchs/lib/templates/TestCase
+		// 60
+		classRef AIDTestApplet$1;
+		// 61
+		staticMethodRef AIDTestApplet$1/<init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V;
+		// 62
+		classRef AIDTestApplet$2;
+		// 63
+		staticMethodRef AIDTestApplet$2/<init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V;
+		// 64
+		classRef AIDTestApplet$3;
+		// 65
+		staticMethodRef AIDTestApplet$3/<init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V;
+		// 66
+		classRef AIDTestApplet$4;
+		// 67
+		staticMethodRef AIDTestApplet$4/<init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V;
+		// 68
+		classRef AIDTestApplet$5;
+		// 69
+		staticMethodRef AIDTestApplet$5/<init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V;
+		// 70
+		classRef AIDTestApplet$6;
+		// 71
+		staticMethodRef AIDTestApplet$6/<init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V;
+		// 72
+		staticMethodRef AIDTestApplet/init([B)V;
+	}
+
+	.class public AIDInfo 0 extends 0.0 {		// extends java/lang/Object
+
+		.fields {
+			private byte[] aid 0;		// [B
+			private short offset 1;		// S
+			private byte length 2;		// B
+		}
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			read(Lbenchs/lib/templates/ByteArrayReader;)Lbenchs/jcapi/javacard_framework/aid/AIDInfo;;
+			write(Lbenchs/lib/templates/ByteArrayWriter;)V;
+			getSize()S;
+			getAID()[B;
+			getOffset()S;
+			getLength()B;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 45;		// java/lang/Object.<init>()V
+					aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacard_framework/aid/AIDInfo.aid
+					aload_0;
+					sload_2;
+					putfield_s 1;		// short benchs/jcapi/javacard_framework/aid/AIDInfo.offset
+					aload_0;
+					sload_3;
+					putfield_b 2;		// byte benchs/jcapi/javacard_framework/aid/AIDInfo.length
+					return;
+		}
+
+		.method public <init>()V 1 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 45;		// java/lang/Object.<init>()V
+					return;
+		}
+
+		.method public read(Lbenchs/lib/templates/ByteArrayReader;)Lbenchs/jcapi/javacard_framework/aid/AIDInfo; 1 {
+			.stack 4;
+			.locals 1;
+
+			.descriptor	Lbenchs/lib/templates/ByteArrayReader;	1.2;
+
+				L0:	aload_1;
+					invokevirtual 20;		// readByte()B
+					sstore_2;
+					sload_2;
+					sconst_5;
+					if_scmplt L2;
+				L1:	sload_2;
+					bspush 16;
+					if_scmple L3;
+				L2:	sconst_1;
+					invokestatic 26;		// javacard/framework/SystemException.throwIt(S)V
+				L3:	aload_0;
+					sload_2;
+					newarray 11;
+					putfield_a 0;		// reference benchs/jcapi/javacard_framework/aid/AIDInfo.aid
+					aload_1;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/aid/AIDInfo.aid
+					sconst_0;
+					sload_2;
+					invokevirtual 27;		// read([BSS)S
+					pop;
+					aload_0;
+					aload_1;
+					invokevirtual 29;		// readShort()S
+					putfield_s 1;		// short benchs/jcapi/javacard_framework/aid/AIDInfo.offset
+					aload_1;
+					invokevirtual 20;		// readByte()B
+					sstore_2;
+					aload_0;
+					areturn;
+		}
+
+		.method public write(Lbenchs/lib/templates/ByteArrayWriter;)V 2 {
+			.stack 4;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/ByteArrayWriter;	1.6;
+
+				L0:	aload_1;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/aid/AIDInfo.aid
+					arraylength;
+					invokevirtual 30;		// writeByte(S)V
+					aload_1;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/aid/AIDInfo.aid
+					sconst_0;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/aid/AIDInfo.aid
+					arraylength;
+					invokevirtual 41;		// write([BSS)V
+					aload_1;
+					getfield_s_this 1;		// short benchs/jcapi/javacard_framework/aid/AIDInfo.offset
+					invokevirtual 44;		// writeShort(S)V
+					aload_1;
+					getfield_b_this 2;		// byte benchs/jcapi/javacard_framework/aid/AIDInfo.length
+					invokevirtual 30;		// writeByte(S)V
+					return;
+		}
+
+		.method public getSize()S 3 {
+			.stack 2;
+			.locals 0;
+
+				L0:	sconst_4;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/aid/AIDInfo.aid
+					arraylength;
+					sadd;
+					sreturn;
+		}
+
+		.method public getAID()[B 4 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/aid/AIDInfo.aid
+					areturn;
+		}
+
+		.method public getOffset()S 5 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_s_this 1;		// short benchs/jcapi/javacard_framework/aid/AIDInfo.offset
+					sreturn;
+		}
+
+		.method public getLength()B 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_b_this 2;		// byte benchs/jcapi/javacard_framework/aid/AIDInfo.length
+					sreturn;
+		}
+
+	}
+
+	.class final AIDTestApplet$1 extends 1.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final AIDTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$1.this$0
+					aload_0;
+					invokespecial 49;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$1.this$0
+					aload_1;
+					invokestatic 54;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$0(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$1.this$0
+					invokestatic 56;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$1(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)[B
+					sconst_0;
+					aload_1;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$1.this$0
+					invokestatic 58;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$2(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)S
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$1.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$3(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)B
+					invokestatic 17;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$1.this$0
+					invokestatic 18;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$4(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Lbenchs/lib/templates/DummyClass;
+					aload_1;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$1.this$0
+					invokestatic 58;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$2(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)S
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$1.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$3(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)B
+					invokevirtual 19;		// dummyMethodShort([BSB)V
+					return;
+		}
+
+	}
+
+	.class final AIDTestApplet$2 extends 1.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final AIDTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$2.this$0
+					aload_0;
+					invokespecial 49;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$2.this$0
+					aload_1;
+					invokestatic 54;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$0(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;[B)V
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$2.this$0
+					invokestatic 21;		// javacard/framework/JCSystem.getAID()Ljavacard/framework/AID;
+					invokestatic 22;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$5(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;Ljavacard/framework/AID;)V
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$2.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$6(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Ljavacard/framework/AID;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$2.this$0
+					invokestatic 56;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$1(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)[B
+					sconst_0;
+					invokevirtual 24;		// getBytes([BS)B
+					pop;
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$2.this$0
+					invokestatic 56;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$1(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)[B
+					sconst_0;
+					aload_1;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$2.this$0
+					invokestatic 58;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$2(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)S
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$2.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$3(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)B
+					invokestatic 17;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$2.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$6(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Ljavacard/framework/AID;
+					aload_1;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$2.this$0
+					invokestatic 58;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$2(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)S
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$2.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$3(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)B
+					invokevirtual 25;		// partialEquals([BSB)Z
+					pop;
+					return;
+		}
+
+	}
+
+	.class final AIDTestApplet$3 extends 1.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final AIDTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$3.this$0
+					aload_0;
+					invokespecial 49;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$3.this$0
+					aload_1;
+					invokestatic 54;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$0(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$3.this$0
+					invokestatic 56;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$1(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)[B
+					sconst_0;
+					aload_1;
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$3.this$0
+					invokestatic 58;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$2(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)S
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$3.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$3(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)B
+					invokestatic 17;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$3.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$6(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Ljavacard/framework/AID;
+					aload_1;
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$3.this$0
+					invokestatic 58;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$2(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)S
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$3.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$3(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)B
+					invokevirtual 25;		// partialEquals([BSB)Z
+					pop;
+					return;
+		}
+
+	}
+
+	.class final AIDTestApplet$4 extends 1.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final AIDTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$4.this$0
+					aload_0;
+					invokespecial 49;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$4.this$0
+					aload_1;
+					invokestatic 54;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$0(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$4.this$0
+					invokestatic 18;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$4(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Lbenchs/lib/templates/DummyClass;
+					aload_1;
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$4.this$0
+					invokestatic 58;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$2(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)S
+					invokevirtual 28;		// dummyMethodShort([BS)V
+					return;
+		}
+
+	}
+
+	.class final AIDTestApplet$5 extends 1.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final AIDTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$5.this$0
+					aload_0;
+					invokespecial 49;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$5.this$0
+					aload_1;
+					invokestatic 54;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$0(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;[B)V
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$5.this$0
+					invokestatic 21;		// javacard/framework/JCSystem.getAID()Ljavacard/framework/AID;
+					invokestatic 22;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$5(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;Ljavacard/framework/AID;)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$5.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$6(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Ljavacard/framework/AID;
+					aload_1;
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$5.this$0
+					invokestatic 58;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$2(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)S
+					invokevirtual 24;		// getBytes([BS)B
+					pop;
+					return;
+		}
+
+	}
+
+	.class final AIDTestApplet$6 extends 1.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final AIDTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$6.this$0
+					aload_0;
+					invokespecial 49;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$6.this$0
+					aload_1;
+					invokestatic 54;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$0(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;[B)V
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$6.this$0
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$6.this$0
+					invokestatic 31;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$7(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Lbenchs/jcapi/javacard_framework/aid/AIDInfo;
+					invokevirtual 32;		// getAID()[B
+					invokestatic 33;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$8(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;[B)V
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$6.this$0
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$6.this$0
+					invokestatic 31;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$7(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Lbenchs/jcapi/javacard_framework/aid/AIDInfo;
+					invokevirtual 34;		// getOffset()S
+					invokestatic 35;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$9(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;S)V
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$6.this$0
+					new 36;		// javacard/framework/AID
+					dup;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$6.this$0
+					invokestatic 56;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$1(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)[B
+					sconst_0;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$6.this$0
+					invokestatic 56;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$1(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)[B
+					arraylength;
+					s2b;
+					invokespecial 37;		// javacard/framework/AID.<init>([BSB)V
+					invokestatic 22;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$5(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;Ljavacard/framework/AID;)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$6.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$6(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Ljavacard/framework/AID;
+					aload_1;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet$6.this$0
+					invokestatic 58;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.access$2(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)S
+					invokevirtual 24;		// getBytes([BS)B
+					pop;
+					return;
+		}
+
+	}
+
+	.class public AIDTestApplet 1 extends 1.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			private 1.5 dummy 0;		// Lbenchs/lib/templates/DummyClass;
+			private 2.6 aid 1;		// Ljavacard/framework/AID;
+			private AIDInfo info 2;		// Lbenchs/jcapi/javacard_framework/aid/AIDInfo;
+			private byte[] value 3;		// [B
+			private 1.2 reader 4;		// Lbenchs/lib/templates/ByteArrayReader;
+			private short offset 5;		// S
+			private byte length 6;		// B
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method private <init>()V {
+			.stack 3;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 38;		// benchs/lib/templates/TemplateApplet.<init>()V
+					aload_0;
+					new 39;		// benchs/jcapi/javacard_framework/aid/AIDInfo
+					dup;
+					invokespecial 40;		// benchs/jcapi/javacard_framework/aid/AIDInfo.<init>()V
+					putfield_a 9;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.info
+					aload_0;
+					new 42;		// benchs/lib/templates/DummyClass
+					dup;
+					invokespecial 43;		// benchs/lib/templates/DummyClass.<init>()V
+					putfield_a 10;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.dummy
+					aload_0;
+					bspush 16;
+					newarray 11;
+					putfield_a 11;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.value
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 46;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet
+					dup;
+					invokespecial 47;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.<init>()V
+					invokevirtual 48;		// register()V
+					return;
+		}
+
+		.method private init([B)V {
+			.stack 6;
+			.locals 1;
+
+				L0:	getfield_a_this 12;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.reader
+					ifnonnull L2;
+				L1:	aload_0;
+					new 50;		// benchs/lib/templates/ByteArrayReader
+					dup;
+					aload_1;
+					sconst_5;
+					invokespecial 51;		// benchs/lib/templates/ByteArrayReader.<init>([BS)V
+					putfield_a 12;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.reader
+					goto L3;
+				L2:	getfield_a_this 12;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.reader
+					aload_1;
+					sconst_5;
+					invokevirtual 52;		// reset([BS)V
+				L3:	getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.info
+					getfield_a_this 12;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.reader
+					invokevirtual 53;		// read(Lbenchs/lib/templates/ByteArrayReader;)Lbenchs/jcapi/javacard_framework/aid/AIDInfo;
+					pop;
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.info
+					invokevirtual 32;		// getAID()[B
+					astore_2;
+					aload_2;
+					sconst_0;
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.value
+					sconst_0;
+					aload_2;
+					arraylength;
+					invokestatic 17;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.aid
+					ifnull L5;
+				L4:	getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.aid
+					aload_2;
+					sconst_0;
+					aload_2;
+					arraylength;
+					s2b;
+					invokevirtual 55;		// equals([BSB)Z
+					ifne L6;
+				L5:	aload_0;
+					new 36;		// javacard/framework/AID
+					dup;
+					aload_2;
+					sconst_0;
+					aload_2;
+					arraylength;
+					s2b;
+					invokespecial 37;		// javacard/framework/AID.<init>([BSB)V
+					putfield_a 13;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.aid
+				L6:	aload_0;
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.info
+					invokevirtual 34;		// getOffset()S
+					putfield_s 14;		// short benchs/jcapi/javacard_framework/aid/AIDTestApplet.offset
+					aload_0;
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.info
+					invokevirtual 57;		// getLength()B
+					putfield_b 15;		// byte benchs/jcapi/javacard_framework/aid/AIDTestApplet.length
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	1.7;
+
+				L0:	bspush 6;
+					anewarray 59;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 60;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 61;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet$1.<init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 62;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 63;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet$2.<init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 64;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 65;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet$3.<init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 66;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 67;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet$4.<init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 68;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 69;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet$5.<init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 70;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 71;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet$6.<init>(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static access$0(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;[B)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					invokespecial 72;		// benchs/jcapi/javacard_framework/aid/AIDTestApplet.init([B)V
+					return;
+		}
+
+		.method static access$1(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 11;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.value
+					areturn;
+		}
+
+		.method static access$2(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_s 14;		// short benchs/jcapi/javacard_framework/aid/AIDTestApplet.offset
+					sreturn;
+		}
+
+		.method static access$3(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_b 15;		// byte benchs/jcapi/javacard_framework/aid/AIDTestApplet.length
+					sreturn;
+		}
+
+		.method static access$4(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Lbenchs/lib/templates/DummyClass; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/DummyClass;	1.5;
+
+				L0:	aload_0;
+					getfield_a 10;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.dummy
+					areturn;
+		}
+
+		.method static access$5(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;Ljavacard/framework/AID;)V {
+			.stack 2;
+			.locals 0;
+
+			.descriptor	Ljavacard/framework/AID;	2.6;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 13;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.aid
+					return;
+		}
+
+		.method static access$6(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Ljavacard/framework/AID; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Ljavacard/framework/AID;	2.6;
+
+				L0:	aload_0;
+					getfield_a 13;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.aid
+					areturn;
+		}
+
+		.method static access$7(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;)Lbenchs/jcapi/javacard_framework/aid/AIDInfo; {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 9;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.info
+					areturn;
+		}
+
+		.method static access$8(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;[B)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 11;		// reference benchs/jcapi/javacard_framework/aid/AIDTestApplet.value
+					return;
+		}
+
+		.method static access$9(Lbenchs/jcapi/javacard_framework/aid/AIDTestApplet;S)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					putfield_s 14;		// short benchs/jcapi/javacard_framework/aid/AIDTestApplet.offset
+					return;
+		}
+
+	}
+
+}

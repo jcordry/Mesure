@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Extractor>
+	<config name="template" description="this is not a configuration but a template for others configurations.">
+		<help/>
+		<warning/>
+		<verbose/>
+		<verboseLevel>10</verboseLevel>
+		<verboseFilter>1</verboseFilter>
+		<refCasePercent>50</refCasePercent>
+		<testCasePercent>20</testCasePercent>
+		<input>../tmp/results.xml</input>
+		<output>../tmp/filtered.xml</output>
+		<filter/>
+		<print/>
+	</config>
+
+	<!-- Default configuration. Should always be defined. -->
+	<config name="default" description="The default configuration">
+	  <log>../tmp/FilteringLog.txt</log>
+	  <verboseLevel>10</verboseLevel>
+	  <input>../tmp/Results.xml</input>
+	  <output>../tmp/Filtered.xml</output>
+	  <refCasePercent>50</refCasePercent>
+	  <testCasePercent>20</testCasePercent>
+	  <filter/>
+	</config>
+	
+	<!-- My configuration.  -->
+	<config name="my_filtering_config" description="My configuration">
+	  <config>default</config>
+	</config>
+</Extractor>

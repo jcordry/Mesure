@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<project name="engine" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="dup" target="convert" inheritall="false"/>
+	  <ant dir="field" target="convert" inheritall="false"/>
+	  <ant dir="invoke" target="convert" inheritall="false"/>
+	  <ant dir="jump" target="convert" inheritall="false"/>
+	  <ant dir="locvar" target="convert" inheritall="false"/>
+	  <ant dir="objects" target="convert" inheritall="false"/>
+	  <ant dir="slookupswitch" target="convert" inheritall="false"/>
+	  <ant dir="stableswitch" target="convert" inheritall="false"/>
+	  <ant dir="stack" target="convert" inheritall="false"/>
+	  <ant dir="stests" target="convert" inheritall="false"/>
+	  <ant dir="tests" target="convert" inheritall="false"/>
+	  <ant dir="types" target="convert" inheritall="false"/>
+	  <ant dir="ual" target="convert" inheritall="false"/>
+	</target>
+
+</project>

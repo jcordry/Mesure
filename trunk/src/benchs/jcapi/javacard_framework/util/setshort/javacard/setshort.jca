@@ -1,0 +1,782 @@
+// converted by version 1.3
+// on Mon Nov 26 16:41:24 CET 2007
+
+.package benchs/jcapi/javacard_framework/util/setshort {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x73:0x68:0x6F:0x72:0x74;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x73:0x68:0x6F:0x72:0x74:0x1 SetShortTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef SetShortTestApplet SetShortTestApplet$1/this$0;
+		// 1
+		instanceFieldRef SetShortTestApplet SetShortTestApplet$2/this$0;
+		// 2
+		instanceFieldRef SetShortTestApplet SetShortTestApplet$3/this$0;
+		// 3
+		instanceFieldRef SetShortTestApplet SetShortTestApplet$4/this$0;
+		// 4
+		instanceFieldRef SetShortTestApplet SetShortTestApplet$5/this$0;
+		// 5
+		instanceFieldRef SetShortTestApplet SetShortTestApplet$6/this$0;
+		// 6
+		instanceFieldRef SetShortTestApplet SetShortTestApplet$7/this$0;
+		// 7
+		instanceFieldRef SetShortTestApplet SetShortTestApplet$8/this$0;
+		// 8
+		instanceFieldRef byte[] SetShortTestApplet/persistentArray;
+		// 9
+		instanceFieldRef byte[] SetShortTestApplet/transientArray;
+		// 10
+		instanceFieldRef short SetShortTestApplet/offset;
+		// 11
+		instanceFieldRef short SetShortTestApplet/arrayLength;
+		// 12
+		staticMethodRef SetShortTestApplet/access$2(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)S;
+		// 13
+		staticMethodRef 2.16.6([BSS)S;		// javacard/framework/Util.setShort([BSS)S
+		// 14
+		staticMethodRef 0.5.4([BSS)V;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BSS)V
+		// 15
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 16
+		staticMethodRef 2.8.1()V;		// javacard/framework/JCSystem.beginTransaction()V
+		// 17
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 18
+		staticMethodRef 2.8.2()V;		// javacard/framework/JCSystem.commitTransaction()V
+		// 19
+		staticMethodRef SetShortTestApplet/access$0(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;[BZ)V;
+		// 20
+		staticMethodRef SetShortTestApplet/access$3(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)[B;
+		// 21
+		staticMethodRef SetShortTestApplet/access$1(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)[B;
+		// 22
+		staticMethodRef 2.8.13(SB)[B;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+		// 23
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 24
+		classRef SetShortTestApplet;
+		// 25
+		staticMethodRef SetShortTestApplet/<init>()V;
+		// 26
+		staticMethodRef 2.16.5(BB)S;		// javacard/framework/Util.makeShort(BB)S
+		// 27
+		staticMethodRef 2.7.1(S)V;		// javacard/framework/ISOException.throwIt(S)V
+		// 28
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 29
+		classRef SetShortTestApplet$1;
+		// 30
+		staticMethodRef SetShortTestApplet$1/<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V;
+		// 31
+		classRef SetShortTestApplet$2;
+		// 32
+		staticMethodRef SetShortTestApplet$2/<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V;
+		// 33
+		classRef SetShortTestApplet$3;
+		// 34
+		staticMethodRef SetShortTestApplet$3/<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V;
+		// 35
+		classRef SetShortTestApplet$4;
+		// 36
+		staticMethodRef SetShortTestApplet$4/<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V;
+		// 37
+		classRef SetShortTestApplet$5;
+		// 38
+		staticMethodRef SetShortTestApplet$5/<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V;
+		// 39
+		classRef SetShortTestApplet$6;
+		// 40
+		staticMethodRef SetShortTestApplet$6/<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V;
+		// 41
+		classRef SetShortTestApplet$7;
+		// 42
+		staticMethodRef SetShortTestApplet$7/<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V;
+		// 43
+		classRef SetShortTestApplet$8;
+		// 44
+		staticMethodRef SetShortTestApplet$8/<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V;
+		// 45
+		staticMethodRef SetShortTestApplet/init([BZ)V;
+	}
+
+	.class final SetShortTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetShortTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$1.this$0
+					aload_0;
+					invokespecial 15;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$1.this$0
+					aload_1;
+					sconst_0;
+					invokestatic 19;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$1.this$0
+					invokestatic 21;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)[B
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$1.this$0
+					invokestatic 12;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)S
+					bspush -28;
+					invokestatic 14;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BSS)V
+					return;
+		}
+
+	}
+
+	.class final SetShortTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetShortTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$2.this$0
+					aload_0;
+					invokespecial 15;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$2.this$0
+					aload_1;
+					sconst_0;
+					invokestatic 19;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 3;
+			.locals 0;
+
+				L0:	invokestatic 16;		// javacard/framework/JCSystem.beginTransaction()V
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$2.this$0
+					invokestatic 21;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)[B
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$2.this$0
+					invokestatic 12;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)S
+					bspush -28;
+					invokestatic 14;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BSS)V
+					invokestatic 18;		// javacard/framework/JCSystem.commitTransaction()V
+					return;
+		}
+
+	}
+
+	.class final SetShortTestApplet$3 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetShortTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$3.this$0
+					aload_0;
+					invokespecial 15;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$3.this$0
+					aload_1;
+					sconst_0;
+					invokestatic 19;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$3.this$0
+					invokestatic 20;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)[B
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$3.this$0
+					invokestatic 12;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)S
+					bspush -28;
+					invokestatic 14;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BSS)V
+					return;
+		}
+
+	}
+
+	.class final SetShortTestApplet$4 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetShortTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$4.this$0
+					aload_0;
+					invokespecial 15;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$4.this$0
+					aload_1;
+					sconst_1;
+					invokestatic 19;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 3;
+			.locals 0;
+
+				L0:	aload_1;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$4.this$0
+					invokestatic 12;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)S
+					bspush -28;
+					invokestatic 14;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BSS)V
+					return;
+		}
+
+	}
+
+	.class final SetShortTestApplet$5 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetShortTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$5.this$0
+					aload_0;
+					invokespecial 15;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$5.this$0
+					aload_1;
+					sconst_0;
+					invokestatic 19;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$5.this$0
+					invokestatic 21;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)[B
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$5.this$0
+					invokestatic 12;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)S
+					bspush -28;
+					invokestatic 13;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final SetShortTestApplet$6 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetShortTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$6.this$0
+					aload_0;
+					invokespecial 15;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$6.this$0
+					aload_1;
+					sconst_0;
+					invokestatic 19;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 3;
+			.locals 0;
+
+				L0:	invokestatic 16;		// javacard/framework/JCSystem.beginTransaction()V
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$6.this$0
+					invokestatic 21;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)[B
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$6.this$0
+					invokestatic 12;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)S
+					bspush -28;
+					invokestatic 13;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					invokestatic 18;		// javacard/framework/JCSystem.commitTransaction()V
+					return;
+		}
+
+	}
+
+	.class final SetShortTestApplet$7 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetShortTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$7.this$0
+					aload_0;
+					invokespecial 15;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$7.this$0
+					aload_1;
+					sconst_0;
+					invokestatic 19;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$7.this$0
+					invokestatic 20;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)[B
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$7.this$0
+					invokestatic 12;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)S
+					bspush -28;
+					invokestatic 13;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final SetShortTestApplet$8 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetShortTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$8.this$0
+					aload_0;
+					invokespecial 15;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$8.this$0
+					aload_1;
+					sconst_1;
+					invokestatic 19;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 3;
+			.locals 0;
+
+				L0:	aload_1;
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$8.this$0
+					invokestatic 12;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)S
+					bspush -28;
+					invokestatic 13;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class public SetShortTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			private byte[] persistentArray 0;		// [B
+			private byte[] transientArray 1;		// [B
+			private short offset 2;		// S
+			private short arrayLength 3;		// S
+			private static final short SHORT = -28;		// S
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method private <init>()V {
+			.stack 3;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 17;		// benchs/lib/templates/TemplateApplet.<init>()V
+					aload_0;
+					aconst_null;
+					putfield_a 8;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.persistentArray
+					aload_0;
+					aconst_null;
+					putfield_a 9;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.transientArray
+					aload_0;
+					sconst_0;
+					putfield_s 10;		// short benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.offset
+					aload_0;
+					sspush 200;
+					putfield_s 11;		// short benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.arrayLength
+					aload_0;
+					getfield_s_this 11;		// short benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.arrayLength
+					newarray 11;
+					putfield_a 8;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.persistentArray
+					aload_0;
+					getfield_s_this 11;		// short benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.arrayLength
+					sconst_2;
+					invokestatic 22;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 9;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.transientArray
+					aload_0;
+					invokevirtual 23;		// register()V
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	new 24;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet
+					invokespecial 25;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.<init>()V
+					return;
+		}
+
+		.method private init([BZ)V {
+			.stack 4;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					sconst_5;
+					baload;
+					aload_1;
+					bspush 6;
+					baload;
+					invokestatic 26;		// javacard/framework/Util.makeShort(BB)S
+					putfield_s 10;		// short benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.offset
+					sload_2;
+					ifeq L3;
+				L1:	getfield_s_this 10;		// short benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.offset
+					aload_1;
+					arraylength;
+					sconst_2;
+					ssub;
+					if_scmple L5;
+				L2:	sspush 27012;
+					invokestatic 27;		// javacard/framework/ISOException.throwIt(S)V
+					goto L5;
+				L3:	getfield_s_this 10;		// short benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.offset
+					getfield_s_this 11;		// short benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.arrayLength
+					sconst_2;
+					ssub;
+					if_scmple L5;
+				L4:	sspush 27012;
+					invokestatic 27;		// javacard/framework/ISOException.throwIt(S)V
+				L5:	return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 8;
+					anewarray 28;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 29;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 30;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$1.<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 31;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 32;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$2.<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 33;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 34;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$3.<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 35;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 36;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$4.<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 37;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 38;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$5.<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 39;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 40;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$6.<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 41;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$7
+					dup;
+					aload_0;
+					invokespecial 42;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$7.<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 43;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$8
+					dup;
+					aload_0;
+					invokespecial 44;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet$8.<init>(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static access$0(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;[BZ)V {
+			.stack 3;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					sload_2;
+					invokespecial 45;		// benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.init([BZ)V
+					return;
+		}
+
+		.method static access$1(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 8;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.persistentArray
+					areturn;
+		}
+
+		.method static access$2(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_s 10;		// short benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.offset
+					sreturn;
+		}
+
+		.method static access$3(Lbenchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 9;		// reference benchs/jcapi/javacard_framework/util/setshort/SetShortTestApplet.transientArray
+					areturn;
+		}
+
+	}
+
+}

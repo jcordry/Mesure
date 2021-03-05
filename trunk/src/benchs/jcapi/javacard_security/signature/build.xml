@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<project name="Signature" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="init" target="convert" inheritall="false"/>
+	  <ant dir="initiv" target="convert" inheritall="false"/>
+	  <ant dir="sign" target="convert" inheritall="false"/>
+	  <ant dir="verify" target="convert" inheritall="false"/>
+	</target>
+
+</project>

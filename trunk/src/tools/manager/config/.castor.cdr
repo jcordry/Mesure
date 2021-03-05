@@ -1,0 +1,6 @@
+#Wed Sep 05 15:17:33 CEST 2007
+tools.manager.config.Test=tools.manager.config.TestDescriptor
+tools.manager.config.CalibrateMetric=tools.manager.config.CalibrateMetricDescriptor
+tools.manager.config.Tests=tools.manager.config.TestsDescriptor
+tools.manager.config.ManagerConfig=tools.manager.config.ManagerConfigDescriptor
+tools.manager.config.TestCase=tools.manager.config.TestCaseDescriptor

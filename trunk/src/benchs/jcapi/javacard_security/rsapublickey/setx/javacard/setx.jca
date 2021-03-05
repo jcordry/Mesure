@@ -1,0 +1,745 @@
+// converted by version 1.3
+// on Tue Nov 27 17:45:12 CET 2007
+
+.package benchs/jcapi/javacard_security/rsapublickey/setx {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x70:0x75:0x62:0x73:0x65:0x74:0x78;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x2 1.1;		//javacard/security
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x70:0x75:0x62:0x73:0x65:0x74:0x78:0x1 SetXTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef SetXTestApplet SetXTestApplet$1/this$0;
+		// 1
+		instanceFieldRef SetXTestApplet SetXTestApplet$2/this$0;
+		// 2
+		instanceFieldRef SetXTestApplet SetXTestApplet$3/this$0;
+		// 3
+		instanceFieldRef SetXTestApplet SetXTestApplet$4/this$0;
+		// 4
+		instanceFieldRef SetXTestApplet SetXTestApplet$5/this$0;
+		// 5
+		instanceFieldRef byte[] SetXTestApplet/cod;
+		// 6
+		instanceFieldRef 0.1 0.10.33;		// reference benchs/lib/templates/KeyTemplateApplet.dummyInterface
+		// 7
+		instanceFieldRef byte[] SetXTestApplet/data;
+		// 8
+		instanceFieldRef short SetXTestApplet/length;
+		// 9
+		instanceFieldRef byte[] 0.10.3;		// reference benchs/lib/templates/KeyTemplateApplet.rsaKeyPublicExponent
+		// 10
+		instanceFieldRef 2.9 0.10.38;		// reference benchs/lib/templates/KeyTemplateApplet.rsaPublicKey
+		// 11
+		instanceFieldRef 0.9 0.10.39;		// reference benchs/lib/templates/KeyTemplateApplet.keyInfo
+		// 12
+		instanceFieldRef byte[] 0.10.18;		// reference benchs/lib/templates/KeyTemplateApplet.rsa128KeyModulus
+		// 13
+		instanceFieldRef byte[] 0.10.25;		// reference benchs/lib/templates/KeyTemplateApplet.rsa256KeyModulus
+		// 14
+		instanceFieldRef byte[] 0.10.4;		// reference benchs/lib/templates/KeyTemplateApplet.rsa64KeyModulus
+		// 15
+		instanceFieldRef byte[] 0.10.11;		// reference benchs/lib/templates/KeyTemplateApplet.rsa96KeyModulus
+		// 16
+		staticMethodRef SetXTestApplet/access$1(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B;
+		// 17
+		staticMethodRef SetXTestApplet/access$9(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Lbenchs/lib/templates/KeyInfo;;
+			.descriptor	Lbenchs/lib/templates/KeyInfo;	0.9;
+
+		// 18
+		virtualMethodRef 0.9.6()S;		// getKeyLength()S
+		// 19
+		staticMethodRef SetXTestApplet/access$10(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B;
+		// 20
+		staticMethodRef SetXTestApplet/access$11(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B;
+		// 21
+		staticMethodRef SetXTestApplet/access$12(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B;
+		// 22
+		staticMethodRef SetXTestApplet/access$13(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B;
+		// 23
+		staticMethodRef SetXTestApplet/access$2(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)S;
+		// 24
+		classRef SetXTestApplet;
+		// 25
+		staticMethodRef SetXTestApplet/<init>()V;
+		// 26
+		virtualMethodRef 0.10.1()V;		// register()V
+		// 27
+		staticMethodRef 0.10.0()V;		// benchs/lib/templates/KeyTemplateApplet.<init>()V
+		// 28
+		staticMethodRef 3.8.13(SB)[B;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+		// 29
+		classRef 0.1;		// benchs/lib/templates/DummyInterface
+		// 30
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 31
+		classRef SetXTestApplet$1;
+		// 32
+		staticMethodRef SetXTestApplet$1/<init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V;
+		// 33
+		classRef SetXTestApplet$2;
+		// 34
+		staticMethodRef SetXTestApplet$2/<init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V;
+		// 35
+		classRef SetXTestApplet$3;
+		// 36
+		staticMethodRef SetXTestApplet$3/<init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V;
+		// 37
+		classRef SetXTestApplet$4;
+		// 38
+		staticMethodRef SetXTestApplet$4/<init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V;
+		// 39
+		classRef SetXTestApplet$5;
+		// 40
+		staticMethodRef SetXTestApplet$5/<init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V;
+		// 41
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 42
+		staticMethodRef SetXTestApplet/access$3(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V;
+		// 43
+		staticMethodRef SetXTestApplet/access$4(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B;
+		// 44
+		virtualMethodRef 0.10.9([B)V;		// init([B)V
+		// 45
+		staticMethodRef SetXTestApplet/access$5(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;S)V;
+		// 46
+		staticMethodRef SetXTestApplet/access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V;
+		// 47
+		staticMethodRef SetXTestApplet/access$7(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Ljavacard/security/RSAPublicKey;;
+			.descriptor	Ljavacard/security/RSAPublicKey;	2.9;
+
+		// 48
+		classRef 2.9;		// javacard/security/RSAPublicKey
+		// 49
+		staticMethodRef SetXTestApplet/access$0(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Lbenchs/lib/templates/DummyInterface;;
+			.descriptor	Lbenchs/lib/templates/DummyInterface;	0.1;
+
+		// 50
+		staticMethodRef SetXTestApplet/access$8(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B;
+		// 51
+		staticMethodRef 3.16.2([BS[BSS)S;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+	}
+
+	.class final SetXTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetXTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$1.this$0
+					aload_0;
+					invokespecial 41;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$1.this$0
+					invokestatic 49;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$0(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Lbenchs/lib/templates/DummyInterface;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$1.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$1(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					sconst_0;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$1.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$2(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)S
+					invokeinterface 4 29 4;		// benchs/lib/templates/DummyInterface
+					return;
+		}
+
+	}
+
+	.class final SetXTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetXTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$2.this$0
+					aload_0;
+					invokespecial 41;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$2.this$0
+					aload_1;
+					invokestatic 42;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$3(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$2.this$0
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$2.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$4(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					arraylength;
+					invokestatic 45;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$5(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;S)V
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$2.this$0
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$2.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$4(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					invokestatic 46;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$2.this$0
+					invokestatic 47;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$7(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Ljavacard/security/RSAPublicKey;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$2.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$1(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					sconst_0;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$2.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$2(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)S
+					invokeinterface 4 48 6;		// javacard/security/RSAPublicKey
+					return;
+		}
+
+	}
+
+	.class final SetXTestApplet$3 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetXTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.this$0
+					aload_0;
+					invokespecial 41;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.this$0
+					aload_1;
+					invokestatic 42;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$3(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.this$0
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$4(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					arraylength;
+					invokestatic 45;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$5(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;S)V
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.this$0
+					invokestatic 43;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$4(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					sconst_0;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.this$0
+					invokestatic 50;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$8(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					sconst_0;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$2(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)S
+					invokestatic 51;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.this$0
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.this$0
+					invokestatic 50;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$8(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					invokestatic 46;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.this$0
+					invokestatic 47;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$7(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Ljavacard/security/RSAPublicKey;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$1(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					sconst_0;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$2(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)S
+					invokeinterface 4 48 6;		// javacard/security/RSAPublicKey
+					return;
+		}
+
+	}
+
+	.class final SetXTestApplet$4 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetXTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					aload_0;
+					invokespecial 41;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					aload_1;
+					invokestatic 42;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$3(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					invokestatic 17;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$9(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Lbenchs/lib/templates/KeyInfo;
+					invokevirtual 18;		// getKeyLength()S
+					slookupswitch L5 4 512 L3 768 L4 1024 L1 2048 L2;
+				L1:	getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					invokestatic 19;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$10(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					invokestatic 46;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					goto L5;
+				L2:	getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					invokestatic 20;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$11(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					invokestatic 46;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					goto L5;
+				L3:	getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					invokestatic 21;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$12(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					invokestatic 46;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					goto L5;
+				L4:	getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					invokestatic 22;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$13(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					invokestatic 46;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					goto L5;
+				L5:	getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$1(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					arraylength;
+					invokestatic 45;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$5(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;S)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					invokestatic 47;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$7(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Ljavacard/security/RSAPublicKey;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$1(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					sconst_0;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$2(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)S
+					invokeinterface 4 48 7;		// javacard/security/RSAPublicKey
+					return;
+		}
+
+	}
+
+	.class final SetXTestApplet$5 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SetXTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					aload_0;
+					invokespecial 41;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					aload_1;
+					invokestatic 42;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$3(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 17;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$9(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Lbenchs/lib/templates/KeyInfo;
+					invokevirtual 18;		// getKeyLength()S
+					slookupswitch L5 4 512 L3 768 L4 1024 L1 2048 L2;
+				L1:	getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 19;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$10(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					invokestatic 46;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					goto L5;
+				L2:	getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 20;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$11(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					invokestatic 46;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					goto L5;
+				L3:	getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 21;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$12(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					invokestatic 46;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					goto L5;
+				L4:	getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 22;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$13(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					invokestatic 46;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					goto L5;
+				L5:	getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$1(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					arraylength;
+					invokestatic 45;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$5(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;S)V
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$1(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					sconst_0;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 50;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$8(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					sconst_0;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$2(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)S
+					invokestatic 51;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 50;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$8(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					invokestatic 46;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 47;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$7(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Ljavacard/security/RSAPublicKey;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 16;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$1(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B
+					sconst_0;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.access$2(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)S
+					invokeinterface 4 48 7;		// javacard/security/RSAPublicKey
+					return;
+		}
+
+	}
+
+	.class public SetXTestApplet 0 extends 0.10 {		// extends benchs/lib/templates/KeyTemplateApplet
+
+		.fields {
+			private byte[] data 0;		// [B
+			private byte[] cod 1;		// [B
+			private short length 2;		// S
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+			init([B)V;
+			buildKey()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 24;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet
+					dup;
+					invokespecial 25;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.<init>()V
+					invokevirtual 26;		// register()V
+					return;
+		}
+
+		.method protected <init>()V 1 {
+			.stack 3;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 27;		// benchs/lib/templates/KeyTemplateApplet.<init>()V
+					aload_0;
+					sspush 256;
+					sconst_2;
+					invokestatic 28;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 5;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.cod
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	sconst_5;
+					anewarray 30;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 31;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 32;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$1.<init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 33;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 34;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$2.<init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 35;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 36;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$3.<init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 37;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 38;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$4.<init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 39;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 40;		// benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet$5.<init>(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static access$0(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Lbenchs/lib/templates/DummyInterface; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/DummyInterface;	0.1;
+
+				L0:	aload_0;
+					getfield_a 6;		// reference benchs/lib/templates/KeyTemplateApplet.dummyInterface
+					areturn;
+		}
+
+		.method static access$1(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 7;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.data
+					areturn;
+		}
+
+		.method static access$2(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_s 8;		// short benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.length
+					sreturn;
+		}
+
+		.method static access$3(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					invokevirtual 44;		// init([B)V
+					return;
+		}
+
+		.method static access$4(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 9;		// reference benchs/lib/templates/KeyTemplateApplet.rsaKeyPublicExponent
+					areturn;
+		}
+
+		.method static access$5(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;S)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					putfield_s 8;		// short benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.length
+					return;
+		}
+
+		.method static access$6(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;[B)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.data
+					return;
+		}
+
+		.method static access$7(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Ljavacard/security/RSAPublicKey; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Ljavacard/security/RSAPublicKey;	2.9;
+
+				L0:	aload_0;
+					getfield_a 10;		// reference benchs/lib/templates/KeyTemplateApplet.rsaPublicKey
+					areturn;
+		}
+
+		.method static access$8(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 5;		// reference benchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet.cod
+					areturn;
+		}
+
+		.method static access$9(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)Lbenchs/lib/templates/KeyInfo; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/KeyInfo;	0.9;
+
+				L0:	aload_0;
+					getfield_a 11;		// reference benchs/lib/templates/KeyTemplateApplet.keyInfo
+					areturn;
+		}
+
+		.method static access$10(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 12;		// reference benchs/lib/templates/KeyTemplateApplet.rsa128KeyModulus
+					areturn;
+		}
+
+		.method static access$11(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 13;		// reference benchs/lib/templates/KeyTemplateApplet.rsa256KeyModulus
+					areturn;
+		}
+
+		.method static access$12(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 14;		// reference benchs/lib/templates/KeyTemplateApplet.rsa64KeyModulus
+					areturn;
+		}
+
+		.method static access$13(Lbenchs/jcapi/javacard_security/rsapublickey/setx/SetXTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 15;		// reference benchs/lib/templates/KeyTemplateApplet.rsa96KeyModulus
+					areturn;
+		}
+
+	}
+
+}

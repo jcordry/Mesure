@@ -1,0 +1,11 @@
+#Mon Nov 19 15:38:51 CET 2007
+lib.xml.profiler_result.BytecodeAverageList=lib.xml.profiler_result.BytecodeAverageListDescriptor
+lib.xml.profiler_result.MethodAverageList=lib.xml.profiler_result.MethodAverageListDescriptor
+lib.xml.profiler_result.Method=lib.xml.profiler_result.MethodDescriptor
+lib.xml.profiler_result.MethodAverage=lib.xml.profiler_result.MethodAverageDescriptor
+lib.xml.profiler_result.BytecodeAverage=lib.xml.profiler_result.BytecodeAverageDescriptor
+lib.xml.profiler_result.Methods=lib.xml.profiler_result.MethodsDescriptor
+lib.xml.profiler_result.Bytecodes=lib.xml.profiler_result.BytecodesDescriptor
+lib.xml.profiler_result.Bytecode=lib.xml.profiler_result.BytecodeDescriptor
+lib.xml.profiler_result.Domain=lib.xml.profiler_result.DomainDescriptor
+lib.xml.profiler_result.Results=lib.xml.profiler_result.ResultsDescriptor

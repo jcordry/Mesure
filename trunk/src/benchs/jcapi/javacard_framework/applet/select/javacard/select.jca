@@ -1,0 +1,206 @@
+// converted by version 1.3
+// on Mon Nov 26 16:41:07 CET 2007
+
+.package benchs/jcapi/javacard_framework/applet/select {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x65:0x6C:0x65:0x63:0x74;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x65:0x6C:0x65:0x63:0x74:0x1 SelectTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef SelectTestApplet SelectTestApplet$1/this$0;
+		// 1
+		instanceFieldRef SelectTestApplet SelectTestApplet$2/this$0;
+		// 2
+		virtualMethodRef SelectTestApplet/dummyMethodShort()V;
+		// 3
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 4
+		virtualMethodRef 0.4.6()Z;		// select()Z
+		// 5
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 6
+		classRef SelectTestApplet;
+		// 7
+		staticMethodRef SelectTestApplet/<init>()V;
+		// 8
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 9
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 10
+		classRef SelectTestApplet$1;
+		// 11
+		staticMethodRef SelectTestApplet$1/<init>(Lbenchs/jcapi/javacard_framework/applet/select/SelectTestApplet;)V;
+		// 12
+		classRef SelectTestApplet$2;
+		// 13
+		staticMethodRef SelectTestApplet$2/<init>(Lbenchs/jcapi/javacard_framework/applet/select/SelectTestApplet;)V;
+	}
+
+	.class final SelectTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SelectTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/applet/select/SelectTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/applet/select/SelectTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacard_framework/applet/select/SelectTestApplet$1.this$0
+					aload_0;
+					invokespecial 3;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/applet/select/SelectTestApplet$1.this$0
+					invokevirtual 2;		// dummyMethodShort()V
+					return;
+		}
+
+	}
+
+	.class final SelectTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SelectTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/applet/select/SelectTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/applet/select/SelectTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcapi/javacard_framework/applet/select/SelectTestApplet$2.this$0
+					aload_0;
+					invokespecial 3;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/applet/select/SelectTestApplet$2.this$0
+					invokevirtual 4;		// select()Z
+					pop;
+					return;
+		}
+
+	}
+
+	.class public SelectTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+			dummyMethodShort()V;
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 5;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 1 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 6;		// benchs/jcapi/javacard_framework/applet/select/SelectTestApplet
+					dup;
+					invokespecial 7;		// benchs/jcapi/javacard_framework/applet/select/SelectTestApplet.<init>()V
+					invokevirtual 8;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	sconst_2;
+					anewarray 9;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 10;		// benchs/jcapi/javacard_framework/applet/select/SelectTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 11;		// benchs/jcapi/javacard_framework/applet/select/SelectTestApplet$1.<init>(Lbenchs/jcapi/javacard_framework/applet/select/SelectTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 12;		// benchs/jcapi/javacard_framework/applet/select/SelectTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 13;		// benchs/jcapi/javacard_framework/applet/select/SelectTestApplet$2.<init>(Lbenchs/jcapi/javacard_framework/applet/select/SelectTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method  dummyMethodShort()V 128 {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+	}
+
+}

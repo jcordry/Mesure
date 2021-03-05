@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<project name="benchs" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="jcapi" target="convert" inheritall="false"/>
+	  <ant dir="jcre" target="convert" inheritall="false"/>
+	  <ant dir="memory" target="convert" inheritall="false"/>
+	</target>
+
+</project>

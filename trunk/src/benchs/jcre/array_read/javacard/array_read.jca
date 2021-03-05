@@ -1,0 +1,1670 @@
+// converted by version 1.3
+// on Mon Nov 26 16:42:42 CET 2007
+
+.package benchs/jcre/array_read {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x61:0x72:0x72:0x61:0x79:0x72;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x61:0x72:0x72:0x61:0x79:0x72:0x1 ArrayReadApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$10/this$0;
+		// 1
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$11/this$0;
+		// 2
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$12/this$0;
+		// 3
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$13/this$0;
+		// 4
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$14/this$0;
+		// 5
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$15/this$0;
+		// 6
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$16/this$0;
+		// 7
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$17/this$0;
+		// 8
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$2/this$0;
+		// 9
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$3/this$0;
+		// 10
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$4/this$0;
+		// 11
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$5/this$0;
+		// 12
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$6/this$0;
+		// 13
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$7/this$0;
+		// 14
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$8/this$0;
+		// 15
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$9/this$0;
+		// 16
+		instanceFieldRef ArrayReadApplet ArrayReadApplet$1/this$0;
+		// 17
+		staticFieldRef short[] ArrayReadApplet/SHORT_RAND;
+		// 18
+		virtualMethodRef ArrayReadApplet/test_unit_saload_seq_transaction_commit()V;
+		// 19
+		staticFieldRef boolean[] ArrayReadApplet/BOOL_RAND;
+		// 20
+		virtualMethodRef ArrayReadApplet/test_unit_saload_seq_transaction_abort_ref()V;
+		// 21
+		staticFieldRef short[] ArrayReadApplet/SHORT_FIRST;
+		// 22
+		virtualMethodRef ArrayReadApplet/test_unit_saload_seq_transaction_abort()V;
+		// 23
+		staticFieldRef short[] ArrayReadApplet/SHORT_SEQ;
+		// 24
+		virtualMethodRef ArrayReadApplet/clean()V;
+		// 25
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 26
+		virtualMethodRef ArrayReadApplet/test_unit_baload_first()V;
+		// 27
+		staticMethodRef ArrayReadTestCase/<init>()V;
+		// 28
+		virtualMethodRef ArrayReadApplet/test_unit_baload_seq()V;
+		// 29
+		virtualMethodRef ArrayReadApplet/test_unit_saload_first()V;
+		// 30
+		virtualMethodRef ArrayReadApplet/test_unit_baload_rand()V;
+		// 31
+		virtualMethodRef 0.7.5(Z)V;		// setUseInnerCounter(Z)V
+		// 32
+		virtualMethodRef ArrayReadApplet/test_unit_baload_seq_transaction_commit_ref()V;
+		// 33
+		virtualMethodRef ArrayReadApplet/test_unit_saload_seq()V;
+		// 34
+		virtualMethodRef ArrayReadApplet/test_unit_baload_seq_transaction_commit()V;
+		// 35
+		staticFieldRef short ArrayReadApplet/iterCount;
+		// 36
+		virtualMethodRef ArrayReadApplet/test_unit_baload_seq_transaction_abort_ref()V;
+		// 37
+		virtualMethodRef ArrayReadApplet/test_unit_saload_rand()V;
+		// 38
+		virtualMethodRef ArrayReadApplet/test_unit_baload_seq_transaction_abort()V;
+		// 39
+		staticFieldRef byte[] ArrayReadApplet/BYTE_RAND;
+		// 40
+		virtualMethodRef ArrayReadApplet/test_unit_saload_ref()V;
+		// 41
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 42
+		classRef ArrayReadApplet;
+		// 43
+		staticMethodRef ArrayReadApplet/<init>()V;
+		// 44
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 45
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 46
+		classRef ArrayReadApplet$1;
+		// 47
+		staticMethodRef ArrayReadApplet$1/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 48
+		classRef ArrayReadApplet$2;
+		// 49
+		staticMethodRef ArrayReadApplet$2/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 50
+		classRef ArrayReadApplet$3;
+		// 51
+		staticMethodRef ArrayReadApplet$3/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 52
+		classRef ArrayReadApplet$4;
+		// 53
+		staticMethodRef ArrayReadApplet$4/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 54
+		classRef ArrayReadApplet$5;
+		// 55
+		staticMethodRef ArrayReadApplet$5/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 56
+		classRef ArrayReadApplet$6;
+		// 57
+		staticMethodRef ArrayReadApplet$6/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 58
+		classRef ArrayReadApplet$7;
+		// 59
+		staticMethodRef ArrayReadApplet$7/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 60
+		classRef ArrayReadApplet$8;
+		// 61
+		staticMethodRef ArrayReadApplet$8/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 62
+		classRef ArrayReadApplet$9;
+		// 63
+		staticMethodRef ArrayReadApplet$9/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 64
+		classRef ArrayReadApplet$10;
+		// 65
+		staticMethodRef ArrayReadApplet$10/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 66
+		classRef ArrayReadApplet$11;
+		// 67
+		staticMethodRef ArrayReadApplet$11/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 68
+		classRef ArrayReadApplet$12;
+		// 69
+		staticMethodRef ArrayReadApplet$12/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 70
+		classRef ArrayReadApplet$13;
+		// 71
+		staticMethodRef ArrayReadApplet$13/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 72
+		classRef ArrayReadApplet$14;
+		// 73
+		staticMethodRef ArrayReadApplet$14/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 74
+		classRef ArrayReadApplet$15;
+		// 75
+		staticMethodRef ArrayReadApplet$15/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 76
+		classRef ArrayReadApplet$16;
+		// 77
+		staticMethodRef ArrayReadApplet$16/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 78
+		classRef ArrayReadApplet$17;
+		// 79
+		staticMethodRef ArrayReadApplet$17/<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V;
+		// 80
+		staticFieldRef byte[] ArrayReadApplet/BYTE_FIRST;
+		// 81
+		staticFieldRef byte[] ArrayReadApplet/BYTE_SEQ;
+		// 82
+		staticMethodRef 2.8.1()V;		// javacard/framework/JCSystem.beginTransaction()V
+		// 83
+		staticMethodRef 2.8.2()V;		// javacard/framework/JCSystem.commitTransaction()V
+		// 84
+		staticMethodRef 2.8.0()V;		// javacard/framework/JCSystem.abortTransaction()V
+		// 85
+		staticFieldRef short ArrayReadApplet/BYTE_SIZE;
+		// 86
+		staticMethodRef 2.8.13(SB)[B;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+		// 87
+		virtualMethodRef ArrayReadApplet/test_unit_saload_seq_transaction_commit_ref()V;
+		// 88
+		virtualMethodRef ArrayReadApplet/test_unit_baload_ref()V;
+	}
+
+	.class  ArrayReadTestCase extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 25;		// benchs/lib/templates/TestCase.<init>()V
+					aload_0;
+					sconst_1;
+					invokevirtual 31;		// setUseInnerCounter(Z)V
+					return;
+		}
+
+		.method public setUp([BS)V 1 {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_2;
+					putstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					return;
+		}
+
+		.method public cleanUp()V 7 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aconst_null;
+					putstatic_a 39;		// reference benchs/jcre/array_read/ArrayReadApplet.BYTE_RAND
+					aconst_null;
+					putstatic_a 17;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_RAND
+					aconst_null;
+					putstatic_a 19;		// reference benchs/jcre/array_read/ArrayReadApplet.BOOL_RAND
+					aconst_null;
+					putstatic_a 21;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_FIRST
+					aconst_null;
+					putstatic_a 17;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_RAND
+					aconst_null;
+					putstatic_a 23;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_SEQ
+					return;
+		}
+
+		.method public run()V 8 {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$10 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcre/array_read/ArrayReadApplet$10.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcre/array_read/ArrayReadApplet$10.this$0
+					invokevirtual 29;		// test_unit_saload_first()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$11 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcre/array_read/ArrayReadApplet$11.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcre/array_read/ArrayReadApplet$11.this$0
+					invokevirtual 33;		// test_unit_saload_seq()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$12 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcre/array_read/ArrayReadApplet$12.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcre/array_read/ArrayReadApplet$12.this$0
+					invokevirtual 37;		// test_unit_saload_rand()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$13 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcre/array_read/ArrayReadApplet$13.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcre/array_read/ArrayReadApplet$13.this$0
+					invokevirtual 87;		// test_unit_saload_seq_transaction_commit_ref()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$14 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcre/array_read/ArrayReadApplet$14.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcre/array_read/ArrayReadApplet$14.this$0
+					invokevirtual 18;		// test_unit_saload_seq_transaction_commit()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$15 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcre/array_read/ArrayReadApplet$15.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 5;		// reference benchs/jcre/array_read/ArrayReadApplet$15.this$0
+					invokevirtual 20;		// test_unit_saload_seq_transaction_abort_ref()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$16 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcre/array_read/ArrayReadApplet$16.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcre/array_read/ArrayReadApplet$16.this$0
+					invokevirtual 22;		// test_unit_saload_seq_transaction_abort()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$17 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcre/array_read/ArrayReadApplet$17.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/jcre/array_read/ArrayReadApplet$17.this$0
+					invokevirtual 24;		// clean()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$2 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcre/array_read/ArrayReadApplet$2.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 8;		// reference benchs/jcre/array_read/ArrayReadApplet$2.this$0
+					invokevirtual 26;		// test_unit_baload_first()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$3 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcre/array_read/ArrayReadApplet$3.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 9;		// reference benchs/jcre/array_read/ArrayReadApplet$3.this$0
+					invokevirtual 28;		// test_unit_baload_seq()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$4 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 10;		// reference benchs/jcre/array_read/ArrayReadApplet$4.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 10;		// reference benchs/jcre/array_read/ArrayReadApplet$4.this$0
+					invokevirtual 30;		// test_unit_baload_rand()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$5 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 11;		// reference benchs/jcre/array_read/ArrayReadApplet$5.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 11;		// reference benchs/jcre/array_read/ArrayReadApplet$5.this$0
+					invokevirtual 32;		// test_unit_baload_seq_transaction_commit_ref()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$6 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 12;		// reference benchs/jcre/array_read/ArrayReadApplet$6.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 12;		// reference benchs/jcre/array_read/ArrayReadApplet$6.this$0
+					invokevirtual 34;		// test_unit_baload_seq_transaction_commit()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$7 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 13;		// reference benchs/jcre/array_read/ArrayReadApplet$7.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 13;		// reference benchs/jcre/array_read/ArrayReadApplet$7.this$0
+					invokevirtual 36;		// test_unit_baload_seq_transaction_abort_ref()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$8 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 14;		// reference benchs/jcre/array_read/ArrayReadApplet$8.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 14;		// reference benchs/jcre/array_read/ArrayReadApplet$8.this$0
+					invokevirtual 38;		// test_unit_baload_seq_transaction_abort()V
+					return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$9 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 15;		// reference benchs/jcre/array_read/ArrayReadApplet$9.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 15;		// reference benchs/jcre/array_read/ArrayReadApplet$9.this$0
+					invokevirtual 40;		// test_unit_saload_ref()V
+					return;
+		}
+
+	}
+
+	.class public ArrayReadApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			public static short BYTE_SIZE 0 = 128;		// S
+			public static byte[] BYTE_SEQ 1 = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,0};		// [B
+			public static byte[] BYTE_FIRST 2 = {0,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,1,2,3,4,5,6,7,0};		// [B
+			public static byte[] BYTE_RAND 3 = {22,84,70,92,103,94,86,91,62,51,56,10,126,1,50,113,85,19,101,118,125,69,114,109,88,42,48,76,15,104,98,16,29,105,79,54,8,61,77,112,117,124,6,27,66,74,25,26,3,41,78,120,111,31,20,44,30,38,97,127,2,28,24,35,49,119,116,93,45,90,36,4,121,12,72,43,71,63,59,21,14,57,53,58,37,7,73,81,33,100,67,115,40,68,18,65,80,17,83,23,39,13,5,108,123,89,87,60,107,95,34,64,102,122,96,82,0,11,47,75,52,55,106,110,32,46,9,99};		// [B
+			public static short SHORT_SIZE 4 = 128;		// S
+			public static short[] SHORT_FIRST 5 = {0,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,1};		// [S
+			public static short[] SHORT_SEQ 6 = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,0};		// [S
+			public static short[] SHORT_RAND 7 = {61,108,30,121,114,32,101,45,9,49,31,34,46,60,55,83,90,115,21,63,41,109,26,44,35,42,43,124,8,67,120,81,126,72,14,38,87,104,66,4,37,78,117,102,16,82,56,95,99,119,97,80,91,69,48,86,112,89,57,111,75,64,47,106,23,13,39,73,24,74,12,7,22,125,93,105,20,68,53,71,84,6,15,96,1,17,77,98,70,11,29,27,18,103,19,88,107,110,36,5,123,25,10,127,76,58,113,94,116,122,118,51,65,92,85,40,33,28,0,3,2,52,62,54,79,50,100,59};		// [S
+			public static boolean[] BOOL_RAND 8;		// [Z
+			public static short iterCount 9;		// S
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+			test_unit_baload_ref()V;
+			test_unit_baload_first()V;
+			test_unit_baload_seq()V;
+			test_unit_baload_rand()V;
+			test_unit_baload_seq_transaction_commit_ref()V;
+			test_unit_baload_seq_transaction_commit()V;
+			test_unit_baload_seq_transaction_abort_ref()V;
+			test_unit_baload_seq_transaction_abort()V;
+			test_unit_saload_ref()V;
+			test_unit_saload_first()V;
+			test_unit_saload_seq()V;
+			test_unit_saload_rand()V;
+			test_unit_saload_seq_transaction_commit_ref()V;
+			test_unit_saload_seq_transaction_commit()V;
+			test_unit_saload_seq_transaction_abort_ref()V;
+			test_unit_saload_seq_transaction_abort()V;
+			clean()V;
+			test_unit_baload_rand_transient()V;
+		}
+
+		.method  <init>()V {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 41;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 42;		// benchs/jcre/array_read/ArrayReadApplet
+					dup;
+					invokespecial 43;		// benchs/jcre/array_read/ArrayReadApplet.<init>()V
+					invokevirtual 44;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 17;
+					anewarray 45;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 46;		// benchs/jcre/array_read/ArrayReadApplet$1
+					dup;
+					aload_0;
+					invokespecial 47;		// benchs/jcre/array_read/ArrayReadApplet$1.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 48;		// benchs/jcre/array_read/ArrayReadApplet$2
+					dup;
+					aload_0;
+					invokespecial 49;		// benchs/jcre/array_read/ArrayReadApplet$2.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 50;		// benchs/jcre/array_read/ArrayReadApplet$3
+					dup;
+					aload_0;
+					invokespecial 51;		// benchs/jcre/array_read/ArrayReadApplet$3.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 52;		// benchs/jcre/array_read/ArrayReadApplet$4
+					dup;
+					aload_0;
+					invokespecial 53;		// benchs/jcre/array_read/ArrayReadApplet$4.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 54;		// benchs/jcre/array_read/ArrayReadApplet$5
+					dup;
+					aload_0;
+					invokespecial 55;		// benchs/jcre/array_read/ArrayReadApplet$5.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 56;		// benchs/jcre/array_read/ArrayReadApplet$6
+					dup;
+					aload_0;
+					invokespecial 57;		// benchs/jcre/array_read/ArrayReadApplet$6.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 58;		// benchs/jcre/array_read/ArrayReadApplet$7
+					dup;
+					aload_0;
+					invokespecial 59;		// benchs/jcre/array_read/ArrayReadApplet$7.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 60;		// benchs/jcre/array_read/ArrayReadApplet$8
+					dup;
+					aload_0;
+					invokespecial 61;		// benchs/jcre/array_read/ArrayReadApplet$8.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 62;		// benchs/jcre/array_read/ArrayReadApplet$9
+					dup;
+					aload_0;
+					invokespecial 63;		// benchs/jcre/array_read/ArrayReadApplet$9.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 64;		// benchs/jcre/array_read/ArrayReadApplet$10
+					dup;
+					aload_0;
+					invokespecial 65;		// benchs/jcre/array_read/ArrayReadApplet$10.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					bspush 10;
+					new 66;		// benchs/jcre/array_read/ArrayReadApplet$11
+					dup;
+					aload_0;
+					invokespecial 67;		// benchs/jcre/array_read/ArrayReadApplet$11.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					bspush 11;
+					new 68;		// benchs/jcre/array_read/ArrayReadApplet$12
+					dup;
+					aload_0;
+					invokespecial 69;		// benchs/jcre/array_read/ArrayReadApplet$12.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					bspush 12;
+					new 70;		// benchs/jcre/array_read/ArrayReadApplet$13
+					dup;
+					aload_0;
+					invokespecial 71;		// benchs/jcre/array_read/ArrayReadApplet$13.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					bspush 13;
+					new 72;		// benchs/jcre/array_read/ArrayReadApplet$14
+					dup;
+					aload_0;
+					invokespecial 73;		// benchs/jcre/array_read/ArrayReadApplet$14.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					bspush 14;
+					new 74;		// benchs/jcre/array_read/ArrayReadApplet$15
+					dup;
+					aload_0;
+					invokespecial 75;		// benchs/jcre/array_read/ArrayReadApplet$15.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					bspush 15;
+					new 76;		// benchs/jcre/array_read/ArrayReadApplet$16
+					dup;
+					aload_0;
+					invokespecial 77;		// benchs/jcre/array_read/ArrayReadApplet$16.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					dup;
+					bspush 16;
+					new 78;		// benchs/jcre/array_read/ArrayReadApplet$17
+					dup;
+					aload_0;
+					invokespecial 79;		// benchs/jcre/array_read/ArrayReadApplet$17.<init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method  test_unit_baload_ref()V 128 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 80;		// reference benchs/jcre/array_read/ArrayReadApplet.BYTE_FIRST
+					astore 4;
+					goto L2;
+				L1:	sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_baload_first()V 129 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 80;		// reference benchs/jcre/array_read/ArrayReadApplet.BYTE_FIRST
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					baload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_baload_seq()V 130 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 81;		// reference benchs/jcre/array_read/ArrayReadApplet.BYTE_SEQ
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					baload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_baload_rand()V 131 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 39;		// reference benchs/jcre/array_read/ArrayReadApplet.BYTE_RAND
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					baload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_baload_seq_transaction_commit_ref()V 132 {
+			.stack 2;
+			.locals 4;
+
+				L0:	invokestatic 82;		// javacard/framework/JCSystem.beginTransaction()V
+					invokestatic 83;		// javacard/framework/JCSystem.commitTransaction()V
+					sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 81;		// reference benchs/jcre/array_read/ArrayReadApplet.BYTE_SEQ
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					baload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_baload_seq_transaction_commit()V 133 {
+			.stack 2;
+			.locals 4;
+
+				L0:	invokestatic 82;		// javacard/framework/JCSystem.beginTransaction()V
+					sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 81;		// reference benchs/jcre/array_read/ArrayReadApplet.BYTE_SEQ
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					baload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	invokestatic 83;		// javacard/framework/JCSystem.commitTransaction()V
+					return;
+		}
+
+		.method  test_unit_baload_seq_transaction_abort_ref()V 134 {
+			.stack 2;
+			.locals 4;
+
+				L0:	invokestatic 82;		// javacard/framework/JCSystem.beginTransaction()V
+					invokestatic 84;		// javacard/framework/JCSystem.abortTransaction()V
+					sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 81;		// reference benchs/jcre/array_read/ArrayReadApplet.BYTE_SEQ
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					baload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_baload_seq_transaction_abort()V 135 {
+			.stack 2;
+			.locals 4;
+
+				L0:	invokestatic 82;		// javacard/framework/JCSystem.beginTransaction()V
+					sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 81;		// reference benchs/jcre/array_read/ArrayReadApplet.BYTE_SEQ
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					baload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	invokestatic 84;		// javacard/framework/JCSystem.abortTransaction()V
+					return;
+		}
+
+		.method  test_unit_saload_ref()V 136 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 21;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_FIRST
+					astore 4;
+					goto L2;
+				L1:	sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_saload_first()V 137 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 21;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_FIRST
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					saload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_saload_seq()V 138 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 23;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_SEQ
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					saload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_saload_rand()V 139 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 17;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_RAND
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					saload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_saload_seq_transaction_commit_ref()V 140 {
+			.stack 2;
+			.locals 4;
+
+				L0:	invokestatic 82;		// javacard/framework/JCSystem.beginTransaction()V
+					invokestatic 83;		// javacard/framework/JCSystem.commitTransaction()V
+					sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 23;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_SEQ
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					saload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_saload_seq_transaction_commit()V 141 {
+			.stack 2;
+			.locals 4;
+
+				L0:	invokestatic 82;		// javacard/framework/JCSystem.beginTransaction()V
+					sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 23;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_SEQ
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					saload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	invokestatic 83;		// javacard/framework/JCSystem.commitTransaction()V
+					return;
+		}
+
+		.method  test_unit_saload_seq_transaction_abort_ref()V 142 {
+			.stack 2;
+			.locals 4;
+
+				L0:	invokestatic 82;		// javacard/framework/JCSystem.beginTransaction()V
+					invokestatic 84;		// javacard/framework/JCSystem.abortTransaction()V
+					sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 23;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_SEQ
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					saload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_saload_seq_transaction_abort()V 143 {
+			.stack 2;
+			.locals 4;
+
+				L0:	invokestatic 82;		// javacard/framework/JCSystem.beginTransaction()V
+					sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 23;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_SEQ
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_3;
+					saload;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	invokestatic 84;		// javacard/framework/JCSystem.abortTransaction()V
+					return;
+		}
+
+		.method  clean()V 144 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aconst_null;
+					putstatic_a 39;		// reference benchs/jcre/array_read/ArrayReadApplet.BYTE_RAND
+					aconst_null;
+					putstatic_a 17;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_RAND
+					aconst_null;
+					putstatic_a 19;		// reference benchs/jcre/array_read/ArrayReadApplet.BOOL_RAND
+					aconst_null;
+					putstatic_a 21;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_FIRST
+					aconst_null;
+					putstatic_a 17;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_RAND
+					aconst_null;
+					putstatic_a 23;		// reference benchs/jcre/array_read/ArrayReadApplet.SHORT_SEQ
+					return;
+		}
+
+		.method  test_unit_baload_rand_transient()V 145 {
+			.stack 4;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 35;		// short benchs/jcre/array_read/ArrayReadApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_s 85;		// short benchs/jcre/array_read/ArrayReadApplet.BYTE_SIZE
+					sconst_2;
+					invokestatic 86;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sload_1;
+					getstatic_a 39;		// reference benchs/jcre/array_read/ArrayReadApplet.BYTE_RAND
+					sload_1;
+					baload;
+					bastore;
+					sinc 1 1;
+				L2:	sload_1;
+					getstatic_s 85;		// short benchs/jcre/array_read/ArrayReadApplet.BYTE_SIZE
+					if_scmplt L1;
+				L3:	sconst_0;
+					sstore_1;
+					goto L5;
+				L4:	aload 4;
+					sload_3;
+					baload;
+					sstore_3;
+					sinc 1 1;
+				L5:	sload_1;
+					sload_2;
+					if_scmplt L4;
+				L6:	return;
+		}
+
+	}
+
+	.class final ArrayReadApplet$1 extends ArrayReadTestCase {
+
+		.fields {
+			final ArrayReadApplet this$0 0;		// Lbenchs/jcre/array_read/ArrayReadApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+			cleanUp()V;
+			run()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/array_read/ArrayReadApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 16;		// reference benchs/jcre/array_read/ArrayReadApplet$1.this$0
+					aload_0;
+					invokespecial 27;		// benchs/jcre/array_read/ArrayReadTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 16;		// reference benchs/jcre/array_read/ArrayReadApplet$1.this$0
+					invokevirtual 88;		// test_unit_baload_ref()V
+					return;
+		}
+
+	}
+
+}

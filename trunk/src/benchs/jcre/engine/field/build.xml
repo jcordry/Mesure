@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<project name="field" default="convert" basedir=".">
+	<property name="package.name" value="benchs.jcre.engine.field"/>
+	<property name="package.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x66:0x69:0x65:0x6C:0x64:0x0D:0x0A"/>
+	<property name="applet.name" value="benchs.jcre.engine.field.FieldTestApplet"/>
+	<property name="applet.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x66:0x69:0x65:0x6C:0x64:0x0D:0x0A:0x01"/>
+
+	<import file="../../../../tools/converter/build.xml"/>
+
+	<target name="convert">
+		<ant dir="${src.path}/benchs/lib/templates" target="convert" inheritall="false"/>
+		<ant antfile="${ant.file.converter}" target="convert" inheritrefs="true"/>
+	</target>
+</project>

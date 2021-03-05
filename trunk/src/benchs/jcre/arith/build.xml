@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<project name="arith" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="arith16" target="convert" inheritall="false"/>
+	</target>
+
+</project>

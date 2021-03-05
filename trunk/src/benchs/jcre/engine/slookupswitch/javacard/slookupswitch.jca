@@ -1,0 +1,1338 @@
+// converted by version 1.3
+// on Mon Nov 26 16:43:10 CET 2007
+
+.package benchs/jcre/engine/slookupswitch {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x6C:0x6F:0x6F:0x6B:0x75:0x70:0x73;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x6C:0x6F:0x6F:0x6B:0x75:0x70:0x73:0x1 SlookupswitchApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$10/this$0;
+		// 1
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$11/this$0;
+		// 2
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$12/this$0;
+		// 3
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$13/this$0;
+		// 4
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$14/this$0;
+		// 5
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$2/this$0;
+		// 6
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$3/this$0;
+		// 7
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$4/this$0;
+		// 8
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$5/this$0;
+		// 9
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$6/this$0;
+		// 10
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$7/this$0;
+		// 11
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$8/this$0;
+		// 12
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$9/this$0;
+		// 13
+		instanceFieldRef SlookupswitchApplet SlookupswitchApplet$1/this$0;
+		// 14
+		staticMethodRef SlookupswitchApplet/access$9()V;
+		// 15
+		staticMethodRef SlookupswitchApplet/access$1()V;
+		// 16
+		virtualMethodRef 0.7.5(Z)V;		// setUseInnerCounter(Z)V
+		// 17
+		staticMethodRef SlookupswitchApplet/access$2()V;
+		// 18
+		staticMethodRef SlookupswitchApplet/access$10()V;
+		// 19
+		staticMethodRef SlookupswitchApplet/access$3()V;
+		// 20
+		staticFieldRef short SlookupswitchApplet/iterCount;
+		// 21
+		staticMethodRef SlookupswitchApplet/access$4()V;
+		// 22
+		staticMethodRef SlookupswitchApplet/access$11()V;
+		// 23
+		staticMethodRef SlookupswitchApplet/access$5()V;
+		// 24
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 25
+		staticMethodRef SlookupswitchApplet/access$6()V;
+		// 26
+		staticMethodRef SlookupswitchApplet/access$12()V;
+		// 27
+		staticMethodRef SlookupswitchApplet/access$7()V;
+		// 28
+		staticMethodRef SlookupswitchTestCase/<init>()V;
+		// 29
+		staticMethodRef SlookupswitchApplet/access$8()V;
+		// 30
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 31
+		classRef SlookupswitchApplet;
+		// 32
+		staticMethodRef SlookupswitchApplet/<init>()V;
+		// 33
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 34
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 35
+		classRef SlookupswitchApplet$1;
+		// 36
+		staticMethodRef SlookupswitchApplet$1/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 37
+		classRef SlookupswitchApplet$2;
+		// 38
+		staticMethodRef SlookupswitchApplet$2/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 39
+		classRef SlookupswitchApplet$3;
+		// 40
+		staticMethodRef SlookupswitchApplet$3/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 41
+		classRef SlookupswitchApplet$4;
+		// 42
+		staticMethodRef SlookupswitchApplet$4/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 43
+		classRef SlookupswitchApplet$5;
+		// 44
+		staticMethodRef SlookupswitchApplet$5/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 45
+		classRef SlookupswitchApplet$6;
+		// 46
+		staticMethodRef SlookupswitchApplet$6/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 47
+		classRef SlookupswitchApplet$7;
+		// 48
+		staticMethodRef SlookupswitchApplet$7/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 49
+		classRef SlookupswitchApplet$8;
+		// 50
+		staticMethodRef SlookupswitchApplet$8/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 51
+		classRef SlookupswitchApplet$9;
+		// 52
+		staticMethodRef SlookupswitchApplet$9/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 53
+		classRef SlookupswitchApplet$10;
+		// 54
+		staticMethodRef SlookupswitchApplet$10/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 55
+		classRef SlookupswitchApplet$11;
+		// 56
+		staticMethodRef SlookupswitchApplet$11/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 57
+		classRef SlookupswitchApplet$12;
+		// 58
+		staticMethodRef SlookupswitchApplet$12/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 59
+		classRef SlookupswitchApplet$13;
+		// 60
+		staticMethodRef SlookupswitchApplet$13/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 61
+		classRef SlookupswitchApplet$14;
+		// 62
+		staticMethodRef SlookupswitchApplet$14/<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V;
+		// 63
+		staticMethodRef SlookupswitchApplet/ref_slookupswitch(SS)V;
+		// 64
+		staticMethodRef SlookupswitchApplet/unit_slookupswitch(S)V;
+		// 65
+		staticMethodRef SlookupswitchApplet/tc_ref_slookupswitch_1()V;
+		// 66
+		staticMethodRef SlookupswitchApplet/tc_unit_slookupswitch_1()V;
+		// 67
+		staticMethodRef SlookupswitchApplet/tc_ref_slookupswitch_2()V;
+		// 68
+		staticMethodRef SlookupswitchApplet/tc_unit_slookupswitch_2()V;
+		// 69
+		staticMethodRef SlookupswitchApplet/tc_ref_slookupswitch_5()V;
+		// 70
+		staticMethodRef SlookupswitchApplet/tc_unit_slookupswitch_5()V;
+		// 71
+		staticMethodRef SlookupswitchApplet/tc_ref_slookupswitch_100()V;
+		// 72
+		staticMethodRef SlookupswitchApplet/tc_unit_slookupswitch_100()V;
+		// 73
+		staticMethodRef SlookupswitchApplet/tc_ref_slookupswitch_0()V;
+		// 74
+		staticMethodRef SlookupswitchApplet/tc_unit_slookupswitch_0()V;
+		// 75
+		staticMethodRef SlookupswitchApplet/tc_ref_slookupswitch_60()V;
+		// 76
+		staticMethodRef SlookupswitchApplet/tc_unit_slookupswitch_60()V;
+		// 77
+		staticMethodRef SlookupswitchApplet/tc_ref_slookupswitch_200()V;
+		// 78
+		staticMethodRef SlookupswitchApplet/tc_unit_slookupswitch_200()V;
+		// 79
+		staticMethodRef SlookupswitchApplet/access$13()V;
+		// 80
+		staticMethodRef SlookupswitchApplet/access$0()V;
+	}
+
+	.class abstract SlookupswitchTestCase extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 24;		// benchs/lib/templates/TestCase.<init>()V
+					aload_0;
+					sconst_1;
+					invokevirtual 16;		// setUseInnerCounter(Z)V
+					return;
+		}
+
+		.method public setUp([BS)V 1 {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_2;
+					putstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$10 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$10.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 14;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$9()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$11 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$11.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 18;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$10()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$12 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$12.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 22;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$11()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$13 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$13.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 26;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$12()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$14 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$14.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 79;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$13()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$2 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$2.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 15;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$1()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$3 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$3.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 17;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$2()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$4 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$4.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 19;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$3()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$5 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$5.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 21;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$4()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$6 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$6.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 23;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$5()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$7 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 10;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$7.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 25;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$6()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$8 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 11;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$8.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 27;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$7()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$9 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 12;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$9.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 29;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$8()V
+					return;
+		}
+
+	}
+
+	.class public SlookupswitchApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			protected static short iterCount 0;		// S
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 30;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 1 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 31;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet
+					dup;
+					invokespecial 32;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.<init>()V
+					invokevirtual 33;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 14;
+					anewarray 34;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 35;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$1
+					dup;
+					aload_0;
+					invokespecial 36;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$1.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 37;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$2
+					dup;
+					aload_0;
+					invokespecial 38;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$2.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 39;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$3
+					dup;
+					aload_0;
+					invokespecial 40;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$3.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 41;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$4
+					dup;
+					aload_0;
+					invokespecial 42;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$4.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 43;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$5
+					dup;
+					aload_0;
+					invokespecial 44;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$5.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 45;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$6
+					dup;
+					aload_0;
+					invokespecial 46;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$6.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 47;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$7
+					dup;
+					aload_0;
+					invokespecial 48;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$7.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 49;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$8
+					dup;
+					aload_0;
+					invokespecial 50;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$8.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 51;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$9
+					dup;
+					aload_0;
+					invokespecial 52;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$9.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 53;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$10
+					dup;
+					aload_0;
+					invokespecial 54;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$10.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					bspush 10;
+					new 55;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$11
+					dup;
+					aload_0;
+					invokespecial 56;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$11.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					bspush 11;
+					new 57;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$12
+					dup;
+					aload_0;
+					invokespecial 58;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$12.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					bspush 12;
+					new 59;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$13
+					dup;
+					aload_0;
+					invokespecial 60;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$13.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					dup;
+					bspush 13;
+					new 61;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$14
+					dup;
+					aload_0;
+					invokespecial 62;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet$14.<init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method private static ref_slookupswitch(SS)V {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+		.method private static tc_ref_slookupswitch_1()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_1;
+					sload_0;
+					invokestatic 63;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.ref_slookupswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static unit_slookupswitch(S)V {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_0;
+					slookupswitch L5 4 1 L1 2 L2 5 L3 100 L4;
+				L1:	return;
+				L2:	return;
+				L3:	return;
+				L4:	return;
+				L5:	return;
+		}
+
+		.method private static tc_unit_slookupswitch_1()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_1;
+					invokestatic 64;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.unit_slookupswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_ref_slookupswitch_2()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_2;
+					sload_0;
+					invokestatic 63;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.ref_slookupswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_unit_slookupswitch_2()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_2;
+					invokestatic 64;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.unit_slookupswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_ref_slookupswitch_5()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_5;
+					sload_0;
+					invokestatic 63;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.ref_slookupswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_unit_slookupswitch_5()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_5;
+					invokestatic 64;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.unit_slookupswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_ref_slookupswitch_100()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	bspush 100;
+					sload_0;
+					invokestatic 63;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.ref_slookupswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_unit_slookupswitch_100()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	bspush 100;
+					invokestatic 64;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.unit_slookupswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_ref_slookupswitch_0()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_0;
+					sload_0;
+					invokestatic 63;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.ref_slookupswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_unit_slookupswitch_0()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sconst_0;
+					invokestatic 64;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.unit_slookupswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_ref_slookupswitch_60()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	bspush 60;
+					sload_0;
+					invokestatic 63;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.ref_slookupswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_unit_slookupswitch_60()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	bspush 60;
+					invokestatic 64;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.unit_slookupswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_ref_slookupswitch_200()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sspush 200;
+					sload_0;
+					invokestatic 63;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.ref_slookupswitch(SS)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static tc_unit_slookupswitch_200()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/slookupswitch/SlookupswitchApplet.iterCount
+					sstore_1;
+					goto L2;
+				L1:	sspush 200;
+					invokestatic 64;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.unit_slookupswitch(S)V
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method static access$0()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 65;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_ref_slookupswitch_1()V
+					return;
+		}
+
+		.method static access$1()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 66;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_unit_slookupswitch_1()V
+					return;
+		}
+
+		.method static access$2()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 67;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_ref_slookupswitch_2()V
+					return;
+		}
+
+		.method static access$3()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 68;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_unit_slookupswitch_2()V
+					return;
+		}
+
+		.method static access$4()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 69;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_ref_slookupswitch_5()V
+					return;
+		}
+
+		.method static access$5()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 70;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_unit_slookupswitch_5()V
+					return;
+		}
+
+		.method static access$6()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 71;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_ref_slookupswitch_100()V
+					return;
+		}
+
+		.method static access$7()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 72;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_unit_slookupswitch_100()V
+					return;
+		}
+
+		.method static access$8()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 73;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_ref_slookupswitch_0()V
+					return;
+		}
+
+		.method static access$9()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 74;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_unit_slookupswitch_0()V
+					return;
+		}
+
+		.method static access$10()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 75;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_ref_slookupswitch_60()V
+					return;
+		}
+
+		.method static access$11()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 76;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_unit_slookupswitch_60()V
+					return;
+		}
+
+		.method static access$12()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 77;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_ref_slookupswitch_200()V
+					return;
+		}
+
+		.method static access$13()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 78;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.tc_unit_slookupswitch_200()V
+					return;
+		}
+
+	}
+
+	.class final SlookupswitchApplet$1 extends SlookupswitchTestCase {
+
+		.fields {
+			final SlookupswitchApplet this$0 0;		// Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/slookupswitch/SlookupswitchApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 13;		// reference benchs/jcre/engine/slookupswitch/SlookupswitchApplet$1.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/slookupswitch/SlookupswitchTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 80;		// benchs/jcre/engine/slookupswitch/SlookupswitchApplet.access$0()V
+					return;
+		}
+
+	}
+
+}

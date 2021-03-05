@@ -1,0 +1,106 @@
+options {
+   MULTI=true;
+}
+
+PARSER_BEGIN(EquationAST)
+package tools.extractor.ast;
+
+public class EquationAST {
+}
+
+PARSER_END(EquationAST)
+
+
+SKIP : /* WHITE SPACE */
+{
+  " "
+| "\t"
+| "\n"
+| "\r"
+| "\f"
+}
+
+TOKEN : /* Types */
+{
+   < INT: "int" >
+}
+
+TOKEN : /* LITERALS */
+{
+  < INTEGER_LITERAL: (<DIGIT>)+ >
+}
+
+/*
+ * Expression syntax follows.
+ */
+
+void Expression() #void:
+{}
+{
+  AdditiveExpression()
+}
+
+void AdditiveExpression() #void :
+{}
+{
+  MultiplicativeExpression()
+  (
+    "+" MultiplicativeExpression() #AddNode(2)
+   |
+    "-" MultiplicativeExpression() #SubtractNode(2)
+  )*
+}
+
+void MultiplicativeExpression() #void :
+{}
+{
+  PrimaryExpression()
+  (
+    "*" PrimaryExpression() #MulNode(2)
+   |
+    "/" PrimaryExpression() #DivNode(2)
+  )*
+}
+
+void PrimaryExpression() #void :
+{
+   String name;
+}
+{
+  Literal()
+|
+  Id() 
+|
+  "(" Expression() ")"
+}
+
+void Id() :
+{
+   Token t;
+}
+{
+   t = <IDENTIFIER>  { jjtThis.name = t.image; }
+}
+
+void Literal() #void :
+{
+   Token t;
+}
+{
+ (
+  t=<INTEGER_LITERAL>
+    {
+       jjtThis.val = Integer.parseInt(t.image);
+    }
+ )#CstNode
+}
+
+
+TOKEN : /* IDENTIFIERS */
+{
+  < IDENTIFIER: <LETTER> (<LETTER>|<DIGIT>)* >
+|
+  < #LETTER: [ "a"-"z", "A"-"Z", "_", "=" ] >
+|
+  < #DIGIT: [ "0"-"9"] >
+}

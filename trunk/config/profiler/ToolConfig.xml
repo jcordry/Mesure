@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Profiler>
+	<config name="template" description="this is not a configuration but a template for others configurations.">
+		<help/>
+		<warning/>
+		<verbose/>
+		<verboseLevel>10</verboseLevel>
+		<verboseFilter>1</verboseFilter>
+		<input>../tmp/results.xml</input>
+		<input>../tmp/extracted.xml</input>
+		<input>../config/manager/ManagerConfig.xml</input>
+		<input>../tmp/coefs.xml</input>	
+		<output>../tmp/MesureProject_output.html</output>
+	</config>
+
+	<!-- Default configuration. Should always be defined. -->
+	<config name="default" description="The default configuration">
+      <log>../tmp/ProfilingLog.txt</log>
+	  <verboseLevel>10</verboseLevel>
+	  <input>../tmp/Results.xml</input>
+      <input>../tmp/Extracted.xml</input>
+      <input>../config/manager/ManagerConfig.xml</input>
+      <input>../config/profiler/coefs.xml</input>
+      <stylesheet>../config/profiler/profiler.xsl</stylesheet>	
+	</config>
+	
+	<config name="Spider" description="All charts are spider charts">
+		<config>default</config>
+		<domainStyle>Spider</domainStyle>
+		<markStyle>Spider</markStyle>
+	</config>
+	
+	<config name="Bar" description="All charts are bar charts">
+	    <config>default</config>
+	    <domainStyle>Bar</domainStyle>
+		<markStyle>Bar</markStyle>
+	</config>
+	
+	<!-- My configuration -->
+	<config name="my_profiling_config" description="My profiling configuration">
+	  <config>default</config>
+	</config>
+</Profiler>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Manager>
+
+	<config name="template" description="this is not a configuration but a template for others configurations.">
+		<help/>
+		<warning/>
+		
+		<log>log/log.txt</log>
+		<verbose/>
+		<verboseLevel>10</verboseLevel>
+		<verboseFilter>1</verboseFilter>
+		
+		<input>../config/ManagerConfig.xml</input>
+		<xmlOutput>../tmp/results.xml</xmlOutput>
+		<textOutput>../tmp/results.csv</textOutput>
+	</config>
+
+	<!-- Manager default configuration. Should always be defined. -->
+	<config name="default" description="The default configuration">
+		<log>../tmp/ManagerLog.txt</log>
+		<verboseLevel>10</verboseLevel>
+		<input>../config/manager/CalibrationOutput.xml</input>
+		<xmlOutput>../tmp/Results.xml</xmlOutput>
+	</config>
+	
+	<!-- Calibration default configuration. -->
+	<config name="calibration" description="The default calibration configuration">
+	  <config>default</config>
+	  <setCalibrate/>
+	  <log>../tmp/CalibrationLog.txt</log>
+	  <input>../config/manager/ManagerConfig.xml</input>
+	  <xmlOutput>../config/manager/CalibrationOutput.xml</xmlOutput>
+	</config>
+	
+	<!-- My manager configuration -->
+	<config name="my_manager_config" description="My manager configuration">
+	  <config>default</config>
+	</config>
+	
+	<!-- My calibration configuration -->
+	<config name="my_calibration_config" description="My calibration configuration">
+	  <config>calibration</config>
+	</config>
+</Manager>

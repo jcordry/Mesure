@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+<project name="converter" default="convert" basedir=".">
+	
+  <property name="converter.path" location ="${ant.file.converter}/.."/>
+  <property name="src.path" location ="${converter.path}/../.."/>
+  <property name="classes.path" location ="${converter.path}/../../../classes"/>
+  <property name="cap" value="true"/>
+  <property name="int" value="false"/>
+  <property name="package.library" value="false"/>
+  <condition property="package.applet">
+    <isfalse value="${package.library}"/>
+  </condition>
+
+  <taskdef name="converter" classname="com.sun.javacard.ant.tasks.ConverterTask">
+    <classpath path="${converter.path}/jctasks.jar"/>
+  </taskdef>
+	
+  <taskdef name="capgen" classname="com.sun.javacard.ant.tasks.CapgenTask">
+	<classpath path="${converter.path}/jctasks.jar"/>
+  </taskdef>
+
+  <target name="convert-applet" if="package.applet">		
+	<converter
+	  CAP="${cap}"
+	  JCA="true"
+	  EXP="true"
+	  int="${int}"
+	  packagename="${package.name}"
+      packageaid="${package.aid}"
+	  majorminorversion="1.0"
+	  classdir="${classes.path}"
+	  outputdirectory="${src.path}">
+	  <AppletNameAID
+	    appletname="${applet.name}"
+		aid="${applet.aid}"/>
+	  <exportpath path="${converter.path}/api21_export_files;${src.path}"/>
+	  <classpath path="${converter.path}/converter.jar;${converter.path}/offcardverifier.jar"/> 
+	</converter>
+  </target>
+	
+  <target name="convert-library" unless="package.applet">		
+    <converter
+      CAP="${cap}"
+      JCA="true"
+      EXP="true"
+      int="${int}"
+	  packagename="${package.name}"
+	  packageaid="${package.aid}"
+	  majorminorversion="1.0"
+	  classdir="${classes.path}"
+	  outputdirectory="${src.path}">
+	  <exportpath path="${converter.path}/api21_export_files;${classes.path}"/>
+	  <classpath path="${converter.path}/converter.jar;${converter.path}/offcardverifier.jar"/> 
+    </converter>
+  </target>	
+  	
+  <target name="convert" depends="convert-applet,convert-library"/>
+
+  <target name="capgen">
+    <capgen
+	  JCAFile="${jcafile}"
+	  outfile="${capfile}">
+	  <classpath path="${converter.path}/converter.jar;${converter.path}/offcardverifier.jar"/>
+	</capgen>
+  </target> 
+	
+</project>

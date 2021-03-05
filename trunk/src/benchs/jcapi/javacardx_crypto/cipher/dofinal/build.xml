@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<project name="dofinal" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="des" target="convert" inheritall="false"/>
+	  <ant dir="rsa_encrypt" target="convert" inheritall="false"/>
+	  <ant dir="rsa_nopad_decrypt_1024" target="convert" inheritall="false"/>
+	  <ant dir="rsa_nopad_decrypt_2048" target="convert" inheritall="false"/>
+	  <ant dir="rsa_nopad_decrypt_768" target="convert" inheritall="false"/>
+	  <ant dir="rsa_nopad_decrypt_512" target="convert" inheritall="false"/>
+	  <ant dir="rsa_pkcs1_decrypt_1024" target="convert" inheritall="false"/>
+	  <ant dir="rsa_pkcs1_decrypt_2048" target="convert" inheritall="false"/>
+	  <ant dir="rsa_pkcs1_decrypt_768" target="convert" inheritall="false"/>
+	  <ant dir="rsa_pkcs1_decrypt_512" target="convert" inheritall="false"/>
+	</target>
+
+</project>

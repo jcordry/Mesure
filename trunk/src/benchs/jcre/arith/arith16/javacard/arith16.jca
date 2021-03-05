@@ -1,0 +1,1271 @@
+// converted by version 1.3
+// on Mon Nov 26 16:42:39 CET 2007
+
+.package benchs/jcre/arith/arith16 {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x61:0x72:0x69:0x74:0x68:0x31:0x36;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x61:0x72:0x69:0x74:0x68:0x31:0x36:0x1 Arith16Applet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef Arith16Applet Arith16Applet$1/this$0;
+		// 1
+		instanceFieldRef Arith16Applet Arith16Applet$10/this$0;
+		// 2
+		instanceFieldRef Arith16Applet Arith16Applet$11/this$0;
+		// 3
+		instanceFieldRef Arith16Applet Arith16Applet$12/this$0;
+		// 4
+		instanceFieldRef Arith16Applet Arith16Applet$13/this$0;
+		// 5
+		instanceFieldRef Arith16Applet Arith16Applet$14/this$0;
+		// 6
+		instanceFieldRef Arith16Applet Arith16Applet$2/this$0;
+		// 7
+		instanceFieldRef Arith16Applet Arith16Applet$3/this$0;
+		// 8
+		instanceFieldRef Arith16Applet Arith16Applet$4/this$0;
+		// 9
+		instanceFieldRef Arith16Applet Arith16Applet$5/this$0;
+		// 10
+		instanceFieldRef Arith16Applet Arith16Applet$6/this$0;
+		// 11
+		instanceFieldRef Arith16Applet Arith16Applet$7/this$0;
+		// 12
+		instanceFieldRef Arith16Applet Arith16Applet$8/this$0;
+		// 13
+		instanceFieldRef Arith16Applet Arith16Applet$9/this$0;
+		// 14
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 15
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 16
+		classRef Arith16Applet;
+		// 17
+		staticMethodRef Arith16Applet/<init>()V;
+		// 18
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 19
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 20
+		classRef Arith16Applet$1;
+		// 21
+		staticMethodRef Arith16Applet$1/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 22
+		classRef Arith16Applet$2;
+		// 23
+		staticMethodRef Arith16Applet$2/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 24
+		classRef Arith16Applet$3;
+		// 25
+		staticMethodRef Arith16Applet$3/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 26
+		classRef Arith16Applet$4;
+		// 27
+		staticMethodRef Arith16Applet$4/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 28
+		classRef Arith16Applet$5;
+		// 29
+		staticMethodRef Arith16Applet$5/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 30
+		classRef Arith16Applet$6;
+		// 31
+		staticMethodRef Arith16Applet$6/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 32
+		classRef Arith16Applet$7;
+		// 33
+		staticMethodRef Arith16Applet$7/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 34
+		classRef Arith16Applet$8;
+		// 35
+		staticMethodRef Arith16Applet$8/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 36
+		classRef Arith16Applet$9;
+		// 37
+		staticMethodRef Arith16Applet$9/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 38
+		classRef Arith16Applet$10;
+		// 39
+		staticMethodRef Arith16Applet$10/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 40
+		classRef Arith16Applet$11;
+		// 41
+		staticMethodRef Arith16Applet$11/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 42
+		classRef Arith16Applet$12;
+		// 43
+		staticMethodRef Arith16Applet$12/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 44
+		classRef Arith16Applet$13;
+		// 45
+		staticMethodRef Arith16Applet$13/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+		// 46
+		classRef Arith16Applet$14;
+		// 47
+		staticMethodRef Arith16Applet$14/<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V;
+	}
+
+	.class final Arith16Applet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcre/arith/arith16/Arith16Applet$1.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+   .locals 0;
+     
+   L0: sspush 32767;
+   sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      sconst_3;
+      return;
+		}
+
+	}
+
+	.class final Arith16Applet$10 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcre/arith/arith16/Arith16Applet$10.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 32767;
+   sconst_3;
+   sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   sconst_3;
+     sshl;
+   return;
+		}
+
+	}
+
+	.class final Arith16Applet$11 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcre/arith/arith16/Arith16Applet$11.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 32767;
+   sconst_3;
+   sshr;
+   sconst_3;
+   sshr;
+   sconst_3;
+   sshr;
+      sconst_3;
+   sshr;
+   sconst_3;
+   sshr;
+   sconst_3;
+   sshr;
+   sconst_3;
+   sshr;
+   sconst_3;
+   sshr;
+   sconst_3;
+   sshr;
+   sconst_3;
+   sshr;
+      sconst_3;
+   sshr;
+   sconst_3;
+   sshr;
+   sconst_3;
+   sshr;
+      sconst_3;
+   sshr;
+      sconst_3;
+   sshr;
+   sconst_3;
+   sshr;
+   return;
+		}
+
+	}
+
+	.class final Arith16Applet$12 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcre/arith/arith16/Arith16Applet$12.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 32767;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   sconst_3;
+   sor;
+   return;
+		}
+
+	}
+
+	.class final Arith16Applet$13 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcre/arith/arith16/Arith16Applet$13.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 32767;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   sconst_3;
+   sand;
+   return;
+		}
+
+	}
+
+	.class final Arith16Applet$14 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcre/arith/arith16/Arith16Applet$14.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 32767;
+   sconst_3;
+   sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   sconst_3;
+     sxor;
+   return;
+		}
+
+	}
+
+	.class final Arith16Applet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcre/arith/arith16/Arith16Applet$2.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 32767;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+         sconst_3;
+         sadd;
+      return;
+		}
+
+	}
+
+	.class final Arith16Applet$3 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcre/arith/arith16/Arith16Applet$3.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 32767;
+      sconst_3;
+      ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+      sconst_3;
+     ssub;
+   return;
+		}
+
+	}
+
+	.class final Arith16Applet$4 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcre/arith/arith16/Arith16Applet$4.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 32767;
+   sconst_3;
+   smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   sconst_3;
+     smul;
+   return;
+		}
+
+	}
+
+	.class final Arith16Applet$5 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcre/arith/arith16/Arith16Applet$5.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 32767;
+   sconst_3;
+   sdiv;
+   sconst_3;
+     sdiv;
+   sconst_3;
+     sdiv;
+   sconst_3;
+     sdiv;
+   sconst_3;
+     sdiv;
+   sconst_3;
+     sdiv;
+   sconst_3;
+      sdiv;
+   sconst_3;
+     sdiv;
+      sconst_3;
+      sdiv;
+   sconst_3;
+     sdiv;
+   sconst_3;
+     sdiv;
+   sconst_3;
+     sdiv;
+   sconst_3;
+     sdiv;
+      sconst_3;
+     sdiv;
+   sconst_3;
+     sdiv;
+   sconst_3;
+     sdiv;
+   return;
+		}
+
+	}
+
+	.class final Arith16Applet$6 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 10;		// reference benchs/jcre/arith/arith16/Arith16Applet$6.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 0;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   sconst_3;
+   sdiv;
+   return;
+		}
+
+	}
+
+	.class final Arith16Applet$7 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 11;		// reference benchs/jcre/arith/arith16/Arith16Applet$7.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 32767;
+      sconst_3;
+   srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   sconst_3;
+     srem;
+   return;
+		}
+
+	}
+
+	.class final Arith16Applet$8 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 12;		// reference benchs/jcre/arith/arith16/Arith16Applet$8.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 0;
+   sconst_3;
+      srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   sconst_3;
+   srem;
+   return;
+		}
+
+	}
+
+	.class final Arith16Applet$9 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final Arith16Applet this$0 0;		// Lbenchs/jcre/arith/arith16/Arith16Applet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 13;		// reference benchs/jcre/arith/arith16/Arith16Applet$9.this$0
+					aload_0;
+					invokespecial 14;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 17;
+     .locals 0;
+     
+     L0: sspush 32767;
+   sconst_3;
+   sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   sconst_3;
+     sneg;
+   return;
+		}
+
+	}
+
+	.class public Arith16Applet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 15;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 1 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 16;		// benchs/jcre/arith/arith16/Arith16Applet
+					dup;
+					invokespecial 17;		// benchs/jcre/arith/arith16/Arith16Applet.<init>()V
+					invokevirtual 18;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 14;
+					anewarray 19;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 20;		// benchs/jcre/arith/arith16/Arith16Applet$1
+					dup;
+					aload_0;
+					invokespecial 21;		// benchs/jcre/arith/arith16/Arith16Applet$1.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 22;		// benchs/jcre/arith/arith16/Arith16Applet$2
+					dup;
+					aload_0;
+					invokespecial 23;		// benchs/jcre/arith/arith16/Arith16Applet$2.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 24;		// benchs/jcre/arith/arith16/Arith16Applet$3
+					dup;
+					aload_0;
+					invokespecial 25;		// benchs/jcre/arith/arith16/Arith16Applet$3.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 26;		// benchs/jcre/arith/arith16/Arith16Applet$4
+					dup;
+					aload_0;
+					invokespecial 27;		// benchs/jcre/arith/arith16/Arith16Applet$4.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 28;		// benchs/jcre/arith/arith16/Arith16Applet$5
+					dup;
+					aload_0;
+					invokespecial 29;		// benchs/jcre/arith/arith16/Arith16Applet$5.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 30;		// benchs/jcre/arith/arith16/Arith16Applet$6
+					dup;
+					aload_0;
+					invokespecial 31;		// benchs/jcre/arith/arith16/Arith16Applet$6.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 32;		// benchs/jcre/arith/arith16/Arith16Applet$7
+					dup;
+					aload_0;
+					invokespecial 33;		// benchs/jcre/arith/arith16/Arith16Applet$7.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 34;		// benchs/jcre/arith/arith16/Arith16Applet$8
+					dup;
+					aload_0;
+					invokespecial 35;		// benchs/jcre/arith/arith16/Arith16Applet$8.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 36;		// benchs/jcre/arith/arith16/Arith16Applet$9
+					dup;
+					aload_0;
+					invokespecial 37;		// benchs/jcre/arith/arith16/Arith16Applet$9.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 38;		// benchs/jcre/arith/arith16/Arith16Applet$10
+					dup;
+					aload_0;
+					invokespecial 39;		// benchs/jcre/arith/arith16/Arith16Applet$10.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					bspush 10;
+					new 40;		// benchs/jcre/arith/arith16/Arith16Applet$11
+					dup;
+					aload_0;
+					invokespecial 41;		// benchs/jcre/arith/arith16/Arith16Applet$11.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					bspush 11;
+					new 42;		// benchs/jcre/arith/arith16/Arith16Applet$12
+					dup;
+					aload_0;
+					invokespecial 43;		// benchs/jcre/arith/arith16/Arith16Applet$12.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					bspush 12;
+					new 44;		// benchs/jcre/arith/arith16/Arith16Applet$13
+					dup;
+					aload_0;
+					invokespecial 45;		// benchs/jcre/arith/arith16/Arith16Applet$13.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					dup;
+					bspush 13;
+					new 46;		// benchs/jcre/arith/arith16/Arith16Applet$14
+					dup;
+					aload_0;
+					invokespecial 47;		// benchs/jcre/arith/arith16/Arith16Applet$14.<init>(Lbenchs/jcre/arith/arith16/Arith16Applet;)V
+					aastore;
+					areturn;
+		}
+
+	}
+
+}

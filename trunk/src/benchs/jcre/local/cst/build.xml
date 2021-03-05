@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+
+<project name="cst" default="convert" basedir=".">
+	
+	<property name="package.name" value="benchs.jcre.local.cst"/>
+	<property name="package.aid" value="0x4d:0x45:0x53:0x55:0x52:0x45:0x5f:0x63:0x73:0x74"/>
+	<property name="applet.name" value="benchs.jcre.local.cst.CstApplet"/>
+	<property name="applet.aid" value="0x4d:0x45:0x53:0x55:0x52:0x45:0x5f:0x63:0x73:0x74:0x01"/>
+	<property name="cap" value="false"/>
+	<property name="jcafile" value="${basedir}/javacard/cst.jca"/>
+	<property name="capfile" value="${basedir}/javacard/cst.cap"/>
+
+	<import file="../../../../tools/converter/build.xml"/>
+	
+	<target name="convert">
+      <ant dir="${src.path}/benchs/lib/templates" target="convert" inheritall="false"/>
+	  <ant antfile="${ant.file.converter}" target="convert" inheritrefs="true"/>
+	  <replaceregexp
+	    file="${jcafile}"
+		match="(?s)\.method private emptyLoop\(\)V \{.*?\}"
+		replace=".method private emptyLoop()V {${line.separator}
+		.stack 16;${line.separator}
+		.locals 0;${line.separator}
+		${line.separator}
+		L0:	return;${line.separator}
+		}"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="(?s)\.method private callsconst\(\)V \{.*?\}"
+		replace=".method private callsconst()V {${line.separator}
+		.stack 16;${line.separator}
+		.locals 0;${line.separator}
+		${line.separator}
+		L0:	sconst_m1;${line.separator}
+		sconst_0;${line.separator}
+		sconst_1;${line.separator}
+		sconst_2;${line.separator}
+		sconst_3;${line.separator}
+		sconst_4;${line.separator}
+		sconst_5;${line.separator}
+		sconst_m1;${line.separator}
+		sconst_0;${line.separator}
+		sconst_1;${line.separator}
+		sconst_2;${line.separator}
+		sconst_3;${line.separator}
+		sconst_4;${line.separator}
+		sconst_5;${line.separator}
+		sconst_m1;${line.separator}
+		sconst_0;${line.separator}
+		return;${line.separator}
+		}"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="(?s)\.method private callaconst\(\)V \{.*?\}"
+		replace=".method private callaconst()V {${line.separator}
+		.stack 16;${line.separator}
+		.locals 0;${line.separator}
+		${line.separator}
+		L0:	aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		aconst_null;${line.separator}
+		return;${line.separator}
+	  	}"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="(?s)\.method private callbspush\(\)V \{.*?\}"
+		replace=".method private callbspush()V {${line.separator}
+		.stack 16;${line.separator}
+		.locals 0;${line.separator}
+		${line.separator}
+		L0:	bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		bspush 127;${line.separator}
+		return;${line.separator}
+		}"
+	  />	
+	  <replaceregexp
+	    file="${jcafile}"
+		match="(?s)\.method private callsspush\(\)V \{.*?\}"
+		replace=".method private callsspush()V {${line.separator}
+		.stack 16;${line.separator}
+		.locals 0;${line.separator}
+		${line.separator}
+		L0:	sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		sspush 32767;${line.separator}
+		return;${line.separator}
+		}"
+	  />		
+	  <ant antfile="${ant.file.converter}" target="capgen" inheritrefs="true"/>
+	</target>
+		
+</project>

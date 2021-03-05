@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+
+<project name="objects" default="convert" basedir=".">
+	
+	<property name="package.name" value="benchs.jcre.engine.objects"/>
+	<property name="package.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x6F:0x62:0x6A:0x65:0x63:0x74"/>
+	<property name="applet.name" value="benchs.jcre.engine.objects.ObjectTestApplet"/>
+	<property name="applet.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x6F:0x62:0x6A:0x65:0x63:0x74:0x01"/>
+	<property name="cap" value="false"/>
+	<property name="jcafile" value="${basedir}/javacard/objects.jca"/>
+	<property name="capfile" value="${basedir}/javacard/objects.cap"/>
+
+	<import file="../../../../tools/converter/build.xml"/>
+	
+	<target name="convert">
+      <ant dir="${src.path}/benchs/lib/templates/" target="convert" inheritall="false"/>
+	  <ant antfile="${ant.file.converter}" target="convert" inheritrefs="true"/>
+	  
+	  <replaceregexp
+	    file="${jcafile}"
+	    match="(?s)\.stack 1;\s+\.locals 2;\s+L0:\s+.*?sspush 361;.*?return;"
+	    replace=".stack 1;${line.separator}
+	    .locals 4;${line.separator}
+	    ${line.separator}
+	    L0: return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="(?s)\.stack 1;\s+\.locals 2;\s+L0:\s+.*?sspush 362;.*?return;"
+		replace=".stack 1;${line.separator}
+		.locals 4;${line.separator}
+		${line.separator}
+		L0: getstatic_a 12;${line.separator}
+	  	return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+	  	match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 363;\s+sstore_2;\s+return;"
+	    replace=".stack 1;${line.separator}
+		.locals 4;${line.separator}
+		${line.separator}
+		L0: aload 4;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+	  	match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 364;\s+sstore_2;\s+return;"
+		replace=".stack 1;${line.separator}
+		.locals 4;${line.separator}
+		${line.separator}
+		L0: getstatic_a 12;${line.separator}
+	  	astore 4;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+	  	match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 365;\s+sstore_2;\s+return;"
+		replace=".stack 1;${line.separator}
+		.locals 4;${line.separator}
+		${line.separator}
+		L0: getstatic_a 12;${line.separator}
+	  	astore_0;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 366;\s+sstore_2;\s+return;"
+		replace=".stack 1;${line.separator}
+		.locals 4;${line.separator}
+		${line.separator}
+		L0: getstatic_a 12;${line.separator}
+		astore_1;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+	  	match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 367;\s+sstore_2;\s+return;"
+		replace=".stack 1;${line.separator}
+		.locals 4;${line.separator}
+		${line.separator}
+		L0: getstatic_a 12;${line.separator}
+		astore_2;${line.separator}
+		return;"
+	  />	
+	  <replaceregexp
+	    file="${jcafile}"
+	  	match="\.stack 1;\s+\.locals 1;\s+L0:\s+sspush 368;\s+sstore_2;\s+return;"
+		replace=".stack 1;${line.separator}
+		.locals 4;${line.separator}
+		${line.separator}
+		L0: getstatic_a 12;${line.separator}
+		astore_3;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+		match="(?s)\.stack 2;\s+\.locals 2;\s+L0:\s+getfield_a_this 10;.*?sspush 369;.*?return;"
+		replace=".stack 2;${line.separator}
+		.locals 0;${line.separator}
+		${line.separator}
+		L0: getfield_a_this 10;${line.separator}
+	  	getfield_a 2;${line.separator}
+	  	sconst_0;${line.separator}
+		return;"
+	  />
+	  <replaceregexp
+	    file="${jcafile}"
+	    match="(?s)\.stack 2;\s+\.locals 2;\s+L0:\s+getfield_a_this 1;.*?sspush 370;.*?return;"
+	    replace=".stack 2;${line.separator}
+	    .locals 0;${line.separator}
+	    ${line.separator}
+	    L0: getfield_a_this 1;${line.separator}
+	    getfield_a 2;${line.separator}
+	    sconst_0;${line.separator}
+	    aaload;${line.separator}
+	    return;"
+	  />
+	  <ant antfile="${ant.file.converter}" target="capgen" inheritrefs="true"/>
+	</target>
+		
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<project name="key" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="getsize" target="convert" inheritall="false"/>
+	  <ant dir="gettype" target="convert" inheritall="false"/>
+	  <ant dir="clearkey" target="convert" inheritall="false"/>
+	</target>
+
+</project>

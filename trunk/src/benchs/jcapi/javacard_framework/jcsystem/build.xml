@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<project name="jcsystem" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="begincommittransaction" target="convert" inheritall="false"/>
+	  <ant dir="getaid" target="convert" inheritall="false"/>
+	</target>
+
+</project>

@@ -1,0 +1,1193 @@
+// converted by version 1.3
+// on Mon Nov 26 16:42:58 CET 2007
+
+.package benchs/jcre/engine/field {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x66:0x69:0x65:0x6C:0x64:0xD:0xA;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x66:0x69:0x65:0x6C:0x64:0xD:0xA:0x1 FieldTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef short TypesTestCase/dummyField;
+		// 1
+		instanceFieldRef FieldTestApplet FieldTestApplet$10/this$0;
+		// 2
+		instanceFieldRef FieldTestApplet FieldTestApplet$11/this$0;
+		// 3
+		instanceFieldRef FieldTestApplet FieldTestApplet$12/this$0;
+		// 4
+		instanceFieldRef FieldTestApplet FieldTestApplet$13/this$0;
+		// 5
+		instanceFieldRef FieldTestApplet FieldTestApplet$2/this$0;
+		// 6
+		instanceFieldRef FieldTestApplet FieldTestApplet$3/this$0;
+		// 7
+		instanceFieldRef FieldTestApplet FieldTestApplet$4/this$0;
+		// 8
+		instanceFieldRef FieldTestApplet FieldTestApplet$5/this$0;
+		// 9
+		instanceFieldRef FieldTestApplet FieldTestApplet$6/this$0;
+		// 10
+		instanceFieldRef FieldTestApplet FieldTestApplet$7/this$0;
+		// 11
+		instanceFieldRef FieldTestApplet FieldTestApplet$8/this$0;
+		// 12
+		instanceFieldRef FieldTestApplet FieldTestApplet$9/this$0;
+		// 13
+		instanceFieldRef short FieldTestApplet/dummyShortField;
+		// 14
+		instanceFieldRef byte FieldTestApplet/dummyByteField;
+		// 15
+		instanceFieldRef FieldTestApplet FieldTestApplet/dummyRefField;
+		// 16
+		instanceFieldRef FieldTestApplet FieldTestApplet$1/this$0;
+		// 17
+		virtualMethodRef 0.7.5(Z)V;		// setUseInnerCounter(Z)V
+		// 18
+		virtualMethodRef FieldTestApplet/loop_getFieldSThis()V;
+		// 19
+		virtualMethodRef FieldTestApplet/loop_putFieldS()V;
+		// 20
+		virtualMethodRef FieldTestApplet/loop_getFieldS()V;
+		// 21
+		staticFieldRef short FieldTestApplet/iterCount;
+		// 22
+		virtualMethodRef FieldTestApplet/loop_getFieldBThis()V;
+		// 23
+		virtualMethodRef FieldTestApplet/loop_putFieldB()V;
+		// 24
+		virtualMethodRef FieldTestApplet/loop_getFieldB()V;
+		// 25
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 26
+		virtualMethodRef FieldTestApplet/loop_getFieldAThis()V;
+		// 27
+		virtualMethodRef FieldTestApplet/loop_putFieldA()V;
+		// 28
+		virtualMethodRef FieldTestApplet/loop_getFieldA()V;
+		// 29
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 30
+		staticMethodRef TypesTestCase/<init>()V;
+		// 31
+		staticMethodRef FieldTestApplet/loop_getStaticS()V;
+		// 32
+		staticMethodRef FieldTestApplet/loop_putStaticA()V;
+		// 33
+		classRef FieldTestApplet;
+		// 34
+		staticMethodRef FieldTestApplet/<init>()V;
+		// 35
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 36
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 37
+		classRef FieldTestApplet$1;
+		// 38
+		staticMethodRef FieldTestApplet$1/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 39
+		classRef FieldTestApplet$2;
+		// 40
+		staticMethodRef FieldTestApplet$2/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 41
+		classRef FieldTestApplet$3;
+		// 42
+		staticMethodRef FieldTestApplet$3/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 43
+		classRef FieldTestApplet$4;
+		// 44
+		staticMethodRef FieldTestApplet$4/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 45
+		classRef FieldTestApplet$5;
+		// 46
+		staticMethodRef FieldTestApplet$5/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 47
+		classRef FieldTestApplet$6;
+		// 48
+		staticMethodRef FieldTestApplet$6/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 49
+		classRef FieldTestApplet$7;
+		// 50
+		staticMethodRef FieldTestApplet$7/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 51
+		classRef FieldTestApplet$8;
+		// 52
+		staticMethodRef FieldTestApplet$8/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 53
+		classRef FieldTestApplet$9;
+		// 54
+		staticMethodRef FieldTestApplet$9/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 55
+		classRef FieldTestApplet$10;
+		// 56
+		staticMethodRef FieldTestApplet$10/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 57
+		classRef FieldTestApplet$11;
+		// 58
+		staticMethodRef FieldTestApplet$11/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 59
+		classRef FieldTestApplet$12;
+		// 60
+		staticMethodRef FieldTestApplet$12/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 61
+		classRef FieldTestApplet$13;
+		// 62
+		staticMethodRef FieldTestApplet$13/<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V;
+		// 63
+		staticFieldRef short FieldTestApplet/dummyStaticShortField;
+		// 64
+		staticFieldRef byte FieldTestApplet/dummyStaticByteField;
+		// 65
+		staticFieldRef FieldTestApplet FieldTestApplet/dummyStaticRefField;
+		// 66
+		staticMethodRef FieldTestApplet/loop_getStaticB()V;
+		// 67
+		staticMethodRef FieldTestApplet/loop_field_ref()V;
+	}
+
+	.class abstract TypesTestCase extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			public short dummyField 0;		// S
+		}
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 25;		// benchs/lib/templates/TestCase.<init>()V
+					aload_0;
+					sconst_0;
+					putfield_s 0;		// short benchs/jcre/engine/field/TypesTestCase.dummyField
+					aload_0;
+					sconst_1;
+					invokevirtual 17;		// setUseInnerCounter(Z)V
+					return;
+		}
+
+		.method public setUp([BS)V 1 {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_2;
+					putstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					return;
+		}
+
+	}
+
+	.class final FieldTestApplet$10 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcre/engine/field/FieldTestApplet$10.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 32;		// benchs/jcre/engine/field/FieldTestApplet.loop_putStaticA()V
+					return;
+		}
+
+	}
+
+	.class final FieldTestApplet$11 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcre/engine/field/FieldTestApplet$11.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcre/engine/field/FieldTestApplet$11.this$0
+					invokevirtual 19;		// loop_putFieldS()V
+					return;
+		}
+
+	}
+
+	.class final FieldTestApplet$12 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcre/engine/field/FieldTestApplet$12.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcre/engine/field/FieldTestApplet$12.this$0
+					invokevirtual 23;		// loop_putFieldB()V
+					return;
+		}
+
+	}
+
+	.class final FieldTestApplet$13 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcre/engine/field/FieldTestApplet$13.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcre/engine/field/FieldTestApplet$13.this$0
+					invokevirtual 27;		// loop_putFieldA()V
+					return;
+		}
+
+	}
+
+	.class final FieldTestApplet$2 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcre/engine/field/FieldTestApplet$2.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 31;		// benchs/jcre/engine/field/FieldTestApplet.loop_getStaticS()V
+					return;
+		}
+
+	}
+
+	.class final FieldTestApplet$3 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcre/engine/field/FieldTestApplet$3.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 66;		// benchs/jcre/engine/field/FieldTestApplet.loop_getStaticB()V
+					return;
+		}
+
+	}
+
+	.class final FieldTestApplet$4 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcre/engine/field/FieldTestApplet$4.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/jcre/engine/field/FieldTestApplet$4.this$0
+					invokevirtual 18;		// loop_getFieldSThis()V
+					return;
+		}
+
+	}
+
+	.class final FieldTestApplet$5 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcre/engine/field/FieldTestApplet$5.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 8;		// reference benchs/jcre/engine/field/FieldTestApplet$5.this$0
+					invokevirtual 20;		// loop_getFieldS()V
+					return;
+		}
+
+	}
+
+	.class final FieldTestApplet$6 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcre/engine/field/FieldTestApplet$6.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 9;		// reference benchs/jcre/engine/field/FieldTestApplet$6.this$0
+					invokevirtual 22;		// loop_getFieldBThis()V
+					return;
+		}
+
+	}
+
+	.class final FieldTestApplet$7 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 10;		// reference benchs/jcre/engine/field/FieldTestApplet$7.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 10;		// reference benchs/jcre/engine/field/FieldTestApplet$7.this$0
+					invokevirtual 24;		// loop_getFieldB()V
+					return;
+		}
+
+	}
+
+	.class final FieldTestApplet$8 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 11;		// reference benchs/jcre/engine/field/FieldTestApplet$8.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 11;		// reference benchs/jcre/engine/field/FieldTestApplet$8.this$0
+					invokevirtual 26;		// loop_getFieldAThis()V
+					return;
+		}
+
+	}
+
+	.class final FieldTestApplet$9 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 12;		// reference benchs/jcre/engine/field/FieldTestApplet$9.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 12;		// reference benchs/jcre/engine/field/FieldTestApplet$9.this$0
+					invokevirtual 28;		// loop_getFieldA()V
+					return;
+		}
+
+	}
+
+	.class public FieldTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			public short dummyShortField 0;		// S
+			public byte dummyByteField 1;		// B
+			public FieldTestApplet dummyRefField 2;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+			public static short dummyStaticShortField 0;		// S
+			public static byte dummyStaticByteField 1;		// B
+			public static FieldTestApplet dummyStaticRefField 2;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+			static short iterCount;		// S
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+			loop_getFieldSThis()V;
+			loop_getFieldS()V;
+			loop_getFieldBThis()V;
+			loop_getFieldB()V;
+			loop_getFieldAThis()V;
+			loop_getFieldA()V;
+			loop_putFieldS()V;
+			loop_putFieldB()V;
+			loop_putFieldA()V;
+		}
+
+		.method  <init>()V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 29;		// benchs/lib/templates/TemplateApplet.<init>()V
+					aload_0;
+					sconst_0;
+					putfield_s 13;		// short benchs/jcre/engine/field/FieldTestApplet.dummyShortField
+					aload_0;
+					sconst_0;
+					putfield_b 14;		// byte benchs/jcre/engine/field/FieldTestApplet.dummyByteField
+					aload_0;
+					aconst_null;
+					putfield_a 15;		// reference benchs/jcre/engine/field/FieldTestApplet.dummyRefField
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 33;		// benchs/jcre/engine/field/FieldTestApplet
+					dup;
+					invokespecial 34;		// benchs/jcre/engine/field/FieldTestApplet.<init>()V
+					invokevirtual 35;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 13;
+					anewarray 36;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 37;		// benchs/jcre/engine/field/FieldTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 38;		// benchs/jcre/engine/field/FieldTestApplet$1.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 39;		// benchs/jcre/engine/field/FieldTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 40;		// benchs/jcre/engine/field/FieldTestApplet$2.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 41;		// benchs/jcre/engine/field/FieldTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 42;		// benchs/jcre/engine/field/FieldTestApplet$3.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 43;		// benchs/jcre/engine/field/FieldTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 44;		// benchs/jcre/engine/field/FieldTestApplet$4.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 45;		// benchs/jcre/engine/field/FieldTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 46;		// benchs/jcre/engine/field/FieldTestApplet$5.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 47;		// benchs/jcre/engine/field/FieldTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 48;		// benchs/jcre/engine/field/FieldTestApplet$6.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 49;		// benchs/jcre/engine/field/FieldTestApplet$7
+					dup;
+					aload_0;
+					invokespecial 50;		// benchs/jcre/engine/field/FieldTestApplet$7.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 51;		// benchs/jcre/engine/field/FieldTestApplet$8
+					dup;
+					aload_0;
+					invokespecial 52;		// benchs/jcre/engine/field/FieldTestApplet$8.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 53;		// benchs/jcre/engine/field/FieldTestApplet$9
+					dup;
+					aload_0;
+					invokespecial 54;		// benchs/jcre/engine/field/FieldTestApplet$9.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 55;		// benchs/jcre/engine/field/FieldTestApplet$10
+					dup;
+					aload_0;
+					invokespecial 56;		// benchs/jcre/engine/field/FieldTestApplet$10.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					dup;
+					bspush 10;
+					new 57;		// benchs/jcre/engine/field/FieldTestApplet$11
+					dup;
+					aload_0;
+					invokespecial 58;		// benchs/jcre/engine/field/FieldTestApplet$11.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					dup;
+					bspush 11;
+					new 59;		// benchs/jcre/engine/field/FieldTestApplet$12
+					dup;
+					aload_0;
+					invokespecial 60;		// benchs/jcre/engine/field/FieldTestApplet$12.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					dup;
+					bspush 12;
+					new 61;		// benchs/jcre/engine/field/FieldTestApplet$13
+					dup;
+					aload_0;
+					invokespecial 62;		// benchs/jcre/engine/field/FieldTestApplet$13.<init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static loop_field_ref()V {
+			.stack 2;
+			.locals 3;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_1;
+					sconst_0;
+					sstore_2;
+					goto L2;
+				L1:	sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method static loop_getStaticS()V {
+			.stack 2;
+			.locals 3;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_1;
+					sconst_0;
+					sstore_2;
+					goto L2;
+				L1:	getstatic_s 63;		// short benchs/jcre/engine/field/FieldTestApplet.dummyStaticShortField
+					sstore_2;
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method static loop_getStaticB()V {
+			.stack 2;
+			.locals 3;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_1;
+					sconst_0;
+					sstore_2;
+					goto L2;
+				L1:	getstatic_b 64;		// byte benchs/jcre/engine/field/FieldTestApplet.dummyStaticByteField
+					sstore_2;
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_getFieldSThis()V 128 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					aconst_null;
+					astore 4;
+					goto L2;
+				L1:	getfield_s_this 13;		// short benchs/jcre/engine/field/FieldTestApplet.dummyShortField
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_getFieldS()V 129 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					aload_0;
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					getfield_s 13;		// short benchs/jcre/engine/field/FieldTestApplet.dummyShortField
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_getFieldBThis()V 130 {
+			.stack 2;
+			.locals 3;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					goto L2;
+				L1:	getfield_b_this 14;		// byte benchs/jcre/engine/field/FieldTestApplet.dummyByteField
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_getFieldB()V 131 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					aload_0;
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					getfield_b 14;		// byte benchs/jcre/engine/field/FieldTestApplet.dummyByteField
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_getFieldAThis()V 132 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_2;
+					aconst_null;
+					astore_3;
+					aconst_null;
+					astore 4;
+					goto L2;
+				L1:	getfield_a_this 15;		// reference benchs/jcre/engine/field/FieldTestApplet.dummyRefField
+					astore 4;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_getFieldA()V 133 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_2;
+					aload_0;
+					astore_3;
+					aconst_null;
+					astore 4;
+					goto L2;
+				L1:	aload_3;
+					getfield_a 15;		// reference benchs/jcre/engine/field/FieldTestApplet.dummyRefField
+					astore 4;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method static loop_putStaticA()V {
+			.stack 2;
+			.locals 3;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_1;
+					sconst_0;
+					sstore_2;
+					goto L2;
+				L1:	aconst_null;
+					putstatic_a 65;		// reference benchs/jcre/engine/field/FieldTestApplet.dummyStaticRefField
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_putFieldS()V 134 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					aload_0;
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sconst_0;
+					putfield_s 13;		// short benchs/jcre/engine/field/FieldTestApplet.dummyShortField
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_putFieldB()V 135 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					aload_0;
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					sconst_0;
+					putfield_b 14;		// byte benchs/jcre/engine/field/FieldTestApplet.dummyByteField
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_putFieldA()V 136 {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 21;		// short benchs/jcre/engine/field/FieldTestApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					aload_0;
+					astore 4;
+					goto L2;
+				L1:	aload 4;
+					aconst_null;
+					putfield_a 15;		// reference benchs/jcre/engine/field/FieldTestApplet.dummyRefField
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+	}
+
+	.class final FieldTestApplet$1 extends TypesTestCase {
+
+		.fields {
+			final FieldTestApplet this$0 0;		// Lbenchs/jcre/engine/field/FieldTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/field/FieldTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 16;		// reference benchs/jcre/engine/field/FieldTestApplet$1.this$0
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/field/TypesTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 67;		// benchs/jcre/engine/field/FieldTestApplet.loop_field_ref()V
+					return;
+		}
+
+	}
+
+}

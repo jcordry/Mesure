@@ -1,0 +1,2627 @@
+// converted by version 1.3
+// on Mon Nov 26 16:43:25 CET 2007
+
+.package benchs/jcre/engine/tests {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x74:0x65:0x73:0x74:0x73;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x74:0x65:0x73:0x74:0x73:0x1 TestsTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef TestsTestApplet TestsTestApplet$1/this$0;
+		// 1
+		instanceFieldRef TestsTestApplet TestsTestApplet$10/this$0;
+		// 2
+		instanceFieldRef TestsTestApplet TestsTestApplet$11/this$0;
+		// 3
+		instanceFieldRef TestsTestApplet TestsTestApplet$12/this$0;
+		// 4
+		instanceFieldRef TestsTestApplet TestsTestApplet$13/this$0;
+		// 5
+		instanceFieldRef TestsTestApplet TestsTestApplet$14/this$0;
+		// 6
+		instanceFieldRef TestsTestApplet TestsTestApplet$2/this$0;
+		// 7
+		instanceFieldRef TestsTestApplet TestsTestApplet$3/this$0;
+		// 8
+		instanceFieldRef TestsTestApplet TestsTestApplet$4/this$0;
+		// 9
+		instanceFieldRef TestsTestApplet TestsTestApplet$5/this$0;
+		// 10
+		instanceFieldRef TestsTestApplet TestsTestApplet$6/this$0;
+		// 11
+		instanceFieldRef TestsTestApplet TestsTestApplet$7/this$0;
+		// 12
+		instanceFieldRef TestsTestApplet TestsTestApplet$8/this$0;
+		// 13
+		instanceFieldRef TestsTestApplet TestsTestApplet$9/this$0;
+		// 14
+		staticMethodRef TestsTestApplet/loop_ifeq_ref()V;
+		// 15
+		staticMethodRef TestsTestApplet/loop_if_cmpgt_w_ko()V;
+		// 16
+		virtualMethodRef 0.7.5(Z)V;		// setUseInnerCounter(Z)V
+		// 17
+		staticMethodRef TestsTestApplet/loop_ifeq_ok()V;
+		// 18
+		staticMethodRef TestsTestApplet/loop_ifeq_w_ref()V;
+		// 19
+		staticMethodRef TestsTestApplet/loop_ifeq_ko()V;
+		// 20
+		staticFieldRef short TestsTestApplet/iterCount;
+		// 21
+		staticMethodRef TestsTestApplet/loop_ifneq_ok()V;
+		// 22
+		staticMethodRef TestsTestApplet/loop_ifeq_w_ok()V;
+		// 23
+		staticMethodRef TestsTestApplet/loop_ifneq_ko()V;
+		// 24
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 25
+		staticMethodRef TestsTestApplet/loop_ifgt_ok()V;
+		// 26
+		staticMethodRef TestsTestApplet/loop_ifeq_w_ko()V;
+		// 27
+		staticMethodRef TestsTestApplet/loop_ifgt_ko()V;
+		// 28
+		staticMethodRef TestTestCase/<init>()V;
+		// 29
+		staticMethodRef TestsTestApplet/loop_ifnonnull_ok()V;
+		// 30
+		staticMethodRef TestsTestApplet/loop_if_cmpgt_w_ok()V;
+		// 31
+		staticMethodRef TestsTestApplet/loop_ifnonnull_ko()V;
+		// 32
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 33
+		classRef TestsTestApplet;
+		// 34
+		staticMethodRef TestsTestApplet/<init>()V;
+		// 35
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 36
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 37
+		classRef TestsTestApplet$1;
+		// 38
+		staticMethodRef TestsTestApplet$1/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 39
+		classRef TestsTestApplet$2;
+		// 40
+		staticMethodRef TestsTestApplet$2/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 41
+		classRef TestsTestApplet$3;
+		// 42
+		staticMethodRef TestsTestApplet$3/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 43
+		classRef TestsTestApplet$4;
+		// 44
+		staticMethodRef TestsTestApplet$4/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 45
+		classRef TestsTestApplet$5;
+		// 46
+		staticMethodRef TestsTestApplet$5/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 47
+		classRef TestsTestApplet$6;
+		// 48
+		staticMethodRef TestsTestApplet$6/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 49
+		classRef TestsTestApplet$7;
+		// 50
+		staticMethodRef TestsTestApplet$7/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 51
+		classRef TestsTestApplet$8;
+		// 52
+		staticMethodRef TestsTestApplet$8/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 53
+		classRef TestsTestApplet$9;
+		// 54
+		staticMethodRef TestsTestApplet$9/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 55
+		classRef TestsTestApplet$10;
+		// 56
+		staticMethodRef TestsTestApplet$10/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 57
+		classRef TestsTestApplet$11;
+		// 58
+		staticMethodRef TestsTestApplet$11/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 59
+		classRef TestsTestApplet$12;
+		// 60
+		staticMethodRef TestsTestApplet$12/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 61
+		classRef TestsTestApplet$13;
+		// 62
+		staticMethodRef TestsTestApplet$13/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 63
+		classRef TestsTestApplet$14;
+		// 64
+		staticMethodRef TestsTestApplet$14/<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V;
+		// 65
+		staticFieldRef byte[] TestsTestApplet/nonNullArray;
+	}
+
+	.class abstract TestTestCase extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 24;		// benchs/lib/templates/TestCase.<init>()V
+					aload_0;
+					sconst_1;
+					invokevirtual 16;		// setUseInnerCounter(Z)V
+					return;
+		}
+
+		.method public setUp([BS)V 1 {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_2;
+					putstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$1 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcre/engine/tests/TestsTestApplet$1.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 14;		// benchs/jcre/engine/tests/TestsTestApplet.loop_ifeq_ref()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$10 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcre/engine/tests/TestsTestApplet$10.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 18;		// benchs/jcre/engine/tests/TestsTestApplet.loop_ifeq_w_ref()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$11 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcre/engine/tests/TestsTestApplet$11.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 22;		// benchs/jcre/engine/tests/TestsTestApplet.loop_ifeq_w_ok()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$12 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcre/engine/tests/TestsTestApplet$12.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 26;		// benchs/jcre/engine/tests/TestsTestApplet.loop_ifeq_w_ko()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$13 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcre/engine/tests/TestsTestApplet$13.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 30;		// benchs/jcre/engine/tests/TestsTestApplet.loop_if_cmpgt_w_ok()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$14 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcre/engine/tests/TestsTestApplet$14.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 15;		// benchs/jcre/engine/tests/TestsTestApplet.loop_if_cmpgt_w_ko()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$2 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcre/engine/tests/TestsTestApplet$2.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 17;		// benchs/jcre/engine/tests/TestsTestApplet.loop_ifeq_ok()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$3 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcre/engine/tests/TestsTestApplet$3.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 19;		// benchs/jcre/engine/tests/TestsTestApplet.loop_ifeq_ko()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$4 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcre/engine/tests/TestsTestApplet$4.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 21;		// benchs/jcre/engine/tests/TestsTestApplet.loop_ifneq_ok()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$5 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcre/engine/tests/TestsTestApplet$5.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 23;		// benchs/jcre/engine/tests/TestsTestApplet.loop_ifneq_ko()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$6 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 10;		// reference benchs/jcre/engine/tests/TestsTestApplet$6.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 25;		// benchs/jcre/engine/tests/TestsTestApplet.loop_ifgt_ok()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$7 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 11;		// reference benchs/jcre/engine/tests/TestsTestApplet$7.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 27;		// benchs/jcre/engine/tests/TestsTestApplet.loop_ifgt_ko()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$8 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 12;		// reference benchs/jcre/engine/tests/TestsTestApplet$8.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 29;		// benchs/jcre/engine/tests/TestsTestApplet.loop_ifnonnull_ok()V
+					return;
+		}
+
+	}
+
+	.class final TestsTestApplet$9 extends TestTestCase {
+
+		.fields {
+			final TestsTestApplet this$0 0;		// Lbenchs/jcre/engine/tests/TestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 13;		// reference benchs/jcre/engine/tests/TestsTestApplet$9.this$0
+					aload_0;
+					invokespecial 28;		// benchs/jcre/engine/tests/TestTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 31;		// benchs/jcre/engine/tests/TestsTestApplet.loop_ifnonnull_ko()V
+					return;
+		}
+
+	}
+
+	.class public TestsTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			static short iterCount;		// S
+			static byte[] nonNullArray = {1,2};		// [B
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>()V {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 32;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 33;		// benchs/jcre/engine/tests/TestsTestApplet
+					dup;
+					invokespecial 34;		// benchs/jcre/engine/tests/TestsTestApplet.<init>()V
+					invokevirtual 35;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 14;
+					anewarray 36;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 37;		// benchs/jcre/engine/tests/TestsTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 38;		// benchs/jcre/engine/tests/TestsTestApplet$1.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 39;		// benchs/jcre/engine/tests/TestsTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 40;		// benchs/jcre/engine/tests/TestsTestApplet$2.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 41;		// benchs/jcre/engine/tests/TestsTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 42;		// benchs/jcre/engine/tests/TestsTestApplet$3.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 43;		// benchs/jcre/engine/tests/TestsTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 44;		// benchs/jcre/engine/tests/TestsTestApplet$4.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 45;		// benchs/jcre/engine/tests/TestsTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 46;		// benchs/jcre/engine/tests/TestsTestApplet$5.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 47;		// benchs/jcre/engine/tests/TestsTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 48;		// benchs/jcre/engine/tests/TestsTestApplet$6.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 49;		// benchs/jcre/engine/tests/TestsTestApplet$7
+					dup;
+					aload_0;
+					invokespecial 50;		// benchs/jcre/engine/tests/TestsTestApplet$7.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 51;		// benchs/jcre/engine/tests/TestsTestApplet$8
+					dup;
+					aload_0;
+					invokespecial 52;		// benchs/jcre/engine/tests/TestsTestApplet$8.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 53;		// benchs/jcre/engine/tests/TestsTestApplet$9
+					dup;
+					aload_0;
+					invokespecial 54;		// benchs/jcre/engine/tests/TestsTestApplet$9.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 55;		// benchs/jcre/engine/tests/TestsTestApplet$10
+					dup;
+					aload_0;
+					invokespecial 56;		// benchs/jcre/engine/tests/TestsTestApplet$10.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 10;
+					new 57;		// benchs/jcre/engine/tests/TestsTestApplet$11
+					dup;
+					aload_0;
+					invokespecial 58;		// benchs/jcre/engine/tests/TestsTestApplet$11.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 11;
+					new 59;		// benchs/jcre/engine/tests/TestsTestApplet$12
+					dup;
+					aload_0;
+					invokespecial 60;		// benchs/jcre/engine/tests/TestsTestApplet$12.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 12;
+					new 61;		// benchs/jcre/engine/tests/TestsTestApplet$13
+					dup;
+					aload_0;
+					invokespecial 62;		// benchs/jcre/engine/tests/TestsTestApplet$13.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 13;
+					new 63;		// benchs/jcre/engine/tests/TestsTestApplet$14
+					dup;
+					aload_0;
+					invokespecial 64;		// benchs/jcre/engine/tests/TestsTestApplet$14.<init>(Lbenchs/jcre/engine/tests/TestsTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static loop_ifeq_ref()V {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_1;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					goto L2;
+				L1:	sinc 3 1;
+					sinc 0 1;
+				L2:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method static loop_ifeq_ok()V {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_0;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					goto L5;
+				L1:	sload_2;
+					ifeq L3;
+				L2:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					goto L4;
+				L3:	sinc 3 1;
+				L4:	sinc 0 1;
+				L5:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L6:	return;
+		}
+
+		.method static loop_ifeq_ko()V {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_1;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					goto L4;
+				L1:	sload_2;
+					ifeq L3;
+				L2:	sinc 3 1;
+				L3:	sinc 0 1;
+				L4:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L5:	return;
+		}
+
+		.method static loop_ifneq_ko()V {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_0;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					goto L4;
+				L1:	sload_2;
+					ifne L3;
+				L2:	sinc 3 1;
+				L3:	sinc 0 1;
+				L4:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L5:	return;
+		}
+
+		.method static loop_ifneq_ok()V {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_1;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					goto L5;
+				L1:	sload_2;
+					ifne L3;
+				L2:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					goto L4;
+				L3:	sinc 3 1;
+				L4:	sinc 0 1;
+				L5:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L6:	return;
+		}
+
+		.method static loop_ifgt_ok()V {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_1;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					goto L5;
+				L1:	sload_2;
+					ifgt L3;
+				L2:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					goto L4;
+				L3:	sinc 3 1;
+				L4:	sinc 0 1;
+				L5:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L6:	return;
+		}
+
+		.method static loop_ifgt_ko()V {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_m1;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					goto L4;
+				L1:	sload_2;
+					ifgt L3;
+				L2:	sinc 3 1;
+				L3:	sinc 0 1;
+				L4:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L5:	return;
+		}
+
+		.method static loop_ifnonnull_ok()V {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					getstatic_a 65;		// reference benchs/jcre/engine/tests/TestsTestApplet.nonNullArray
+					astore_2;
+					sconst_0;
+					sstore_3;
+					goto L5;
+				L1:	aload_2;
+					ifnonnull L3;
+				L2:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					goto L4;
+				L3:	sinc 3 1;
+				L4:	sinc 0 1;
+				L5:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L6:	return;
+		}
+
+		.method static loop_ifnonnull_ko()V {
+			.stack 2;
+			.locals 4;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					aconst_null;
+					checkcast 11 0;		// T_BYTE
+					astore_2;
+					sconst_0;
+					sstore_3;
+					goto L4;
+				L1:	aload_2;
+					ifnonnull L3;
+				L2:	sinc 3 1;
+				L3:	sinc 0 1;
+				L4:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L5:	return;
+		}
+
+		.method static loop_ifeq_w_ref()V {
+			.stack 2;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_0;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					sconst_0;
+					sstore 4;
+					goto_w L4;
+				L1:	sload 4;
+					ifeq_w L3;
+				L2:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+				L3:	sinc 3 1;
+					sinc 0 1;
+				L4:	sload_0;
+					sload_1;
+					if_scmplt_w L1;
+				L5:	return;
+		}
+
+		.method static loop_ifeq_w_ok()V {
+			.stack 2;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_0;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					sconst_0;
+					sstore 4;
+					goto_w L7;
+				L1:	sload 4;
+					ifeq_w L3;
+				L2:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+				L3:	sload_2;
+					ifeq_w L5;
+				L4:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					goto L6;
+				L5:	sinc 3 1;
+				L6:	sinc 0 1;
+				L7:	sload_0;
+					sload_1;
+					if_scmplt_w L1;
+				L8:	return;
+		}
+
+		.method static loop_ifeq_w_ko()V {
+			.stack 2;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_1;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					sconst_0;
+					sstore 4;
+					goto_w L7;
+				L1:	sload 4;
+					ifeq_w L3;
+				L2:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+				L3:	sload_2;
+					ifeq L5;
+				L4:	sinc 3 1;
+					goto_w L6;
+				L5:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+				L6:	sinc 0 1;
+				L7:	sload_0;
+					sload_1;
+					if_scmplt_w L1;
+				L8:	return;
+		}
+
+		.method static loop_if_cmpgt_w_ok()V {
+			.stack 2;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_0;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					sconst_0;
+					sstore 4;
+					goto_w L7;
+				L1:	sload_2;
+					ifeq_w L3;
+				L2:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+				L3:	sload_1;
+					sload 4;
+					if_scmpgt_w L5;
+				L4:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					goto L6;
+				L5:	sinc 3 1;
+				L6:	sinc 0 1;
+				L7:	sload_0;
+					sload_1;
+					if_scmplt_w L1;
+				L8:	return;
+		}
+
+		.method static loop_if_cmpgt_w_ko()V {
+			.stack 2;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_0;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					sconst_0;
+					sstore 4;
+					goto_w L7;
+				L1:	sload_2;
+					ifeq_w L3;
+				L2:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+				L3:	sload_1;
+					sload 4;
+					if_scmple L5;
+				L4:	sinc 3 1;
+					goto_w L6;
+				L5:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+				L6:	sinc 0 1;
+				L7:	sload_0;
+					sload_1;
+					if_scmplt_w L1;
+				L8:	return;
+		}
+
+		.method static loop_if_cmplt_w_ref()V {
+			.stack 2;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_0;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					sconst_0;
+					sstore 4;
+					goto L4;
+				L1:	sload_2;
+					ifeq L3;
+				L2:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+				L3:	sinc 3 1;
+					sinc 0 1;
+				L4:	sload_0;
+					sload_1;
+					if_scmplt L1;
+				L5:	return;
+		}
+
+		.method static loop_if_cmplt_w()V {
+			.stack 2;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_0;
+					getstatic_s 20;		// short benchs/jcre/engine/tests/TestsTestApplet.iterCount
+					sstore_1;
+					sconst_0;
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					sconst_0;
+					sstore 4;
+					goto_w L4;
+				L1:	sload_2;
+					ifeq_w L3;
+				L2:	sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+					sinc 3 1;
+				L3:	sinc 3 1;
+					sinc 0 1;
+				L4:	sload_0;
+					sload_1;
+					if_scmplt_w L1;
+				L5:	return;
+		}
+
+	}
+
+}

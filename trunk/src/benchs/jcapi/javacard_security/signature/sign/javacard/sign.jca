@@ -1,0 +1,1170 @@
+// converted by version 1.3
+// on Tue Nov 27 17:45:02 CET 2007
+
+.package benchs/jcapi/javacard_security/signature/sign {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x69:0x67:0x6E;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x2 1.1;		//javacard/security
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x69:0x67:0x6E:0x1 SignTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef SignTestApplet SignTestApplet$1/this$0;
+		// 1
+		instanceFieldRef SignTestApplet SignTestApplet$10/this$0;
+		// 2
+		instanceFieldRef SignTestApplet SignTestApplet$2/this$0;
+		// 3
+		instanceFieldRef SignTestApplet SignTestApplet$3/this$0;
+		// 4
+		instanceFieldRef SignTestApplet SignTestApplet$4/this$0;
+		// 5
+		instanceFieldRef SignTestApplet SignTestApplet$5/this$0;
+		// 6
+		instanceFieldRef SignTestApplet SignTestApplet$6/this$0;
+		// 7
+		instanceFieldRef SignTestApplet SignTestApplet$7/this$0;
+		// 8
+		instanceFieldRef SignTestApplet SignTestApplet$8/this$0;
+		// 9
+		instanceFieldRef SignTestApplet SignTestApplet$9/this$0;
+		// 10
+		instanceFieldRef byte[] SignTestApplet/inputBuffer;
+		// 11
+		instanceFieldRef byte[] SignTestApplet/outputBuffer;
+		// 12
+		instanceFieldRef 0.3 0.11.7;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+		// 13
+		instanceFieldRef 0.9 0.10.39;		// reference benchs/lib/templates/KeyTemplateApplet.keyInfo
+		// 14
+		instanceFieldRef 3.15 0.11.4;		// reference benchs/lib/templates/CryptoTemplateApplet.signature
+		// 15
+		instanceFieldRef 3.0 0.10.34;		// reference benchs/lib/templates/KeyTemplateApplet.key
+		// 16
+		instanceFieldRef 0.5 0.11.2;		// reference benchs/lib/templates/CryptoTemplateApplet.dummy
+		// 17
+		instanceFieldRef 0.3 0.11.7;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+		// 18
+		instanceFieldRef 3.15 0.11.4;		// reference benchs/lib/templates/CryptoTemplateApplet.signature
+		// 19
+		instanceFieldRef byte[] 0.11.1;		// reference benchs/lib/templates/CryptoTemplateApplet.IV_NULL
+		// 20
+		instanceFieldRef byte[] 0.11.0;		// reference benchs/lib/templates/CryptoTemplateApplet.IV
+		// 21
+		virtualMethodRef 0.3.11()S;		// getInLength()S
+		// 22
+		staticMethodRef SignTestApplet/access$3(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B;
+		// 23
+		virtualMethodRef 0.3.12()S;		// getOutOffset()S
+		// 24
+		virtualMethodRef 0.5.9([BSS[BS)V;		// dummyMethodShort([BSS[BS)V
+		// 25
+		staticMethodRef 0.11.0()V;		// benchs/lib/templates/CryptoTemplateApplet.<init>()V
+		// 26
+		staticMethodRef 2.8.13(SB)[B;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+		// 27
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 28
+		staticMethodRef SignTestApplet/access$4(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;[B[B[B[B)V;
+		// 29
+		classRef SignTestApplet;
+		// 30
+		staticMethodRef SignTestApplet/<init>()V;
+		// 31
+		virtualMethodRef 0.11.1()V;		// register()V
+		// 32
+		virtualMethodRef 0.11.9([B)V;		// init([B)V
+		// 33
+		staticMethodRef 2.16.3([BSSB)S;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+		// 34
+		virtualMethodRef 0.3.7()B;		// getAlgorithm()B
+		// 35
+		staticMethodRef SignTestApplet/access$5(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Ljavacard/security/Signature;;
+			.descriptor	Ljavacard/security/Signature;	3.15;
+
+		// 36
+		virtualMethodRef 0.9.6()S;		// getKeyLength()S
+		// 37
+		staticMethodRef 2.7.1(S)V;		// javacard/framework/ISOException.throwIt(S)V
+		// 38
+		virtualMethodRef 3.15.5([BSS[BS)S;		// sign([BSS[BS)S
+		// 39
+		staticMethodRef SignTestApplet/access$0(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/DummyClass;;
+			.descriptor	Lbenchs/lib/templates/DummyClass;	0.5;
+
+		// 40
+		virtualMethodRef 3.15.3(Ljavacard/security/Key;B)V;		// init(Ljavacard/security/Key;B)V
+			.descriptor	Ljavacard/security/Key;	3.0;
+
+		// 41
+		virtualMethodRef 3.15.4(Ljavacard/security/Key;B[BSS)V;		// init(Ljavacard/security/Key;B[BSS)V
+			.descriptor	Ljavacard/security/Key;	3.0;
+
+		// 42
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 43
+		classRef SignTestApplet$1;
+		// 44
+		staticMethodRef SignTestApplet$1/<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V;
+		// 45
+		classRef SignTestApplet$2;
+		// 46
+		staticMethodRef SignTestApplet$2/<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V;
+		// 47
+		classRef SignTestApplet$3;
+		// 48
+		staticMethodRef SignTestApplet$3/<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V;
+		// 49
+		classRef SignTestApplet$4;
+		// 50
+		staticMethodRef SignTestApplet$4/<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V;
+		// 51
+		classRef SignTestApplet$5;
+		// 52
+		staticMethodRef SignTestApplet$5/<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V;
+		// 53
+		classRef SignTestApplet$6;
+		// 54
+		staticMethodRef SignTestApplet$6/<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V;
+		// 55
+		classRef SignTestApplet$7;
+		// 56
+		staticMethodRef SignTestApplet$7/<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V;
+		// 57
+		classRef SignTestApplet$8;
+		// 58
+		staticMethodRef SignTestApplet$8/<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V;
+		// 59
+		classRef SignTestApplet$9;
+		// 60
+		staticMethodRef SignTestApplet$9/<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V;
+		// 61
+		classRef SignTestApplet$10;
+		// 62
+		staticMethodRef SignTestApplet$10/<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V;
+		// 63
+		staticMethodRef SignTestApplet/access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B;
+		// 64
+		staticMethodRef SignTestApplet/access$6(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B;
+		// 65
+		staticMethodRef SignTestApplet/init([B[B[B[B)V;
+		// 66
+		staticMethodRef SignTestApplet/access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;;
+			.descriptor	Lbenchs/lib/templates/CryptoInfo;	0.3;
+
+		// 67
+		staticMethodRef SignTestApplet/access$7(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B;
+		// 68
+		virtualMethodRef 0.3.10()S;		// getInOffset()S
+	}
+
+	.class final SignTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SignTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$1.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$1.this$0
+					invokestatic 39;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$0(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/DummyClass;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$1.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$1.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 68;		// getInOffset()S
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$1.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 21;		// getInLength()S
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$1.this$0
+					invokestatic 22;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$1.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 23;		// getOutOffset()S
+					invokevirtual 24;		// dummyMethodShort([BSS[BS)V
+					return;
+		}
+
+	}
+
+	.class final SignTestApplet$10 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SignTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$10.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$10.this$0
+					aload_1;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$10.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					aload_1;
+					aconst_null;
+					invokestatic 28;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$4(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;[B[B[B[B)V
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$10.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					sconst_0;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$10.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					arraylength;
+					bspush -91;
+					invokestatic 33;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$10.this$0
+					invokestatic 35;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$5(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Ljavacard/security/Signature;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$10.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$10.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 68;		// getInOffset()S
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$10.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 21;		// getInLength()S
+					aload_1;
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$10.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 23;		// getOutOffset()S
+					invokevirtual 38;		// sign([BSS[BS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final SignTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SignTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.this$0
+					aload_1;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.this$0
+					invokestatic 22;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					aconst_null;
+					invokestatic 28;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$4(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;[B[B[B[B)V
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					sconst_0;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					arraylength;
+					bspush -91;
+					invokestatic 33;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.this$0
+					invokestatic 35;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$5(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Ljavacard/security/Signature;
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 68;		// getInOffset()S
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 21;		// getInLength()S
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.this$0
+					invokestatic 22;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 23;		// getOutOffset()S
+					invokevirtual 38;		// sign([BSS[BS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final SignTestApplet$3 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SignTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					aload_1;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					invokestatic 22;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					invokestatic 64;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$6(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					invokestatic 28;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$4(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;[B[B[B[B)V
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					sconst_0;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					arraylength;
+					bspush -91;
+					invokestatic 33;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					invokestatic 35;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$5(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Ljavacard/security/Signature;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 68;		// getInOffset()S
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 21;		// getInLength()S
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					invokestatic 22;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 23;		// getOutOffset()S
+					invokevirtual 38;		// sign([BSS[BS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final SignTestApplet$4 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SignTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					aload_1;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					invokestatic 22;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					invokestatic 67;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$7(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					invokestatic 28;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$4(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;[B[B[B[B)V
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					sconst_0;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					arraylength;
+					bspush -91;
+					invokestatic 33;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					invokestatic 35;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$5(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Ljavacard/security/Signature;
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 68;		// getInOffset()S
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 21;		// getInLength()S
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					invokestatic 22;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 23;		// getOutOffset()S
+					invokevirtual 38;		// sign([BSS[BS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final SignTestApplet$5 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SignTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$5.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 5;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$5.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					sconst_0;
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$5.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					arraylength;
+					bspush -91;
+					invokestatic 33;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$5.this$0
+					invokestatic 39;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$0(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/DummyClass;
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$5.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$5.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 68;		// getInOffset()S
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$5.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 21;		// getInLength()S
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$5.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$5.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 68;		// getInOffset()S
+					invokevirtual 24;		// dummyMethodShort([BSS[BS)V
+					return;
+		}
+
+	}
+
+	.class final SignTestApplet$6 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SignTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.this$0
+					aload_1;
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					aconst_null;
+					invokestatic 28;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$4(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;[B[B[B[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					sconst_0;
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					arraylength;
+					bspush -91;
+					invokestatic 33;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.this$0
+					invokestatic 35;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$5(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Ljavacard/security/Signature;
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 68;		// getInOffset()S
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 21;		// getInLength()S
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 68;		// getInOffset()S
+					invokevirtual 38;		// sign([BSS[BS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final SignTestApplet$7 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SignTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$7.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	aload_1;
+					sconst_0;
+					aload_1;
+					arraylength;
+					bspush -91;
+					invokestatic 33;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$7.this$0
+					invokestatic 39;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$0(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/DummyClass;
+					aload_1;
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$7.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 68;		// getInOffset()S
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$7.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 21;		// getInLength()S
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$7.this$0
+					invokestatic 22;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$7.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 23;		// getOutOffset()S
+					invokevirtual 24;		// dummyMethodShort([BSS[BS)V
+					return;
+		}
+
+	}
+
+	.class final SignTestApplet$8 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SignTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$8.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 8;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$8.this$0
+					aload_1;
+					aload_1;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$8.this$0
+					invokestatic 22;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					aconst_null;
+					invokestatic 28;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$4(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;[B[B[B[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	aload_1;
+					sconst_0;
+					aload_1;
+					arraylength;
+					bspush -91;
+					invokestatic 33;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$8.this$0
+					invokestatic 35;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$5(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Ljavacard/security/Signature;
+					aload_1;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$8.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 68;		// getInOffset()S
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$8.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 21;		// getInLength()S
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$8.this$0
+					invokestatic 22;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$3(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$8.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 23;		// getOutOffset()S
+					invokevirtual 38;		// sign([BSS[BS)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final SignTestApplet$9 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final SignTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$9.this$0
+					aload_0;
+					invokespecial 27;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	getfield_a_this 9;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$9.this$0
+					invokestatic 39;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$0(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/DummyClass;
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$9.this$0
+					invokestatic 63;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$9.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 68;		// getInOffset()S
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$9.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 21;		// getInLength()S
+					aload_1;
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet$9.this$0
+					invokestatic 66;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo;
+					invokevirtual 23;		// getOutOffset()S
+					invokevirtual 24;		// dummyMethodShort([BSS[BS)V
+					return;
+		}
+
+	}
+
+	.class public SignTestApplet 0 extends 0.11 {		// extends benchs/lib/templates/CryptoTemplateApplet
+
+		.fields {
+			private byte[] inputBuffer 0;		// [B
+			private byte[] outputBuffer 1;		// [B
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+			init([B)V;
+			buildKey()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method private <init>()V {
+			.stack 3;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 25;		// benchs/lib/templates/CryptoTemplateApplet.<init>()V
+					aload_0;
+					sspush 256;
+					sconst_2;
+					invokestatic 26;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 10;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet.inputBuffer
+					aload_0;
+					sspush 320;
+					sconst_2;
+					invokestatic 26;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 11;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet.outputBuffer
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 29;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet
+					dup;
+					invokespecial 30;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.<init>()V
+					invokevirtual 31;		// register()V
+					return;
+		}
+
+		.method private init([B[B[B[B)V {
+			.stack 6;
+			.locals 1;
+
+				L0:	aload_0;
+					aload_1;
+					invokevirtual 32;		// init([B)V
+					sconst_0;
+					sstore 5;
+					getfield_a_this 12;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 34;		// getAlgorithm()B
+					stableswitch L4 1 16 L1 L2 L1 L2 L1 L2 L1 L2 L3 L3 L3 L3 L3 L3 L3 L3;
+				L1:	sconst_4;
+					sstore 5;
+					goto L4;
+				L2:	bspush 8;
+					sstore 5;
+					goto L4;
+				L3:	getfield_a_this 13;		// reference benchs/lib/templates/KeyTemplateApplet.keyInfo
+					invokevirtual 36;		// getKeyLength()S
+					bspush 8;
+					sdiv;
+					sstore 5;
+					goto L4;
+				L4:	getfield_a_this 12;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 68;		// getInOffset()S
+					getfield_a_this 12;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 21;		// getInLength()S
+					sadd;
+					aload_2;
+					arraylength;
+					if_scmple L6;
+				L5:	sspush 27012;
+					invokestatic 37;		// javacard/framework/ISOException.throwIt(S)V
+				L6:	getfield_a_this 12;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					invokevirtual 23;		// getOutOffset()S
+					sload 5;
+					sadd;
+					aload_3;
+					arraylength;
+					if_scmple L8;
+				L7:	sspush 27012;
+					invokestatic 37;		// javacard/framework/ISOException.throwIt(S)V
+				L8:	aload 4;
+					ifnonnull L10;
+				L9:	getfield_a_this 14;		// reference benchs/lib/templates/CryptoTemplateApplet.signature
+					getfield_a_this 15;		// reference benchs/lib/templates/KeyTemplateApplet.key
+					sconst_1;
+					invokevirtual 40;		// init(Ljavacard/security/Key;B)V
+					goto L11;
+				L10:	getfield_a_this 14;		// reference benchs/lib/templates/CryptoTemplateApplet.signature
+					getfield_a_this 15;		// reference benchs/lib/templates/KeyTemplateApplet.key
+					sconst_1;
+					aload 4;
+					sconst_0;
+					aload 4;
+					arraylength;
+					invokevirtual 41;		// init(Ljavacard/security/Key;B[BSS)V
+				L11:	return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 10;
+					anewarray 42;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 43;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 44;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$1.<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 45;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 46;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$2.<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 47;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 48;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$3.<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 49;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 50;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$4.<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 51;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 52;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$5.<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 53;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 54;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$6.<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 55;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$7
+					dup;
+					aload_0;
+					invokespecial 56;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$7.<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 57;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$8
+					dup;
+					aload_0;
+					invokespecial 58;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$8.<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 59;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$9
+					dup;
+					aload_0;
+					invokespecial 60;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$9.<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 61;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$10
+					dup;
+					aload_0;
+					invokespecial 62;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet$10.<init>(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static access$0(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/DummyClass; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/DummyClass;	0.5;
+
+				L0:	aload_0;
+					getfield_a 16;		// reference benchs/lib/templates/CryptoTemplateApplet.dummy
+					areturn;
+		}
+
+		.method static access$1(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 10;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet.inputBuffer
+					areturn;
+		}
+
+		.method static access$2(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Lbenchs/lib/templates/CryptoInfo; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/CryptoInfo;	0.3;
+
+				L0:	aload_0;
+					getfield_a 17;		// reference benchs/lib/templates/CryptoTemplateApplet.cryptoInfo
+					areturn;
+		}
+
+		.method static access$3(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 11;		// reference benchs/jcapi/javacard_security/signature/sign/SignTestApplet.outputBuffer
+					areturn;
+		}
+
+		.method static access$4(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;[B[B[B[B)V {
+			.stack 5;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					aload_2;
+					aload_3;
+					aload 4;
+					invokespecial 65;		// benchs/jcapi/javacard_security/signature/sign/SignTestApplet.init([B[B[B[B)V
+					return;
+		}
+
+		.method static access$5(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)Ljavacard/security/Signature; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Ljavacard/security/Signature;	3.15;
+
+				L0:	aload_0;
+					getfield_a 18;		// reference benchs/lib/templates/CryptoTemplateApplet.signature
+					areturn;
+		}
+
+		.method static access$6(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 19;		// reference benchs/lib/templates/CryptoTemplateApplet.IV_NULL
+					areturn;
+		}
+
+		.method static access$7(Lbenchs/jcapi/javacard_security/signature/sign/SignTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 20;		// reference benchs/lib/templates/CryptoTemplateApplet.IV
+					areturn;
+		}
+
+	}
+
+}

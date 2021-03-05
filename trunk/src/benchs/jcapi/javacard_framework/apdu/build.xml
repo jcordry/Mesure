@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<project name="apdu" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="getbuffer" target="convert" inheritall="false"/>
+	  <ant dir="getprotocol" target="convert" inheritall="false"/>
+	</target>
+
+</project>

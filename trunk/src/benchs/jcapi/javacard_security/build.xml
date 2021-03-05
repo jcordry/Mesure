@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<project name="javacard_security" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="deskey" target="convert" inheritall="false"/>
+	  <ant dir="key" target="convert" inheritall="false"/>
+	  <ant dir="messagedigest" target="convert" inheritall="false"/>
+	  <ant dir="randomdata" target="convert" inheritall="false"/>
+	  <ant dir="signature" target="convert" inheritall="false"/>
+	  <ant dir="rsaprivatecrtkey" target="convert" inheritall="false"/>
+	  <ant dir="rsaprivatekey" target="convert" inheritall="false"/>
+	  <ant dir="rsapublickey" target="convert" inheritall="false"/>
+	</target>
+
+</project>

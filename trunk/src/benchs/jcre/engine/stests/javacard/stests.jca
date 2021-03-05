@@ -1,0 +1,1801 @@
+                                                                                                                                     // converted by version 1.3
+// on Mon Nov 26 16:43:17 CET 2007
+
+.package benchs/jcre/engine/stests {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x74:0x65:0x73:0x74:0x73;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x74:0x65:0x73:0x74:0x73:0x1 STestsTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef STestsTestApplet STestsTestApplet$1/this$0;
+		// 1
+		instanceFieldRef STestsTestApplet STestsTestApplet$10/this$0;
+		// 2
+		instanceFieldRef STestsTestApplet STestsTestApplet$11/this$0;
+		// 3
+		instanceFieldRef STestsTestApplet STestsTestApplet$12/this$0;
+		// 4
+		instanceFieldRef STestsTestApplet STestsTestApplet$13/this$0;
+		// 5
+		instanceFieldRef STestsTestApplet STestsTestApplet$14/this$0;
+		// 6
+		instanceFieldRef STestsTestApplet STestsTestApplet$15/this$0;
+		// 7
+		instanceFieldRef STestsTestApplet STestsTestApplet$16/this$0;
+		// 8
+		instanceFieldRef STestsTestApplet STestsTestApplet$17/this$0;
+		// 9
+		instanceFieldRef STestsTestApplet STestsTestApplet$18/this$0;
+		// 10
+		instanceFieldRef STestsTestApplet STestsTestApplet$19/this$0;
+		// 11
+		instanceFieldRef STestsTestApplet STestsTestApplet$2/this$0;
+		// 12
+		instanceFieldRef STestsTestApplet STestsTestApplet$20/this$0;
+		// 13
+		instanceFieldRef STestsTestApplet STestsTestApplet$21/this$0;
+		// 14
+		instanceFieldRef STestsTestApplet STestsTestApplet$22/this$0;
+		// 15
+		instanceFieldRef STestsTestApplet STestsTestApplet$23/this$0;
+		// 16
+		instanceFieldRef STestsTestApplet STestsTestApplet$24/this$0;
+		// 17
+		instanceFieldRef STestsTestApplet STestsTestApplet$25/this$0;
+		// 18
+		instanceFieldRef STestsTestApplet STestsTestApplet$26/this$0;
+		// 19
+		instanceFieldRef STestsTestApplet STestsTestApplet$3/this$0;
+		// 20
+		instanceFieldRef STestsTestApplet STestsTestApplet$4/this$0;
+		// 21
+		instanceFieldRef STestsTestApplet STestsTestApplet$5/this$0;
+		// 22
+		instanceFieldRef STestsTestApplet STestsTestApplet$6/this$0;
+		// 23
+		instanceFieldRef STestsTestApplet STestsTestApplet$7/this$0;
+		// 24
+		instanceFieldRef STestsTestApplet STestsTestApplet$8/this$0;
+		// 25
+		instanceFieldRef STestsTestApplet STestsTestApplet$9/this$0;
+		// 26
+		classRef 1.0;		// java/lang/Object
+		// 27
+		staticMethodRef 1.0.0()V;		// java/lang/Object.<init>()V
+		// 28
+		staticFieldRef 1.0 STestsTestApplet/dummy;
+		// 29
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 30
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 31
+		classRef STestsTestApplet;
+		// 32
+		staticMethodRef STestsTestApplet/<init>()V;
+		// 33
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 34
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 35
+		classRef STestsTestApplet$1;
+		// 36
+		staticMethodRef STestsTestApplet$1/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 37
+		classRef STestsTestApplet$2;
+		// 38
+		staticMethodRef STestsTestApplet$2/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 39
+		classRef STestsTestApplet$3;
+		// 40
+		staticMethodRef STestsTestApplet$3/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 41
+		classRef STestsTestApplet$4;
+		// 42
+		staticMethodRef STestsTestApplet$4/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 43
+		classRef STestsTestApplet$5;
+		// 44
+		staticMethodRef STestsTestApplet$5/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 45
+		classRef STestsTestApplet$6;
+		// 46
+		staticMethodRef STestsTestApplet$6/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 47
+		classRef STestsTestApplet$7;
+		// 48
+		staticMethodRef STestsTestApplet$7/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 49
+		classRef STestsTestApplet$8;
+		// 50
+		staticMethodRef STestsTestApplet$8/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 51
+		classRef STestsTestApplet$9;
+		// 52
+		staticMethodRef STestsTestApplet$9/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 53
+		classRef STestsTestApplet$10;
+		// 54
+		staticMethodRef STestsTestApplet$10/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 55
+		classRef STestsTestApplet$11;
+		// 56
+		staticMethodRef STestsTestApplet$11/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 57
+		classRef STestsTestApplet$12;
+		// 58
+		staticMethodRef STestsTestApplet$12/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 59
+		classRef STestsTestApplet$13;
+		// 60
+		staticMethodRef STestsTestApplet$13/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 61
+		classRef STestsTestApplet$14;
+		// 62
+		staticMethodRef STestsTestApplet$14/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 63
+		classRef STestsTestApplet$15;
+		// 64
+		staticMethodRef STestsTestApplet$15/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 65
+		classRef STestsTestApplet$16;
+		// 66
+		staticMethodRef STestsTestApplet$16/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 67
+		classRef STestsTestApplet$17;
+		// 68
+		staticMethodRef STestsTestApplet$17/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 69
+		classRef STestsTestApplet$18;
+		// 70
+		staticMethodRef STestsTestApplet$18/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 71
+		classRef STestsTestApplet$19;
+		// 72
+		staticMethodRef STestsTestApplet$19/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 73
+		classRef STestsTestApplet$20;
+		// 74
+		staticMethodRef STestsTestApplet$20/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 75
+		classRef STestsTestApplet$21;
+		// 76
+		staticMethodRef STestsTestApplet$21/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 77
+		classRef STestsTestApplet$22;
+		// 78
+		staticMethodRef STestsTestApplet$22/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 79
+		classRef STestsTestApplet$23;
+		// 80
+		staticMethodRef STestsTestApplet$23/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 81
+		classRef STestsTestApplet$24;
+		// 82
+		staticMethodRef STestsTestApplet$24/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 83
+		classRef STestsTestApplet$25;
+		// 84
+		staticMethodRef STestsTestApplet$25/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+		// 85
+		classRef STestsTestApplet$26;
+		// 86
+		staticMethodRef STestsTestApplet$26/<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V;
+	}
+
+	.class final STestsTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcre/engine/stests/STestsTestApplet$1.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					sinc 2 1;
+					     sload_2;
+     sload_3;
+					return;
+		}
+
+	}
+
+	.class final STestsTestApplet$10 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcre/engine/stests/STestsTestApplet$10.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					sload_2;
+					sload_3;
+					     ifle L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$11 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcre/engine/stests/STestsTestApplet$11.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					     sconst_m1;     
+					sstore_3;
+					sload_2;
+					sload_3;
+					     iflt L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$12 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcre/engine/stests/STestsTestApplet$12.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					sload_2;
+					sload_3;
+					     iflt L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$13 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcre/engine/stests/STestsTestApplet$13.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 26;		// java/lang/Object
+					dup;
+					invokespecial 27;		// java/lang/Object.<init>()V
+					putstatic_a 28;		// reference benchs/jcre/engine/stests/STestsTestApplet.dummy
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					getstatic_a 28;		// reference benchs/jcre/engine/stests/STestsTestApplet.dummy
+					     aconst_null;
+     ifnull L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+		.method public cleanUp([B)V 3 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aconst_null;
+					putstatic_a 28;		// reference benchs/jcre/engine/stests/STestsTestApplet.dummy
+					return;
+		}
+
+	}
+
+	.class final STestsTestApplet$14 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcre/engine/stests/STestsTestApplet$14.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 26;		// java/lang/Object
+					dup;
+					invokespecial 27;		// java/lang/Object.<init>()V
+					putstatic_a 28;		// reference benchs/jcre/engine/stests/STestsTestApplet.dummy
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					getstatic_a 28;		// reference benchs/jcre/engine/stests/STestsTestApplet.dummy
+					ifnull L2;
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	     aconst_null;
+					return;
+		}
+
+		.method public cleanUp([B)V 3 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aconst_null;
+					putstatic_a 28;		// reference benchs/jcre/engine/stests/STestsTestApplet.dummy
+					return;
+		}
+
+	}
+
+	.class final STestsTestApplet$15 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcre/engine/stests/STestsTestApplet$15.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					     sload_3;
+     sload_2;
+     if_scmpge L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$16 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcre/engine/stests/STestsTestApplet$16.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					sload_2;
+					sload_3;
+					     if_scmpge L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$17 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcre/engine/stests/STestsTestApplet$17.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					     sload_3;
+     sload_2;
+     if_scmpgt L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$18 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcre/engine/stests/STestsTestApplet$18.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					sload_2;
+					sload_3;
+					     if_scmpgt L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$19 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 10;		// reference benchs/jcre/engine/stests/STestsTestApplet$19.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					sload_2;
+					sload_3;
+					     if_scmple L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 11;		// reference benchs/jcre/engine/stests/STestsTestApplet$2.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					sinc 2 1;
+					     sload_2;
+     sload_3;
+     goto L1;
+     L1: return;
+		}
+
+	}
+
+	.class final STestsTestApplet$20 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 12;		// reference benchs/jcre/engine/stests/STestsTestApplet$20.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					     sload_3;
+     sload_2;
+     if_scmple L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$21 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 13;		// reference benchs/jcre/engine/stests/STestsTestApplet$21.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					sload_2;
+					sload_3;
+					     if_scmplt L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$22 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 14;		// reference benchs/jcre/engine/stests/STestsTestApplet$22.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					     sload_3;
+     sload_2;
+     if_scmplt L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$23 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 15;		// reference benchs/jcre/engine/stests/STestsTestApplet$23.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					sload_2;
+					sload_3;
+					     if_scmpne L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$24 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 16;		// reference benchs/jcre/engine/stests/STestsTestApplet$24.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					     sconst_0;     
+					sstore_3;
+					sload_2;
+					sload_3;
+					     if_scmpne L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$25 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 17;		// reference benchs/jcre/engine/stests/STestsTestApplet$25.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					     sconst_0;     
+					sstore_3;
+					sload_2;
+					sload_3;
+					     if_scmpeq L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$26 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 18;		// reference benchs/jcre/engine/stests/STestsTestApplet$26.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					sload_2;
+					sload_3;
+					     if_scmpeq L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$3 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 19;		// reference benchs/jcre/engine/stests/STestsTestApplet$3.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 26;		// java/lang/Object
+					dup;
+					invokespecial 27;		// java/lang/Object.<init>()V
+					putstatic_a 28;		// reference benchs/jcre/engine/stests/STestsTestApplet.dummy
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					getstatic_a 28;		// reference benchs/jcre/engine/stests/STestsTestApplet.dummy
+					     aconst_null;
+     sinc 2 1;
+					return;
+		}
+
+		.method public cleanUp([B)V 3 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aconst_null;
+					putstatic_a 28;		// reference benchs/jcre/engine/stests/STestsTestApplet.dummy
+					return;
+		}
+
+	}
+
+	.class final STestsTestApplet$4 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 20;		// reference benchs/jcre/engine/stests/STestsTestApplet$4.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 26;		// java/lang/Object
+					dup;
+					invokespecial 27;		// java/lang/Object.<init>()V
+					putstatic_a 28;		// reference benchs/jcre/engine/stests/STestsTestApplet.dummy
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					getstatic_a 28;		// reference benchs/jcre/engine/stests/STestsTestApplet.dummy
+					     aconst_null;
+     sinc 2 1;
+     goto L1;
+     L1: return;
+		}
+
+		.method public cleanUp([B)V 3 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aconst_null;
+					putstatic_a 28;		// reference benchs/jcre/engine/stests/STestsTestApplet.dummy
+					return;
+		}
+
+	}
+
+	.class final STestsTestApplet$5 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 21;		// reference benchs/jcre/engine/stests/STestsTestApplet$5.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					sload_2;
+					sload_3;
+					     ifge L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$6 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 22;		// reference benchs/jcre/engine/stests/STestsTestApplet$6.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					     sconst_m1;     
+					sstore_3;
+					sload_2;
+					sload_3;
+					     ifge L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$7 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 23;		// reference benchs/jcre/engine/stests/STestsTestApplet$7.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					sconst_1;
+					sstore_3;
+					sload_2;
+					sload_3;
+					     ifgt L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$8 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 24;		// reference benchs/jcre/engine/stests/STestsTestApplet$8.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					     sconst_m1;     
+					sstore_3;
+					sload_2;
+					sload_3;
+					     ifgt L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class final STestsTestApplet$9 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final STestsTestApplet this$0 0;		// Lbenchs/jcre/engine/stests/STestsTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 25;		// reference benchs/jcre/engine/stests/STestsTestApplet$9.this$0
+					aload_0;
+					invokespecial 29;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			     .stack 2;
+     .locals 2;     
+
+				L0:	sconst_0;
+					sstore_2;
+					     sconst_m1;     
+					sstore_3;
+					sload_2;
+					sload_3;
+					     ifle L2;     
+				L1:	sinc 2 1;
+					goto L3;
+				L2:	sinc 3 1;
+				L3:	return;
+		}
+
+	}
+
+	.class public STestsTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			public static 1.0 dummy 0;		// Ljava/lang/Object;
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 30;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 1 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 31;		// benchs/jcre/engine/stests/STestsTestApplet
+					dup;
+					invokespecial 32;		// benchs/jcre/engine/stests/STestsTestApplet.<init>()V
+					invokevirtual 33;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 26;
+					anewarray 34;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 35;		// benchs/jcre/engine/stests/STestsTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 36;		// benchs/jcre/engine/stests/STestsTestApplet$1.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 37;		// benchs/jcre/engine/stests/STestsTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 38;		// benchs/jcre/engine/stests/STestsTestApplet$2.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 39;		// benchs/jcre/engine/stests/STestsTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 40;		// benchs/jcre/engine/stests/STestsTestApplet$3.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 41;		// benchs/jcre/engine/stests/STestsTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 42;		// benchs/jcre/engine/stests/STestsTestApplet$4.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 43;		// benchs/jcre/engine/stests/STestsTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 44;		// benchs/jcre/engine/stests/STestsTestApplet$5.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 45;		// benchs/jcre/engine/stests/STestsTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 46;		// benchs/jcre/engine/stests/STestsTestApplet$6.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 47;		// benchs/jcre/engine/stests/STestsTestApplet$7
+					dup;
+					aload_0;
+					invokespecial 48;		// benchs/jcre/engine/stests/STestsTestApplet$7.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 49;		// benchs/jcre/engine/stests/STestsTestApplet$8
+					dup;
+					aload_0;
+					invokespecial 50;		// benchs/jcre/engine/stests/STestsTestApplet$8.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 51;		// benchs/jcre/engine/stests/STestsTestApplet$9
+					dup;
+					aload_0;
+					invokespecial 52;		// benchs/jcre/engine/stests/STestsTestApplet$9.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 53;		// benchs/jcre/engine/stests/STestsTestApplet$10
+					dup;
+					aload_0;
+					invokespecial 54;		// benchs/jcre/engine/stests/STestsTestApplet$10.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 10;
+					new 55;		// benchs/jcre/engine/stests/STestsTestApplet$11
+					dup;
+					aload_0;
+					invokespecial 56;		// benchs/jcre/engine/stests/STestsTestApplet$11.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 11;
+					new 57;		// benchs/jcre/engine/stests/STestsTestApplet$12
+					dup;
+					aload_0;
+					invokespecial 58;		// benchs/jcre/engine/stests/STestsTestApplet$12.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 12;
+					new 59;		// benchs/jcre/engine/stests/STestsTestApplet$13
+					dup;
+					aload_0;
+					invokespecial 60;		// benchs/jcre/engine/stests/STestsTestApplet$13.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 13;
+					new 61;		// benchs/jcre/engine/stests/STestsTestApplet$14
+					dup;
+					aload_0;
+					invokespecial 62;		// benchs/jcre/engine/stests/STestsTestApplet$14.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 14;
+					new 63;		// benchs/jcre/engine/stests/STestsTestApplet$15
+					dup;
+					aload_0;
+					invokespecial 64;		// benchs/jcre/engine/stests/STestsTestApplet$15.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 15;
+					new 65;		// benchs/jcre/engine/stests/STestsTestApplet$16
+					dup;
+					aload_0;
+					invokespecial 66;		// benchs/jcre/engine/stests/STestsTestApplet$16.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 16;
+					new 67;		// benchs/jcre/engine/stests/STestsTestApplet$17
+					dup;
+					aload_0;
+					invokespecial 68;		// benchs/jcre/engine/stests/STestsTestApplet$17.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 17;
+					new 69;		// benchs/jcre/engine/stests/STestsTestApplet$18
+					dup;
+					aload_0;
+					invokespecial 70;		// benchs/jcre/engine/stests/STestsTestApplet$18.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 18;
+					new 71;		// benchs/jcre/engine/stests/STestsTestApplet$19
+					dup;
+					aload_0;
+					invokespecial 72;		// benchs/jcre/engine/stests/STestsTestApplet$19.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 19;
+					new 73;		// benchs/jcre/engine/stests/STestsTestApplet$20
+					dup;
+					aload_0;
+					invokespecial 74;		// benchs/jcre/engine/stests/STestsTestApplet$20.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 20;
+					new 75;		// benchs/jcre/engine/stests/STestsTestApplet$21
+					dup;
+					aload_0;
+					invokespecial 76;		// benchs/jcre/engine/stests/STestsTestApplet$21.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 21;
+					new 77;		// benchs/jcre/engine/stests/STestsTestApplet$22
+					dup;
+					aload_0;
+					invokespecial 78;		// benchs/jcre/engine/stests/STestsTestApplet$22.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 22;
+					new 79;		// benchs/jcre/engine/stests/STestsTestApplet$23
+					dup;
+					aload_0;
+					invokespecial 80;		// benchs/jcre/engine/stests/STestsTestApplet$23.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 23;
+					new 81;		// benchs/jcre/engine/stests/STestsTestApplet$24
+					dup;
+					aload_0;
+					invokespecial 82;		// benchs/jcre/engine/stests/STestsTestApplet$24.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 24;
+					new 83;		// benchs/jcre/engine/stests/STestsTestApplet$25
+					dup;
+					aload_0;
+					invokespecial 84;		// benchs/jcre/engine/stests/STestsTestApplet$25.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					dup;
+					bspush 25;
+					new 85;		// benchs/jcre/engine/stests/STestsTestApplet$26
+					dup;
+					aload_0;
+					invokespecial 86;		// benchs/jcre/engine/stests/STestsTestApplet$26.<init>(Lbenchs/jcre/engine/stests/STestsTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+	}
+
+}

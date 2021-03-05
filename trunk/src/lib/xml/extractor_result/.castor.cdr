@@ -1,0 +1,5 @@
+#Fri Feb 16 10:20:25 CET 2007
+lib.xml.extractor_result.Metric=lib.xml.extractor_result.MetricDescriptor
+lib.xml.extractor_result.ExtractorResult=lib.xml.extractor_result.ExtractorResultDescriptor
+lib.xml.extractor_result.Unit=lib.xml.extractor_result.UnitDescriptor
+lib.xml.extractor_result.Time=lib.xml.extractor_result.TimeDescriptor

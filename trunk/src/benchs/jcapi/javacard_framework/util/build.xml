@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<project name="Util" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="arraycompare" target="convert" inheritall="false"/>
+	  <ant dir="arraycopy" target="convert" inheritall="false"/>
+	  <ant dir="arraycopynonatomic" target="convert" inheritall="false"/>
+	  <ant dir="arrayfillnonatomic" target="convert" inheritall="false"/>
+	  <ant dir="setshort" target="convert" inheritall="false"/>
+	  <ant dir="getshort" target="convert" inheritall="false"/>
+	  <ant dir="makeshort" target="convert" inheritall="false"/>
+	</target>
+
+</project>

@@ -1,0 +1,1140 @@
+// converted by version 1.3
+// on Mon Nov 26 16:43:39 CET 2007
+
+.package benchs/memory/cache/write {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x63:0x61:0x63:0x68:0x65:0x77;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x63:0x61:0x63:0x68:0x65:0x77:0x1 WriteCacheApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef WriteCacheApplet WriteCacheApplet$10/this$0;
+		// 1
+		instanceFieldRef WriteCacheApplet WriteCacheApplet$11/this$0;
+		// 2
+		instanceFieldRef WriteCacheApplet WriteCacheApplet$2/this$0;
+		// 3
+		instanceFieldRef WriteCacheApplet WriteCacheApplet$3/this$0;
+		// 4
+		instanceFieldRef WriteCacheApplet WriteCacheApplet$4/this$0;
+		// 5
+		instanceFieldRef WriteCacheApplet WriteCacheApplet$5/this$0;
+		// 6
+		instanceFieldRef WriteCacheApplet WriteCacheApplet$6/this$0;
+		// 7
+		instanceFieldRef WriteCacheApplet WriteCacheApplet$7/this$0;
+		// 8
+		instanceFieldRef WriteCacheApplet WriteCacheApplet$8/this$0;
+		// 9
+		instanceFieldRef WriteCacheApplet WriteCacheApplet$9/this$0;
+		// 10
+		instanceFieldRef WriteCacheApplet WriteCacheApplet$1/this$0;
+		// 11
+		virtualMethodRef WriteCacheApplet/test_unit_cache_4()V;
+		// 12
+		staticMethodRef WriteCacheTestCase/<init>()V;
+		// 13
+		virtualMethodRef WriteCacheApplet/test_unit_cache_8()V;
+		// 14
+		virtualMethodRef WriteCacheApplet/test_unit_cache_512()V;
+		// 15
+		virtualMethodRef WriteCacheApplet/test_unit_cache_16()V;
+		// 16
+		virtualMethodRef 0.7.5(Z)V;		// setUseInnerCounter(Z)V
+		// 17
+		virtualMethodRef WriteCacheApplet/test_unit_cache_32()V;
+		// 18
+		virtualMethodRef WriteCacheApplet/clean()V;
+		// 19
+		virtualMethodRef WriteCacheApplet/test_unit_cache_64()V;
+		// 20
+		staticFieldRef short WriteCacheApplet/iterCount;
+		// 21
+		virtualMethodRef WriteCacheApplet/test_unit_cache_128()V;
+		// 22
+		virtualMethodRef WriteCacheApplet/test_unit_cache_2()V;
+		// 23
+		virtualMethodRef WriteCacheApplet/test_unit_cache_256()V;
+		// 24
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 25
+		classRef WriteCacheApplet;
+		// 26
+		staticMethodRef WriteCacheApplet/<init>()V;
+		// 27
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 28
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 29
+		classRef WriteCacheApplet$1;
+		// 30
+		staticMethodRef WriteCacheApplet$1/<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V;
+		// 31
+		classRef WriteCacheApplet$2;
+		// 32
+		staticMethodRef WriteCacheApplet$2/<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V;
+		// 33
+		classRef WriteCacheApplet$3;
+		// 34
+		staticMethodRef WriteCacheApplet$3/<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V;
+		// 35
+		classRef WriteCacheApplet$4;
+		// 36
+		staticMethodRef WriteCacheApplet$4/<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V;
+		// 37
+		classRef WriteCacheApplet$5;
+		// 38
+		staticMethodRef WriteCacheApplet$5/<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V;
+		// 39
+		classRef WriteCacheApplet$6;
+		// 40
+		staticMethodRef WriteCacheApplet$6/<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V;
+		// 41
+		classRef WriteCacheApplet$7;
+		// 42
+		staticMethodRef WriteCacheApplet$7/<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V;
+		// 43
+		classRef WriteCacheApplet$8;
+		// 44
+		staticMethodRef WriteCacheApplet$8/<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V;
+		// 45
+		classRef WriteCacheApplet$9;
+		// 46
+		staticMethodRef WriteCacheApplet$9/<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V;
+		// 47
+		classRef WriteCacheApplet$10;
+		// 48
+		staticMethodRef WriteCacheApplet$10/<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V;
+		// 49
+		classRef WriteCacheApplet$11;
+		// 50
+		staticMethodRef WriteCacheApplet$11/<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V;
+		// 51
+		staticFieldRef short[] WriteCacheApplet/SHORT_REF;
+		// 52
+		staticFieldRef short[] WriteCacheApplet/SHORT_CACHE_2;
+		// 53
+		staticFieldRef short[] WriteCacheApplet/SHORT_CACHE_4;
+		// 54
+		staticFieldRef short[] WriteCacheApplet/SHORT_CACHE_8;
+		// 55
+		staticFieldRef short[] WriteCacheApplet/SHORT_CACHE_16;
+		// 56
+		staticFieldRef short[] WriteCacheApplet/SHORT_CACHE_32;
+		// 57
+		staticFieldRef short[] WriteCacheApplet/SHORT_CACHE_64;
+		// 58
+		staticFieldRef short[] WriteCacheApplet/SHORT_CACHE_128;
+		// 59
+		staticFieldRef short[] WriteCacheApplet/SHORT_CACHE_256;
+		// 60
+		staticFieldRef short[] WriteCacheApplet/SHORT_CACHE_512;
+		// 61
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 62
+		virtualMethodRef WriteCacheApplet/test_unit_ref()V;
+	}
+
+	.class  WriteCacheTestCase extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 61;		// benchs/lib/templates/TestCase.<init>()V
+					aload_0;
+					sconst_1;
+					invokevirtual 16;		// setUseInnerCounter(Z)V
+					return;
+		}
+
+		.method public setUp([BS)V 1 {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_2;
+					putstatic_s 20;		// short benchs/memory/cache/write/WriteCacheApplet.iterCount
+					return;
+		}
+
+		.method public cleanUp([B)V 3 {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+	}
+
+	.class final WriteCacheApplet$10 extends WriteCacheTestCase {
+
+		.fields {
+			final WriteCacheApplet this$0 0;		// Lbenchs/memory/cache/write/WriteCacheApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/memory/cache/write/WriteCacheApplet$10.this$0
+					aload_0;
+					invokespecial 12;		// benchs/memory/cache/write/WriteCacheTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/memory/cache/write/WriteCacheApplet$10.this$0
+					invokevirtual 14;		// test_unit_cache_512()V
+					return;
+		}
+
+	}
+
+	.class final WriteCacheApplet$11 extends WriteCacheTestCase {
+
+		.fields {
+			final WriteCacheApplet this$0 0;		// Lbenchs/memory/cache/write/WriteCacheApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/memory/cache/write/WriteCacheApplet$11.this$0
+					aload_0;
+					invokespecial 12;		// benchs/memory/cache/write/WriteCacheTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/memory/cache/write/WriteCacheApplet$11.this$0
+					invokevirtual 18;		// clean()V
+					return;
+		}
+
+	}
+
+	.class final WriteCacheApplet$2 extends WriteCacheTestCase {
+
+		.fields {
+			final WriteCacheApplet this$0 0;		// Lbenchs/memory/cache/write/WriteCacheApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/memory/cache/write/WriteCacheApplet$2.this$0
+					aload_0;
+					invokespecial 12;		// benchs/memory/cache/write/WriteCacheTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/memory/cache/write/WriteCacheApplet$2.this$0
+					invokevirtual 22;		// test_unit_cache_2()V
+					return;
+		}
+
+	}
+
+	.class final WriteCacheApplet$3 extends WriteCacheTestCase {
+
+		.fields {
+			final WriteCacheApplet this$0 0;		// Lbenchs/memory/cache/write/WriteCacheApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/memory/cache/write/WriteCacheApplet$3.this$0
+					aload_0;
+					invokespecial 12;		// benchs/memory/cache/write/WriteCacheTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/memory/cache/write/WriteCacheApplet$3.this$0
+					invokevirtual 11;		// test_unit_cache_4()V
+					return;
+		}
+
+	}
+
+	.class final WriteCacheApplet$4 extends WriteCacheTestCase {
+
+		.fields {
+			final WriteCacheApplet this$0 0;		// Lbenchs/memory/cache/write/WriteCacheApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/memory/cache/write/WriteCacheApplet$4.this$0
+					aload_0;
+					invokespecial 12;		// benchs/memory/cache/write/WriteCacheTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/memory/cache/write/WriteCacheApplet$4.this$0
+					invokevirtual 13;		// test_unit_cache_8()V
+					return;
+		}
+
+	}
+
+	.class final WriteCacheApplet$5 extends WriteCacheTestCase {
+
+		.fields {
+			final WriteCacheApplet this$0 0;		// Lbenchs/memory/cache/write/WriteCacheApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/memory/cache/write/WriteCacheApplet$5.this$0
+					aload_0;
+					invokespecial 12;		// benchs/memory/cache/write/WriteCacheTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 5;		// reference benchs/memory/cache/write/WriteCacheApplet$5.this$0
+					invokevirtual 15;		// test_unit_cache_16()V
+					return;
+		}
+
+	}
+
+	.class final WriteCacheApplet$6 extends WriteCacheTestCase {
+
+		.fields {
+			final WriteCacheApplet this$0 0;		// Lbenchs/memory/cache/write/WriteCacheApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/memory/cache/write/WriteCacheApplet$6.this$0
+					aload_0;
+					invokespecial 12;		// benchs/memory/cache/write/WriteCacheTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/memory/cache/write/WriteCacheApplet$6.this$0
+					invokevirtual 17;		// test_unit_cache_32()V
+					return;
+		}
+
+	}
+
+	.class final WriteCacheApplet$7 extends WriteCacheTestCase {
+
+		.fields {
+			final WriteCacheApplet this$0 0;		// Lbenchs/memory/cache/write/WriteCacheApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/memory/cache/write/WriteCacheApplet$7.this$0
+					aload_0;
+					invokespecial 12;		// benchs/memory/cache/write/WriteCacheTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/memory/cache/write/WriteCacheApplet$7.this$0
+					invokevirtual 19;		// test_unit_cache_64()V
+					return;
+		}
+
+	}
+
+	.class final WriteCacheApplet$8 extends WriteCacheTestCase {
+
+		.fields {
+			final WriteCacheApplet this$0 0;		// Lbenchs/memory/cache/write/WriteCacheApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/memory/cache/write/WriteCacheApplet$8.this$0
+					aload_0;
+					invokespecial 12;		// benchs/memory/cache/write/WriteCacheTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 8;		// reference benchs/memory/cache/write/WriteCacheApplet$8.this$0
+					invokevirtual 21;		// test_unit_cache_128()V
+					return;
+		}
+
+	}
+
+	.class final WriteCacheApplet$9 extends WriteCacheTestCase {
+
+		.fields {
+			final WriteCacheApplet this$0 0;		// Lbenchs/memory/cache/write/WriteCacheApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/memory/cache/write/WriteCacheApplet$9.this$0
+					aload_0;
+					invokespecial 12;		// benchs/memory/cache/write/WriteCacheTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 9;		// reference benchs/memory/cache/write/WriteCacheApplet$9.this$0
+					invokevirtual 23;		// test_unit_cache_256()V
+					return;
+		}
+
+	}
+
+	.class public WriteCacheApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			public static short[] SHORT_REF 0 = {0,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,0,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511};		// [S
+			public static short[] SHORT_CACHE_2 1 = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,0};		// [S
+			public static short[] SHORT_CACHE_4 2 = {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,1,0};		// [S
+			public static short[] SHORT_CACHE_8 3 = {4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,1,2,3,0};		// [S
+			public static short[] SHORT_CACHE_16 4 = {8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,1,2,3,4,5,6,7,0};		// [S
+			public static short[] SHORT_CACHE_32 5 = {16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,0};		// [S
+			public static short[] SHORT_CACHE_64 6 = {32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,0};		// [S
+			public static short[] SHORT_CACHE_128 7 = {64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,0};		// [S
+			public static short[] SHORT_CACHE_256 8 = {256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,0};		// [S
+			public static short[] SHORT_CACHE_512 9 = {256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,0};		// [S
+			public static short iterCount 10;		// S
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+			test_unit_ref()V;
+			test_unit_cache_2()V;
+			test_unit_cache_4()V;
+			test_unit_cache_8()V;
+			test_unit_cache_16()V;
+			test_unit_cache_32()V;
+			test_unit_cache_64()V;
+			test_unit_cache_128()V;
+			test_unit_cache_256()V;
+			test_unit_cache_512()V;
+			clean()V;
+		}
+
+		.method  <init>()V {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 24;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 25;		// benchs/memory/cache/write/WriteCacheApplet
+					dup;
+					invokespecial 26;		// benchs/memory/cache/write/WriteCacheApplet.<init>()V
+					invokevirtual 27;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 11;
+					anewarray 28;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 29;		// benchs/memory/cache/write/WriteCacheApplet$1
+					dup;
+					aload_0;
+					invokespecial 30;		// benchs/memory/cache/write/WriteCacheApplet$1.<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 31;		// benchs/memory/cache/write/WriteCacheApplet$2
+					dup;
+					aload_0;
+					invokespecial 32;		// benchs/memory/cache/write/WriteCacheApplet$2.<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 33;		// benchs/memory/cache/write/WriteCacheApplet$3
+					dup;
+					aload_0;
+					invokespecial 34;		// benchs/memory/cache/write/WriteCacheApplet$3.<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 35;		// benchs/memory/cache/write/WriteCacheApplet$4
+					dup;
+					aload_0;
+					invokespecial 36;		// benchs/memory/cache/write/WriteCacheApplet$4.<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 37;		// benchs/memory/cache/write/WriteCacheApplet$5
+					dup;
+					aload_0;
+					invokespecial 38;		// benchs/memory/cache/write/WriteCacheApplet$5.<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 39;		// benchs/memory/cache/write/WriteCacheApplet$6
+					dup;
+					aload_0;
+					invokespecial 40;		// benchs/memory/cache/write/WriteCacheApplet$6.<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 41;		// benchs/memory/cache/write/WriteCacheApplet$7
+					dup;
+					aload_0;
+					invokespecial 42;		// benchs/memory/cache/write/WriteCacheApplet$7.<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 43;		// benchs/memory/cache/write/WriteCacheApplet$8
+					dup;
+					aload_0;
+					invokespecial 44;		// benchs/memory/cache/write/WriteCacheApplet$8.<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 45;		// benchs/memory/cache/write/WriteCacheApplet$9
+					dup;
+					aload_0;
+					invokespecial 46;		// benchs/memory/cache/write/WriteCacheApplet$9.<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 47;		// benchs/memory/cache/write/WriteCacheApplet$10
+					dup;
+					aload_0;
+					invokespecial 48;		// benchs/memory/cache/write/WriteCacheApplet$10.<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V
+					aastore;
+					dup;
+					bspush 10;
+					new 49;		// benchs/memory/cache/write/WriteCacheApplet$11
+					dup;
+					aload_0;
+					invokespecial 50;		// benchs/memory/cache/write/WriteCacheApplet$11.<init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method  test_unit_ref()V 128 {
+			.stack 3;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 20;		// short benchs/memory/cache/write/WriteCacheApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 51;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_REF
+					astore 5;
+					goto L2;
+				L1:	aload 5;
+					sload_3;
+					saload;
+					sstore 4;
+					aload 5;
+					sload_3;
+					sload 4;
+					sastore;
+					sload 4;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_cache_2()V 129 {
+			.stack 3;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 20;		// short benchs/memory/cache/write/WriteCacheApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 52;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_2
+					astore 5;
+					goto L2;
+				L1:	aload 5;
+					sload_3;
+					saload;
+					sstore 4;
+					aload 5;
+					sload_3;
+					sload 4;
+					sastore;
+					sload 4;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_cache_4()V 130 {
+			.stack 3;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 20;		// short benchs/memory/cache/write/WriteCacheApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 53;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_4
+					astore 5;
+					goto L2;
+				L1:	aload 5;
+					sload_3;
+					saload;
+					sstore 4;
+					aload 5;
+					sload_3;
+					sload 4;
+					sastore;
+					sload 4;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_cache_8()V 131 {
+			.stack 3;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 20;		// short benchs/memory/cache/write/WriteCacheApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 54;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_8
+					astore 5;
+					goto L2;
+				L1:	aload 5;
+					sload_3;
+					saload;
+					sstore 4;
+					aload 5;
+					sload_3;
+					sload 4;
+					sastore;
+					sload 4;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_cache_16()V 132 {
+			.stack 3;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 20;		// short benchs/memory/cache/write/WriteCacheApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 55;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_16
+					astore 5;
+					goto L2;
+				L1:	aload 5;
+					sload_3;
+					saload;
+					sstore 4;
+					aload 5;
+					sload_3;
+					sload 4;
+					sastore;
+					sload 4;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_cache_32()V 133 {
+			.stack 3;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 20;		// short benchs/memory/cache/write/WriteCacheApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 56;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_32
+					astore 5;
+					goto L2;
+				L1:	aload 5;
+					sload_3;
+					saload;
+					sstore 4;
+					aload 5;
+					sload_3;
+					sload 4;
+					sastore;
+					sload 4;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_cache_64()V 134 {
+			.stack 3;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 20;		// short benchs/memory/cache/write/WriteCacheApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 57;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_64
+					astore 5;
+					goto L2;
+				L1:	aload 5;
+					sload_3;
+					saload;
+					sstore 4;
+					aload 5;
+					sload_3;
+					sload 4;
+					sastore;
+					sload 4;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_cache_128()V 135 {
+			.stack 3;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 20;		// short benchs/memory/cache/write/WriteCacheApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 58;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_128
+					astore 5;
+					goto L2;
+				L1:	aload 5;
+					sload_3;
+					saload;
+					sstore 4;
+					aload 5;
+					sload_3;
+					sload 4;
+					sastore;
+					sload 4;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_cache_256()V 136 {
+			.stack 3;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 20;		// short benchs/memory/cache/write/WriteCacheApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 59;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_256
+					astore 5;
+					goto L2;
+				L1:	aload 5;
+					sload_3;
+					saload;
+					sstore 4;
+					aload 5;
+					sload_3;
+					sload 4;
+					sastore;
+					sload 4;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  test_unit_cache_512()V 137 {
+			.stack 3;
+			.locals 5;
+
+				L0:	sconst_0;
+					sstore_1;
+					getstatic_s 20;		// short benchs/memory/cache/write/WriteCacheApplet.iterCount
+					sstore_2;
+					sconst_0;
+					sstore_3;
+					getstatic_a 60;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_512
+					astore 5;
+					goto L2;
+				L1:	aload 5;
+					sload_3;
+					saload;
+					sstore 4;
+					aload 5;
+					sload_3;
+					sload 4;
+					sastore;
+					sload 4;
+					sstore_3;
+					sinc 1 1;
+				L2:	sload_1;
+					sload_2;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  clean()V 138 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aconst_null;
+					putstatic_a 51;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_REF
+					aconst_null;
+					putstatic_a 52;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_2
+					aconst_null;
+					putstatic_a 53;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_4
+					aconst_null;
+					putstatic_a 54;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_8
+					aconst_null;
+					putstatic_a 55;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_16
+					aconst_null;
+					putstatic_a 56;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_32
+					aconst_null;
+					putstatic_a 57;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_64
+					aconst_null;
+					putstatic_a 58;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_128
+					aconst_null;
+					putstatic_a 59;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_256
+					aconst_null;
+					putstatic_a 60;		// reference benchs/memory/cache/write/WriteCacheApplet.SHORT_CACHE_512
+					return;
+		}
+
+	}
+
+	.class final WriteCacheApplet$1 extends WriteCacheTestCase {
+
+		.fields {
+			final WriteCacheApplet this$0 0;		// Lbenchs/memory/cache/write/WriteCacheApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/memory/cache/write/WriteCacheApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 10;		// reference benchs/memory/cache/write/WriteCacheApplet$1.this$0
+					aload_0;
+					invokespecial 12;		// benchs/memory/cache/write/WriteCacheTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 10;		// reference benchs/memory/cache/write/WriteCacheApplet$1.this$0
+					invokevirtual 62;		// test_unit_ref()V
+					return;
+		}
+
+	}
+
+}

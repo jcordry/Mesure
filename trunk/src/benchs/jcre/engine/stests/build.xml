@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+
+<project name="tests" default="convert" basedir=".">
+	<property name="package.name" value="benchs.jcre.engine.stests"/>
+	<property name="package.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x74:0x65:0x73:0x74:0x73"/>
+	<property name="applet.name" value="benchs.jcre.engine.stests.STestsTestApplet"/>
+	<property name="applet.aid" value="0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x73:0x74:0x65:0x73:0x74:0x73:0x01"/>
+	<property name="cap" value="false"/>
+	<property name="jcafile" value="${basedir}/javacard/stests.jca"/>
+	<property name="capfile" value="${basedir}/javacard/stests.cap"/>
+	
+	<import file="../../../../tools/converter/build.xml"/>
+
+	<target name="convert">
+		<ant dir="${src.path}/benchs/lib/templates" target="convert" inheritall="false"/>
+		<ant antfile="${ant.file.converter}" target="convert" inheritrefs="true"/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sspush 360;\s+sstore 4;"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  sload_2;${line.separator}
+		  sload_3;"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sspush 361;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  sload_2;${line.separator}
+		  sload_3;${line.separator}
+		  goto L1;${line.separator}
+		  L1: "
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)ifnull L2;(.*?)sspush 362;\s+sstore 4;"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  aconst_null;${line.separator}
+		  sinc 2 1;"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)ifnull L2;(.*?)sspush 363;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  aconst_null;${line.separator}
+		  sinc 2 1;${line.separator}
+		  goto L1;${line.separator}
+		  L1: "
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)if_scmpeq L2;(.*?)sspush 364;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  ifge L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sconst_1;(.*?)if_scmpeq L2;(.*?)sspush 365;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  sconst_m1;
+		  \3
+		  ifge L2;
+		  \4"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)if_scmpeq L2;(.*?)sspush 366;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  ifgt L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sconst_1;(.*?)if_scmpeq L2;(.*?)sspush 367;\s+sstore 4;\s+"
+		  replace="
+	      \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  sconst_m1;
+		  \3
+		  ifgt L2;
+		  \4"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sconst_1;(.*?)if_scmpeq L2;(.*?)sspush 368;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  sconst_m1;
+		  \3
+		  ifle L2;
+		  \4"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)if_scmpeq L2;(.*?)sspush 369;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  ifle L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sconst_1;(.*?)if_scmpeq L2;(.*?)sspush 370;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  sconst_m1;
+		  \3
+		  iflt L2;
+		  \4"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)if_scmpeq L2;(.*?)sspush 371;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  iflt L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)ifnull L2;(.*?)sspush 372;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  aconst_null;${line.separator}
+		  ifnull L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sspush 373;\s+sstore 4;"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  aconst_null;"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sload_2;\s+sload_3;\s+if_scmpeq L2;(.*?)sspush 374;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  sload_3;${line.separator}
+		  sload_2;${line.separator}
+		  if_scmpge L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)if_scmpeq L2;(.*?)sspush 375;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  if_scmpge L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sload_2;\s+sload_3;\s+if_scmpeq L2;(.*?)sspush 376;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  sload_3;${line.separator}
+		  sload_2;${line.separator}
+		  if_scmpgt L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)if_scmpeq L2;(.*?)sspush 377;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  if_scmpgt L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)if_scmpeq L2;(.*?)sspush 378;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  if_scmple L2;
+		  \3"
+	    />
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sload_2;\s+sload_3;\s+if_scmpeq L2;(.*?)sspush 379;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  sload_3;${line.separator}
+		  sload_2;${line.separator}
+		  if_scmple L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)if_scmpeq L2;(.*?)sspush 380;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  if_scmplt L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sload_2;\s+sload_3;\s+if_scmpeq L2;(.*?)sspush 381;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  sload_3;${line.separator}
+		  sload_2;${line.separator}
+		  if_scmplt L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)if_scmpeq L2;(.*?)sspush 382;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  if_scmpne L2;
+		  \3"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sconst_1;(.*?)if_scmpeq L2;(.*?)sspush 383;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  sconst_0;
+		  \3
+		  if_scmpne L2;
+		  \4"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)sconst_1;(.*?)if_scmpeq L2;(.*?)sspush 384;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  sconst_0;
+		  \3
+		  if_scmpeq L2;
+		  \4"
+		/>
+		<replaceregexp
+		  file="${jcafile}"
+		  match="(?s)(.*)\.stack 2;\s+\.locals 3;(.*?)if_scmpeq L2;(.*?)sspush 385;\s+sstore 4;\s+"
+		  replace="
+		  \1
+		  .stack 2;${line.separator}
+		  .locals 2;
+		  \2
+		  if_scmpeq L2;
+		  \3"
+		/>
+		<ant antfile="${ant.file.converter}" target="capgen" inheritrefs="true"/>
+	</target>
+</project>

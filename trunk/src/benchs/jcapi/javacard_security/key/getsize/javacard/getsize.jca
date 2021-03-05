@@ -1,0 +1,271 @@
+// converted by version 1.3
+// on Tue Nov 27 17:44:46 CET 2007
+
+.package benchs/jcapi/javacard_security/key/getsize {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x67:0x65:0x74:0x73:0x69:0x7A:0x65;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x2 1.1;		//javacard/security
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x67:0x65:0x74:0x73:0x69:0x7A:0x65:0x1 GetSizeTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef GetSizeTestApplet GetSizeTestApplet$1/this$0;
+		// 1
+		instanceFieldRef GetSizeTestApplet GetSizeTestApplet$2/this$0;
+		// 2
+		instanceFieldRef 0.1 0.10.33;		// reference benchs/lib/templates/KeyTemplateApplet.dummyInterface
+		// 3
+		instanceFieldRef 2.0 0.10.34;		// reference benchs/lib/templates/KeyTemplateApplet.key
+		// 4
+		classRef 0.1;		// benchs/lib/templates/DummyInterface
+		// 5
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 6
+		staticMethodRef GetSizeTestApplet/access$2(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;)Ljavacard/security/Key;;
+			.descriptor	Ljavacard/security/Key;	2.0;
+
+		// 7
+		classRef 2.0;		// javacard/security/Key
+		// 8
+		staticMethodRef 0.10.0()V;		// benchs/lib/templates/KeyTemplateApplet.<init>()V
+		// 9
+		classRef GetSizeTestApplet;
+		// 10
+		staticMethodRef GetSizeTestApplet/<init>()V;
+		// 11
+		virtualMethodRef 0.10.1()V;		// register()V
+		// 12
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 13
+		classRef GetSizeTestApplet$1;
+		// 14
+		staticMethodRef GetSizeTestApplet$1/<init>(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;)V;
+		// 15
+		classRef GetSizeTestApplet$2;
+		// 16
+		staticMethodRef GetSizeTestApplet$2/<init>(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;)V;
+		// 17
+		virtualMethodRef 0.10.9([B)V;		// init([B)V
+		// 18
+		staticMethodRef GetSizeTestApplet/access$0(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;[B)V;
+		// 19
+		staticMethodRef GetSizeTestApplet/access$1(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;)Lbenchs/lib/templates/DummyInterface;;
+			.descriptor	Lbenchs/lib/templates/DummyInterface;	0.1;
+
+	}
+
+	.class final GetSizeTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final GetSizeTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet$1.this$0
+					aload_0;
+					invokespecial 5;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet$1.this$0
+					aload_1;
+					invokestatic 18;		// benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet.access$0(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet$1.this$0
+					invokestatic 19;		// benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet.access$1(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;)Lbenchs/lib/templates/DummyInterface;
+					invokeinterface 1 4 1;		// benchs/lib/templates/DummyInterface
+					return;
+		}
+
+	}
+
+	.class final GetSizeTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final GetSizeTestApplet this$0 0;		// Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet$2.this$0
+					aload_0;
+					invokespecial 5;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet$2.this$0
+					aload_1;
+					invokestatic 18;		// benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet.access$0(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet$2.this$0
+					invokestatic 6;		// benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet.access$2(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;)Ljavacard/security/Key;
+					invokeinterface 1 7 1;		// javacard/security/Key
+					pop;
+					return;
+		}
+
+	}
+
+	.class public GetSizeTestApplet 0 extends 0.10 {		// extends benchs/lib/templates/KeyTemplateApplet
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+			init([B)V;
+			buildKey()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 8;		// benchs/lib/templates/KeyTemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 1 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 9;		// benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet
+					dup;
+					invokespecial 10;		// benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet.<init>()V
+					invokevirtual 11;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	sconst_2;
+					anewarray 12;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 13;		// benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 14;		// benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet$1.<init>(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 15;		// benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 16;		// benchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet$2.<init>(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static access$0(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;[B)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					invokevirtual 17;		// init([B)V
+					return;
+		}
+
+		.method static access$1(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;)Lbenchs/lib/templates/DummyInterface; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/DummyInterface;	0.1;
+
+				L0:	aload_0;
+					getfield_a 2;		// reference benchs/lib/templates/KeyTemplateApplet.dummyInterface
+					areturn;
+		}
+
+		.method static access$2(Lbenchs/jcapi/javacard_security/key/getsize/GetSizeTestApplet;)Ljavacard/security/Key; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Ljavacard/security/Key;	2.0;
+
+				L0:	aload_0;
+					getfield_a 3;		// reference benchs/lib/templates/KeyTemplateApplet.key
+					areturn;
+		}
+
+	}
+
+}

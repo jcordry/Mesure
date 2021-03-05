@@ -1,0 +1,1192 @@
+// converted by version 1.3
+// on Mon Nov 26 16:43:29 CET 2007
+
+.package benchs/jcre/engine/ual {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x75:0x61:0x6C;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x75:0x61:0x6C:0x1 UALTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef UALTestApplet UALTestApplet$10/this$0;
+		// 1
+		instanceFieldRef UALTestApplet UALTestApplet$11/this$0;
+		// 2
+		instanceFieldRef UALTestApplet UALTestApplet$2/this$0;
+		// 3
+		instanceFieldRef UALTestApplet UALTestApplet$3/this$0;
+		// 4
+		instanceFieldRef UALTestApplet UALTestApplet$4/this$0;
+		// 5
+		instanceFieldRef UALTestApplet UALTestApplet$5/this$0;
+		// 6
+		instanceFieldRef UALTestApplet UALTestApplet$6/this$0;
+		// 7
+		instanceFieldRef UALTestApplet UALTestApplet$7/this$0;
+		// 8
+		instanceFieldRef UALTestApplet UALTestApplet$8/this$0;
+		// 9
+		instanceFieldRef UALTestApplet UALTestApplet$9/this$0;
+		// 10
+		instanceFieldRef UALTestApplet UALTestApplet$1/this$0;
+		// 11
+		staticMethodRef UALTestApplet/access$2()V;
+		// 12
+		staticMethodRef UALTestCase/<init>()V;
+		// 13
+		staticMethodRef UALTestApplet/access$3()V;
+		// 14
+		staticMethodRef UALTestApplet/access$9()V;
+		// 15
+		staticMethodRef UALTestApplet/access$4()V;
+		// 16
+		virtualMethodRef 0.7.5(Z)V;		// setUseInnerCounter(Z)V
+		// 17
+		staticMethodRef UALTestApplet/access$5()V;
+		// 18
+		staticMethodRef UALTestApplet/access$10()V;
+		// 19
+		staticMethodRef UALTestApplet/access$6()V;
+		// 20
+		staticFieldRef short UALTestApplet/iterCount;
+		// 21
+		staticMethodRef UALTestApplet/access$7()V;
+		// 22
+		staticMethodRef UALTestApplet/access$1()V;
+		// 23
+		staticMethodRef UALTestApplet/access$8()V;
+		// 24
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 25
+		classRef UALTestApplet;
+		// 26
+		staticMethodRef UALTestApplet/<init>()V;
+		// 27
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 28
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 29
+		classRef UALTestApplet$1;
+		// 30
+		staticMethodRef UALTestApplet$1/<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V;
+		// 31
+		classRef UALTestApplet$2;
+		// 32
+		staticMethodRef UALTestApplet$2/<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V;
+		// 33
+		classRef UALTestApplet$3;
+		// 34
+		staticMethodRef UALTestApplet$3/<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V;
+		// 35
+		classRef UALTestApplet$4;
+		// 36
+		staticMethodRef UALTestApplet$4/<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V;
+		// 37
+		classRef UALTestApplet$5;
+		// 38
+		staticMethodRef UALTestApplet$5/<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V;
+		// 39
+		classRef UALTestApplet$6;
+		// 40
+		staticMethodRef UALTestApplet$6/<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V;
+		// 41
+		classRef UALTestApplet$7;
+		// 42
+		staticMethodRef UALTestApplet$7/<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V;
+		// 43
+		classRef UALTestApplet$8;
+		// 44
+		staticMethodRef UALTestApplet$8/<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V;
+		// 45
+		classRef UALTestApplet$9;
+		// 46
+		staticMethodRef UALTestApplet$9/<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V;
+		// 47
+		classRef UALTestApplet$10;
+		// 48
+		staticMethodRef UALTestApplet$10/<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V;
+		// 49
+		classRef UALTestApplet$11;
+		// 50
+		staticMethodRef UALTestApplet$11/<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V;
+		// 51
+		staticMethodRef UALTestApplet/unit_1s3s(SSS)S;
+		// 52
+		staticMethodRef UALTestApplet/unit_sadd_1s2s(SS)S;
+		// 53
+		staticMethodRef UALTestApplet/unit_ssub_1s2s(SS)S;
+		// 54
+		staticMethodRef UALTestApplet/unit_smul_1s2s(SS)S;
+		// 55
+		staticMethodRef UALTestApplet/unit_sdiv_1s2s(SS)S;
+		// 56
+		staticMethodRef UALTestApplet/unit_srem_1s2s(SS)S;
+		// 57
+		staticMethodRef UALTestApplet/unit_sshl_1s2s(SS)S;
+		// 58
+		staticMethodRef UALTestApplet/unit_sshr_1s2s(SS)S;
+		// 59
+		staticMethodRef UALTestApplet/unit_1s1s(S)S;
+		// 60
+		staticMethodRef UALTestApplet/unit_sneg_1s1s(S)S;
+		// 61
+		staticMethodRef UALTestApplet/test_unit_binops_ref()V;
+		// 62
+		staticMethodRef UALTestApplet/test_unit_sadd_1s2s()V;
+		// 63
+		staticMethodRef UALTestApplet/test_unit_ssub_1s2s()V;
+		// 64
+		staticMethodRef UALTestApplet/test_unit_smul_1s2s()V;
+		// 65
+		staticMethodRef UALTestApplet/test_unit_sdiv_1s2s()V;
+		// 66
+		staticMethodRef UALTestApplet/test_unit_srem_1s2s()V;
+		// 67
+		staticMethodRef UALTestApplet/test_unit_shift_1_ref()V;
+		// 68
+		staticMethodRef UALTestApplet/test_unit_sshl_1_1s2s()V;
+		// 69
+		staticMethodRef UALTestApplet/test_unit_sshr_1_1s2s()V;
+		// 70
+		staticMethodRef UALTestApplet/test_unit_unaryops_ref()V;
+		// 71
+		staticMethodRef UALTestApplet/test_unit_sneg_1s1s()V;
+		// 72
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 73
+		staticMethodRef UALTestApplet/access$0()V;
+	}
+
+	.class abstract UALTestCase extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 72;		// benchs/lib/templates/TestCase.<init>()V
+					aload_0;
+					sconst_1;
+					invokevirtual 16;		// setUseInnerCounter(Z)V
+					return;
+		}
+
+		.method public setUp([BS)V 1 {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_2;
+					putstatic_s 20;		// short benchs/jcre/engine/ual/UALTestApplet.iterCount
+					return;
+		}
+
+	}
+
+	.class final UALTestApplet$10 extends UALTestCase {
+
+		.fields {
+			final UALTestApplet this$0 0;		// Lbenchs/jcre/engine/ual/UALTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcre/engine/ual/UALTestApplet$10.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/ual/UALTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 14;		// benchs/jcre/engine/ual/UALTestApplet.access$9()V
+					return;
+		}
+
+	}
+
+	.class final UALTestApplet$11 extends UALTestCase {
+
+		.fields {
+			final UALTestApplet this$0 0;		// Lbenchs/jcre/engine/ual/UALTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcre/engine/ual/UALTestApplet$11.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/ual/UALTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 18;		// benchs/jcre/engine/ual/UALTestApplet.access$10()V
+					return;
+		}
+
+	}
+
+	.class final UALTestApplet$2 extends UALTestCase {
+
+		.fields {
+			final UALTestApplet this$0 0;		// Lbenchs/jcre/engine/ual/UALTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcre/engine/ual/UALTestApplet$2.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/ual/UALTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 22;		// benchs/jcre/engine/ual/UALTestApplet.access$1()V
+					return;
+		}
+
+	}
+
+	.class final UALTestApplet$3 extends UALTestCase {
+
+		.fields {
+			final UALTestApplet this$0 0;		// Lbenchs/jcre/engine/ual/UALTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcre/engine/ual/UALTestApplet$3.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/ual/UALTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 11;		// benchs/jcre/engine/ual/UALTestApplet.access$2()V
+					return;
+		}
+
+	}
+
+	.class final UALTestApplet$4 extends UALTestCase {
+
+		.fields {
+			final UALTestApplet this$0 0;		// Lbenchs/jcre/engine/ual/UALTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcre/engine/ual/UALTestApplet$4.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/ual/UALTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 13;		// benchs/jcre/engine/ual/UALTestApplet.access$3()V
+					return;
+		}
+
+	}
+
+	.class final UALTestApplet$5 extends UALTestCase {
+
+		.fields {
+			final UALTestApplet this$0 0;		// Lbenchs/jcre/engine/ual/UALTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcre/engine/ual/UALTestApplet$5.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/ual/UALTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 15;		// benchs/jcre/engine/ual/UALTestApplet.access$4()V
+					return;
+		}
+
+	}
+
+	.class final UALTestApplet$6 extends UALTestCase {
+
+		.fields {
+			final UALTestApplet this$0 0;		// Lbenchs/jcre/engine/ual/UALTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcre/engine/ual/UALTestApplet$6.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/ual/UALTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 17;		// benchs/jcre/engine/ual/UALTestApplet.access$5()V
+					return;
+		}
+
+	}
+
+	.class final UALTestApplet$7 extends UALTestCase {
+
+		.fields {
+			final UALTestApplet this$0 0;		// Lbenchs/jcre/engine/ual/UALTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcre/engine/ual/UALTestApplet$7.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/ual/UALTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 19;		// benchs/jcre/engine/ual/UALTestApplet.access$6()V
+					return;
+		}
+
+	}
+
+	.class final UALTestApplet$8 extends UALTestCase {
+
+		.fields {
+			final UALTestApplet this$0 0;		// Lbenchs/jcre/engine/ual/UALTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcre/engine/ual/UALTestApplet$8.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/ual/UALTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 21;		// benchs/jcre/engine/ual/UALTestApplet.access$7()V
+					return;
+		}
+
+	}
+
+	.class final UALTestApplet$9 extends UALTestCase {
+
+		.fields {
+			final UALTestApplet this$0 0;		// Lbenchs/jcre/engine/ual/UALTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcre/engine/ual/UALTestApplet$9.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/ual/UALTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 23;		// benchs/jcre/engine/ual/UALTestApplet.access$8()V
+					return;
+		}
+
+	}
+
+	.class public UALTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			public static short iterCount 0;		// S
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>()V {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 24;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 25;		// benchs/jcre/engine/ual/UALTestApplet
+					dup;
+					invokespecial 26;		// benchs/jcre/engine/ual/UALTestApplet.<init>()V
+					invokevirtual 27;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 11;
+					anewarray 28;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 29;		// benchs/jcre/engine/ual/UALTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/ual/UALTestApplet$1.<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 31;		// benchs/jcre/engine/ual/UALTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 32;		// benchs/jcre/engine/ual/UALTestApplet$2.<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 33;		// benchs/jcre/engine/ual/UALTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 34;		// benchs/jcre/engine/ual/UALTestApplet$3.<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 35;		// benchs/jcre/engine/ual/UALTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 36;		// benchs/jcre/engine/ual/UALTestApplet$4.<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 37;		// benchs/jcre/engine/ual/UALTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 38;		// benchs/jcre/engine/ual/UALTestApplet$5.<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 39;		// benchs/jcre/engine/ual/UALTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 40;		// benchs/jcre/engine/ual/UALTestApplet$6.<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 41;		// benchs/jcre/engine/ual/UALTestApplet$7
+					dup;
+					aload_0;
+					invokespecial 42;		// benchs/jcre/engine/ual/UALTestApplet$7.<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 43;		// benchs/jcre/engine/ual/UALTestApplet$8
+					dup;
+					aload_0;
+					invokespecial 44;		// benchs/jcre/engine/ual/UALTestApplet$8.<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 45;		// benchs/jcre/engine/ual/UALTestApplet$9
+					dup;
+					aload_0;
+					invokespecial 46;		// benchs/jcre/engine/ual/UALTestApplet$9.<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 47;		// benchs/jcre/engine/ual/UALTestApplet$10
+					dup;
+					aload_0;
+					invokespecial 48;		// benchs/jcre/engine/ual/UALTestApplet$10.<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V
+					aastore;
+					dup;
+					bspush 10;
+					new 49;		// benchs/jcre/engine/ual/UALTestApplet$11
+					dup;
+					aload_0;
+					invokespecial 50;		// benchs/jcre/engine/ual/UALTestApplet$11.<init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method private static test_unit_binops_ref()V {
+			.stack 3;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					bspush 11;
+					sstore_1;
+					goto L2;
+				L1:	sload_0;
+					sload_1;
+					sload_0;
+					invokestatic 51;		// benchs/jcre/engine/ual/UALTestApplet.unit_1s3s(SSS)S
+					pop;
+					sinc 0 1;
+				L2:	sload_0;
+					getstatic_s 20;		// short benchs/jcre/engine/ual/UALTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static test_unit_sadd_1s2s()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					bspush 11;
+					sstore_1;
+					goto L2;
+				L1:	sload_0;
+					sload_1;
+					invokestatic 52;		// benchs/jcre/engine/ual/UALTestApplet.unit_sadd_1s2s(SS)S
+					pop;
+					sinc 0 1;
+				L2:	sload_0;
+					getstatic_s 20;		// short benchs/jcre/engine/ual/UALTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static test_unit_ssub_1s2s()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					bspush 11;
+					sstore_1;
+					goto L2;
+				L1:	sload_0;
+					sload_1;
+					invokestatic 53;		// benchs/jcre/engine/ual/UALTestApplet.unit_ssub_1s2s(SS)S
+					pop;
+					sinc 0 1;
+				L2:	sload_0;
+					getstatic_s 20;		// short benchs/jcre/engine/ual/UALTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static test_unit_smul_1s2s()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					bspush 11;
+					sstore_1;
+					goto L2;
+				L1:	sload_0;
+					sload_1;
+					invokestatic 54;		// benchs/jcre/engine/ual/UALTestApplet.unit_smul_1s2s(SS)S
+					pop;
+					sinc 0 1;
+				L2:	sload_0;
+					getstatic_s 20;		// short benchs/jcre/engine/ual/UALTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static test_unit_sdiv_1s2s()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					bspush 11;
+					sstore_1;
+					goto L2;
+				L1:	sload_0;
+					sload_1;
+					invokestatic 55;		// benchs/jcre/engine/ual/UALTestApplet.unit_sdiv_1s2s(SS)S
+					pop;
+					sinc 0 1;
+				L2:	sload_0;
+					getstatic_s 20;		// short benchs/jcre/engine/ual/UALTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static test_unit_srem_1s2s()V {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					bspush 11;
+					sstore_1;
+					goto L2;
+				L1:	sload_0;
+					sload_1;
+					invokestatic 56;		// benchs/jcre/engine/ual/UALTestApplet.unit_srem_1s2s(SS)S
+					pop;
+					sinc 0 1;
+				L2:	sload_0;
+					getstatic_s 20;		// short benchs/jcre/engine/ual/UALTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static test_unit_shift_1_ref()V {
+			.stack 3;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_0;
+					sload_0;
+					sstore_1;
+					goto L2;
+				L1:	sload_0;
+					sconst_1;
+					sload_0;
+					invokestatic 51;		// benchs/jcre/engine/ual/UALTestApplet.unit_1s3s(SSS)S
+					pop;
+					sinc 0 1;
+				L2:	sload_0;
+					getstatic_s 20;		// short benchs/jcre/engine/ual/UALTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static test_unit_sshl_1_1s2s()V {
+			.stack 2;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore_0;
+					goto L2;
+				L1:	sload_0;
+					sconst_1;
+					invokestatic 57;		// benchs/jcre/engine/ual/UALTestApplet.unit_sshl_1s2s(SS)S
+					pop;
+					sinc 0 1;
+				L2:	sload_0;
+					getstatic_s 20;		// short benchs/jcre/engine/ual/UALTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static test_unit_sshr_1_1s2s()V {
+			.stack 2;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore_0;
+					goto L2;
+				L1:	sload_0;
+					sconst_1;
+					invokestatic 58;		// benchs/jcre/engine/ual/UALTestApplet.unit_sshr_1s2s(SS)S
+					pop;
+					sinc 0 1;
+				L2:	sload_0;
+					getstatic_s 20;		// short benchs/jcre/engine/ual/UALTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static test_unit_unaryops_ref()V {
+			.stack 2;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore_0;
+					goto L2;
+				L1:	sload_0;
+					invokestatic 59;		// benchs/jcre/engine/ual/UALTestApplet.unit_1s1s(S)S
+					pop;
+					sinc 0 1;
+				L2:	sload_0;
+					getstatic_s 20;		// short benchs/jcre/engine/ual/UALTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static test_unit_sneg_1s1s()V {
+			.stack 2;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore_0;
+					goto L2;
+				L1:	sload_0;
+					invokestatic 60;		// benchs/jcre/engine/ual/UALTestApplet.unit_sneg_1s1s(S)S
+					pop;
+					sinc 0 1;
+				L2:	sload_0;
+					getstatic_s 20;		// short benchs/jcre/engine/ual/UALTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method private static unit_1s3s(SSS)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_0;
+					sreturn;
+		}
+
+		.method private static unit_sadd_1s2s(SS)S {
+			.stack 2;
+			.locals 0;
+
+				L0:	sload_0;
+					sload_1;
+					sadd;
+					sreturn;
+		}
+
+		.method private static unit_ssub_1s2s(SS)S {
+			.stack 2;
+			.locals 0;
+
+				L0:	sload_0;
+					sload_1;
+					ssub;
+					sreturn;
+		}
+
+		.method private static unit_smul_1s2s(SS)S {
+			.stack 2;
+			.locals 0;
+
+				L0:	sload_0;
+					sload_1;
+					smul;
+					sreturn;
+		}
+
+		.method private static unit_sdiv_1s2s(SS)S {
+			.stack 2;
+			.locals 0;
+
+				L0:	sload_0;
+					sload_1;
+					sdiv;
+					sreturn;
+		}
+
+		.method private static unit_srem_1s2s(SS)S {
+			.stack 2;
+			.locals 0;
+
+				L0:	sload_0;
+					sload_1;
+					srem;
+					sreturn;
+		}
+
+		.method private static unit_1s2s(SS)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_0;
+					sreturn;
+		}
+
+		.method private static unit_sshl_1s2s(SS)S {
+			.stack 2;
+			.locals 0;
+
+				L0:	sload_0;
+					sload_1;
+					sshl;
+					sreturn;
+		}
+
+		.method private static unit_sshr_1s2s(SS)S {
+			.stack 2;
+			.locals 0;
+
+				L0:	sload_0;
+					sload_1;
+					sshr;
+					sreturn;
+		}
+
+		.method private static unit_1s1s(S)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_0;
+					sreturn;
+		}
+
+		.method private static unit_sneg_1s1s(S)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_0;
+					sneg;
+					sreturn;
+		}
+
+		.method static access$0()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 61;		// benchs/jcre/engine/ual/UALTestApplet.test_unit_binops_ref()V
+					return;
+		}
+
+		.method static access$1()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 62;		// benchs/jcre/engine/ual/UALTestApplet.test_unit_sadd_1s2s()V
+					return;
+		}
+
+		.method static access$2()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 63;		// benchs/jcre/engine/ual/UALTestApplet.test_unit_ssub_1s2s()V
+					return;
+		}
+
+		.method static access$3()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 64;		// benchs/jcre/engine/ual/UALTestApplet.test_unit_smul_1s2s()V
+					return;
+		}
+
+		.method static access$4()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 65;		// benchs/jcre/engine/ual/UALTestApplet.test_unit_sdiv_1s2s()V
+					return;
+		}
+
+		.method static access$5()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 66;		// benchs/jcre/engine/ual/UALTestApplet.test_unit_srem_1s2s()V
+					return;
+		}
+
+		.method static access$6()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 67;		// benchs/jcre/engine/ual/UALTestApplet.test_unit_shift_1_ref()V
+					return;
+		}
+
+		.method static access$7()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 68;		// benchs/jcre/engine/ual/UALTestApplet.test_unit_sshl_1_1s2s()V
+					return;
+		}
+
+		.method static access$8()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 69;		// benchs/jcre/engine/ual/UALTestApplet.test_unit_sshr_1_1s2s()V
+					return;
+		}
+
+		.method static access$9()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 70;		// benchs/jcre/engine/ual/UALTestApplet.test_unit_unaryops_ref()V
+					return;
+		}
+
+		.method static access$10()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 71;		// benchs/jcre/engine/ual/UALTestApplet.test_unit_sneg_1s1s()V
+					return;
+		}
+
+	}
+
+	.class final UALTestApplet$1 extends UALTestCase {
+
+		.fields {
+			final UALTestApplet this$0 0;		// Lbenchs/jcre/engine/ual/UALTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/ual/UALTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 10;		// reference benchs/jcre/engine/ual/UALTestApplet$1.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/ual/UALTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 0;
+			.locals 0;
+
+				L0:	invokestatic 73;		// benchs/jcre/engine/ual/UALTestApplet.access$0()V
+					return;
+		}
+
+	}
+
+}

@@ -1,0 +1,862 @@
+// converted by version 1.3
+// on Mon Nov 26 16:41:22 CET 2007
+
+.package benchs/jcapi/javacard_framework/util/arrayfillnonatomic {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x66:0x69:0x6C:0x6C:0x6E:0x61;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x66:0x69:0x6C:0x6C:0x6E:0x61:0x1 ArrayFillNonAtomicTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef ArrayFillNonAtomicTestApplet ArrayFillNonAtomicTestApplet$1/this$0;
+		// 1
+		instanceFieldRef ArrayFillNonAtomicTestApplet ArrayFillNonAtomicTestApplet$2/this$0;
+		// 2
+		instanceFieldRef ArrayFillNonAtomicTestApplet ArrayFillNonAtomicTestApplet$3/this$0;
+		// 3
+		instanceFieldRef ArrayFillNonAtomicTestApplet ArrayFillNonAtomicTestApplet$4/this$0;
+		// 4
+		instanceFieldRef ArrayFillNonAtomicTestApplet ArrayFillNonAtomicTestApplet$5/this$0;
+		// 5
+		instanceFieldRef ArrayFillNonAtomicTestApplet ArrayFillNonAtomicTestApplet$6/this$0;
+		// 6
+		instanceFieldRef ArrayFillNonAtomicTestApplet ArrayFillNonAtomicTestApplet$7/this$0;
+		// 7
+		instanceFieldRef ArrayFillNonAtomicTestApplet ArrayFillNonAtomicTestApplet$8/this$0;
+		// 8
+		instanceFieldRef byte[] ArrayFillNonAtomicTestApplet/persistent1;
+		// 9
+		instanceFieldRef byte[] ArrayFillNonAtomicTestApplet/transient1;
+		// 10
+		instanceFieldRef short ArrayFillNonAtomicTestApplet/lengthFill;
+		// 11
+		instanceFieldRef short ArrayFillNonAtomicTestApplet/offset;
+		// 12
+		instanceFieldRef short ArrayFillNonAtomicTestApplet/arrayLength;
+		// 13
+		instanceFieldRef short ArrayFillNonAtomicTestApplet/apduLength;
+		// 14
+		staticMethodRef 2.16.3([BSSB)S;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+		// 15
+		staticMethodRef ArrayFillNonAtomicTestApplet/access$3(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S;
+		// 16
+		staticMethodRef 0.5.5([BSSB)V;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BSSB)V
+		// 17
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 18
+		classRef 2.13;		// javacard/framework/SystemException
+		// 19
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 20
+		staticMethodRef 2.8.1()V;		// javacard/framework/JCSystem.beginTransaction()V
+		// 21
+		staticMethodRef 2.8.2()V;		// javacard/framework/JCSystem.commitTransaction()V
+		// 22
+		staticMethodRef ArrayFillNonAtomicTestApplet/access$0(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;[BZ)V;
+		// 23
+		staticMethodRef ArrayFillNonAtomicTestApplet/access$4(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)[B;
+		// 24
+		staticMethodRef ArrayFillNonAtomicTestApplet/access$1(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)[B;
+		// 25
+		staticMethodRef ArrayFillNonAtomicTestApplet/access$2(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S;
+		// 26
+		staticMethodRef 2.8.13(SB)[B;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+		// 27
+		virtualMethodRef 2.13.1()S;		// getReason()S
+		// 28
+		staticMethodRef 2.7.1(S)V;		// javacard/framework/ISOException.throwIt(S)V
+		// 29
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 30
+		classRef ArrayFillNonAtomicTestApplet;
+		// 31
+		staticMethodRef ArrayFillNonAtomicTestApplet/<init>()V;
+		// 32
+		staticMethodRef 2.16.5(BB)S;		// javacard/framework/Util.makeShort(BB)S
+		// 33
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 34
+		classRef ArrayFillNonAtomicTestApplet$1;
+		// 35
+		staticMethodRef ArrayFillNonAtomicTestApplet$1/<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V;
+		// 36
+		classRef ArrayFillNonAtomicTestApplet$2;
+		// 37
+		staticMethodRef ArrayFillNonAtomicTestApplet$2/<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V;
+		// 38
+		classRef ArrayFillNonAtomicTestApplet$3;
+		// 39
+		staticMethodRef ArrayFillNonAtomicTestApplet$3/<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V;
+		// 40
+		classRef ArrayFillNonAtomicTestApplet$4;
+		// 41
+		staticMethodRef ArrayFillNonAtomicTestApplet$4/<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V;
+		// 42
+		classRef ArrayFillNonAtomicTestApplet$5;
+		// 43
+		staticMethodRef ArrayFillNonAtomicTestApplet$5/<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V;
+		// 44
+		classRef ArrayFillNonAtomicTestApplet$6;
+		// 45
+		staticMethodRef ArrayFillNonAtomicTestApplet$6/<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V;
+		// 46
+		classRef ArrayFillNonAtomicTestApplet$7;
+		// 47
+		staticMethodRef ArrayFillNonAtomicTestApplet$7/<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V;
+		// 48
+		classRef ArrayFillNonAtomicTestApplet$8;
+		// 49
+		staticMethodRef ArrayFillNonAtomicTestApplet$8/<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V;
+		// 50
+		staticMethodRef ArrayFillNonAtomicTestApplet/init([BZ)V;
+	}
+
+	.class final ArrayFillNonAtomicTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayFillNonAtomicTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$1.this$0
+					aload_0;
+					invokespecial 17;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$1.this$0
+					aload_1;
+					sconst_0;
+					invokestatic 22;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$1.this$0
+					invokestatic 24;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)[B
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$1.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$1.this$0
+					invokestatic 15;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					sconst_0;
+					invokestatic 16;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BSSB)V
+					return;
+		}
+
+	}
+
+	.class final ArrayFillNonAtomicTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayFillNonAtomicTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$2.this$0
+					aload_0;
+					invokespecial 17;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$2.this$0
+					aload_1;
+					sconst_0;
+					invokestatic 22;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	invokestatic 20;		// javacard/framework/JCSystem.beginTransaction()V
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$2.this$0
+					invokestatic 24;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)[B
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$2.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$2.this$0
+					invokestatic 15;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					sconst_0;
+					invokestatic 16;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BSSB)V
+					invokestatic 21;		// javacard/framework/JCSystem.commitTransaction()V
+					return;
+		}
+
+	}
+
+	.class final ArrayFillNonAtomicTestApplet$3 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayFillNonAtomicTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$3.this$0
+					aload_0;
+					invokespecial 17;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$3.this$0
+					aload_1;
+					sconst_0;
+					invokestatic 22;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$3.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$4(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)[B
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$3.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$3.this$0
+					invokestatic 15;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					sconst_0;
+					invokestatic 16;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BSSB)V
+					return;
+		}
+
+	}
+
+	.class final ArrayFillNonAtomicTestApplet$4 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayFillNonAtomicTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$4.this$0
+					aload_0;
+					invokespecial 17;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$4.this$0
+					aload_1;
+					sconst_1;
+					invokestatic 22;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	aload_1;
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$4.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$4.this$0
+					invokestatic 15;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					sconst_0;
+					invokestatic 16;		// benchs/lib/templates/DummyClass.dummyMethodStaticShort([BSSB)V
+					return;
+		}
+
+	}
+
+	.class final ArrayFillNonAtomicTestApplet$5 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayFillNonAtomicTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$5.this$0
+					aload_0;
+					invokespecial 17;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$5.this$0
+					aload_1;
+					sconst_0;
+					invokestatic 22;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$5.this$0
+					invokestatic 24;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)[B
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$5.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$5.this$0
+					invokestatic 15;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					sconst_0;
+					invokestatic 14;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final ArrayFillNonAtomicTestApplet$6 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayFillNonAtomicTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$6.this$0
+					aload_0;
+					invokespecial 17;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$6.this$0
+					aload_1;
+					sconst_0;
+					invokestatic 22;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	invokestatic 20;		// javacard/framework/JCSystem.beginTransaction()V
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$6.this$0
+					invokestatic 24;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$1(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)[B
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$6.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$6.this$0
+					invokestatic 15;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					sconst_0;
+					invokestatic 14;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					invokestatic 21;		// javacard/framework/JCSystem.commitTransaction()V
+					return;
+		}
+
+	}
+
+	.class final ArrayFillNonAtomicTestApplet$7 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayFillNonAtomicTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$7.this$0
+					aload_0;
+					invokespecial 17;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$7.this$0
+					aload_1;
+					sconst_0;
+					invokestatic 22;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$7.this$0
+					invokestatic 23;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$4(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)[B
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$7.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$7.this$0
+					invokestatic 15;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					sconst_0;
+					invokestatic 14;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class final ArrayFillNonAtomicTestApplet$8 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final ArrayFillNonAtomicTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$8.this$0
+					aload_0;
+					invokespecial 17;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$8.this$0
+					aload_1;
+					sconst_1;
+					invokestatic 22;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$0(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;[BZ)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	aload_1;
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$8.this$0
+					invokestatic 25;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$2(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$8.this$0
+					invokestatic 15;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.access$3(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S
+					sconst_0;
+					invokestatic 14;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					return;
+		}
+
+	}
+
+	.class public ArrayFillNonAtomicTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			private byte[] persistent1 0;		// [B
+			private byte[] transient1 1;		// [B
+			private short lengthFill 2;		// S
+			private short offset 3;		// S
+			private short arrayLength 4;		// S
+			private short apduLength 5;		// S
+			private static final byte FILL_BYTE = 0;		// B
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method private <init>()V {
+			.stack 3;
+			.locals 1;
+
+				L0:	aload_0;
+					invokespecial 19;		// benchs/lib/templates/TemplateApplet.<init>()V
+					aload_0;
+					aconst_null;
+					putfield_a 8;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.persistent1
+					aload_0;
+					aconst_null;
+					putfield_a 9;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.transient1
+					aload_0;
+					sconst_0;
+					putfield_s 10;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.lengthFill
+					aload_0;
+					sconst_0;
+					putfield_s 11;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.offset
+					aload_0;
+					sspush 128;
+					putfield_s 12;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.arrayLength
+					aload_0;
+					sconst_0;
+					putfield_s 13;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.apduLength
+				L1:	aload_0;
+					getfield_s_this 12;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.arrayLength
+					newarray 11;
+					putfield_a 8;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.persistent1
+					aload_0;
+					getfield_s_this 12;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.arrayLength
+					sconst_2;
+					invokestatic 26;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 9;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.transient1
+					goto L7;
+				L2:	astore_1;
+					aload_1;
+					invokevirtual 27;		// getReason()S
+					sconst_2;
+					if_scmpne L4;
+				L3:	sspush -25791;
+					invokestatic 28;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	aload_1;
+					invokevirtual 27;		// getReason()S
+					sconst_5;
+					if_scmpne L6;
+				L5:	sspush -25790;
+					invokestatic 28;		// javacard/framework/ISOException.throwIt(S)V
+				L6:	sspush -25792;
+					invokestatic 28;		// javacard/framework/ISOException.throwIt(S)V
+				L7:	aload_0;
+					invokevirtual 29;		// register()V
+					return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L1 L2 L2 18;
+			}
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	new 30;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet
+					invokespecial 31;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.<init>()V
+					return;
+		}
+
+		.method private init([BZ)V {
+			.stack 4;
+			.locals 1;
+
+				L0:	getfield_s_this 13;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.apduLength
+					ifne L2;
+				L1:	aload_0;
+					aload_1;
+					arraylength;
+					putfield_s 13;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.apduLength
+				L2:	sload_2;
+					ifeq L4;
+				L3:	getfield_s_this 13;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.apduLength
+					sstore_3;
+					goto L5;
+				L4:	getfield_s_this 12;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.arrayLength
+					sstore_3;
+				L5:	aload_0;
+					aload_1;
+					sconst_5;
+					baload;
+					aload_1;
+					bspush 6;
+					baload;
+					invokestatic 32;		// javacard/framework/Util.makeShort(BB)S
+					putfield_s 10;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.lengthFill
+					aload_0;
+					aload_1;
+					bspush 7;
+					baload;
+					aload_1;
+					bspush 8;
+					baload;
+					invokestatic 32;		// javacard/framework/Util.makeShort(BB)S
+					putfield_s 11;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.offset
+					getfield_s_this 10;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.lengthFill
+					sspush 256;
+					if_scmpgt L8;
+				L6:	getfield_s_this 11;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.offset
+					sspush 172;
+					if_scmpgt L8;
+				L7:	getfield_s_this 10;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.lengthFill
+					getfield_s_this 11;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.offset
+					sadd;
+					sload_3;
+					if_scmple L9;
+				L8:	sspush 27012;
+					invokestatic 28;		// javacard/framework/ISOException.throwIt(S)V
+				L9:	return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 8;
+					anewarray 33;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 34;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 35;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$1.<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 36;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 37;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$2.<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 38;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 39;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$3.<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 40;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 41;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$4.<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 42;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 43;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$5.<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 44;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 45;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$6.<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 46;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$7
+					dup;
+					aload_0;
+					invokespecial 47;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$7.<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 48;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$8
+					dup;
+					aload_0;
+					invokespecial 49;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet$8.<init>(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static access$0(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;[BZ)V {
+			.stack 3;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					sload_2;
+					invokespecial 50;		// benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.init([BZ)V
+					return;
+		}
+
+		.method static access$1(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 8;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.persistent1
+					areturn;
+		}
+
+		.method static access$2(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_s 11;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.offset
+					sreturn;
+		}
+
+		.method static access$3(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_s 10;		// short benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.lengthFill
+					sreturn;
+		}
+
+		.method static access$4(Lbenchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 9;		// reference benchs/jcapi/javacard_framework/util/arrayfillnonatomic/ArrayFillNonAtomicTestApplet.transient1
+					areturn;
+		}
+
+	}
+
+}

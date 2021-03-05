@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<project name="MessageDigest" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="dofinal" target="convert" inheritall="false"/>
+	</target>
+
+</project>

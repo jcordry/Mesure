@@ -1,0 +1,1040 @@
+// converted by version 1.3
+// on Mon Nov 26 16:43:00 CET 2007
+
+.package benchs/jcre/engine/invoke {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x69:0x6E:0x76:0x6F:0x6B:0x65;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x69:0x6E:0x76:0x6F:0x6B:0x65:0x1 InvokeTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef InvokeTestApplet InvokeTestApplet$10/this$0;
+		// 1
+		instanceFieldRef InvokeTestApplet InvokeTestApplet$11/this$0;
+		// 2
+		instanceFieldRef InvokeTestApplet InvokeTestApplet$2/this$0;
+		// 3
+		instanceFieldRef InvokeTestApplet InvokeTestApplet$3/this$0;
+		// 4
+		instanceFieldRef InvokeTestApplet InvokeTestApplet$4/this$0;
+		// 5
+		instanceFieldRef InvokeTestApplet InvokeTestApplet$5/this$0;
+		// 6
+		instanceFieldRef InvokeTestApplet InvokeTestApplet$6/this$0;
+		// 7
+		instanceFieldRef InvokeTestApplet InvokeTestApplet$7/this$0;
+		// 8
+		instanceFieldRef InvokeTestApplet InvokeTestApplet$8/this$0;
+		// 9
+		instanceFieldRef InvokeTestApplet InvokeTestApplet$9/this$0;
+		// 10
+		instanceFieldRef InvokeTestApplet InvokeTestApplet$1/this$0;
+		// 11
+		virtualMethodRef InvokeTestApplet/loop_11()V;
+		// 12
+		staticMethodRef InvokeTestCase/<init>()V;
+		// 13
+		virtualMethodRef InvokeTestApplet/loop_2()V;
+		// 14
+		virtualMethodRef InvokeTestApplet/loop_7()V;
+		// 15
+		virtualMethodRef InvokeTestApplet/loop_3()V;
+		// 16
+		virtualMethodRef 0.7.5(Z)V;		// setUseInnerCounter(Z)V
+		// 17
+		virtualMethodRef InvokeTestApplet/loop_33()V;
+		// 18
+		virtualMethodRef InvokeTestApplet/loop_8()V;
+		// 19
+		virtualMethodRef InvokeTestApplet/loop_4()V;
+		// 20
+		staticFieldRef short InvokeTestApplet/iterCount;
+		// 21
+		virtualMethodRef InvokeTestApplet/loop_5()V;
+		// 22
+		virtualMethodRef InvokeTestApplet/loop_1()V;
+		// 23
+		virtualMethodRef InvokeTestApplet/loop_6()V;
+		// 24
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 25
+		classRef InvokeTestApplet;
+		// 26
+		staticMethodRef InvokeTestApplet/<init>()V;
+		// 27
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 28
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 29
+		classRef InvokeTestApplet$1;
+		// 30
+		staticMethodRef InvokeTestApplet$1/<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V;
+		// 31
+		classRef InvokeTestApplet$2;
+		// 32
+		staticMethodRef InvokeTestApplet$2/<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V;
+		// 33
+		classRef InvokeTestApplet$3;
+		// 34
+		staticMethodRef InvokeTestApplet$3/<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V;
+		// 35
+		classRef InvokeTestApplet$4;
+		// 36
+		staticMethodRef InvokeTestApplet$4/<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V;
+		// 37
+		classRef InvokeTestApplet$5;
+		// 38
+		staticMethodRef InvokeTestApplet$5/<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V;
+		// 39
+		classRef InvokeTestApplet$6;
+		// 40
+		staticMethodRef InvokeTestApplet$6/<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V;
+		// 41
+		classRef InvokeTestApplet$7;
+		// 42
+		staticMethodRef InvokeTestApplet$7/<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V;
+		// 43
+		classRef InvokeTestApplet$8;
+		// 44
+		staticMethodRef InvokeTestApplet$8/<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V;
+		// 45
+		classRef InvokeTestApplet$9;
+		// 46
+		staticMethodRef InvokeTestApplet$9/<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V;
+		// 47
+		classRef InvokeTestApplet$10;
+		// 48
+		staticMethodRef InvokeTestApplet$10/<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V;
+		// 49
+		classRef InvokeTestApplet$11;
+		// 50
+		staticMethodRef InvokeTestApplet$11/<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V;
+		// 51
+		staticMethodRef InvokeTestApplet/m1()V;
+		// 52
+		classRef 2.5;		// javacard/framework/CardRuntimeException
+		// 53
+		staticMethodRef InvokeTestApplet/m2()V;
+		// 54
+		staticMethodRef InvokeTestApplet/m3()V;
+		// 55
+		staticMethodRef InvokeTestApplet/m33()V;
+		// 56
+		staticMethodRef 2.5.1(S)V;		// javacard/framework/CardRuntimeException.throwIt(S)V
+		// 57
+		staticMethodRef InvokeTestApplet/m_static()V;
+		// 58
+		staticMethodRef InvokeTestApplet/m_private()V;
+		// 59
+		virtualMethodRef InvokeTestApplet/m_public()V;
+		// 60
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 61
+		virtualMethodRef InvokeTestApplet/loop_0()V;
+	}
+
+	.class abstract InvokeTestCase extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 60;		// benchs/lib/templates/TestCase.<init>()V
+					aload_0;
+					sconst_1;
+					invokevirtual 16;		// setUseInnerCounter(Z)V
+					return;
+		}
+
+		.method public setUp([BS)V 1 {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_2;
+					putstatic_s 20;		// short benchs/jcre/engine/invoke/InvokeTestApplet.iterCount
+					return;
+		}
+
+	}
+
+	.class final InvokeTestApplet$10 extends InvokeTestCase {
+
+		.fields {
+			final InvokeTestApplet this$0 0;		// Lbenchs/jcre/engine/invoke/InvokeTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$10.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/invoke/InvokeTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$10.this$0
+					invokevirtual 14;		// loop_7()V
+					return;
+		}
+
+	}
+
+	.class final InvokeTestApplet$11 extends InvokeTestCase {
+
+		.fields {
+			final InvokeTestApplet this$0 0;		// Lbenchs/jcre/engine/invoke/InvokeTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$11.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/invoke/InvokeTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$11.this$0
+					invokevirtual 18;		// loop_8()V
+					return;
+		}
+
+	}
+
+	.class final InvokeTestApplet$2 extends InvokeTestCase {
+
+		.fields {
+			final InvokeTestApplet this$0 0;		// Lbenchs/jcre/engine/invoke/InvokeTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$2.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/invoke/InvokeTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$2.this$0
+					invokevirtual 22;		// loop_1()V
+					return;
+		}
+
+	}
+
+	.class final InvokeTestApplet$3 extends InvokeTestCase {
+
+		.fields {
+			final InvokeTestApplet this$0 0;		// Lbenchs/jcre/engine/invoke/InvokeTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$3.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/invoke/InvokeTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$3.this$0
+					invokevirtual 11;		// loop_11()V
+					return;
+		}
+
+	}
+
+	.class final InvokeTestApplet$4 extends InvokeTestCase {
+
+		.fields {
+			final InvokeTestApplet this$0 0;		// Lbenchs/jcre/engine/invoke/InvokeTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$4.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/invoke/InvokeTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$4.this$0
+					invokevirtual 13;		// loop_2()V
+					return;
+		}
+
+	}
+
+	.class final InvokeTestApplet$5 extends InvokeTestCase {
+
+		.fields {
+			final InvokeTestApplet this$0 0;		// Lbenchs/jcre/engine/invoke/InvokeTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$5.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/invoke/InvokeTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 5;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$5.this$0
+					invokevirtual 15;		// loop_3()V
+					return;
+		}
+
+	}
+
+	.class final InvokeTestApplet$6 extends InvokeTestCase {
+
+		.fields {
+			final InvokeTestApplet this$0 0;		// Lbenchs/jcre/engine/invoke/InvokeTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$6.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/invoke/InvokeTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$6.this$0
+					invokevirtual 17;		// loop_33()V
+					return;
+		}
+
+	}
+
+	.class final InvokeTestApplet$7 extends InvokeTestCase {
+
+		.fields {
+			final InvokeTestApplet this$0 0;		// Lbenchs/jcre/engine/invoke/InvokeTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$7.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/invoke/InvokeTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$7.this$0
+					invokevirtual 19;		// loop_4()V
+					return;
+		}
+
+	}
+
+	.class final InvokeTestApplet$8 extends InvokeTestCase {
+
+		.fields {
+			final InvokeTestApplet this$0 0;		// Lbenchs/jcre/engine/invoke/InvokeTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$8.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/invoke/InvokeTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 8;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$8.this$0
+					invokevirtual 21;		// loop_5()V
+					return;
+		}
+
+	}
+
+	.class final InvokeTestApplet$9 extends InvokeTestCase {
+
+		.fields {
+			final InvokeTestApplet this$0 0;		// Lbenchs/jcre/engine/invoke/InvokeTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$9.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/invoke/InvokeTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 9;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$9.this$0
+					invokevirtual 23;		// loop_6()V
+					return;
+		}
+
+	}
+
+	.class public InvokeTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			public static short iterCount 0;		// S
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+			m_public()V;
+		}
+
+		.packageMethodTable 0 {
+			loop_0()V;
+			loop_1()V;
+			loop_11()V;
+			loop_2()V;
+			loop_3()V;
+			loop_33()V;
+			loop_4()V;
+			loop_5()V;
+			loop_6()V;
+			loop_7()V;
+			loop_8()V;
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 24;		// benchs/lib/templates/TemplateApplet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 1 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 25;		// benchs/jcre/engine/invoke/InvokeTestApplet
+					dup;
+					invokespecial 26;		// benchs/jcre/engine/invoke/InvokeTestApplet.<init>()V
+					invokevirtual 27;		// register()V
+					return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 11;
+					anewarray 28;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 29;		// benchs/jcre/engine/invoke/InvokeTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 30;		// benchs/jcre/engine/invoke/InvokeTestApplet$1.<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 31;		// benchs/jcre/engine/invoke/InvokeTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 32;		// benchs/jcre/engine/invoke/InvokeTestApplet$2.<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 33;		// benchs/jcre/engine/invoke/InvokeTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 34;		// benchs/jcre/engine/invoke/InvokeTestApplet$3.<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 35;		// benchs/jcre/engine/invoke/InvokeTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 36;		// benchs/jcre/engine/invoke/InvokeTestApplet$4.<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 37;		// benchs/jcre/engine/invoke/InvokeTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 38;		// benchs/jcre/engine/invoke/InvokeTestApplet$5.<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 39;		// benchs/jcre/engine/invoke/InvokeTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 40;		// benchs/jcre/engine/invoke/InvokeTestApplet$6.<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 41;		// benchs/jcre/engine/invoke/InvokeTestApplet$7
+					dup;
+					aload_0;
+					invokespecial 42;		// benchs/jcre/engine/invoke/InvokeTestApplet$7.<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 43;		// benchs/jcre/engine/invoke/InvokeTestApplet$8
+					dup;
+					aload_0;
+					invokespecial 44;		// benchs/jcre/engine/invoke/InvokeTestApplet$8.<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 45;		// benchs/jcre/engine/invoke/InvokeTestApplet$9
+					dup;
+					aload_0;
+					invokespecial 46;		// benchs/jcre/engine/invoke/InvokeTestApplet$9.<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 47;		// benchs/jcre/engine/invoke/InvokeTestApplet$10
+					dup;
+					aload_0;
+					invokespecial 48;		// benchs/jcre/engine/invoke/InvokeTestApplet$10.<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V
+					aastore;
+					dup;
+					bspush 10;
+					new 49;		// benchs/jcre/engine/invoke/InvokeTestApplet$11
+					dup;
+					aload_0;
+					invokespecial 50;		// benchs/jcre/engine/invoke/InvokeTestApplet$11.<init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method  loop_0()V 128 {
+			.stack 2;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore_1;
+					goto L2;
+				L1:	sinc 1 1;
+				L2:	sload_1;
+					getstatic_s 20;		// short benchs/jcre/engine/invoke/InvokeTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_1()V 129 {
+			.stack 2;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore_1;
+					goto L2;
+				L1:	invokestatic 51;		// benchs/jcre/engine/invoke/InvokeTestApplet.m1()V
+					sinc 1 1;
+				L2:	sload_1;
+					getstatic_s 20;		// short benchs/jcre/engine/invoke/InvokeTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_11()V 130 {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_1;
+					goto L4;
+				L1:	invokestatic 51;		// benchs/jcre/engine/invoke/InvokeTestApplet.m1()V
+					goto L3;
+				L2:	astore_2;
+				L3:	sinc 1 1;
+				L4:	sload_1;
+					getstatic_s 20;		// short benchs/jcre/engine/invoke/InvokeTestApplet.iterCount
+					if_scmplt L1;
+				L5:	return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L1 L2 L2 52;
+			}
+		}
+
+		.method  loop_2()V 131 {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_1;
+					goto L4;
+				L1:	invokestatic 53;		// benchs/jcre/engine/invoke/InvokeTestApplet.m2()V
+					goto L3;
+				L2:	astore_2;
+				L3:	sinc 1 1;
+				L4:	sload_1;
+					getstatic_s 20;		// short benchs/jcre/engine/invoke/InvokeTestApplet.iterCount
+					if_scmplt L1;
+				L5:	return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L1 L2 L2 52;
+			}
+		}
+
+		.method  loop_3()V 132 {
+			.stack 2;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore_1;
+					goto L2;
+				L1:	invokestatic 54;		// benchs/jcre/engine/invoke/InvokeTestApplet.m3()V
+					sinc 1 1;
+				L2:	sload_1;
+					getstatic_s 20;		// short benchs/jcre/engine/invoke/InvokeTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_33()V 133 {
+			.stack 2;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore_1;
+					goto L2;
+				L1:	invokestatic 55;		// benchs/jcre/engine/invoke/InvokeTestApplet.m33()V
+					sinc 1 1;
+				L2:	sload_1;
+					getstatic_s 20;		// short benchs/jcre/engine/invoke/InvokeTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_4()V 134 {
+			.stack 2;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore_1;
+					goto L4;
+				L1:	sconst_0;
+					invokestatic 56;		// javacard/framework/CardRuntimeException.throwIt(S)V
+					goto L3;
+				L2:	astore_2;
+				L3:	sinc 1 1;
+				L4:	sload_1;
+					getstatic_s 20;		// short benchs/jcre/engine/invoke/InvokeTestApplet.iterCount
+					if_scmplt L1;
+				L5:	return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L1 L2 L2 52;
+			}
+		}
+
+		.method static m1()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+		.method static m2()V {
+			.stack 1;
+			.locals 0;
+
+				L0:	sconst_0;
+					invokestatic 56;		// javacard/framework/CardRuntimeException.throwIt(S)V
+					return;
+		}
+
+		.method static m3()V {
+			.stack 1;
+			.locals 1;
+
+				L0:	invokestatic 53;		// benchs/jcre/engine/invoke/InvokeTestApplet.m2()V
+					goto L2;
+				L1:	astore_0;
+					return;
+				L2:	return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L0 L1 L1 52;
+			}
+		}
+
+		.method static m33()V {
+			.stack 1;
+			.locals 1;
+
+				L0:	sconst_0;
+					invokestatic 56;		// javacard/framework/CardRuntimeException.throwIt(S)V
+					goto L2;
+				L1:	astore_0;
+					return;
+				L2:	return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L0 L1 L1 52;
+			}
+		}
+
+		.method  loop_5()V 135 {
+			.stack 2;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore_1;
+					goto L2;
+				L1:	sinc 1 1;
+				L2:	sload_1;
+					getstatic_s 20;		// short benchs/jcre/engine/invoke/InvokeTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_6()V 136 {
+			.stack 2;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore_1;
+					goto L2;
+				L1:	invokestatic 57;		// benchs/jcre/engine/invoke/InvokeTestApplet.m_static()V
+					sinc 1 1;
+				L2:	sload_1;
+					getstatic_s 20;		// short benchs/jcre/engine/invoke/InvokeTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_7()V 137 {
+			.stack 2;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore_1;
+					goto L2;
+				L1:	aload_0;
+					invokespecial 58;		// benchs/jcre/engine/invoke/InvokeTestApplet.m_private()V
+					sinc 1 1;
+				L2:	sload_1;
+					getstatic_s 20;		// short benchs/jcre/engine/invoke/InvokeTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method  loop_8()V 138 {
+			.stack 2;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore_1;
+					goto L2;
+				L1:	aload_0;
+					invokevirtual 59;		// m_public()V
+					sinc 1 1;
+				L2:	sload_1;
+					getstatic_s 20;		// short benchs/jcre/engine/invoke/InvokeTestApplet.iterCount
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method public static m_static()V 2 {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+		.method private m_private()V {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+		.method public m_public()V 9 {
+			.stack 0;
+			.locals 0;
+
+				L0:	return;
+		}
+
+	}
+
+	.class final InvokeTestApplet$1 extends InvokeTestCase {
+
+		.fields {
+			final InvokeTestApplet this$0 0;		// Lbenchs/jcre/engine/invoke/InvokeTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcre/engine/invoke/InvokeTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 10;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$1.this$0
+					aload_0;
+					invokespecial 12;		// benchs/jcre/engine/invoke/InvokeTestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 10;		// reference benchs/jcre/engine/invoke/InvokeTestApplet$1.this$0
+					invokevirtual 61;		// loop_0()V
+					return;
+		}
+
+	}
+
+}

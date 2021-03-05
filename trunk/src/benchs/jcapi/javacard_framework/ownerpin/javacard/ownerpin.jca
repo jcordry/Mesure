@@ -1,0 +1,1846 @@
+// converted by version 1.3
+// on Thu Dec 20 10:31:43 CET 2007
+
+.package benchs/jcapi/javacard_framework/ownerpin {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x70:0x69:0x6E;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x70:0x69:0x6E:0x1 OwnerPINTestApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$1/this$0;
+		// 1
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$10/this$0;
+		// 2
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$11/this$0;
+		// 3
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$12/this$0;
+		// 4
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$13/this$0;
+		// 5
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$14/this$0;
+		// 6
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$2/this$0;
+		// 7
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$3/this$0;
+		// 8
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$4/this$0;
+		// 9
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$5/this$0;
+		// 10
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$6/this$0;
+		// 11
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$7/this$0;
+		// 12
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$8/this$0;
+		// 13
+		instanceFieldRef OwnerPINTestApplet OwnerPINTestApplet$9/this$0;
+		// 14
+		instanceFieldRef PINInfo OwnerPINTestApplet/info;
+		// 15
+		instanceFieldRef 0.5 OwnerPINTestApplet/dummy;
+		// 16
+		instanceFieldRef 0.2 OwnerPINTestApplet/reader;
+		// 17
+		instanceFieldRef 2.9 OwnerPINTestApplet/pin;
+		// 18
+		instanceFieldRef byte[] OwnerPINTestApplet/value;
+		// 19
+		instanceFieldRef short OwnerPINTestApplet/offset;
+		// 20
+		instanceFieldRef byte OwnerPINTestApplet/length;
+		// 21
+		instanceFieldRef byte OwnerPINTestApplet/tryLimit;
+		// 22
+		instanceFieldRef byte OwnerPINTestApplet/maxPINSize;
+		// 23
+		instanceFieldRef byte PINInfo/tryLimit;
+		// 24
+		instanceFieldRef byte PINInfo/maxSize;
+		// 25
+		instanceFieldRef byte[] PINInfo/reference;
+		// 26
+		instanceFieldRef byte[] PINInfo/presented;
+		// 27
+		instanceFieldRef byte PINInfo/remainingTries;
+		// 28
+		instanceFieldRef byte[] PINInfo/reference4;
+		// 29
+		instanceFieldRef byte[] PINInfo/reference8;
+		// 30
+		instanceFieldRef byte[] PINInfo/presented4;
+		// 31
+		instanceFieldRef byte[] PINInfo/presented8;
+		// 32
+		virtualMethodRef 2.9.1([BSB)Z;		// check([BSB)Z
+		// 33
+		staticMethodRef OwnerPINTestApplet/access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B;
+		// 34
+		virtualMethodRef PINInfo/getReferencePIN()[B;
+		// 35
+		virtualMethodRef 2.9.8([BSB)V;		// update([BSB)V
+		// 36
+		staticMethodRef OwnerPINTestApplet/access$5(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V;
+		// 37
+		staticMethodRef 2.16.2([BS[BSS)S;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+		// 38
+		staticMethodRef OwnerPINTestApplet/access$6(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/lib/templates/DummyClass;;
+			.descriptor	Lbenchs/lib/templates/DummyClass;	0.5;
+
+		// 39
+		staticMethodRef OwnerPINTestApplet/access$7(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)S;
+		// 40
+		virtualMethodRef 0.5.1()V;		// dummyMethodVoid()V
+		// 41
+		staticMethodRef OwnerPINTestApplet/access$8(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B;
+		// 42
+		virtualMethodRef 0.5.5([BSB)V;		// dummyMethodShort([BSB)V
+		// 43
+		virtualMethodRef 0.5.2()V;		// dummyMethodShort()V
+		// 44
+		staticMethodRef 0.7.0()V;		// benchs/lib/templates/TestCase.<init>()V
+		// 45
+		virtualMethodRef 2.9.2()B;		// getTriesRemaining()B
+		// 46
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 47
+		classRef PINInfo;
+		// 48
+		staticMethodRef PINInfo/<init>()V;
+		// 49
+		staticMethodRef OwnerPINTestApplet/access$9(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Ljavacard/framework/OwnerPIN;;
+			.descriptor	Ljavacard/framework/OwnerPIN;	2.9;
+
+		// 50
+		classRef 0.5;		// benchs/lib/templates/DummyClass
+		// 51
+		staticMethodRef 0.5.0()V;		// benchs/lib/templates/DummyClass.<init>()V
+		// 52
+		virtualMethodRef 2.9.4()Z;		// isValidated()Z
+		// 53
+		classRef OwnerPINTestApplet;
+		// 54
+		staticMethodRef OwnerPINTestApplet/<init>()V;
+		// 55
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 56
+		staticMethodRef OwnerPINTestApplet/access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V;
+		// 57
+		classRef 0.2;		// benchs/lib/templates/ByteArrayReader
+		// 58
+		staticMethodRef 0.2.0([BS)V;		// benchs/lib/templates/ByteArrayReader.<init>([BS)V
+		// 59
+		virtualMethodRef 0.2.6([BS)V;		// reset([BS)V
+		// 60
+		virtualMethodRef PINInfo/read(Lbenchs/lib/templates/ByteArrayReader;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;;
+			.descriptor	Lbenchs/lib/templates/ByteArrayReader;	0.2;
+
+		// 61
+		virtualMethodRef 2.9.5()V;		// reset()V
+		// 62
+		virtualMethodRef PINInfo/getTriesRemaining()B;
+		// 63
+		classRef 0.7;		// benchs/lib/templates/TestCase
+		// 64
+		classRef OwnerPINTestApplet$1;
+		// 65
+		staticMethodRef OwnerPINTestApplet$1/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 66
+		classRef OwnerPINTestApplet$2;
+		// 67
+		staticMethodRef OwnerPINTestApplet$2/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 68
+		classRef OwnerPINTestApplet$3;
+		// 69
+		staticMethodRef OwnerPINTestApplet$3/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 70
+		classRef OwnerPINTestApplet$4;
+		// 71
+		staticMethodRef OwnerPINTestApplet$4/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 72
+		classRef OwnerPINTestApplet$5;
+		// 73
+		staticMethodRef OwnerPINTestApplet$5/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 74
+		classRef OwnerPINTestApplet$6;
+		// 75
+		staticMethodRef OwnerPINTestApplet$6/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 76
+		classRef OwnerPINTestApplet$7;
+		// 77
+		staticMethodRef OwnerPINTestApplet$7/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 78
+		classRef OwnerPINTestApplet$8;
+		// 79
+		staticMethodRef OwnerPINTestApplet$8/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 80
+		classRef OwnerPINTestApplet$9;
+		// 81
+		staticMethodRef OwnerPINTestApplet$9/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 82
+		classRef OwnerPINTestApplet$10;
+		// 83
+		staticMethodRef OwnerPINTestApplet$10/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 84
+		classRef OwnerPINTestApplet$11;
+		// 85
+		staticMethodRef OwnerPINTestApplet$11/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 86
+		classRef OwnerPINTestApplet$12;
+		// 87
+		staticMethodRef OwnerPINTestApplet$12/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 88
+		classRef OwnerPINTestApplet$13;
+		// 89
+		staticMethodRef OwnerPINTestApplet$13/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 90
+		classRef OwnerPINTestApplet$14;
+		// 91
+		staticMethodRef OwnerPINTestApplet$14/<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V;
+		// 92
+		staticMethodRef OwnerPINTestApplet/init([B)V;
+		// 93
+		staticMethodRef OwnerPINTestApplet/access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;;
+		// 94
+		virtualMethodRef 2.9.6()V;		// resetAndUnblock()V
+		// 95
+		virtualMethodRef PINInfo/getPresentedPIN()[B;
+		// 96
+		virtualMethodRef PINInfo/getTryLimit()B;
+		// 97
+		staticMethodRef OwnerPINTestApplet/access$10(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V;
+		// 98
+		staticMethodRef 1.0.0()V;		// java/lang/Object.<init>()V
+		// 99
+		staticMethodRef 2.11.1(S)V;		// javacard/framework/PINException.throwIt(S)V
+		// 100
+		virtualMethodRef PINInfo/getMaxSize()B;
+		// 101
+		staticMethodRef OwnerPINTestApplet/access$11(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V;
+		// 102
+		staticMethodRef OwnerPINTestApplet/access$12(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B;
+		// 103
+		staticMethodRef OwnerPINTestApplet/access$13(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B;
+		// 104
+		staticMethodRef 0.5.1(BB)V;		// benchs/lib/templates/DummyClass.dummyMethodStaticVoid(BB)V
+		// 105
+		staticMethodRef OwnerPINTestApplet/access$2(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V;
+		// 106
+		classRef 2.9;		// javacard/framework/OwnerPIN
+		// 107
+		staticMethodRef 2.9.0(BB)V;		// javacard/framework/OwnerPIN.<init>(BB)V
+		// 108
+		staticMethodRef OwnerPINTestApplet/access$3(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;S)V;
+		// 109
+		virtualMethodRef 0.2.3()B;		// readByte()B
+		// 110
+		virtualMethodRef 0.2.2([BSS)S;		// read([BSS)S
+		// 111
+		virtualMethodRef 0.6.3(S)V;		// writeByte(S)V
+		// 112
+		virtualMethodRef 0.6.2([BSS)V;		// write([BSS)V
+	}
+
+	.class final OwnerPINTestApplet$1 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1.this$0
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1.this$0
+					invokestatic 93;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+					invokevirtual 95;		// getPresentedPIN()[B
+					invokestatic 105;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$2(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1.this$0
+					sconst_0;
+					invokestatic 108;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$3(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;S)V
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1.this$0
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					arraylength;
+					s2b;
+					invokestatic 36;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$5(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1.this$0
+					invokestatic 38;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$6(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/lib/templates/DummyClass;
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1.this$0
+					invokestatic 39;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$7(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)S
+					getfield_a_this 0;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$8(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					invokevirtual 42;		// dummyMethodShort([BSB)V
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$10 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 1;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$10.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$10.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 1;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$10.this$0
+					invokestatic 49;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$9(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Ljavacard/framework/OwnerPIN;
+					invokevirtual 52;		// isValidated()Z
+					pop;
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$11 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 2;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$11.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$11.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 2;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$11.this$0
+					invokestatic 49;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$9(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Ljavacard/framework/OwnerPIN;
+					invokevirtual 61;		// reset()V
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$12 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 3;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$12.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$12.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$12.this$0
+					invokestatic 49;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$9(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Ljavacard/framework/OwnerPIN;
+					invokevirtual 94;		// resetAndUnblock()V
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$13 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$13.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$13.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$13.this$0
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$13.this$0
+					invokestatic 93;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+					invokevirtual 96;		// getTryLimit()B
+					invokestatic 97;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$10(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$13.this$0
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$13.this$0
+					invokestatic 93;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+					invokevirtual 100;		// getMaxSize()B
+					invokestatic 101;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$11(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$13.this$0
+					invokestatic 102;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$12(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					getfield_a_this 4;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$13.this$0
+					invokestatic 103;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$13(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					invokestatic 104;		// benchs/lib/templates/DummyClass.dummyMethodStaticVoid(BB)V
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$14 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 5;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$14.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$14.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$14.this$0
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$14.this$0
+					invokestatic 93;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+					invokevirtual 96;		// getTryLimit()B
+					invokestatic 97;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$10(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$14.this$0
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$14.this$0
+					invokestatic 93;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+					invokevirtual 100;		// getMaxSize()B
+					invokestatic 101;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$11(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 3;
+			.locals 0;
+
+				L0:	new 106;		// javacard/framework/OwnerPIN
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$14.this$0
+					invokestatic 102;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$12(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					getfield_a_this 5;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$14.this$0
+					invokestatic 103;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$13(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					invokespecial 107;		// javacard/framework/OwnerPIN.<init>(BB)V
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$2 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 6;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2.this$0
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2.this$0
+					invokestatic 93;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+					invokevirtual 95;		// getPresentedPIN()[B
+					invokestatic 105;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$2(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2.this$0
+					sconst_0;
+					invokestatic 108;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$3(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;S)V
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2.this$0
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					arraylength;
+					s2b;
+					invokestatic 36;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$5(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2.this$0
+					invokestatic 49;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$9(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Ljavacard/framework/OwnerPIN;
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2.this$0
+					invokestatic 39;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$7(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)S
+					getfield_a_this 6;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$8(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					invokevirtual 32;		// check([BSB)Z
+					pop;
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$3 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 7;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3.this$0
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3.this$0
+					invokestatic 93;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+					invokevirtual 34;		// getReferencePIN()[B
+					invokestatic 105;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$2(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3.this$0
+					sconst_0;
+					invokestatic 108;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$3(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;S)V
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3.this$0
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					arraylength;
+					s2b;
+					invokestatic 36;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$5(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3.this$0
+					invokestatic 49;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$9(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Ljavacard/framework/OwnerPIN;
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3.this$0
+					invokestatic 39;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$7(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)S
+					getfield_a_this 7;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$8(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					invokevirtual 35;		// update([BSB)V
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$4 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 8;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.this$0
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.this$0
+					invokestatic 93;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+					invokevirtual 95;		// getPresentedPIN()[B
+					invokestatic 105;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$2(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.this$0
+					sconst_0;
+					invokestatic 108;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$3(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;S)V
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.this$0
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					arraylength;
+					s2b;
+					invokestatic 36;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$5(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.this$0
+					invokestatic 39;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$7(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)S
+					aload_1;
+					sconst_5;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$8(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					invokestatic 37;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.this$0
+					invokestatic 38;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$6(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/lib/templates/DummyClass;
+					aload_1;
+					sconst_5;
+					getfield_a_this 8;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$8(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					invokevirtual 42;		// dummyMethodShort([BSB)V
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$5 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 9;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.this$0
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.this$0
+					invokestatic 93;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+					invokevirtual 95;		// getPresentedPIN()[B
+					invokestatic 105;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$2(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.this$0
+					sconst_0;
+					invokestatic 108;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$3(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;S)V
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.this$0
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					arraylength;
+					s2b;
+					invokestatic 36;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$5(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 5;
+			.locals 0;
+
+				L0:	getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.this$0
+					invokestatic 39;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$7(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)S
+					aload_1;
+					sconst_5;
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$8(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					invokestatic 37;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.this$0
+					invokestatic 49;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$9(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Ljavacard/framework/OwnerPIN;
+					aload_1;
+					sconst_5;
+					getfield_a_this 9;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$8(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					invokevirtual 32;		// check([BSB)Z
+					pop;
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$6 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 10;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.this$0
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.this$0
+					invokestatic 93;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+					invokevirtual 95;		// getPresentedPIN()[B
+					invokestatic 105;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$2(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.this$0
+					sconst_0;
+					invokestatic 108;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$3(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;S)V
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.this$0
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					arraylength;
+					s2b;
+					invokestatic 36;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$5(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.this$0
+					invokestatic 49;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$9(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Ljavacard/framework/OwnerPIN;
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.this$0
+					invokestatic 39;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$7(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)S
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$8(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					invokevirtual 32;		// check([BSB)Z
+					pop;
+					getfield_a_this 10;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.this$0
+					invokestatic 38;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$6(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/lib/templates/DummyClass;
+					invokevirtual 40;		// dummyMethodVoid()V
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$7 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 11;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.this$0
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.this$0
+					invokestatic 93;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+					invokevirtual 95;		// getPresentedPIN()[B
+					invokestatic 105;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$2(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.this$0
+					sconst_0;
+					invokestatic 108;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$3(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;S)V
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.this$0
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					arraylength;
+					s2b;
+					invokestatic 36;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$5(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.this$0
+					invokestatic 49;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$9(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Ljavacard/framework/OwnerPIN;
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.this$0
+					invokestatic 33;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.this$0
+					invokestatic 39;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$7(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)S
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.this$0
+					invokestatic 41;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$8(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B
+					invokevirtual 32;		// check([BSB)Z
+					pop;
+					getfield_a_this 11;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.this$0
+					invokestatic 49;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$9(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Ljavacard/framework/OwnerPIN;
+					invokevirtual 94;		// resetAndUnblock()V
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$8 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 6 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 12;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$8.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 12;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$8.this$0
+					invokestatic 38;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$6(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/lib/templates/DummyClass;
+					invokevirtual 43;		// dummyMethodShort()V
+					return;
+		}
+
+	}
+
+	.class final OwnerPINTestApplet$9 extends 0.7 {		// extends benchs/lib/templates/TestCase
+
+		.fields {
+			final OwnerPINTestApplet this$0 0;		// Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;
+		}
+
+		.publicMethodTable 2 {
+			equals(Ljava/lang/Object;)Z;
+			setUp([BS)V;
+			setUp([B)V;
+			cleanUp([B)V;
+			isUseInnerCounter()Z;
+			setUseInnerCounter(Z)V;
+			run([B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 13;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$9.this$0
+					aload_0;
+					invokespecial 44;		// benchs/lib/templates/TestCase.<init>()V
+					return;
+		}
+
+		.method public setUp([B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$9.this$0
+					aload_1;
+					invokestatic 56;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V
+					return;
+		}
+
+		.method public run([B)V 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 13;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$9.this$0
+					invokestatic 49;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.access$9(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Ljavacard/framework/OwnerPIN;
+					invokevirtual 45;		// getTriesRemaining()B
+					pop;
+					return;
+		}
+
+	}
+
+	.class public OwnerPINTestApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			private 0.5 dummy 0;		// Lbenchs/lib/templates/DummyClass;
+			private 2.9 pin 1;		// Ljavacard/framework/OwnerPIN;
+			private PINInfo info 2;		// Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+			private 0.2 reader 3;		// Lbenchs/lib/templates/ByteArrayReader;
+			private byte[] value 4;		// [B
+			private byte tryLimit 5;		// B
+			private byte maxPINSize 6;		// B
+			private short offset 7;		// S
+			private byte length 8;		// B
+		}
+
+		.publicMethodTable 8 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method private <init>()V {
+			.stack 3;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 46;		// benchs/lib/templates/TemplateApplet.<init>()V
+					aload_0;
+					new 47;		// benchs/jcapi/javacard_framework/ownerpin/PINInfo
+					dup;
+					invokespecial 48;		// benchs/jcapi/javacard_framework/ownerpin/PINInfo.<init>()V
+					putfield_a 14;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.info
+					aload_0;
+					new 50;		// benchs/lib/templates/DummyClass
+					dup;
+					invokespecial 51;		// benchs/lib/templates/DummyClass.<init>()V
+					putfield_a 15;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.dummy
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	new 53;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet
+					dup;
+					invokespecial 54;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.<init>()V
+					invokevirtual 55;		// register()V
+					return;
+		}
+
+		.method private init([B)V {
+			.stack 5;
+			.locals 5;
+
+				L0:	getfield_a_this 16;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.reader
+					ifnonnull L2;
+				L1:	aload_0;
+					new 57;		// benchs/lib/templates/ByteArrayReader
+					dup;
+					aload_1;
+					sconst_5;
+					invokespecial 58;		// benchs/lib/templates/ByteArrayReader.<init>([BS)V
+					putfield_a 16;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.reader
+					goto L3;
+				L2:	getfield_a_this 16;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.reader
+					aload_1;
+					sconst_5;
+					invokevirtual 59;		// reset([BS)V
+				L3:	getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.info
+					invokevirtual 96;		// getTryLimit()B
+					sstore_2;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.info
+					invokevirtual 100;		// getMaxSize()B
+					sstore_3;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.info
+					getfield_a_this 16;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.reader
+					invokevirtual 60;		// read(Lbenchs/lib/templates/ByteArrayReader;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;
+					pop;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.info
+					invokevirtual 96;		// getTryLimit()B
+					sload_2;
+					if_scmpne L5;
+				L4:	getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.info
+					invokevirtual 100;		// getMaxSize()B
+					sload_3;
+					if_scmpeq L6;
+				L5:	aload_0;
+					new 106;		// javacard/framework/OwnerPIN
+					dup;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.info
+					invokevirtual 96;		// getTryLimit()B
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.info
+					invokevirtual 100;		// getMaxSize()B
+					invokespecial 107;		// javacard/framework/OwnerPIN.<init>(BB)V
+					putfield_a 17;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.pin
+				L6:	getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.info
+					invokevirtual 34;		// getReferencePIN()[B
+					astore 4;
+					getfield_a_this 17;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.pin
+					aload 4;
+					sconst_0;
+					aload 4;
+					arraylength;
+					s2b;
+					invokevirtual 35;		// update([BSB)V
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.info
+					invokevirtual 95;		// getPresentedPIN()[B
+					astore 5;
+					sconst_0;
+					sstore 6;
+					goto L8;
+				L7:	getfield_a_this 17;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.pin
+					aload 5;
+					sconst_0;
+					aload 5;
+					arraylength;
+					s2b;
+					invokevirtual 32;		// check([BSB)Z
+					pop;
+					sinc 6 1;
+				L8:	sload 6;
+					getfield_a_this 14;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.info
+					invokevirtual 62;		// getTriesRemaining()B
+					if_scmplt L7;
+				L9:	return;
+		}
+
+		.method public getTestCases()[Lbenchs/lib/templates/TestCase; 8 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/TestCase;	0.7;
+
+				L0:	bspush 14;
+					anewarray 63;		// benchs/lib/templates/TestCase
+					dup;
+					sconst_0;
+					new 64;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1
+					dup;
+					aload_0;
+					invokespecial 65;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$1.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					sconst_1;
+					new 66;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2
+					dup;
+					aload_0;
+					invokespecial 67;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$2.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					sconst_2;
+					new 68;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3
+					dup;
+					aload_0;
+					invokespecial 69;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$3.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					sconst_3;
+					new 70;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4
+					dup;
+					aload_0;
+					invokespecial 71;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$4.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					sconst_4;
+					new 72;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5
+					dup;
+					aload_0;
+					invokespecial 73;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$5.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					sconst_5;
+					new 74;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6
+					dup;
+					aload_0;
+					invokespecial 75;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$6.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					bspush 6;
+					new 76;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7
+					dup;
+					aload_0;
+					invokespecial 77;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$7.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					bspush 7;
+					new 78;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$8
+					dup;
+					aload_0;
+					invokespecial 79;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$8.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					bspush 8;
+					new 80;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$9
+					dup;
+					aload_0;
+					invokespecial 81;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$9.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					bspush 9;
+					new 82;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$10
+					dup;
+					aload_0;
+					invokespecial 83;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$10.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					bspush 10;
+					new 84;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$11
+					dup;
+					aload_0;
+					invokespecial 85;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$11.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					bspush 11;
+					new 86;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$12
+					dup;
+					aload_0;
+					invokespecial 87;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$12.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					bspush 12;
+					new 88;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$13
+					dup;
+					aload_0;
+					invokespecial 89;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$13.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					dup;
+					bspush 13;
+					new 90;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$14
+					dup;
+					aload_0;
+					invokespecial 91;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet$14.<init>(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)V
+					aastore;
+					areturn;
+		}
+
+		.method static access$0(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					invokespecial 92;		// benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.init([B)V
+					return;
+		}
+
+		.method static access$1(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo; {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 14;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.info
+					areturn;
+		}
+
+		.method static access$2(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;[B)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 18;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.value
+					return;
+		}
+
+		.method static access$3(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;S)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					putfield_s 19;		// short benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.offset
+					return;
+		}
+
+		.method static access$4(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)[B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a 18;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.value
+					areturn;
+		}
+
+		.method static access$5(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					putfield_b 20;		// byte benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.length
+					return;
+		}
+
+		.method static access$6(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Lbenchs/lib/templates/DummyClass; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/DummyClass;	0.5;
+
+				L0:	aload_0;
+					getfield_a 15;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.dummy
+					areturn;
+		}
+
+		.method static access$7(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)S {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_s 19;		// short benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.offset
+					sreturn;
+		}
+
+		.method static access$8(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_b 20;		// byte benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.length
+					sreturn;
+		}
+
+		.method static access$9(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)Ljavacard/framework/OwnerPIN; {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Ljavacard/framework/OwnerPIN;	2.9;
+
+				L0:	aload_0;
+					getfield_a 17;		// reference benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.pin
+					areturn;
+		}
+
+		.method static access$10(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					putfield_b 21;		// byte benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.tryLimit
+					return;
+		}
+
+		.method static access$11(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;B)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					putfield_b 22;		// byte benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.maxPINSize
+					return;
+		}
+
+		.method static access$12(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_b 21;		// byte benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.tryLimit
+					sreturn;
+		}
+
+		.method static access$13(Lbenchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet;)B {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_b 22;		// byte benchs/jcapi/javacard_framework/ownerpin/OwnerPINTestApplet.maxPINSize
+					sreturn;
+		}
+
+	}
+
+	.class public PINInfo 1 extends 1.0 {		// extends java/lang/Object
+
+		.fields {
+			private byte[] reference 0;		// [B
+			private byte[] presented 1;		// [B
+			private byte[] reference4 2;		// [B
+			private byte[] reference8 3;		// [B
+			private byte[] presented4 4;		// [B
+			private byte[] presented8 5;		// [B
+			private byte tryLimit 6;		// B
+			private byte maxSize 7;		// B
+			private byte remainingTries 8;		// B
+		}
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			read(Lbenchs/lib/templates/ByteArrayReader;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo;;
+			write(Lbenchs/lib/templates/ByteArrayWriter;)V;
+			getSize()S;
+			getTryLimit()B;
+			getMaxSize()B;
+			getReferencePIN()[B;
+			getPresentedPIN()[B;
+			getTriesRemaining()B;
+			setTryLimit(B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>(BB[B[BB)V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 98;		// java/lang/Object.<init>()V
+					sload_1;
+					sconst_1;
+					if_scmpge L2;
+				L1:	sconst_1;
+					invokestatic 99;		// javacard/framework/PINException.throwIt(S)V
+				L2:	aload_0;
+					sload_1;
+					putfield_b 23;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.tryLimit
+					sload_2;
+					sconst_1;
+					if_scmpge L4;
+				L3:	sconst_1;
+					invokestatic 99;		// javacard/framework/PINException.throwIt(S)V
+				L4:	aload_0;
+					sload_2;
+					putfield_b 24;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.maxSize
+					aload_3;
+					ifnonnull L6;
+				L5:	aload_0;
+					sconst_0;
+					newarray 11;
+					putfield_a 25;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference
+					goto L9;
+				L6:	aload_3;
+					arraylength;
+					sload_2;
+					if_scmple L8;
+				L7:	sconst_1;
+					invokestatic 99;		// javacard/framework/PINException.throwIt(S)V
+				L8:	aload_0;
+					aload_3;
+					putfield_a 25;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference
+				L9:	aload 4;
+					ifnonnull L11;
+				L10:	aload_0;
+					sconst_0;
+					newarray 11;
+					putfield_a 26;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented
+					goto L12;
+				L11:	aload_0;
+					aload 4;
+					putfield_a 26;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented
+				L12:	aload_0;
+					sload 5;
+					putfield_b 27;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.remainingTries
+					return;
+		}
+
+		.method public <init>()V 1 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 98;		// java/lang/Object.<init>()V
+					aload_0;
+					sconst_4;
+					newarray 11;
+					putfield_a 28;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference4
+					aload_0;
+					bspush 8;
+					newarray 11;
+					putfield_a 29;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference8
+					aload_0;
+					sconst_4;
+					newarray 11;
+					putfield_a 30;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented4
+					aload_0;
+					bspush 8;
+					newarray 11;
+					putfield_a 31;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented8
+					return;
+		}
+
+		.method public read(Lbenchs/lib/templates/ByteArrayReader;)Lbenchs/jcapi/javacard_framework/ownerpin/PINInfo; 1 {
+			.stack 4;
+			.locals 1;
+
+			.descriptor	Lbenchs/lib/templates/ByteArrayReader;	0.2;
+
+				L0:	aload_0;
+					aload_1;
+					invokevirtual 109;		// readByte()B
+					putfield_b 23;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.tryLimit
+					aload_0;
+					aload_1;
+					invokevirtual 109;		// readByte()B
+					putfield_b 24;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.maxSize
+					aload_1;
+					invokevirtual 109;		// readByte()B
+					sstore_2;
+					sload_2;
+					sconst_4;
+					if_scmpne L2;
+				L1:	aload_0;
+					getfield_a_this 28;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference4
+					putfield_a 25;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference
+					goto L5;
+				L2:	sload_2;
+					bspush 8;
+					if_scmpne L4;
+				L3:	aload_0;
+					getfield_a_this 29;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference8
+					putfield_a 25;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference
+					goto L5;
+				L4:	sconst_1;
+					invokestatic 99;		// javacard/framework/PINException.throwIt(S)V
+				L5:	aload_1;
+					getfield_a_this 25;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference
+					sconst_0;
+					sload_2;
+					invokevirtual 110;		// read([BSS)S
+					pop;
+					aload_1;
+					invokevirtual 109;		// readByte()B
+					sstore_2;
+					sload_2;
+					sconst_4;
+					if_scmpne L7;
+				L6:	aload_0;
+					getfield_a_this 30;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented4
+					putfield_a 26;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented
+					goto L10;
+				L7:	sload_2;
+					bspush 8;
+					if_scmpne L9;
+				L8:	aload_0;
+					getfield_a_this 31;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented8
+					putfield_a 26;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented
+					goto L10;
+				L9:	sconst_1;
+					invokestatic 99;		// javacard/framework/PINException.throwIt(S)V
+				L10:	aload_1;
+					getfield_a_this 26;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented
+					sconst_0;
+					sload_2;
+					invokevirtual 110;		// read([BSS)S
+					pop;
+					aload_0;
+					aload_1;
+					invokevirtual 109;		// readByte()B
+					putfield_b 27;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.remainingTries
+					aload_0;
+					areturn;
+		}
+
+		.method public write(Lbenchs/lib/templates/ByteArrayWriter;)V 2 {
+			.stack 4;
+			.locals 0;
+
+			.descriptor	Lbenchs/lib/templates/ByteArrayWriter;	0.6;
+
+				L0:	aload_1;
+					getfield_b_this 23;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.tryLimit
+					invokevirtual 111;		// writeByte(S)V
+					aload_1;
+					getfield_b_this 24;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.maxSize
+					invokevirtual 111;		// writeByte(S)V
+					aload_1;
+					getfield_a_this 25;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference
+					arraylength;
+					invokevirtual 111;		// writeByte(S)V
+					aload_1;
+					getfield_a_this 25;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference
+					sconst_0;
+					getfield_a_this 25;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference
+					arraylength;
+					invokevirtual 112;		// write([BSS)V
+					aload_1;
+					getfield_a_this 26;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented
+					arraylength;
+					invokevirtual 111;		// writeByte(S)V
+					aload_1;
+					getfield_a_this 26;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented
+					sconst_0;
+					getfield_a_this 26;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented
+					arraylength;
+					invokevirtual 112;		// write([BSS)V
+					aload_1;
+					getfield_b_this 27;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.remainingTries
+					invokevirtual 111;		// writeByte(S)V
+					return;
+		}
+
+		.method public getSize()S 3 {
+			.stack 2;
+			.locals 0;
+
+				L0:	sconst_5;
+					getfield_a_this 25;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference
+					arraylength;
+					sadd;
+					getfield_a_this 26;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented
+					arraylength;
+					sadd;
+					sreturn;
+		}
+
+		.method public getTryLimit()B 4 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_b_this 23;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.tryLimit
+					sreturn;
+		}
+
+		.method public getMaxSize()B 5 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_b_this 24;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.maxSize
+					sreturn;
+		}
+
+		.method public getReferencePIN()[B 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 25;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.reference
+					areturn;
+		}
+
+		.method public getPresentedPIN()[B 7 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 26;		// reference benchs/jcapi/javacard_framework/ownerpin/PINInfo.presented
+					areturn;
+		}
+
+		.method public getTriesRemaining()B 8 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_b_this 27;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.remainingTries
+					sreturn;
+		}
+
+		.method public setTryLimit(B)V 9 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					putfield_b 23;		// byte benchs/jcapi/javacard_framework/ownerpin/PINInfo.tryLimit
+					return;
+		}
+
+	}
+
+}

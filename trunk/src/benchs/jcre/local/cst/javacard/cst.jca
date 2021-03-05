@@ -1,0 +1,376 @@
+// converted by version 1.3
+// on Mon Nov 26 16:43:32 CET 2007
+
+.package benchs/jcre/local/cst {
+	.aid 0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x63:0x73:0x74;
+	.version 1.0;
+
+	.imports {
+		0x4D:0x45:0x53:0x55:0x52:0x45 1.0;		//benchs/lib/templates
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.0;		//javacard/framework
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+	}
+
+	.applet {
+		0x4D:0x45:0x53:0x55:0x52:0x45:0x5F:0x63:0x73:0x74:0x1 CstApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef short[] CstApplet/iterationRange;
+		// 1
+		staticMethodRef 0.4.0()V;		// benchs/lib/templates/TemplateApplet.<init>()V
+		// 2
+		virtualMethodRef 0.4.1()V;		// register()V
+		// 3
+		classRef CstApplet;
+		// 4
+		staticMethodRef CstApplet/<init>([BSB)V;
+		// 5
+		staticMethodRef 1.7.1(S)V;		// javacard/framework/ISOException.throwIt(S)V
+		// 6
+		staticMethodRef CstApplet/emptyLoop()V;
+		// 7
+		staticMethodRef CstApplet/callsconst()V;
+		// 8
+		staticMethodRef CstApplet/callaconst()V;
+		// 9
+		staticMethodRef CstApplet/callbspush()V;
+		// 10
+		staticMethodRef CstApplet/callsspush()V;
+	}
+
+	.class public CstApplet 0 extends 0.4 {		// extends benchs/lib/templates/TemplateApplet
+
+		.fields {
+			private short[] iterationRange 0;		// [S
+			private static final short P1_emptyLoop = 0;		// S
+			private static final short P1_sconst = 16;		// S
+			private static final short P1_aconst = 32;		// S
+			private static final short P1_bspush = 48;		// S
+			private static final short P1_sspush = 64;		// S
+			private static final short P1_FILTER = 252;		// S
+		}
+
+		.publicMethodTable 9 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			getTestCases()[Lbenchs/lib/templates/TestCase;;
+			process([BSSS)B;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method protected <init>([BSB)V 0 {
+			.stack 3;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 1;		// benchs/lib/templates/TemplateApplet.<init>()V
+					aload_0;
+					bspush 16;
+					newarray 12;
+					putfield_a 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					sconst_0;
+					sconst_0;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					sconst_1;
+					sconst_1;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					sconst_2;
+					sconst_3;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					sconst_3;
+					bspush 7;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					sconst_4;
+					bspush 15;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					sconst_5;
+					bspush 31;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					bspush 6;
+					bspush 63;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					bspush 7;
+					bspush 127;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					bspush 8;
+					sspush 255;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					bspush 9;
+					sspush 511;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					bspush 10;
+					sspush 1023;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					bspush 11;
+					sspush 2047;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					bspush 12;
+					sspush 4095;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					bspush 13;
+					sspush 8191;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					bspush 14;
+					sspush 16383;
+					sastore;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					bspush 15;
+					sspush 32767;
+					sastore;
+					aload_0;
+					invokevirtual 2;		// register()V
+					return;
+		}
+
+		.method private emptyLoop()V {
+   .stack 16;
+   .locals 0;
+   
+   L0: return;
+   }
+
+		.method private callsconst()V {
+   .stack 16;
+   .locals 0;
+   
+   L0: sconst_m1;
+   sconst_0;
+   sconst_1;
+   sconst_2;
+   sconst_3;
+   sconst_4;
+   sconst_5;
+   sconst_m1;
+   sconst_0;
+   sconst_1;
+   sconst_2;
+   sconst_3;
+   sconst_4;
+   sconst_5;
+   sconst_m1;
+   sconst_0;
+   return;
+   }
+
+		.method private callaconst()V {
+   .stack 16;
+   .locals 0;
+   
+   L0: aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   aconst_null;
+   return;
+     }
+
+		.method private callbspush()V {
+   .stack 16;
+   .locals 0;
+   
+   L0: bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   bspush 127;
+   return;
+   }
+
+		.method private callsspush()V {
+   .stack 16;
+   .locals 0;
+   
+   L0: sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   sspush 32767;
+   return;
+   }
+
+		.method public static install([BSB)V 1 {
+			.stack 4;
+			.locals 0;
+
+				L0:	new 3;		// benchs/jcre/local/cst/CstApplet
+					aload_0;
+					sload_1;
+					sload_2;
+					invokespecial 4;		// benchs/jcre/local/cst/CstApplet.<init>([BSB)V
+					return;
+		}
+
+		.method protected process([BSSS)B 9 {
+			.stack 3;
+			.locals 4;
+
+				L0:	aload_1;
+					sconst_3;
+					baload;
+					sspush 240;
+					sand;
+					sstore 5;
+					getfield_a_this 0;		// reference benchs/jcre/local/cst/CstApplet.iterationRange
+					aload_1;
+					sconst_3;
+					baload;
+					bspush 15;
+					sand;
+					saload;
+					sstore 6;
+					sload_3;
+					sspush 252;
+					sand;
+					slookupswitch L36 5 0 L1 16 L8 32 L15 48 L22 64 L29;
+				L1:	sconst_0;
+					sstore 7;
+					goto L6;
+				L2:	sconst_0;
+					sstore 8;
+					goto L4;
+				L3:	aload_0;
+					invokespecial 6;		// benchs/jcre/local/cst/CstApplet.emptyLoop()V
+					sinc 8 1;
+				L4:	sload 8;
+					sload 6;
+					if_scmplt L3;
+				L5:	sinc 7 1;
+				L6:	sload 7;
+					sload 5;
+					if_scmplt L2;
+				L7:	goto_w L37;
+				L8:	sconst_0;
+					sstore 7;
+					goto L13;
+				L9:	sconst_0;
+					sstore 8;
+					goto L11;
+				L10:	aload_0;
+					invokespecial 7;		// benchs/jcre/local/cst/CstApplet.callsconst()V
+					sinc 8 1;
+				L11:	sload 8;
+					sload 6;
+					if_scmplt L10;
+				L12:	sinc 7 1;
+				L13:	sload 7;
+					sload 5;
+					if_scmplt L9;
+				L14:	goto L37;
+				L15:	sconst_0;
+					sstore 7;
+					goto L20;
+				L16:	sconst_0;
+					sstore 8;
+					goto L18;
+				L17:	aload_0;
+					invokespecial 8;		// benchs/jcre/local/cst/CstApplet.callaconst()V
+					sinc 8 1;
+				L18:	sload 8;
+					sload 6;
+					if_scmplt L17;
+				L19:	sinc 7 1;
+				L20:	sload 7;
+					sload 5;
+					if_scmplt L16;
+				L21:	goto L37;
+				L22:	sconst_0;
+					sstore 7;
+					goto L27;
+				L23:	sconst_0;
+					sstore 8;
+					goto L25;
+				L24:	aload_0;
+					invokespecial 9;		// benchs/jcre/local/cst/CstApplet.callbspush()V
+					sinc 8 1;
+				L25:	sload 8;
+					sload 6;
+					if_scmplt L24;
+				L26:	sinc 7 1;
+				L27:	sload 7;
+					sload 5;
+					if_scmplt L23;
+				L28:	goto L37;
+				L29:	sconst_0;
+					sstore 7;
+					goto L34;
+				L30:	sconst_0;
+					sstore 8;
+					goto L32;
+				L31:	aload_0;
+					invokespecial 10;		// benchs/jcre/local/cst/CstApplet.callsspush()V
+					sinc 8 1;
+				L32:	sload 8;
+					sload 6;
+					if_scmplt L31;
+				L33:	sinc 7 1;
+				L34:	sload 7;
+					sload 5;
+					if_scmplt L30;
+				L35:	goto L37;
+				L36:	sspush 27270;
+					invokestatic 5;		// javacard/framework/ISOException.throwIt(S)V
+				L37:	sconst_0;
+					sreturn;
+		}
+
+	}
+
+}

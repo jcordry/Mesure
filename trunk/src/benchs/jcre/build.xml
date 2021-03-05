@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<project name="jcre" default="convert" basedir=".">
+	
+	<target name="convert">
+	  <ant dir="arith" target="convert" inheritall="false"/>
+	  <ant dir="array_read" target="convert" inheritall="false"/>
+	  <ant dir="array_write" target="convert" inheritall="false"/>
+      <ant dir="arraylength" target="convert" inheritall="false"/>
+	  <ant dir="dirtymemsetup" target="convert" inheritall="false"/>
+	  <ant dir="dirtymemsetup2" target="convert" inheritall="false"/>
+	  <ant dir="dummyBench" target="convert" inheritall="false"/>
+	  <ant dir="engine" target="convert" inheritall="false"/>
+      <ant dir="local" target="convert" inheritall="false"/>
+	  <ant dir="memsetup" target="convert" inheritall="false"/>
+		
+	</target>
+
+</project>
